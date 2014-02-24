@@ -46,11 +46,38 @@ header {
 }
 
 .tab {
-    width:60px;
-    height:200px;
+    font-size:30px;
+    color:$grey;
+    width:200px;
+    text-align:center;
+    padding-top:10px;
+    height:60px;
     background-color:$blue;
     float:right;
+    
+    transform-origin:100% 100%;
+
+     /* Safari */
+    transform: rotate(-90deg);
+
+    /* Firefox */
+    transform: rotate(-90deg);
+
+    /* E */
+    transform: rotate(-90deg);
+
+    /* Opera */
+    transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    
+           
+    
 }
+
+    
 
 h1 { 
     text-align:center;
