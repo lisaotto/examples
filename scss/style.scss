@@ -83,13 +83,34 @@ body{
 header {
     width:75%;
     float:left;
-    position:fixed;
+    position:fixed
 }
 
-h1 span {
-    border-bottom: 3px solid $yellow;
-    margin-top:-2px;
-    
+h1 { 
+    text-align:center;
+    color:$yellow;
+    font-size:40px;
+    max-width: 600px;
+    margin:0 auto;
+
+}
+
+.name {
+    border-bottom: 3px solid $yellow; 
+    cursor:pointer; 
+}
+
+.portrait {
+    position: absolute;
+    margin-top:-225px;
+    margin-left:20px;
+    display:none;
+
+}
+
+h1 span:hover > .portrait{
+    display:block;
+
 }
 
 .icons {
@@ -103,7 +124,7 @@ h1 span {
 
     div {
         display:inline-block;
-        padding-top:50px
+        padding-top:30px
     }
 }
 
@@ -123,6 +144,7 @@ a.icon-dribbble, a.icon-envelope, a.icon-pin {
 
 a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
     display:block;
+    transition: all 5s ease;
 }
 
 .icons p {
@@ -152,29 +174,103 @@ a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
     padding-top:10px;
     height:60px;
     background-color:$blue;
+    cursor:pointer;
 
     transform-origin:100% 50%;
 
     transform: rotate(-90deg);
 
 
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -o-transition: 0.2s all;
+    -ms-transition: 0.2s all;
+
+
         span {
             top: 4px;
             padding-left: 6px;
         }
-           
-    
 }
 
-    
+.bio-title {
+   display:none; 
+}
 
-h1 { 
-    text-align:center;
-    color:$yellow;
-    font-size:40px;
-    max-width: 600px;
-    margin:0 auto;
+.work-title {
+   display:inline; 
+}
 
+.tab:hover {
+
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=8)";
+
+  /* Netscape */
+  -moz-opacity: 0.8;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.8;
+
+  /* Good browsers */
+  opacity: 0.8;
+
+}
+
+//////////////////header hover//////////////////
+
+header {
+    width:25% !important;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 35px;
+}
+
+.bio{
+    display:none !important;
+}
+
+.tab {
+    transform: rotate(90deg) !important; 
+}
+
+.work-title {
+   display:none !important; 
+}
+
+.bio-title {
+   display:inline !important; 
+}
+
+.icons {
+    position:relative !important;
+    float:left !important;
+
+    div {
+        display:block !important;
+    }
+}
+
+.icon-dribbble, .icon-envelope, .icon-pin {
+    margin: 35px;
+}
+
+.icon-envelope + p {
+    margin-left: 90px;
+    top: 13px;
+}
+
+.icon-dribbble + p {
+    margin-left: 90px;
+    top: 21x;
+}
+
+.icon-pin + p {
+    margin-left: 90px;
+    top: 20px;
 }
 
 //////////////////Portolio Teaser//////////////////
@@ -197,3 +293,10 @@ main {
     .purple {
         background-color: #bbb3cd;
     }
+
+
+//////////////////Portolio Teaser Hover//////////////////
+
+main {
+    width:75% !important;
+}
