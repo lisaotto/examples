@@ -143,8 +143,8 @@ a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
 
 .tab {
     position: absolute;
-    top:0;
-    right:0;
+    top: -100px;
+    right: 30px;
     font-size:30px;
     color:$grey;
     width:200px;
@@ -152,24 +152,11 @@ a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
     padding-top:10px;
     height:60px;
     background-color:$blue;
-    float:right;
 
-    transform-origin:100% 100%;
+    transform-origin:100% 50%;
 
-     /* Safari */
     transform: rotate(-90deg);
 
-    /* Firefox */
-    transform: rotate(-90deg);
-
-    /* E */
-    transform: rotate(-90deg);
-
-    /* Opera */
-    transform: rotate(-90deg);
-
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
         span {
             top: 4px;

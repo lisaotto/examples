@@ -1,8 +1,11 @@
 var win = $(window),
-	header = $('#header');
+	header = $('#header, .tab');
 
 function centerHeader() {
-	header.css('top', ( win.height() - header.height() ) / 2);
+	header.each(function(){
+		var $this = $(this);
+		$this.css('margin-top', ( win.height() - $this.height() ) / 2);
+	});
 }
 centerHeader();
 win.resize(centerHeader);
