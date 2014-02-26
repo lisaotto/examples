@@ -129,7 +129,6 @@ a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
     display:none;
 }
 
-
 .icon-envelope + p {
     margin-left: -16px;
 }
@@ -143,6 +142,9 @@ a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
 }
 
 .tab {
+    position: absolute;
+    top:0;
+    right:0;
     font-size:30px;
     color:$grey;
     width:200px;
