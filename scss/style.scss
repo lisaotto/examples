@@ -28,11 +28,11 @@ $blue: #03adb0;
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?4vso9e');
-    src:url('../fonts/icomoon.eot?#iefix4vso9e') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?4vso9e') format('woff'),
-        url('../fonts/icomoon.ttf?4vso9e') format('truetype'),
-        url('../fonts/icomoon.svg?4vso9e#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?-v24xao');
+    src:url('../fonts/icomoon.eot?#iefix-v24xao') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-v24xao') format('woff'),
+        url('../fonts/icomoon.ttf?-v24xao') format('truetype'),
+        url('../fonts/icomoon.svg?-v24xao#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -51,9 +51,6 @@ $blue: #03adb0;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope:before {
-    content: "\e600";
-}
 .icon-dribbble:before {
     content: "\e601";
 }
@@ -63,6 +60,13 @@ $blue: #03adb0;
 .icon-arrow:before {
     content: "\e603";
 }
+.icon-arrow-box:before {
+    content: "\e600";
+}
+.icon-envelope:before {
+    content: "\e604";
+}
+
 
 
 ///end icomoon///
@@ -75,6 +79,11 @@ html {
 
 body{
     font-family:'andes';
+    overflow:hidden;
+}
+
+a{
+    text-decoration:none;
 }
 
 
@@ -104,26 +113,22 @@ h1 {
     position: absolute;
     margin-top:-225px;
     margin-left:20px;
-    display:none;
-
+    opacity:0;
+    transition: ease .5s opacity;
 }
-
 
 
 h1 span:hover > .portrait{
-    display:block;
-
+    opacity:1;
 }
 
-.arrow-down {
-    .arrow-down {
+.arrow-portrait {
     width: 0; 
     height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid $lightgrey;
-}
-
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 14px solid $lightgrey;
+    left:41px;
 }
 
 .icons {
@@ -137,7 +142,7 @@ h1 span:hover > .portrait{
 
     div {
         display:inline-block;
-        padding-top:30px
+        padding-top:50px
     }
 }
 
@@ -147,33 +152,33 @@ h1 span:hover > .portrait{
 }
 
 a.icon-dribbble, a.icon-envelope, a.icon-pin {
-    text-decoration:none;
     color:$blue;
 }
 
 .icons p {
-    display:none;
+    opacity:0;
+    font-family: andes;
 }
 
-a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
-    display:block;
-    transition: all 5s ease;
+a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
+    opacity:1;
+    transition: ease .5s all;
 }
 
-.icons p {
-    display:none;
+
+.icon-envelope p {
+    margin-left: -72px;
+    padding:4px;
 }
 
-.icon-envelope + p {
-    padding-left: -16px;
+.icon-dribbble p {
+    margin-left: -22px;
+    padding:4px;
 }
 
-.icon-dribbble + p {
-    padding-left:44px;
-}
-
-.icon-pin + p {
-    padding-left:24px;
+.icon-pin p {
+    margin-left: -42px;
+    padding:4px;
 }
 
 .tab {
@@ -190,16 +195,11 @@ a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
     cursor:pointer;
 
     transform-origin:100% 50%;
-
     transform: rotate(-90deg);
 
 
-    transition: 0.2s all;
-    -webkit-transition: 0.2s all;
-    -moz-transition: 0.2s all;
-    -o-transition: 0.2s all;
-    -ms-transition: 0.2s all;
-
+    transition: 0.2s opacity;
+  
 
         span {
             top: 4px;
@@ -233,90 +233,132 @@ a.icon-dribbble:hover + p, a.icon-envelope:hover + p, a.icon-pin:hover + p {
 
 //////////////////header hover//////////////////
 
+.teasers-open{
 
-header {
-    width:25% !important;
-}
-
-#header {
-        margin-top: 50px !important;
-}
-
-h1 {
-    text-align: left;
-    padding-left: 35px;
-}
-
-.bio{
-    display:none !important;
-}
-
-.tab {
-    transform: rotate(90deg) !important; 
-}
-
-.work-title {
-   display:none !important; 
-}
-
-.bio-title {
-   display:inline !important; 
-}
-
-.icons {
-    position: fixed;
-    float: left !important;
-    bottom: 50px;
-    text-align:left;
-
-    div {
-        display:block !important;
+    header{
+        width:25%;
     }
-}
 
-.icon-dribbble, .icon-envelope, .icon-pin {
-    margin: 35px;
-}
+    #header{
+        margin-top: 50px !important;
+    }
 
-.icon-envelope + p {
-    padding-left: 90px;
-    top: 13px;
-}
+    h1{
+        text-align: left;
+        padding-left: 35px;
+    }
 
-.icon-dribbble + p {
-    padding-left: 90px;
-    top: 16px;
-}
+    .bio{
+        display:none;
+    }
 
-.icon-pin + p {
-    padding-left: 90px;
-    top: 20px;
-}
+    .tab{
+        transform: rotate(90deg); 
+    }
 
+    .work-title {
+       display:none ; 
+    }
+
+    .bio-title {
+       display:inline ; 
+    }
+
+    .portrait {
+        position: absolute;
+        margin-top:28px;
+        margin-left:20px;
+    }
+
+    .arrow-portrait {
+        border-top:none;
+        border-bottom: 14px solid $lightgrey;
+        margin-top:-164px;
+    }
+
+    .icons {
+        position: fixed;
+        float: left ;
+        bottom: 60px;
+        text-align:left;
+
+        div {
+            display:block;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .icon-dribbble, .icon-envelope, .icon-pin{
+        margin: 35px;
+    }
+
+    .icon-envelope p, .icon-dribbble p, .icon-pin p {
+        margin-left: 50px;
+        top: -16px;
+    }
+
+}
 //////////////////Portolio Teaser//////////////////
 
 main {
-    width:25%;
+    width:75%;
     float:right;
+    margin-right:-50%;
 }
 
 .project-sample {
-    height:250px;
     width:100%;
+    padding-bottom:22.73%;
+    display:block;
+
+    img{
+        position:absolute;
+        width:100%;
+
+    }
+}
+
+.overlay {
+    width: 90%;
+    height: 60%;
+    background-color: $blue;
+    position:absolute;
+    margin: 5%;
+
+    p {
+        font-size: 30px;
+        font-family: 'andes';
+        color: $grey;
+        text-align:center;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
 
 }
 
-    .pink {
-       background-color: #c4adb3;
-    }
-
-    .purple {
-        background-color: #bbb3cd;
-    }
+.icon-arrow-box {
+    display:block;
+}
 
 
 //////////////////Portolio Teaser Hover//////////////////
+.teasers-open{
+    
+    main {
+        width:75%;
+        margin-right:0;
 
-main {
-    width:75% !important;
+        a:hover{
+
+        }
+    }
+
+
+
 }
