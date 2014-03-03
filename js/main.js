@@ -1,3 +1,5 @@
+(function($){
+
 var win = $(window),
 	header = $('#header, .tab');
 
@@ -9,3 +11,10 @@ function centerHeader() {
 }
 centerHeader();
 win.resize(centerHeader);
+
+function toggle() {
+	$( this.getAttribute('data-toggle') ).toggleClass( this.getAttribute('data-toggle-class') );
+}
+$('[data-toggle]').click( toggle );
+
+}(jQuery));
