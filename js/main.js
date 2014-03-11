@@ -1,16 +1,17 @@
 (function($){
 
 var win = $(window),
-	header = $('#header, .tab');
+	headerContainer = $('header'),
+	header = $('#header'),
+	tab = $('.tab');
 
-function centerHeader() {
-	header.each(function(){
-		var $this = $(this);
-		$this.css('margin-top', ( win.height() - $this.height() ) / 2);
-	});
+function headerThings() {
+
+	headerContainer.height( win.height() );
+
 }
-centerHeader();
-win.resize(centerHeader);
+headerThings();
+win.resize( headerThings );
 
 function toggle() {
 	$( this.getAttribute('data-toggle') ).toggleClass( this.getAttribute('data-toggle-class') );
