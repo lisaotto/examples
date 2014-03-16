@@ -335,6 +335,15 @@ main {
     margin-right:-50%;
 }
 
+.nolink-box {
+    position: fixed;
+    width:25%;
+    top:0;
+    right:0;
+    height: 100%;
+    z-index:100;
+}
+
 .project-sample {
     width:100%;
     padding-bottom:22.73%;
@@ -430,13 +439,22 @@ main {
 
 }
 
+
 @media screen and (max-width: 960px){
     @include overlay;
+
+    .nolink-box {
+        display:none;
+    }
 }
 
 
- .teasers-open {
+.teasers-open {
     @include overlay;
+    
+    .nolink-box {
+        display:none;
+    }
 }
 
 body.teasers-open {
