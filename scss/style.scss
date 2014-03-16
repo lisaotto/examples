@@ -247,6 +247,7 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
 }
 
 //////////////////header hover//////////////////
+
 @media screen and (min-width: 960px) {
 
     .teasers-open{
@@ -393,11 +394,11 @@ main {
             top: 50%;
             transform: translateY(-50%);
         }
-    }
+ }
 
-    .icon-arrow-box {
-        display:block;
-    }  
+.icon-arrow-box {
+    display:block;
+}  
 
 
 
@@ -414,17 +415,73 @@ main {
 
 }
 
-a.project-sample:hover img{
-    opacity:.8;
+@mixin overlay {
+
+    a.project-sample:hover {
+
+        img {
+            opacity:.8;
+        }
+
+        .overlay {
+            opacity:.95;
+        }
+    }
+
 }
 
-a.project-sample:hover .overlay {
-    opacity:.95;
+@media screen and (max-width: 960px){
+    @include overlay;
+}
+
+
+ .teasers-open {
+    @include overlay;
 }
 
 body.teasers-open {
     overflow: visible !important;
 }
+
+
+//////////////////Portfolio Teaser Touch//////////////
+
+.touch {
+    .overlay h2, .overlay h3 {
+        display:none;
+    }
+
+    .overlay {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 1;
+
+
+        > div {
+            display:inline-block;
+            height: 100%;
+            vertical-align:top;
+        }
+
+        p {
+            top: auto;
+            bottom: 50%;
+        }
+    }
+
+    a.project-sample:hover img {
+        opacity:1;
+    }
+}
+
+
+
+
+
 
 //////////////////Media Query < 960 //////////////////
 
@@ -459,9 +516,6 @@ body.teasers-open {
     .overlay h3 {
         display:none;
     }
-
-
-
 }
  
 //////////////////Media Query < 700 //////////////////
@@ -478,6 +532,21 @@ body.teasers-open {
         width: 180px;
         height: 50px;
         padding-top:6px;
+    }
+
+    .touch {
+        .overlay {
+            width: 50px;
+            height: 50px; 
+
+            > div {
+                height:0;
+            }
+
+            p {
+                font-size: 26px;
+            }
+        }
     }
 
 }
@@ -504,6 +573,21 @@ body.teasers-open {
 
     div.icons {
         padding-top: 10px;
+    }
+
+    .touch {
+        .overlay {
+            width: 40px;
+            height: 40px; 
+
+            > div {
+                height:0;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
     }
 
 }
