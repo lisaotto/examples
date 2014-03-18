@@ -317,14 +317,21 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
             margin: 35px;
         }
 
+    }
+
+}
+
+
+@media screen and (min-width: 1350px) {
+
+    .teasers-open {
         .icon-envelope p, .icon-dribbble p, .icon-pin p {
             margin-left: 50px;
             top: -16px;
         }
-
     }
-
 }
+
 
 
 //////////////////Portolio Teaser//////////////////
@@ -498,8 +505,20 @@ body.teasers-open {
 
 
 
+//////////////////Media Query < 1350 //////////////////
 
+@media screen and (min-width: 960px) and (max-width: 1350px) {
 
+    .teasers-open{
+
+        .icon-envelope p, .icon-dribbble p, .icon-pin p {
+            margin-left: -5px;
+            top: 22px;
+            font-size: 15px;
+        }
+    }
+
+}
 
 //////////////////Media Query < 960 //////////////////
 
