@@ -103,6 +103,7 @@ header {
     float: left;
     position:fixed;
 
+
     > div {
         top: 50%;
         transform: translateY(-50%);
@@ -129,7 +130,7 @@ h1 {
     margin-top:-225px;
     margin-left:20px;
     opacity:0;
-    transition: ease .5s opacity;
+    transition: opacity .5s ease;
 }
 
 
@@ -176,7 +177,7 @@ a.icon-dribbble, a.icon-envelope, a.icon-pin {
 
 a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
     opacity:1;
-    transition: ease .5s all;
+    transition: all .5s ease;
 }
 
 
@@ -213,7 +214,7 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
     transform: translateY(-50%) rotate(-90deg);
 
 
-    transition: 0.2s opacity;
+    transition: opacity 0.2s ease;
   
 
         span {
@@ -253,7 +254,6 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
     .teasers-open{
 
         header{
-            
             width:25%;
               
              > div {
@@ -351,16 +351,24 @@ main {
     z-index:100;
 }
 
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+
 .project-sample {
-    width:100%;
     padding-bottom:22.73%;
     display:block;
 
     img{
         position:absolute;
         width:100%;
-        transition: ease .5s opacity;
-
+        transition: opacity .5s ease;
     }
 }
 
@@ -372,8 +380,9 @@ main {
     margin: 4.5% 15%;
     text-align:center;
     opacity: 0;
-    transition: ease .5s opacity;
+    transition: opacity .5s ease;
     transition-delay: .1s;
+    overflow:hidden;
 
 
         > div {
@@ -397,9 +406,10 @@ main {
         }
 
         .hgroup {
-            top: 50%;
-            transform: translateY(-50%);
+            top: 40%;
             padding-right: 30px;
+            transition: .4s ease;
+            transition-delay: .1s;
         }
 
         p {
@@ -407,9 +417,14 @@ main {
             text-align:center;
             font-size: 30px;
             margin: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 60%;
+            transition: .4s ease;
+            transition-delay: .1s;
         }
+ }
+
+ .half .overlay {
+    margin: 9.5% 15%;
  }
 
 .icon-arrow-box {
@@ -442,6 +457,16 @@ main {
         .overlay {
             opacity:.95;
         }
+
+        .hgroup {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        p { 
+            top: 50%;
+            transform: translateY(-50%);
+        }   
     }
 
 }
