@@ -12,9 +12,9 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css">
         
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="<?php echo $url; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body class="teasers-open">
         <!--[if lt IE 7]>
@@ -22,32 +22,14 @@
         <![endif]-->
 
         <header>
-
-            <div>
-                <h1>
-                    <span class="name">Lisa Otto<div class="portrait"><img src="img/portrait.svg" alt="Lisa Otto as an Illustration"><div class="arrow-portrait"></div></div></span><span class="bio"> is a user experience and interface designer who, sometimes, dabbles in illustration.</span>
-                </h1>
-
-                <div class="icons">
-                    <div>
-                        <a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"><p>otto.elizabeth@gmail.com</p></a>
-                    </div>
-                    <div>
-                        <a href="http://dribbble.com/Lisaotto" class="icon-dribbble"><p>@lisaotto</p></a>
-                    </div>
-                    <div>
-                        <a href="" class="icon-pin"><p>Washington&nbsp;DC</p></a>
-                    </div>
-                </div>
-            </div>
-
-        <p class="tab" data-toggle="body" data-toggle-class="teasers-open"><span class="work-title">THE WORK</span><span class="bio-title">THE BIO</span><span class="icon-arrow"></span></p>
+        
+        <?php include("../../includes/header.php"); ?>
         
         </header>
 
         <main id="projects">
             <div class="banner"> 
-                <img src="img/teaser-infographics-retina.jpg" alt="">
+                <img src="<?php echo $url; ?>/img/teaser-infographics-retina.jpg" alt="">
                 <div class="hgroup"><h3>BLOG INTEGRATION</h3><h2>Platform Blog</h2></div>
             </div>
             <div class="navigation">
@@ -84,8 +66,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="<?php echo $url; ?>/js/plugins.js"></script>
+        <script src="<?php echo $url; ?>/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
