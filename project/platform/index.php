@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <?php $url = 'http://localhost/portfolio';?>
 
         <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css">
         
@@ -22,44 +23,45 @@
         <![endif]-->
 
         <header>
-        
+
         <?php include("../../includes/header.php"); ?>
         
         </header>
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/teaser-infographics-retina.jpg" alt="">
-                <div class="hgroup"><h3>BLOG INTEGRATION</h3><h2>Platform Blog</h2></div>
+                <img src="<?php echo $url; ?>/img/infographics/header-infographics.png" alt="">
+                <div class="hgroup"><h3>Blog Integration</h3><h2>Platform</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
                 <a class="next" href="/"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
                 <div class="bar"></div>
             </div>
-            <div class="intro clearfix">
+            <div class="intro clearfix outerpadding">
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero. Aliquam sodales consequat lacus, quis gravida turpis adipiscing nec. Etiam quis massa et sem facilisis tempor. Cras at tellus id neque lacinia dapibus id nec lacus.</p>
                 <div class="role">
-                    <h4>My Role</h4>
-                    <ul>
-                        <li>UX</li>
-                        <li>IU</li>
-                    </ul>
-                    <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
+                <h4>My Role</h4>
+                <ul>
+                    <li>UX</li>
+                    <li>IU</li>
+                </ul>
+                <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>
             </div>
-            <div class="content">
+            <div class="content outerpadding finalblock clearfix">
+                <img class="halfcolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
+                <img class="halfcolumn last" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
+                <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
+                <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+            </div>
+
+            <div class="bottom-navigation">
+                <a class="backup" href="#projects"><span class="title">BACK UP</span><span class="icon-arrow-box"></span></a>
+                <div class="bar"></div>
             </div>
  
         </main>
-
-
-
-
-
-
-
-
 
 
 
