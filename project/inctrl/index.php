@@ -30,8 +30,8 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/infographics/header-infographics.png" alt="">
-                <div class="hgroup"><h3>Various Illustrations</h3><h2>CAT</h2></div>
+                <img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt="">
+                <div class="hgroup"><h3>Various Illustrations</h3><h2>Teach InCtrl</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -50,17 +50,19 @@
                 </div>
             </div>
             <div class="content outerpadding finalblock clearfix">
-                <img class="threecolumn first" src="<?php echo $url; ?>/img/infographics/spectrumMap-Full.jpg">
-                <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/spectrumMap-zoom1.jpg">
-                <img class="halfcolumn last" src="<?php echo $url; ?>//img/infographics/spectrumMap-zoom2.jpg">
-                <img class="twocolumn center" src="<?php echo $url; ?>/img/infographics/realtimeentertainment.png">
-                <img class="threecolumn" src="<?php echo $url; ?>/img/infographics/schoolsupplies.jpg">
-                <img class="threecolumn" src="<?php echo $url; ?>/img/infographics/millionyears-Full1.jpg">
-                <img class="threecolumn" src="<?php echo $url; ?>/img/infographics/millionyears-Full2.jpg">
-                <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/millionyears-zoom1.png">
-                <img class="halfcolumn last" src="<?php echo $url; ?>/img/infographics/millionyears-zoom2.png">
-                <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/millionyears-zoom3.png">
-                <img class="halfcolumn last" src="<?php echo $url; ?>/img/infographics/millionyears-zoom4.png">
+                <img class="onecolumn first" src="<?php echo $url; ?>/img/inctrl/digitalcitizen.png">
+                <img class="onecolumn first" src="<?php echo $url; ?>/img/inctrl/privacy.png">
+                <img class="onecolumn first last" src="<?php echo $url; ?>/img/inctrl/infoliteracy.png">
+                <img class="onecolumn" src="<?php echo $url; ?>/img/inctrl/collaboration.png">
+                <img class="onecolumn" src="<?php echo $url; ?>/img/inctrl/ethics.png">
+                <img class="onecolumn last" src="<?php echo $url; ?>/img/inctrl/medialiteracy.png">
+                <img class="threecolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_home.png">
+                <div class="onecolumn"> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                     <img class="threecolumn" src="<?php echo $url; ?>/img/inctrl/inctrl_mobile.png">
+                </div>
+                <img class="twocolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_tablet.png">
+                <a class="visitsite" href="http://www.teachinctrl.org">Visit Site<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

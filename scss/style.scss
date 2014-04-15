@@ -835,6 +835,28 @@ body.teasers-open {
     }
 }
 
+a.visitsite , a.visitsite:visited{
+    text-align:center;
+    display:inline-block;
+    width:100%;
+    color:$blue;
+    text-decoration:none;
+    font-size: 40px;
+    transition: opacity .4s ease;
+    margin-top:10%;
+}
+
+.visitsite {
+     .icon-arrow{
+        top:5px;
+        left: 6px;
+        display:inline-block;
+        transform: rotate(-90deg);
+    }
+
+
+}
+
 
 //setting up grid//
 
