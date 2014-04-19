@@ -30,8 +30,8 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/infographics/header-infographics.png" alt="">
-                <div class="hgroup"><h3>Various Illustrations</h3><h2>CAT</h2></div>
+                <img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt="">
+                <div class="hgroup"><h3>Website Redesign</h3><h2>B and R Autobody</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -50,17 +50,13 @@
                 </div>
             </div>
             <div class="content outerpadding finalblock clearfix">
-                <img class="threecolumn first" src="<?php echo $url; ?>/img/infographics/spectrumMap-Full.jpg">
-                <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/spectrumMap-zoom1.jpg">
-                <img class="halfcolumn last" src="<?php echo $url; ?>//img/infographics/spectrumMap-zoom2.jpg">
-                <img class="twocolumn center" src="<?php echo $url; ?>/img/infographics/realtimeentertainment.png">
-                <img class="threecolumn" src="<?php echo $url; ?>/img/infographics/schoolsupplies.jpg">
-                <img class="threecolumn" src="<?php echo $url; ?>/img/infographics/millionyears-Full1.jpg">
-                <img class="threecolumn" src="<?php echo $url; ?>/img/infographics/millionyears-Full2.jpg">
-                <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/millionyears-zoom1.png">
-                <img class="halfcolumn last" src="<?php echo $url; ?>/img/infographics/millionyears-zoom2.png">
-                <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/millionyears-zoom3.png">
-                <img class="halfcolumn finalblock" src="<?php echo $url; ?>/img/infographics/millionyears-zoom4.png">
+                <img class="threecolumn first" src="<?php echo $url; ?>/img/bandr/bandr-home.jpg">
+                <img class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-home-mobile.jpg">
+                <p class="twocolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero.</p>
+                <img class="halfcolumn" src="<?php echo $url; ?>/img/bandr/bandr-sales.jpg">
+                <img class="halfcolumn last" src="<?php echo $url; ?>/img/bandr/bandr-sales-hover.jpg">
+                <img class="threecolumn finalblock" src="<?php echo $url; ?>/img/bandr/bandr-services.jpg">
+                <a class="visitsite" href="http://www.teachinctrl.org">Visit Site<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

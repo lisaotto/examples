@@ -53,7 +53,7 @@
                 <img class="halfcolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
                 <img class="halfcolumn last" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
                 <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
-                <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                <p class="onecolumn finalblock"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
             </div>
 
             <div class="bottom-navigation">
