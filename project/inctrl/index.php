@@ -31,7 +31,7 @@
         <main id="projects">
             <div class="banner"> 
                 <img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt="">
-                <div class="hgroup"><h3>Various Illustrations</h3><h2>Teach InCtrl</h2></div>
+                <div class="hgroup"><h3>Website Redesign</h3><h2>TEACH INCTRL</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -49,7 +49,7 @@
                 <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>
             </div>
-            <div class="content outerpadding finalblock clearfix">
+            <div class="content outerpadding clearfix">
                 <img class="onecolumn first" src="<?php echo $url; ?>/img/inctrl/digitalcitizen.png">
                 <img class="onecolumn first" src="<?php echo $url; ?>/img/inctrl/privacy.png">
                 <img class="onecolumn first last" src="<?php echo $url; ?>/img/inctrl/infoliteracy.png">
@@ -57,12 +57,14 @@
                 <img class="onecolumn" src="<?php echo $url; ?>/img/inctrl/ethics.png">
                 <img class="onecolumn last" src="<?php echo $url; ?>/img/inctrl/medialiteracy.png">
                 <img class="threecolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_home.png">
-                <div class="onecolumn"> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                     <img class="threecolumn" src="<?php echo $url; ?>/img/inctrl/inctrl_mobile.png">
+               <div class="clearfix finalblock">
+                    <div class="onecolumn"> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                         <img class="threecolumn" src="<?php echo $url; ?>/img/inctrl/inctrl_mobile.png">
+                    </div>
+                    <img class="twocolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_tablet.png">
                 </div>
-                <img class="twocolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_tablet.png">
-                <a class="visitsite" href="http://www.teachinctrl.org">Visit Site<span class="icon-arrow"></span></a>
+                <a class="visitsite" href="http://www.teachinctrl.org">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

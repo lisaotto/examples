@@ -30,7 +30,7 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt="">
+                <img src="<?php echo $url; ?>/img/bandr/bandr-header.jpg" alt="">
                 <div class="hgroup"><h3>Website Redesign</h3><h2>B and R Autobody</h2></div>
             </div>
             <div class="navigation">
@@ -46,17 +46,19 @@
                     <li>UX</li>
                     <li>IU</li>
                 </ul>
-                <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
+                <p>Work done with <a href="http://www.parsleyandsprouts.com" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
+                 <p>Photos takes by <a href="http://nateryan.com" alt="Nate Ryan">Nate Ryan</a></p>
                 </div>
             </div>
-            <div class="content outerpadding finalblock clearfix">
+            <div class="content outerpadding clearfix">
                 <img class="threecolumn first" src="<?php echo $url; ?>/img/bandr/bandr-home.jpg">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-home-mobile.jpg">
-                <p class="twocolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero.</p>
+                <img class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services-mobile.jpg">
+                <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero.</p>
+                <img class="threecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services.jpg">
                 <img class="halfcolumn" src="<?php echo $url; ?>/img/bandr/bandr-sales.jpg">
-                <img class="halfcolumn last" src="<?php echo $url; ?>/img/bandr/bandr-sales-hover.jpg">
-                <img class="threecolumn finalblock" src="<?php echo $url; ?>/img/bandr/bandr-services.jpg">
-                <a class="visitsite" href="http://www.teachinctrl.org">Visit Site<span class="icon-arrow"></span></a>
+                <img class="halfcolumn last  finalblock" src="<?php echo $url; ?>/img/bandr/bandr-sales-hover.jpg">
+                <a class="visitsite" href="http://www.bandrautotrucksalvage.com/">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

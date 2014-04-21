@@ -30,8 +30,8 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/platform/platform-header.png" alt="">
-                <div class="hgroup"><h3>Blog Integration</h3><h2>PLATFORM</h2></div>
+                <img src="<?php echo $url; ?>/img/booksatwork/header_booksatwork.png" alt="">
+                <div class="hgroup"><h3>Website Redesign</h3><h2>BOOKS@WORK</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -46,17 +46,16 @@
                     <li>UX</li>
                     <li>IU</li>
                 </ul>
-                <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
+                <p>Work done with <a href="http://www.parsleyandsprouts.com" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
                 </div>
             </div>
             <div class="content outerpadding clearfix">
-                <img class="twocolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
-                <p class="onecolumn last"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
-                <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
-                <p class="onecolumn finalblock"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <a class="visitsite" href="http://www.teachinctrl.org">VISIT SITE<span class="icon-arrow"></span></a>
+                <img class="threecolumn first" src="<?php echo $url; ?>/img/booksatwork/booksatwork-home.jpg">
+                 <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel.</p>
+                 <img class="twocolumn last" src="<?php echo $url; ?>/img/booksatwork/booksshelf.gif">
+
+
+                <a class="visitsite" href="http://www.booksatwork.org" alt="Books@Work">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

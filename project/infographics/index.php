@@ -31,7 +31,7 @@
         <main id="projects">
             <div class="banner"> 
                 <img src="<?php echo $url; ?>/img/infographics/header-infographics.png" alt="">
-                <div class="hgroup"><h3>Various Illustrations</h3><h2>CAT</h2></div>
+                <div class="hgroup"><h3>Various Illustrations</h3><h2>INFOGRAPHICS</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -60,7 +60,7 @@
                 <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/millionyears-zoom1.png">
                 <img class="halfcolumn last" src="<?php echo $url; ?>/img/infographics/millionyears-zoom2.png">
                 <img class="halfcolumn" src="<?php echo $url; ?>/img/infographics/millionyears-zoom3.png">
-                <img class="halfcolumn finalblock" src="<?php echo $url; ?>/img/infographics/millionyears-zoom4.png">
+                <img class="halfcolumn finalblock last" src="<?php echo $url; ?>/img/infographics/millionyears-zoom4.png">
             </div>
 
             <div class="bottom-navigation">

@@ -36,14 +36,14 @@
                 </div>             
             </a>
             <a href="<?php echo $url; ?>/project/booksatwork" class="project-sample full">
-                <img src="img/teaser-pc.jpg">
+                <img src="img/teaser-booksatwork.jpg">
                 <div class="overlay">
                     <div><div class="hgroup"><h2>Books@Work</h2><h3>Website Redesign</h3></div></div>
                     <div><p class="icon-arrow-box"></p></div>
                 </div>            
             </a>
             <a href="<?php echo $url; ?>/project/bandr" class="project-sample half">
-                <img src="img/half.jpg">
+                <img src="img/teaser-bandr.jpg">
                 <div class="overlay">
                     <div><div class="hgroup"><h2>B and R</h2><h3>Website Redesign</h3></div></div>
                     <div><p class="icon-arrow-box"></p></div>

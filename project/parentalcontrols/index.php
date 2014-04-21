@@ -30,8 +30,8 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/platform/platform-header.png" alt="">
-                <div class="hgroup"><h3>Blog Integration</h3><h2>PLATFORM</h2></div>
+                <img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt="">
+                <div class="hgroup"><h3>Website Redesign</h3><h2>CABLE PUTS YOU IN CONTROL</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -50,13 +50,17 @@
                 </div>
             </div>
             <div class="content outerpadding clearfix">
-                <img class="twocolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
-                <p class="onecolumn last"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
-                <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
-                <p class="onecolumn finalblock"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <a class="visitsite" href="http://www.teachinctrl.org">VISIT SITE<span class="icon-arrow"></span></a>
+                <img class="threecolumn first" src="<?php echo $url; ?>/img/parentalcontrols/pc-home.jpg">
+                <img class="threecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-slide.jpg">
+                <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-mobile.jpg">
+                <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-mobile-slide.jpg">
+                <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis.</p>
+                <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-choose.png">
+                <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
+                <img class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
+                <img class="threecolumn last finalblock" src="<?php echo $url; ?>/img/parentalcontrols/pc-landing.jpg">
+
+                <a class="visitsite" href="">SITE IS UNDER DEVELOPMENT</a>
             </div>
 
             <div class="bottom-navigation">
