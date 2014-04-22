@@ -1,9 +1,10 @@
            
-            <?php $url = 'http://localhost/portfolio';?>
+            <?php $url = 'http://localhost/portfolio'; ?>
 
             <div>
-                <h1>
-                    <span class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.svg" alt="Lisa Otto as an Illustration"><div class="arrow-portrait"></div></div></span><span class="bio"> is a user experience and interface designer who, sometimes, dabbles in illustration.</span>
+
+                <h1> 
+                    <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.svg" alt="Lisa Otto as an Illustration"><div class="arrow-portrait"></div></div></a><span class="bio"> is a user experience and interface designer who, sometimes, dabbles in illustration.</span>
                 </h1>
 
                 <div class="icons">
@@ -19,4 +20,4 @@
                 </div>
             </div>
 
-        <p class="tab" data-toggle="body" data-toggle-class="teasers-open"><span class="work-title">THE WORK</span><span class="bio-title">THE BIO</span><span class="icon-arrow"></span></p>
+        <p class="tab" data-toggle="body" data-toggle-class="teasers-open"><span class="work-title">WORK</span><span class="bio-title">BIO</span><span class="icon-arrow"></span></p>

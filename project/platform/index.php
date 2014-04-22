@@ -30,12 +30,12 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/platform/platform-header.png" alt="">
+                <div class="bannerimg"><img src="<?php echo $url; ?>/img/platform/platform-header.png" alt=""></div>
                 <div class="hgroup"><h3>Blog Integration</h3><h2>PLATFORM</h2></div>
             </div>
             <div class="navigation">
-                <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
-                <a class="next" href="/"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
+                <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
+                <a class="next" href="<?php echo $url; ?>/project/booksatwork"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="clearfix">   
                     <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                    <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
+                    <img class="twocolumn last lesspadding" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
                 </div>
                 <div class="clearfix">
                     <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
@@ -66,22 +66,27 @@
                     <p class="twocolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
                     <div class="onecolumn last"> <p  class="gridbutton">VIEW GRID</p></div>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix extrapadding">
                     <img class="twocolumn" src="<?php echo $url; ?>//img/platform/menu.gif">
                     <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
                 </div>
-                <div class="clearfix">
+                <div class="clearfix extrapadding">
                     <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
-                    <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/bar.gif">
+                    <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/newsfromelsewhere.gif">
                 </div>
-                <div class="clearfix">
-                    <img class="twocolumn finalblock" src="<?php echo $url; ?>//img/platform/individual.png">
+                <div class="clearfix extrapadding">
+                    <img class="twocolumn" src="<?php echo $url; ?>//img/platform/individual.png">
                     <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
+                </div>
+                <div>
+                    <img class="onecolumn" src="<?php echo $url; ?>//img/platform/platform-mobile.jpg">
+                    <img class="twocolumn last finalblock" src="<?php echo $url; ?>//img/platform/platform-tablet.jpg">
                 </div>
                 <a class="visitsite" href="https://www.ncta.com/platform/" alt="Platform: Technology, TV & the Future">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">
+                <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
                 <a class="backup" href="#projects"><span class="title">BACK UP</span><span class="icon-arrow-box"></span></a>
                 <div class="bar"></div>
             </div>

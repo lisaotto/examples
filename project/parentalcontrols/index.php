@@ -30,12 +30,12 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/parentalcontrols/pc-header.jpg" alt="">
+                <div class="bannerimg"><img src="<?php echo $url; ?>/img/parentalcontrols/pc-header.jpg" alt=""></div>
                 <div class="hgroup"><h3>Website Redesign</h3><h2>PARENTAL CONTROLS</h2></div>
             </div>
             <div class="navigation">
-                <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
-                <a class="next" href="/"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
+                <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
+                <a class="next" href="<?php echo $url; ?>/project/lefkowitz"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
@@ -64,6 +64,7 @@
             </div>
 
             <div class="bottom-navigation">
+                <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
                 <a class="backup" href="#projects"><span class="title">BACK UP</span><span class="icon-arrow-box"></span></a>
                 <div class="bar"></div>
             </div>

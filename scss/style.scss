@@ -13,6 +13,7 @@ $twocolumnscreen: 63%;
 $halfcolumnscreen: 47%;
 $halfcolumnpadding: 6%;
 $bottompadding:15%;
+$paddingmobile: 12%;
 
 
 
@@ -136,7 +137,7 @@ header {
 }
 
 
-h1 { 
+h1, h1 a { 
     text-align:center;
     color:$yellow;
     font-size:40px;
@@ -156,10 +157,14 @@ h1 {
     margin-left:20px;
     opacity:0;
     transition: opacity .5s ease;
+///display none until done///
+    display:none;
+
+
 }
 
 
-h1 span:hover > .portrait{
+h1 a:hover > .portrait{
     opacity:1;
 }
 
@@ -543,9 +548,10 @@ body.teasers-open {
             vertical-align:top;
         }
 
-        p {
-            top: auto;
-            bottom: 50%;
+        p.icon-arrow-box {
+            font-size: 30px;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 
@@ -601,8 +607,18 @@ body.teasers-open {
         position:relative;        
     }
 
-    .overlay h3 {
-        display:none;
+    .overlay {
+        h3 {
+            display:none;
+        }
+
+        h2, p {
+            font-size: 25px;
+        }
+        
+        .hgroup {
+            padding-right:12px;
+        }
     }
 }
  
@@ -620,6 +636,20 @@ body.teasers-open {
         width: 180px;
         height: 50px;
         padding-top:6px;
+    }
+
+    .overlay {
+        h3 {
+            display:none;
+        }
+
+        h2, p {
+            font-size: 20px;
+        }
+        
+        .hgroup {
+            padding-right:12px;
+        }
     }
 
     .touch {
@@ -663,6 +693,20 @@ body.teasers-open {
         padding-top: 10px;
     }
 
+    .overlay {
+        h3 {
+            display:none;
+        }
+
+        h2, p {
+            font-size: 16px;
+        }
+        
+        .hgroup {
+            padding-right:8px;
+        }
+    }
+
     .touch {
         .overlay {
             width: 40px;
@@ -677,7 +721,17 @@ body.teasers-open {
             }
         }
     }
+}
 
+
+//////////////////Media Query < 440 //////////////////
+
+@media screen and (max-width: 550px) {
+
+    a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
+        opacity:0;
+
+    }
 }
 
 
@@ -786,14 +840,14 @@ body.teasers-open {
 
     .hgroup{
         position: absolute;
-        bottom:30px;
+        bottom:20px;
         padding-left:$paddingscreen;
     }
 
     h2 {
         margin: 10px 0;
         font-size: 80px;
-        line-height: 80%;
+        line-height: 70%;
     }
 
     h3{
@@ -911,6 +965,13 @@ a.visitsite , a.visitsite:visited{
     padding-bottom: 10%;
 }
 
+.extrapadding{
+    margin-top:2%;
+}
+
+.lesspadding{
+    margin-top: 2%;
+}
 
 //////////////////Work Pages Custon//////////////////
 
@@ -942,18 +1003,47 @@ a.visitsite , a.visitsite:visited{
 //////////////////Work Pages Responsive//////////////////
 
 @media screen and (max-width: 960px) {
+    .tab {
+        cursor:default;
+    }
+
+    .tab:hover {
+        opacity:1;
+    }
 
     .navigation{
         position:relative;
+        margin-bottom: 220px;
+    }
+
+    .banner {
+        .hgroup {
+            bottom: 0;
+            margin-bottom: -220px;
+        }
     }
 
 }
 
 @media screen and (max-width: 550px) {
+
+    .navigation{
+        margin-bottom: 160px;
+    }
+
     .banner{
+
+        .bannerimg {
+            overflow-x:hidden;
+        }
+
+        .hgroup{
+            margin-bottom: -180px;
+        }
+
         img{
             height:220px;
-            width:auto;
+            width:auto;   
         }
 
         h3{
@@ -962,9 +1052,9 @@ a.visitsite , a.visitsite:visited{
 
         h2{
             font-size:60px;
-            margin: 4px 0;
         }
     }
+
     .intro{
         p{
             width:100%;
@@ -975,7 +1065,47 @@ a.visitsite , a.visitsite:visited{
             margin-top:$paddingscreen;
         }
     }
+
+    .outerpadding{
+        margin: 0 $paddingscreen 0 $paddingscreen;
+    }
+
+    ////grid////
+    .onecolumn, .twocolumn, .halfcolumn, .threecolumn {
+        width: 100%;
+        margin-top: $paddingmobile;
+    }
+
+    p.onecolumn, p.twocolumn, p.halfcolumn, p.threecolumn {
+        margin-bottom: 0;
+    }
+
+    .gridbutton {
+        margin: 0 auto;
+        margin-top:-8%;
+    }
 }
 
+@media screen and (max-width: 550px) {
 
+    .banner{
+
+        img{
+            height:220px;
+            width:auto;   
+        }
+
+        h3{
+            font-size:20px;
+        }
+
+        h2{
+            font-size:44px;
+        }
+    }
+
+    .intro > p {
+        font-size: 18px;
+    }
+}
 

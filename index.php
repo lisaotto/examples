@@ -74,7 +74,7 @@
                 <img src="img/teaser-inctrl.jpg">
                 <div class="overlay">
                     <div><div class="hgroup"><h2>InCtrl</h2><h3>Design & Illustration</h3></div></div>
-                    <div><p class="icon-arrow-box"></p></div>
+                    <div><p class="icon-arrow-box"></></div>
                 </div>             
             </a>
             <div class="nolink-box"></div>
