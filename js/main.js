@@ -18,4 +18,18 @@ function toggle() {
 }
 $('[data-toggle]').click( toggle );
 
+var overlay = $('.gridoverlay');
+function toggleGridOverlay() {
+
+	console.log(overlay.css('opacity'));
+
+	overlay.animate({
+		opacity: overlay.css('opacity') === '0' ? 1 : 0
+	});
+
+	var $this = $(this);
+	$this.text( $this.text() === 'VIEW GRID' ? 'HIDE GRID' : 'VIEW GRID' );
+}
+$('.gridbutton').click(toggleGridOverlay);
+
 }(jQuery));

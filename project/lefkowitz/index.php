@@ -30,8 +30,8 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/booksatwork/header_booksatwork.png" alt="">
-                <div class="hgroup"><h3>Website Redesign</h3><h2>BOOKS@WORK</h2></div>
+                <img src="<?php echo $url; ?>/img/lefkowitz/lefko-header.jpg" alt="">
+                <div class="hgroup"><h3>Website Redesign</h3><h2>David Leftkowitz</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -50,32 +50,17 @@
                 </div>
             </div>
             <div class="content outerpadding clearfix">
-                <div class="clearfix">
-                    <img class="halfcolumn" src="<?php echo $url; ?>/img/booksatwork/books-wireframe-old.png">
-                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel.</p>
-                </div>
-                <div class="clearfix">
-                    <p class="onecolumn">ksjkasjflksjf</p>
-                    <img class="halfcolumn last" src="<?php echo $url; ?>/img/booksatwork/books-bucketing.png">
-                </div>
-                <div class="clearfix">
-                    <img class="halfcolumn" src="<?php echo $url; ?>/img/booksatwork/books-wireframe-new.png">
-                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel.</p>
-                </div>
-                <div class="clearfix">
-                    <img class="threecolumn" src="<?php echo $url; ?>/img/booksatwork/booksatwork-home.jpg">
-                </div>
-                <div class="clearfix">
-                    <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel.</p>
-                    <img class="twocolumn last" src="<?php echo $url; ?>/img/booksatwork/booksshelf.gif">
-                </div>
-                <div class="clearfix">
-                <img class="onecolumn" src="<?php echo $url; ?>/img/booksatwork/books-mobile-blog.png">
-                <img class="onecolumn" src="<?php echo $url; ?>/img/booksatwork/books-mobile-nav.png">
-                <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/booksatwork/books-mobile-contact.png">
-                </div>
-
-                <a class="visitsite" href="http://www.booksatwork.org" alt="Books@Work">VISIT SITE<span class="icon-arrow"></span></a>
+                <img class="threecolumn first" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-home.jpg">
+                <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-menu.jpg">
+                <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
+                <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-responsive.png">
+                <img class="twocolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
+                <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing massa sit amet mattis vestibulum. Vestibulum ante sem, viverra eget justo vitae, placerat mollis nisl. Proin dictum ipsum at pellentesque aliquet. Morbi ut lectus fermentum, dictum magna at, sollicitudin diam.</p>
+                <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
+                <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing massa sit amet mattis vestibulum. Vestibulum ante sem, viverra eget justo vitae, placerat mollis nisl. Proin dictum ipsum at pellentesque aliquet. Morbi ut lectus fermentum, dictum magna at, sollicitudin diam.</p>
+                <img class="onecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile.jpg">
+                <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
+                <a class="visitsite" href="http://www.davidlefkowitz.net/" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

@@ -914,11 +914,30 @@ a.visitsite , a.visitsite:visited{
 
 //////////////////Work Pages Custon//////////////////
 
-//inctrl//
+////platform////
 
-.longer {
-    padding-top:180px;
+.gridoverlay {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
 }
+
+.gridbutton {
+   width: 80%;
+    text-align: center;
+    background-color: $blue;
+    height: 50px;
+    margin: 0;
+    padding-top: 14px;
+    font-size: 18px;
+    transition: opacity .4s ease;
+}
+
+.gridbutton:hover {
+    opacity:.8;
+    cursor:pointer;
+}
+
 
 //////////////////Work Pages Responsive//////////////////
 

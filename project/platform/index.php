@@ -50,13 +50,35 @@
                 </div>
             </div>
             <div class="content outerpadding clearfix">
-                <img class="twocolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
-                <p class="onecolumn last"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
-                <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
-                <p class="onecolumn finalblock"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
-                <a class="visitsite" href="http://www.teachinctrl.org">VISIT SITE<span class="icon-arrow"></span></a>
+                <div class="clearfix">
+                    <img class="twocolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
+                    <p class="onecolumn last"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                </div>
+                <div class="clearfix">   
+                    <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                    <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
+                </div>
+                <div class="clearfix">
+                    <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
+                    <img class="threecolumn gridoverlay" src="<?php echo $url; ?>//img/platform/home-grid.png">
+                </div>
+                <div class="clearfix">
+                    <p class="twocolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                    <div class="onecolumn last"> <p  class="gridbutton">VIEW GRID</p></div>
+                </div>
+                <div class="clearfix">
+                    <img class="twocolumn" src="<?php echo $url; ?>//img/platform/menu.gif">
+                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
+                </div>
+                <div class="clearfix">
+                    <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
+                    <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/bar.gif">
+                </div>
+                <div class="clearfix">
+                    <img class="twocolumn finalblock" src="<?php echo $url; ?>//img/platform/individual.png">
+                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
+                </div>
+                <a class="visitsite" href="https://www.ncta.com/platform/" alt="Platform: Technology, TV & the Future">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

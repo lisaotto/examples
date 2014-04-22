@@ -30,8 +30,8 @@
 
         <main id="projects">
             <div class="banner"> 
-                <img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt="">
-                <div class="hgroup"><h3>Website Redesign</h3><h2>CABLE PUTS YOU IN CONTROL</h2></div>
+                <img src="<?php echo $url; ?>/img/parentalcontrols/pc-header.jpg" alt="">
+                <div class="hgroup"><h3>Website Redesign</h3><h2>PARENTAL CONTROLS</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="/"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>

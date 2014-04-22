@@ -50,7 +50,7 @@
                 </div>
             </a>
             <a href="<?php echo $url; ?>/project/parentalcontrols" class="project-sample half">
-                <img src="img/half.jpg">
+                <img src="img/teaser-pc.jpg">
                 <div class="overlay">
                     <div><div class="hgroup"><h2>Parental Controls</h2><h3>Website Redesign</h3></div></div>
                     <div><p class="icon-arrow-box"></p></div>
