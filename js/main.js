@@ -40,17 +40,30 @@ function scrollUp() {
 }
 body.on('click', '.backup .title', scrollUp);
 
-
 // Internal AJAX loading
 function loadElements(data) {
+
+	loadedFromElement.fadeOut();
+
+	var delay = 500;
+
 	// Fade out and remove current project elements
 	var curProjects = $('#projects'),
 		curElements = curProjects.children();
 	curProjects.height(curProjects.height());
-	curElements.fadeOut(300);
+	if (curProjects.find('.fader').length > 0) {
+		curProjects.find('.fader').addClass('faded');
+	} else {
+		curElements.fadeOut(delay);
+	}
 	setTimeout(function(){
+		if (loadedFromElement.hasClass('back') || loadedFromElement.hasClass('project-sample')) {
+			$('html, body').animate({
+				scrollTop: 0
+			}, 1);
+		}
 		curElements.remove();
-	}, 301);
+	}, delay + 1);
 
 	var $data = $(data),
 		url,
@@ -72,15 +85,20 @@ function loadElements(data) {
 	if ( !!history ) window.history.pushState({}, title, url);
 
 	var newElements = newProjects.children(),
-		newReadyElements = newElements.find('.banner, .navigation, .intro'),
+		newReadyElements = newProjects.find('.banner, .navigation, .intro'),
 		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p');
 	
 	newReadyElements.addClass('fader faded');
 	newScrollingElements.addClass('fader faded');
-	
+
 	setTimeout(function(){
+
 		newElements.appendTo(curProjects);
-		newReadyElements.removeClass('faded');
+
+		setTimeout(function(){
+			newReadyElements.removeClass('faded');
+		}, 100);
+
 		newScrollingElements.each(function(){
 			var $this = $(this);
 			if ($this.parent().hasClass('project-sample')) {
@@ -88,7 +106,7 @@ function loadElements(data) {
 			}
 		});
 		curProjects.height('auto');
-	}, 302);
+	}, delay + 2);
 
 	win.scroll(function() {
 		newScrollingElements.each(function(){
@@ -100,12 +118,11 @@ function loadElements(data) {
 	});
 }
 
+var loadedFromElement;
 function loadPage(e) {
 	e.preventDefault();
 
-	if ($(this).hasClass('back')) {
-		scrollUp();
-	}
+	loadedFromElement = $(this);
 
 	var url = this.href;
 	$.ajax({

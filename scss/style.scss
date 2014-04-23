@@ -49,9 +49,11 @@ $paddingmobile: 12%;
 }
 
 .fader {
-    transition: opacity 0.3s;
+    opacity: 1;
+    transition: opacity 0.5s;
+    
     &.faded {
-        opacity: 0;
+        opacity: 0 !important;
     }
 }
 
@@ -135,7 +137,7 @@ header {
     width: 75%;
     float: left;
     position:fixed;
-    transition: width 0.25s;   
+    // transition: width 0.25s;   
 
     > div {
         top: 50%;
@@ -377,7 +379,7 @@ main {
     width:75%;
     float:right;
     margin-right:-50%;
-    transition: margin 0.25s;   
+    //transition: margin 0.25s;
 }
 
 .nolink-box {
