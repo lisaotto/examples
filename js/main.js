@@ -143,6 +143,12 @@ function loadPage(e) {
 
 	loadedFromElement = $(this);
 
+	if (loadedFromElement.hasClass('next') && win.width() < 960) {
+		$('html, body').animate({
+			scrollTop: $('#projects').offset().top
+		}, 500);
+	}
+
 	var url = this.href;
 	$.ajax({
 		url: url,
