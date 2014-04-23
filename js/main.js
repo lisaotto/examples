@@ -84,9 +84,11 @@ function loadElements(data) {
 	if ( !!history ) window.history.pushState({}, title, url);
 
 	var newElements = newProjects.children(),
-		newReadyElements = newProjects.find('.banner, .navigation, .intro'),
+		newReadyElements = newProjects.find('.navigation, .intro'),
+		banner = newProjects.find('.banner'),
 		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
 	
+	banner.addClass('fader faded');
 	newReadyElements.addClass('fader faded');
 	newScrollingElements.addClass('fader faded');
 
@@ -97,6 +99,11 @@ function loadElements(data) {
 		setTimeout(function(){
 			newReadyElements.removeClass('faded');
 		}, 100);
+
+		banner.imagesLoaded()
+			.done(function(){
+				banner.removeClass('faded');
+			});
 
 		$('.project-sample').each(function(){
 			var $this = $(this);
