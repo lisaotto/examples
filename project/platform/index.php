@@ -60,7 +60,7 @@
                 </div>
                 <div class="clearfix">
                     <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
-                    <img class="threecolumn gridoverlay" src="<?php echo $url; ?>//img/platform/home-grid.png">
+                    <img class="threecolumn gridoverlay" src="<?php echo $url; ?>/img/platform/home-grid.png">
                 </div>
                 <div class="clearfix">
                     <p class="twocolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>

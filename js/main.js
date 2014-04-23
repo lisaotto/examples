@@ -19,9 +19,8 @@ function toggle() {
 }
 $('[data-toggle]').click( toggle );
 
-var overlay = $('.gridoverlay');
 function toggleGridOverlay() {
-
+	var overlay = $('.gridoverlay');
 	overlay.animate({
 		opacity: overlay.css('opacity') === '0' ? 1 : 0
 	});
@@ -29,7 +28,7 @@ function toggleGridOverlay() {
 	var $this = $(this);
 	$this.text( $this.text() === 'VIEW GRID' ? 'HIDE GRID' : 'VIEW GRID' );
 }
-$('.gridbutton').click(toggleGridOverlay);
+body.on('click', '.gridbutton', toggleGridOverlay);
 
 // Scroll back up to the top
 
@@ -99,20 +98,31 @@ function loadElements(data) {
 			newReadyElements.removeClass('faded');
 		}, 100);
 
-		newScrollingElements.each(function(){
+		$('.project-sample').each(function(){
 			var $this = $(this);
-			if ($this.parent().hasClass('project-sample')) {
-				$this.removeClass('faded');
-			}
+			setTimeout(function(){
+				$this.find('img').removeClass('faded');
+			}, Math.random() * delay);
 		});
+
 		curProjects.height('auto');
 	}, delay + 2);
 
 	win.scroll(function() {
 		newScrollingElements.each(function(){
 			var $this = $(this);
-			if ( win.scrollTop() + win.height() > $this.offset().top + 100 ) {
-				$this.removeClass('faded');
+			if ( win.scrollTop() + win.height() > $this.offset().top + 50 ) {
+				if ( $this.hasClass('onecolumn') && $this.prev('.onecolumn').length > 0 && $this.next('.onecolumn.last').length > 0) {
+					setTimeout(function(){
+						$this.removeClass('faded');
+					}, 150);
+				} else if ( $this.hasClass('last') && $this.prev('.onecolumn').length > 0) {
+					setTimeout(function(){
+						$this.removeClass('faded');
+					}, 300);
+				} else {
+					$this.removeClass('faded');
+				}
 			}
 		});
 	});
