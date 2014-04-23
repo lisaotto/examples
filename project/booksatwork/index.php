@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero. Aliquam sodales consequat lacus, quis gravida turpis adipiscing nec. Etiam quis massa et sem facilisis tempor. Cras at tellus id neque lacinia dapibus id nec lacus.</p>
+                <p class="description">Books@Work is a young non-profit that uses literature seminars to improve workplace morale and performance. The Books@Work team were looking for a website that would make the program (and Shakespeare) accessible to the their new audience.</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -52,21 +52,21 @@
             <div class="content outerpadding clearfix">
                 <div class="clearfix">
                     <img class="halfcolumn" src="<?php echo $url; ?>/img/booksatwork/books-wireframe-old.png">
-                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel.</p>
+                    <p class="onecolumn last">Originally the site had a grid of links to the interior pages. Because some of the content is only relevant to certain audience members, it created an overwhelming experience and limited the space for an introduction to the program.</p>
                 </div>
                 <div class="clearfix">
-                    <p class="onecolumn">ksjkasjflksjf</p>
+                    <p class="onecolumn">In order to simplify the navigation and site structure overall, we bucketed much of the content into audience categories.</p>
                     <img class="halfcolumn last" src="<?php echo $url; ?>/img/booksatwork/books-bucketing.png">
                 </div>
                 <div class="clearfix">
                     <img class="halfcolumn" src="<?php echo $url; ?>/img/booksatwork/books-wireframe-new.png">
-                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel.</p>
+                    <p class="onecolumn last">Simplifying the navigation allowed space for the homepage copy and graphic elements to introduce the mission and key elements of the program, such as the books they were reading.</p>
                 </div>
                 <div class="clearfix">
                     <img class="threecolumn" src="<?php echo $url; ?>/img/booksatwork/booksatwork-home.jpg">
                 </div>
                 <div class="clearfix">
-                    <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel.</p>
+                    <p class="onecolumn">The Books@Works team wanted the books to take center stage on the site. To ensure that the graphic would be easily updatable as their roster of books grew, we created an interactive bookshelf for the homepage.</p>
                     <img class="twocolumn last" src="<?php echo $url; ?>/img/booksatwork/booksshelf.gif">
                 </div>
                 <div class="clearfix">

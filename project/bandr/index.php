@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero. Aliquam sodales consequat lacus, quis gravida turpis adipiscing nec. Etiam quis massa et sem facilisis tempor. Cras at tellus id neque lacinia dapibus id nec lacus.</p>
+                <p class="description">B & R is an auto and truck salvage yard whose main goal with the website redesign was to keep the information accessible and easy to understand. They had an external vendor for used parts but wanted to create a gallery for bigger ticket items on their site. We worked with photographer Nate Ryan to give each visitor the feel that they are visiting the yard in person. </p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -54,7 +54,7 @@
                 <img class="threecolumn first" src="<?php echo $url; ?>/img/bandr/bandr-home.jpg">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-home-mobile.jpg">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services-mobile.jpg">
-                <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero.</p>
+                <p class="onecolumn last">Ensuring that a site with full width images would work responsively meant repositioning the text in new content areas for mobile and considering horizontal breakpoints.</p>
                 <img class="threecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services.jpg">
                 <img class="halfcolumn" src="<?php echo $url; ?>/img/bandr/bandr-sales.jpg">
                 <img class="halfcolumn last  finalblock" src="<?php echo $url; ?>/img/bandr/bandr-sales-hover.jpg">

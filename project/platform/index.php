@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero. Aliquam sodales consequat lacus, quis gravida turpis adipiscing nec. Etiam quis massa et sem facilisis tempor. Cras at tellus id neque lacinia dapibus id nec lacus.</p>
+                <p class="description">NCTA was looking to integrate their external blog into their recently redesigned and rebranded website. Part of the challenge was sticking with the structure and theme of the current site while giving the blog a distinct feel. The NCTA blog covers a wide range of topics from the latest Internet technology to television programming, so the blog had to remain a place that all of the topics could come together cohesively.</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -52,10 +52,10 @@
             <div class="content outerpadding clearfix">
                 <div class="clearfix">
                     <img class="twocolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
-                    <p class="onecolumn last"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                    <p class="onecolumn last">Early wireframes laid out three content types - posts, 'news from elsewhere' (curated links from around the web), and industry data stats. The original design gave prominence to featured content.</p>
                 </div>
                 <div class="clearfix">   
-                    <p class="onecolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                    <p class="onecolumn">After reviewing visitor analytics and determining that most users visited the site from promoted article links (rather than casually browsing the homepage), encouraging users to browse content became the priority in wireframing. Sequential full articles allow the user to more naturally flow from reading one article to the next.</p>
                     <img class="twocolumn last lesspadding" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
                 </div>
                 <div class="clearfix">
@@ -63,20 +63,20 @@
                     <img class="threecolumn gridoverlay" src="<?php echo $url; ?>/img/platform/home-grid.png">
                 </div>
                 <div class="clearfix">
-                    <p class="twocolumn"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis. </p>
+                    <p class="twocolumn">Because the blog was being integrated into an existing site, all of the features had to fit onto the existing grid system. </p>
                     <div class="onecolumn last"> <p  class="gridbutton">VIEW GRID</p></div>
                 </div>
                 <div class="clearfix extrapadding">
                     <img class="twocolumn" src="<?php echo $url; ?>//img/platform/menu.gif">
-                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
+                    <p class="onecolumn last">In order to avoid competition between the main navigation and the blog navigation, the blog’s navigation is hidden behind a hamburger navigation. The main goal is to have users read through the latest posts, however if a user is looking for particular content, posts are sorted into categories. Top stories within those categories are promoted within the navigation. </p>
                 </div>
                 <div class="clearfix extrapadding">
-                    <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
+                    <p class="onecolumn">The ‘news from elsewhere’ bar remains fixed as the user scrolls through the posts but can be hidden for better readability.</p>
                     <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/newsfromelsewhere.gif">
                 </div>
                 <div class="clearfix extrapadding">
                     <img class="twocolumn" src="<?php echo $url; ?>//img/platform/individual.png">
-                    <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor.</p>
+                    <p class="onecolumn last">Examining the analytics, we found that readers rarely clicked on the standard ‘related articles’ link on the old blog. Instead, on individual posts, the homepage is mimicked with an abbreviated curated post styled the same as the individual post to encourage readers to continue reading after they have finished the first article</p>
                 </div>
                 <div>
                     <img class="onecolumn" src="<?php echo $url; ?>//img/platform/platform-mobile.jpg">

@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero. Aliquam sodales consequat lacus, quis gravida turpis adipiscing nec. Etiam quis massa et sem facilisis tempor. Cras at tellus id neque lacinia dapibus id nec lacus.</p>
+                <p class="description">Illustrated infographics that were made for various purposes — blog posts and web pages.</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>

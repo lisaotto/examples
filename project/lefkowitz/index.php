@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero. Aliquam sodales consequat lacus, quis gravida turpis adipiscing nec. Etiam quis massa et sem facilisis tempor. Cras at tellus id neque lacinia dapibus id nec lacus.</p>
+                <p class="description">David Lefkowitz is a visual artist with a sense of humor. Much of David’s works involve visual puns and originally he wanted to incorporate one into the site’s navigation. Eventually we settled on the <a href="https://www.google.com/search?q=cladogram&safe=active&es_sm=91&source=lnms&tbm=isch&sa=X&ei=yw1XU_mDOvLisASplYHYBA&ved=0CAgQ_AUoAQ&biw=1416&bih=777" alt="Cladograms">cladogram</a> as inspiration for the navigation since it provides both structure for the many groupings of work and is a concept that David plays off in his <a href="http://www.davidlefkowitz.net/projects-installations/nrthfld-nirthfolde-visitors-bureau/" alt="Beaver Cladogram in the background">works</a>. With the cladogram as a central theme, we designed a sleek minimal site to show off his work.</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -53,11 +53,10 @@
                 <img class="threecolumn first" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-home.jpg">
                 <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-menu.jpg">
                 <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
-                <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-responsive.png">
-                <img class="twocolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
-                <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing massa sit amet mattis vestibulum. Vestibulum ante sem, viverra eget justo vitae, placerat mollis nisl. Proin dictum ipsum at pellentesque aliquet. Morbi ut lectus fermentum, dictum magna at, sollicitudin diam.</p>
+                <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
                 <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
-                <p class="onecolumn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing massa sit amet mattis vestibulum. Vestibulum ante sem, viverra eget justo vitae, placerat mollis nisl. Proin dictum ipsum at pellentesque aliquet. Morbi ut lectus fermentum, dictum magna at, sollicitudin diam.</p>
+                <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-responsive.png">
+                <p class="onecolumn">Since the navigation design and structure was such a major part of the site, we did not want to drop or overly simplify it for mobile. The ultimate solution we found was to develop a responsive-adaptive blended site. The site is responsive up to a certain point where it has a minimum width. However, on narrow touch screens, it reconfigures to display the navigation in an alternative formation.</p>
                 <img class="onecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile.jpg">
                 <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
                 <a class="visitsite" href="http://www.davidlefkowitz.net/" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>

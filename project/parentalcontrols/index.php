@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sapien at leo pulvinar ultricies non id est. Nullam tempus porttitor nibh, quis vehicula mauris ullamcorper vel. Mauris at urna eu orci aliquet feugiat. Maecenas mi orci, elementum eget ornare nec, suscipit at libero. Aliquam sodales consequat lacus, quis gravida turpis adipiscing nec. Etiam quis massa et sem facilisis tempor. Cras at tellus id neque lacinia dapibus id nec lacus.</p>
+                <p class="description">Cable Puts You In Control is a merger of NCTA’s two sites on parental controls — one on web resources and one on television resources. Meant as a resource and an aggregate of the tools Cable provides, NCTA wanted the site to be accessible to parents but also dynamic in order to keep parents engaged..</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -54,7 +54,7 @@
                 <img class="threecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-slide.jpg">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-mobile.jpg">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-mobile-slide.jpg">
-                <p class="onecolumn last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ipsum et dolor ultrices porttitor. Nulla dapibus odio lacinia urna luctus, ut tincidunt mauris mollis.</p>
+                <p class="onecolumn last">In order to make the navigation manageable for the user on mobile devices, the two-tiered desktopnavigation collapses into a single column. The off-canvas navigation on mobile allows for the long column of content to take up as little of the screen as possible and allows the user to easily switch between navigation and content.</p>
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-choose.png">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
                 <img class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
