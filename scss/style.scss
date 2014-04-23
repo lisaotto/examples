@@ -1119,3 +1119,71 @@ a.visitsite , a.visitsite:visited{
     }
 }
 
+//////////////404////////////////
+
+#projects {
+    
+    .error {
+
+        h2 {
+            font-size: 100px;
+            color: $blue;
+            text-align: center;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 40px;
+            margin: -4px 0 10px 0;
+        }
+
+        p {
+            font-size: 24px;
+            text-align: center;
+            margin: 0;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+            width: 500px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .error.outerpadding {
+        margin-top:2%;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    #projects{
+
+        .error {
+            img {
+                width:80%;
+            }
+
+            h3{
+                margin-top: -13px;
+            }
+        }
+
+        .error.outerpadding {
+             margin-top:0%;
+             padding-top: 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #projects{
+        .error {
+            img {
+                width:100%;
+            }
+        }
+    }
+}
