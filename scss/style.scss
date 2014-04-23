@@ -236,10 +236,11 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
 }
 
 .tab {
-    position: absolute;
+    position: fixed;
     top: 50%;
     margin-top: -100px;
-    right: 30px;
+    margin-right: 30px;
+    right: 25%;
     font-size:30px;
     color:$grey;
     width:200px;
@@ -248,13 +249,10 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
     height:60px;
     background-color:$blue;
     cursor:pointer;
-
     transform-origin: 100% 50%;
     transform: translateY(-50%) rotate(-90deg);
 
-
-    transition: opacity 0.2s ease;
-  
+    transition: opacity 0.2s, right 0.25s;
 
         span {
             top: 4px;
@@ -315,6 +313,7 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
         .tab{
             transform: rotate(90deg); 
             margin-top:70px;
+            right: 75%;
         }
 
         .work-title {
@@ -322,7 +321,7 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
         }
 
         .bio-title {
-           display:inline ; 
+           display:inline; 
         }
 
         .portrait {
@@ -379,7 +378,7 @@ main {
     width:75%;
     float:right;
     margin-right:-50%;
-    //transition: margin 0.25s;
+    transition: margin 0.25s;
 }
 
 .nolink-box {

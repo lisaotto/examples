@@ -85,7 +85,7 @@ function loadElements(data) {
 
 	var newElements = newProjects.children(),
 		newReadyElements = newProjects.find('.banner, .navigation, .intro'),
-		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p');
+		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
 	
 	newReadyElements.addClass('fader faded');
 	newScrollingElements.addClass('fader faded');
@@ -102,7 +102,7 @@ function loadElements(data) {
 			var $this = $(this);
 			setTimeout(function(){
 				$this.find('img').removeClass('faded');
-			}, Math.random() * delay);
+			}, $this.index() * delay / 2);
 		});
 
 		curProjects.height('auto');
@@ -112,7 +112,8 @@ function loadElements(data) {
 		newScrollingElements.each(function(){
 			var $this = $(this);
 			if ( win.scrollTop() + win.height() > $this.offset().top + 50 ) {
-				if ( $this.hasClass('onecolumn') && $this.prev('.onecolumn').length > 0 && $this.next('.onecolumn.last').length > 0) {
+				// Three columns in a row (or two columns)
+				if ( $this.hasClass('onecolumn') && $this.prev('.onecolumn').length > 0 && $this.next('.onecolumn.last').length > 0 || $this.hasClass('halfcolumn') && $this.hasClass('last')) {
 					setTimeout(function(){
 						$this.removeClass('faded');
 					}, 150);
@@ -120,6 +121,7 @@ function loadElements(data) {
 					setTimeout(function(){
 						$this.removeClass('faded');
 					}, 300);
+
 				} else {
 					$this.removeClass('faded');
 				}
