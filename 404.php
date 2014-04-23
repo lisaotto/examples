@@ -30,21 +30,44 @@
 
         <main id="projects">
             <div class="error outerpadding">
-                <h2>404</h2>
-                <h3>PAGE NOT FOUND</h3>
-                <p>Nobody here but us bunnies.</p>
-                <img src="<?php echo $url; ?>/img/bunnies.gif">
+                <div class="404-content">
+                    <h2>404</h2>
+                    <h3>PAGE NOT FOUND</h3>
+                    <p>Nobody here but us bunnies.</p>
+                    <img src="<?php echo $url; ?>/img/bunnies.gif">
+                </div>
             </div>
             
         </main>
-
-
-
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="<?php echo $url; ?>/js/plugins.js"></script>
         <script src="<?php echo $url; ?>/js/main.js"></script>
+
+        <script>
+        (function($){
+            var win = $(window),
+                projects = $('#projects'),
+                container = projects.find('.error'),
+                content = $('.404-content');
+            function center404() {
+                projects.height('auto');
+                if (win.height() > projects.height()) {
+                    projects.height(win.height());
+                }
+                if (projects.height() > content.height() + 2 * Math.round(parseInt( container.css('margin-top'), 10))) {
+                    content.css({
+                        top: (projects.height() - content.height()) / 2
+                    });
+                } else {
+                    content.css({ top: 0 });
+                }
+            }
+            center404();
+            win.resize(center404);
+        })(jQuery);
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
