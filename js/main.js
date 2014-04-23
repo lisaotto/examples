@@ -42,7 +42,9 @@ body.on('click', '.backup .title', scrollUp);
 // Internal AJAX loading
 function loadElements(data) {
 
-	loadedFromElement.fadeOut();
+	if (loadedFromElement.closest('#projects').length > 0) {
+		loadedFromElement.fadeOut();
+	}
 
 	var delay = 500;
 
@@ -155,6 +157,6 @@ function loadPage(e) {
 		success: loadElements
 	});
 }
-body.on('click', '.navigation .next, .project-sample, .back', loadPage);
+body.on('click', '.navigation .next, .project-sample, .back, h1 a', loadPage);
 
 }(jQuery));
