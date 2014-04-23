@@ -1,5 +1,14 @@
            
-            <?php $url = 'http://localhost/portfolio'; ?>
+            <?php $url = 'http://localhost/portfolio'; 
+
+            function getUrl() {
+              $the_url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
+              $the_url .= ( $_SERVER["SERVER_PORT"] !== 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
+              $the_url .= $_SERVER["REQUEST_URI"];
+              return $the_url;
+            }
+            ?>
+            <div hidden id="page-url"><?= getUrl(); ?></div>
 
             <div>
 

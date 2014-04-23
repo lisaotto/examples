@@ -48,6 +48,13 @@ $paddingmobile: 12%;
 
 }
 
+.fader {
+    transition: opacity 0.3s;
+    &.faded {
+        opacity: 0;
+    }
+}
+
 
 //////////////////icomoon//////////////////
 
@@ -128,7 +135,7 @@ header {
     width: 75%;
     float: left;
     position:fixed;
-
+    transition: width 0.25s;   
 
     > div {
         top: 50%;
@@ -370,6 +377,7 @@ main {
     width:75%;
     float:right;
     margin-right:-50%;
+    transition: margin 0.25s;   
 }
 
 .nolink-box {
@@ -604,7 +612,7 @@ body.teasers-open {
     main {
         width:100%; 
         float:none; 
-        position:relative;        
+        position:relative;   
     }
 
     .overlay {
