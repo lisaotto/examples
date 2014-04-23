@@ -44,7 +44,8 @@
                 <h4>My Role</h4>
                 <ul>
                     <li>UX</li>
-                    <li>IU</li>
+                    <li>UI</li>
+                    <li>HTML/CSS support</li>
                 </ul>
                 <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>
@@ -52,11 +53,12 @@
             <div class="content outerpadding clearfix">
                 <div class="clearfix">
                     <img class="twocolumn first" src="<?php echo $url; ?>//img/platform/platform-wireframe1.png">
-                    <p class="onecolumn last">Early wireframes laid out three content types - posts, 'news from elsewhere' (curated links from around the web), and industry data stats. The original design gave prominence to featured content.</p>
+                    <p class="onecolumn last raisedblurb">Early wireframes laid out three content types - posts, 'news from elsewhere' (curated links from around the web), and industry data stats. The original design gave prominence to featured content.</p>
                 </div>
-                <div class="clearfix">   
-                    <p class="onecolumn">After reviewing visitor analytics and determining that most users visited the site from promoted article links (rather than casually browsing the homepage), encouraging users to browse content became the priority in wireframing. Sequential full articles allow the user to more naturally flow from reading one article to the next.</p>
-                    <img class="twocolumn last lesspadding" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png">
+                <div class="clearfix">  
+                     <img class="twocolumn last floatright" src="<?php echo $url; ?>//img/platform/platform-wireframe2.png"> 
+                    <p class="onecolumn floatright alignright">After reviewing visitor analytics and determining that most users visited the site from promoted article links (rather than casually browsing the homepage), encouraging users to browse content became the priority in wireframing. Sequential full articles allow the user to more naturally flow from reading one article to the next.</p>
+                    
                 </div>
                 <div class="clearfix">
                     <img class="threecolumn" src="<?php echo $url; ?>//img/platform/platform-home.jpg">
@@ -71,8 +73,8 @@
                     <p class="onecolumn last">In order to avoid competition between the main navigation and the blog navigation, the blog’s navigation is hidden behind a hamburger navigation. The main goal is to have users read through the latest posts, however if a user is looking for particular content, posts are sorted into categories. Top stories within those categories are promoted within the navigation. </p>
                 </div>
                 <div class="clearfix extrapadding">
-                    <p class="onecolumn">The ‘news from elsewhere’ bar remains fixed as the user scrolls through the posts but can be hidden for better readability.</p>
-                    <img class="twocolumn last" src="<?php echo $url; ?>//img/platform/newsfromelsewhere.gif">
+                    <img class="twocolumn last floatright" src="<?php echo $url; ?>//img/platform/newsfromelsewhere.gif">
+                    <p class="onecolumn floatright alignright">The ‘news from elsewhere’ bar remains fixed as the user scrolls through the posts but can be hidden for better readability.</p>
                 </div>
                 <div class="clearfix extrapadding">
                     <img class="twocolumn" src="<?php echo $url; ?>//img/platform/individual.png">

@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>B&R</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,7 +31,7 @@
         <main id="projects">
             <div class="banner"> 
                 <div class="bannerimg"><img src="<?php echo $url; ?>/img/bandr/bandr-header.jpg" alt=""></div>
-                <div class="hgroup"><h3>Website Redesign</h3><h2>B and R Autobody</h2></div>
+                <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">B & R</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -44,10 +44,10 @@
                 <h4>My Role</h4>
                 <ul>
                     <li>UX</li>
-                    <li>IU</li>
+                    <li>UI</li>
                 </ul>
                 <p>Work done with <a href="http://www.parsleyandsprouts.com" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
-                 <p>Photos takes by <a href="http://nateryan.com" alt="Nate Ryan">Nate Ryan</a></p>
+                 <p>Photos taken by <a href="http://nateryan.com" alt="Nate Ryan">Nate Ryan</a></p>
                 </div>
             </div>
             <div class="content outerpadding clearfix">

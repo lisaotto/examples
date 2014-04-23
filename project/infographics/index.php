@@ -43,8 +43,8 @@
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
-                    <li>UX</li>
-                    <li>IU</li>
+                    <li>Design</li>
+                    <li>Illustration</li>
                 </ul>
                 <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>

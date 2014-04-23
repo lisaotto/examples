@@ -31,7 +31,7 @@
         <main id="projects">
             <div class="banner"> 
                 <div class="bannerimg"><img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt=""></div>
-                <div class="hgroup"><h3>Website Redesign</h3><h2>TEACH INCTRL</h2></div>
+                <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">TEACH INCTRL</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -44,7 +44,9 @@
                 <h4>My Role</h4>
                 <ul>
                     <li>UX</li>
-                    <li>IU</li>
+                    <li>UI</li>
+                    <li>Illustration</li>
+                    <li>HTML/CSS support</li>
                 </ul>
                 <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>

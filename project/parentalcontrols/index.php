@@ -31,7 +31,7 @@
         <main id="projects">
             <div class="banner"> 
                 <div class="bannerimg"><img src="<?php echo $url; ?>/img/parentalcontrols/pc-header.jpg" alt=""></div>
-                <div class="hgroup"><h3>Website Redesign</h3><h2>PARENTAL CONTROLS</h2></div>
+                <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">PARENTAL CONTROLS</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -44,7 +44,7 @@
                 <h4>My Role</h4>
                 <ul>
                     <li>UX</li>
-                    <li>IU</li>
+                    <li>UI</li>
                 </ul>
                 <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>
@@ -60,7 +60,7 @@
                 <img class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
                 <img class="threecolumn last finalblock" src="<?php echo $url; ?>/img/parentalcontrols/pc-landing.jpg">
 
-                <a class="visitsite" href="">SITE IS UNDER DEVELOPMENT</a>
+                <p class="visitsite" href="">SITE IS UNDER DEVELOPMENT</p>
             </div>
 
             <div class="bottom-navigation">

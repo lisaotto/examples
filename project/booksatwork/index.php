@@ -44,7 +44,8 @@
                 <h4>My Role</h4>
                 <ul>
                     <li>UX</li>
-                    <li>IU</li>
+                    <li>UI</li>
+                    <li>Illustrations</li>
                 </ul>
                 <p>Work done with <a href="http://www.parsleyandsprouts.com" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
                 </div>
@@ -52,21 +53,21 @@
             <div class="content outerpadding clearfix">
                 <div class="clearfix">
                     <img class="halfcolumn" src="<?php echo $url; ?>/img/booksatwork/books-wireframe-old.png">
-                    <p class="onecolumn last">Originally the site had a grid of links to the interior pages. Because some of the content is only relevant to certain audience members, it created an overwhelming experience and limited the space for an introduction to the program.</p>
+                    <p class="onecolumn loweredblurb last">Originally the site had a grid of links to the interior pages. Because some of the content is only relevant to certain audience members, it created an overwhelming experience and limited the space for an introduction to the program.</p>
                 </div>
                 <div class="clearfix">
-                    <p class="onecolumn">In order to simplify the navigation and site structure overall, we bucketed much of the content into audience categories.</p>
-                    <img class="halfcolumn last" src="<?php echo $url; ?>/img/booksatwork/books-bucketing.png">
+                    <img class="halfcolumn floatright last" src="<?php echo $url; ?>/img/booksatwork/books-bucketing.png">
+                    <p class="onecolumn floatright alignright">In order to simplify the navigation and site structure overall, we bucketed much of the content into audience categories.</p>
                 </div>
                 <div class="clearfix">
                     <img class="halfcolumn" src="<?php echo $url; ?>/img/booksatwork/books-wireframe-new.png">
-                    <p class="onecolumn last">Simplifying the navigation allowed space for the homepage copy and graphic elements to introduce the mission and key elements of the program, such as the books they were reading.</p>
+                    <p class="onecolumn loweredblurb last">Simplifying the navigation allowed space for the homepage copy and graphic elements to introduce the mission and key elements of the program, such as the books they were reading.</p>
                 </div>
                 <div class="clearfix">
                     <img class="threecolumn" src="<?php echo $url; ?>/img/booksatwork/booksatwork-home.jpg">
                 </div>
                 <div class="clearfix">
-                    <p class="onecolumn">The Books@Works team wanted the books to take center stage on the site. To ensure that the graphic would be easily updatable as their roster of books grew, we created an interactive bookshelf for the homepage.</p>
+                    <p class="onecolumn alignright">The Books@Works team wanted the books to take center stage on the site. To ensure that the graphic would be easily updatable as their roster of books grew, we created an interactive bookshelf for the homepage.</p>
                     <img class="twocolumn last" src="<?php echo $url; ?>/img/booksatwork/booksshelf.gif">
                 </div>
                 <div class="clearfix">

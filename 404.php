@@ -65,7 +65,7 @@
                 }
             }
             center404();
-            win.resize(center404);
+            win.on('load resize', center404);
         })(jQuery);
         </script>
 

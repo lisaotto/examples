@@ -23,7 +23,7 @@
                     <a href="http://dribbble.com/Lisaotto" class="icon-dribbble"><p>@lisaotto</p></a>
                 </div>
                 <div>
-                    <a href="" class="icon-pin"><p>Washington&nbsp;DC</p></a>
+                    <a href="https://goo.gl/maps/e7AoR" class="icon-pin" alt="Washington DC"><p>Washington&nbsp;DC</p></a>
                 </div>
             </div>
         </div>

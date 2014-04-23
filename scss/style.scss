@@ -55,6 +55,12 @@ $paddingmobile: 12%;
     &.faded {
         opacity: 0 !important;
     }
+
+    @media screen and (max-width: 960px) {
+        &.faded {
+            opacity: 1 !important;
+        }
+    }
 }
 
 
@@ -571,6 +577,34 @@ body.teasers-open {
     }
 }
 
+//////////////////Media Query > 1450 //////////////////
+
+@media screen and (min-width: 1450px){
+    
+    .intro > p {
+        font-size: 22px !important;
+        line-height:150%;
+    }
+
+    p.onecolumn, p.twocolumn {
+        font-size: 18px
+    }
+
+    .overlay {
+
+        h2{
+            font-size:40px;
+        }
+
+        h3{
+            font-size:24px;
+        }
+
+        p{
+            font-size: 40px;
+        }
+    }
+}
 
 
 //////////////////Media Query < 1350 //////////////////
@@ -637,7 +671,7 @@ body.teasers-open {
 
 @media screen and (max-width: 700px) {
 
-    h1 { 
+    h1, h1 a { 
         font-size:32px;
         max-width: 500px;
     }
@@ -684,9 +718,9 @@ body.teasers-open {
 
 @media screen and (max-width: 550px) {
 
-    h1 { 
+    h1, h1 a { 
         font-size:24px;
-        max-width: 360px;
+        max-width: 340px;
     }
 
        .tab {
@@ -697,7 +731,7 @@ body.teasers-open {
     }
 
     .icon-dribbble, .icon-envelope, .icon-pin {
-        margin:40px;
+        margin:30px;
     }
 
     div.icons {
@@ -849,6 +883,10 @@ body.teasers-open {
         width:100%
     }  
 
+    .bannerimg {
+        background-color: $blue;
+    }
+
     .hgroup{
         position: absolute;
         bottom:20px;
@@ -869,6 +907,7 @@ body.teasers-open {
 
 }
 
+
 .intro{
     > p {
         display: block;
@@ -882,6 +921,16 @@ body.teasers-open {
     .role{
         width:$columnscreen;
         float:left;
+
+        ul {
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        li {
+            padding-bottom: 4px;
+            color: $lightgrey;
+        }
     }
 
     h4{
@@ -901,7 +950,9 @@ body.teasers-open {
     }
 }
 
-a.visitsite , a.visitsite:visited{
+#projects {
+
+ a.visitsite , a.visitsite:visited, p.visitsite{
     text-align:center;
     font-weight:normal;
     display:inline-block;
@@ -911,6 +962,8 @@ a.visitsite , a.visitsite:visited{
     font-size: 30px;
     transition: opacity .4s ease;
     margin-bottom:10%;
+    }
+   
 }
 
 .visitsite {
@@ -984,7 +1037,23 @@ a.visitsite , a.visitsite:visited{
     margin-top: 2%;
 }
 
+.floatright {
+    float: right;
+}
+
+.alignright {
+    text-align: right;
+}
+
 //////////////////Work Pages Custon//////////////////
+
+#projects {
+    .whitetitle {
+        color: #e0e2e0;
+        text-shadow: 2px 2px 8px transparentize($grey, 0.5);
+    }   
+
+}
 
 ////platform////
 
@@ -1010,6 +1079,18 @@ a.visitsite , a.visitsite:visited{
     cursor:pointer;
 }
 
+@media screen and (min-width: 550px) {
+    .loweredblurb {
+        margin-top: 3%;
+    }
+}
+
+///booksatwork////
+@media screen and (min-width: 550px) {
+    .loweredblurb {
+        padding-top: 4.5%;
+    }
+}
 
 //////////////////Work Pages Responsive//////////////////
 
@@ -1136,7 +1217,7 @@ a.visitsite , a.visitsite:visited{
         h3 {
             text-align: center;
             font-size: 40px;
-            margin: -4px 0 10px 0;
+            margin: -22px 0 20px 0;
         }
 
         p {
