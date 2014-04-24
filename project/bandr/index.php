@@ -30,8 +30,8 @@
 
         <main id="projects">
             <div class="banner"> 
-                <div class="bannerimg"><img src="<?php echo $url; ?>/img/bandr/bandr-header.jpg" alt=""></div>
-                <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">B & R</h2></div>
+                <div class="bannerimg"><img src="<?php echo $url; ?>/img/bandr/bandr-header.jpg" alt="B&R"></div>
+                <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">B &amp; R</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -39,14 +39,14 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">B & R is an auto and truck salvage yard whose main goal with the website redesign was to keep the information accessible and easy to understand. They had an external vendor for used parts but wanted to create a gallery for bigger ticket items on their site. We worked with photographer Nate Ryan to give each visitor the feel that they are visiting the yard in person. </p>
+                <p class="description">B &amp; R is an auto and truck salvage yard whose main goal with the website redesign was to keep the information accessible and easy to understand. They had an external vendor for used parts but wanted to create a gallery for bigger ticket items on their site. We worked with photographer Nate Ryan to give each visitor the feel that they are visiting the yard in person. </p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
                     <li>UX</li>
                     <li>UI</li>
                 </ul>
-                <p>Work done with <a href="http://www.parsleyandsprouts.com" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
+                <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" alt="Parsley and Sprouts, LLC">Parsley &amp;Sprouts</a></p>
                  <p>Photos taken by <a href="http://nateryan.com" alt="Nate Ryan">Nate Ryan</a></p>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 <img class="threecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services.jpg">
                 <img class="halfcolumn" src="<?php echo $url; ?>/img/bandr/bandr-sales.jpg">
                 <img class="halfcolumn last  finalblock" src="<?php echo $url; ?>/img/bandr/bandr-sales-hover.jpg">
-                <a class="visitsite" href="http://www.bandrautotrucksalvage.com/">VISIT SITE<span class="icon-arrow"></span></a>
+                <a class="visitsite" href="http://www.bandrautotrucksalvage.com/" target="_blank">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

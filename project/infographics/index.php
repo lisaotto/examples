@@ -46,7 +46,7 @@
                     <li>Design</li>
                     <li>Illustration</li>
                 </ul>
-                <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
+                <p>Work done with <a href="http://www.ncta.com" target="_blank" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>
             </div>
             <div class="content outerpadding finalblock clearfix">

@@ -46,7 +46,7 @@
                     <li>UX</li>
                     <li>UI</li>
                 </ul>
-                <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
+                <p>Work done with <a href="http://www.ncta.com" target="_blank" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>
             </div>
             <div class="content outerpadding clearfix">
@@ -60,7 +60,7 @@
                 <img class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
                 <img class="threecolumn last finalblock" src="<?php echo $url; ?>/img/parentalcontrols/pc-landing.jpg">
 
-                <p class="visitsite" href="">SITE IS UNDER DEVELOPMENT</p>
+                <p class="visitsite" >SITE IS UNDER DEVELOPMENT</p>
             </div>
 
             <div class="bottom-navigation">

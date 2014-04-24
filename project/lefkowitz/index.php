@@ -46,7 +46,7 @@
                     <li>UX</li>
                     <li>UI</li>
                 </ul>
-                <p>Work done with <a href="http://www.parsleyandsprouts.com" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
+                <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
                 </div>
             </div>
             <div class="content outerpadding clearfix">
@@ -59,7 +59,7 @@
                 <p class="onecolumn alignright">Since the navigation design and structure was such a major part of the site, we did not want to drop or overly simplify it for mobile. The ultimate solution we found was to develop a responsive-adaptive blended site. The site is responsive up to a certain point where it has a minimum width. However, on narrow touch screens, it reconfigures to display the navigation in an alternative formation.</p>
                 <img class="onecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile.jpg">
                 <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
-                <a class="visitsite" href="http://www.davidlefkowitz.net/" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>
+                <a class="visitsite" href="http://www.davidlefkowitz.net/" target="_blank" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

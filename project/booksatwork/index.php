@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Books at Work</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -47,7 +47,7 @@
                     <li>UI</li>
                     <li>Illustrations</li>
                 </ul>
-                <p>Work done with <a href="http://www.parsleyandsprouts.com" alt="Parsley and Sprouts, LLC">Parsley & Sprouts</a></p>
+                <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" alt="Parsley and Sprouts, LLC">Parsley &amp; Sprouts</a></p>
                 </div>
             </div>
             <div class="content outerpadding clearfix">
@@ -76,7 +76,7 @@
                 <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/booksatwork/books-mobile-contact.png">
                 </div>
 
-                <a class="visitsite" href="http://www.booksatwork.org" alt="Books@Work">VISIT SITE<span class="icon-arrow"></span></a>
+                <a class="visitsite" target="_blank" href="http://www.booksatwork.org" alt="Books@Work">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

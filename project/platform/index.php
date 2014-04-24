@@ -47,7 +47,7 @@
                     <li>UI</li>
                     <li>HTML/CSS support</li>
                 </ul>
-                <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
+                <p>Work done with <a href="http://www.ncta.com" target="_blank" alt="National Cable and Telecommunications Association">NCTA</a></p>
                 </div>
             </div>
             <div class="content outerpadding clearfix">
@@ -84,7 +84,7 @@
                     <img class="onecolumn" src="<?php echo $url; ?>//img/platform/platform-mobile.jpg">
                     <img class="twocolumn last finalblock" src="<?php echo $url; ?>//img/platform/platform-tablet.jpg">
                 </div>
-                <a class="visitsite" href="https://www.ncta.com/platform/" alt="Platform: Technology, TV & the Future">VISIT SITE<span class="icon-arrow"></span></a>
+                <a class="visitsite" href="https://www.ncta.com/platform/" target="_blank" alt="Platform: Technology, TV & the Future">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">

@@ -35,7 +35,7 @@
             </div>
             <div class="navigation">
                 <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
-                <a class="next" href="<?php echo $url; ?>/project/platform/"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
+                <a class="next" href="<?php echo $url; ?>/project/platform/" target="_blank"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
@@ -66,7 +66,7 @@
                     </div>
                     <img class="twocolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_tablet.png">
                 </div>
-                <a class="visitsite" href="http://www.teachinctrl.org">VISIT SITE<span class="icon-arrow"></span></a>
+                <a class="visitsite" target="_blank" href="http://www.teachinctrl.org">VISIT SITE<span class="icon-arrow"></span></a>
             </div>
 
             <div class="bottom-navigation">
