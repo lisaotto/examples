@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Cable Puts You In Control is a merger of NCTA’s two sites on parental controls — one on web resources and one on television resources. Meant as a resource and an aggregate of the tools Cable provides, NCTA wanted the site to be accessible to parents but also dynamic in order to keep parents engaged..</p>
+                <p class="description">Cable Puts You In Control is a merger of NCTA’s two sites on parental controls — one on web resources and one on television resources. Meant as an aggregate and overview of the tools cable provides, NCTA wanted the site to be consumer accessible but also dynamic in order to keep parents engaged.</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -54,13 +54,13 @@
                 <img class="threecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-slide.jpg">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-mobile.jpg">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-home-mobile-slide.jpg">
-                <p class="onecolumn last">In order to make the navigation manageable for the user on mobile devices, the two-tiered desktopnavigation collapses into a single column. The off-canvas navigation on mobile allows for the long column of content to take up as little of the screen as possible and allows the user to easily switch between navigation and content.</p>
+                <p class="onecolumn last">In order to make the navigation manageable for the user on mobile devices, the two-tiered desktop navigation collapses into a single column. Through off-canvas navigation, the the long column of content takes up as little of the screen as possible while allowing the user to easily switch between navigation and content.</p>
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-choose.png">
                 <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
                 <img class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
                 <img class="threecolumn last finalblock" src="<?php echo $url; ?>/img/parentalcontrols/pc-landing.jpg">
 
-                <p class="visitsite" >SITE IS UNDER DEVELOPMENT</p>
+                <p class="visitsite">SITE IS UNDER DEVELOPMENT</p>
             </div>
 
             <div class="bottom-navigation">

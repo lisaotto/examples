@@ -31,7 +31,7 @@
         <main id="projects">
             <div class="banner"> 
                 <div class="bannerimg"><img src="<?php echo $url; ?>/img/lefkowitz/lefko-header.jpg" alt=""></div>
-                <div class="hgroup"><h3>Website Redesign</h3><h2>David Leftkowitz</h2></div>
+                <div class="hgroup"><h3>Website Redesign</h3><h2>DAVID LEFKOWITZ</h2></div>
             </div>
             <div class="navigation">
                 <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">David Lefkowitz is a visual artist with a sense of humor. Much of David’s works involve visual puns and originally he wanted to incorporate one into the site’s navigation. Eventually we settled on the <a href="https://www.google.com/search?q=cladogram&safe=active&es_sm=91&source=lnms&tbm=isch&sa=X&ei=yw1XU_mDOvLisASplYHYBA&ved=0CAgQ_AUoAQ&biw=1416&bih=777" alt="Cladograms">cladogram</a> as inspiration for the navigation since it provides both structure for the many groupings of work and is a concept that David plays off in his <a href="http://www.davidlefkowitz.net/projects-installations/nrthfld-nirthfolde-visitors-bureau/" alt="Beaver Cladogram in the background">works</a>. With the cladogram as a central theme, we designed a sleek minimal site to show off his work.</p>
+                <p class="description">David Lefkowitz is a visual artist with a sense of humor. Much of David’s work involves visual puns and originally he wanted to incorporate one into the site’s navigation. Eventually, we settled on the <a href="https://www.google.com/search?q=cladogram&safe=active&es_sm=91&source=lnms&tbm=isch&sa=X&ei=yw1XU_mDOvLisASplYHYBA&ved=0CAgQ_AUoAQ&biw=1416&bih=777" target="_blank"alt="Cladograms">cladogram</a> as inspiration for the navigation since it provides both structure for the many groupings of work and is a concept that David plays off in his <a href="http://www.davidlefkowitz.net/projects-installations/nrthfld-nirthfolde-visitors-bureau/" target="_blank" alt="Beaver Cladogram in the background">work</a>. With the cladogram as a central theme, we designed a sleek minimal site to show off his work.</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -56,7 +56,7 @@
                 <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
                 <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
                 <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-responsive.png">
-                <p class="onecolumn alignright">Since the navigation design and structure was such a major part of the site, we did not want to drop or overly simplify it for mobile. The ultimate solution we found was to develop a responsive-adaptive blended site. The site is responsive up to a certain point where it has a minimum width. However, on narrow touch screens, it reconfigures to display the navigation in an alternative formation.</p>
+                <p class="onecolumn alignright">Since the navigation's design and structure was a major part of the site, we did not want to drop or overly simplify it for mobile. The ultimate solution we found was to develop a responsive-adaptive blended site. The site is responsive up to a certain point where it has a minimum width. However, on narrow touch screens, it reconfigures to display the navigation in an alternate formation.</p>
                 <img class="onecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile.jpg">
                 <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
                 <a class="visitsite" href="http://www.davidlefkowitz.net/" target="_blank" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>

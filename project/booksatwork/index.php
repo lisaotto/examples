@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Books@Work is a young non-profit that uses literature seminars to improve workplace morale and performance. The Books@Work team were looking for a website that would make the program (and Shakespeare) accessible to the their new audience.</p>
+                <p class="description">Books@Work is a young non-profit that uses literature seminars to improve workplace morale and performance. The Books@Work team was looking for a website that would make the program (and Shakespeare) accessible to their new audience.</p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
@@ -53,7 +53,7 @@
             <div class="content outerpadding clearfix">
                 <div class="clearfix">
                     <img class="halfcolumn" src="<?php echo $url; ?>/img/booksatwork/books-wireframe-old.png">
-                    <p class="onecolumn loweredblurb last">Originally the site had a grid of links to the interior pages. Because some of the content is only relevant to certain audience members, it created an overwhelming experience and limited the space for an introduction to the program.</p>
+                    <p class="onecolumn loweredblurb last">Originally the site had a grid of links to secondary pages. Because some of the content is only relevant to certain audiences, it created an overwhelming experience and limited the space for an introduction to the program.</p>
                 </div>
                 <div class="clearfix">
                     <img class="halfcolumn floatright last" src="<?php echo $url; ?>/img/booksatwork/books-bucketing.png">
@@ -67,7 +67,7 @@
                     <img class="threecolumn" src="<?php echo $url; ?>/img/booksatwork/booksatwork-home.jpg">
                 </div>
                 <div class="clearfix">
-                    <p class="onecolumn alignright">The Books@Works team wanted the books to take center stage on the site. To ensure that the graphic would be easily updatable as their roster of books grew, we created an interactive bookshelf for the homepage.</p>
+                    <p class="onecolumn alignright">The Books@Works team wanted the books to take center stage on the site. We created an interactive bookshelf for the homepage, ensuring that it would be easily updatable as their roster of books grew.</p>
                     <img class="twocolumn last" src="<?php echo $url; ?>/img/booksatwork/booksshelf.gif">
                 </div>
                 <div class="clearfix">

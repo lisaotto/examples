@@ -39,7 +39,7 @@
                 <div class="bar"></div>
             </div>
             <div class="intro clearfix outerpadding">
-                <p class="description">Inctrl is a series of lessons and plans for teachers to integrate into their classrooms on safe and responsible Internet usage. Inctrl provides 7 lessons with videos and plans on topics ranging from cyberbullying to media literacy. The redesign project included illustrating badges for that conveyed the theme of each lesson. </p>
+                <p class="description">InCtrl is a series of lessons for teachers to integrate into their classrooms on safe and responsible Internet usage. InCtrl provides seven lessons with videos and instructions on topics ranging from cyberbullying to media literacy. The redesign project included illustrating badges that conveyed the theme of each lesson. </p>
                 <div class="role">
                 <h4>My Role</h4>
                 <ul>
