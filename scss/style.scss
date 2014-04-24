@@ -1087,12 +1087,6 @@ body.teasers-open {
     cursor:pointer;
 }
 
-@media screen and (min-width: 550px) {
-    .loweredblurb {
-        margin-top: 3%;
-    }
-}
-
 ///booksatwork////
 @media screen and (min-width: 550px) {
     .loweredblurb {
@@ -1164,6 +1158,7 @@ body.teasers-open {
 
         img{
             height:220px;
+            margin-left: -20%;
             width:auto;   
         }
 

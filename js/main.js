@@ -83,7 +83,10 @@ function loadElements(data) {
 		}
 	}
 
-	if ( !!history ) window.history.pushState({}, title, url);
+	if ( !!history ) {
+		window.history.pushState({}, title, url);
+		document.title = title;
+	}
 
 	var newElements = newProjects.children(),
 		newReadyElements = newProjects.find('.navigation, .intro'),
