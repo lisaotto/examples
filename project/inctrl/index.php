@@ -1,5 +1,6 @@
 <?php
 $title = 'InCtrl';
+$slug = 'project/inctrl';
 include('../../includes/header.php'); ?>
 
 <main id="projects">
@@ -22,7 +23,7 @@ include('../../includes/header.php'); ?>
             <li>Illustration</li>
             <li>HTML/CSS support</li>
         </ul>
-        <p>Work done with <a href="http://www.ncta.com" alt="National Cable and Telecommunications Association">NCTA</a></p>
+        <p>Work done with <a href="http://www.ncta.com" title="National Cable and Telecommunications Association" target="_blank">NCTA</a></p>
         </div>
     </div>
     <div class="content outerpadding clearfix">

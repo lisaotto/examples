@@ -1,5 +1,6 @@
 <?php
 $title = 'David Lefkowitz';
+$slug = 'project/lefkowitz';
 include('../../includes/header.php'); ?>
 
 <main id="projects">

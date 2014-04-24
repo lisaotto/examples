@@ -887,13 +887,10 @@ body.teasers-open {
 
 
 .banner{
+    background-color: $blue;
     img{
         width:100%
     }  
-
-    .bannerimg {
-        background-color: $blue;
-    }
 
     .hgroup{
         position: absolute;
@@ -1091,6 +1088,12 @@ body.teasers-open {
 @media screen and (min-width: 550px) {
     .loweredblurb {
         padding-top: 4.5%;
+    }
+
+    .booksatwork {
+        .content.outerpadding {
+            margin-top: 4%;
+        }
     }
 }
 ////parental controls////

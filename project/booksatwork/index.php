@@ -1,5 +1,6 @@
 <?php
 $title = 'Books at Work';
+$slug = 'project/booksatwork';
 include('../../includes/header.php'); ?>
 
 <main id="projects">

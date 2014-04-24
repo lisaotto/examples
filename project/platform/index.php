@@ -1,5 +1,6 @@
 <?php
 $title = 'Platform';
+$slug = 'project/platform';
 include('../../includes/header.php'); ?>
 
 <main id="projects">

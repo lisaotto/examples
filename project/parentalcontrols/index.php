@@ -1,5 +1,6 @@
 <?php
 $title = 'Parental Controls';
+$slug = 'project/parentalcontrols';
 include('../../includes/header.php'); ?>
 
 <main id="projects">

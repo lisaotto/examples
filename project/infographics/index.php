@@ -1,5 +1,6 @@
 <?php
 $title = 'Infographics';
+$slug = 'project/infographics';
 include('../../includes/header.php'); ?>
 
 <main id="projects">
@@ -24,9 +25,9 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
     <div class="content outerpadding finalblock clearfix">
-        <img class="threecolumn first" src="<?php echo $cf_url; ?>/img/infographics/spectrumMap-Full.jpg">
-        <img class="halfcolumn" src="<?php echo $cf_url; ?>/img/infographics/spectrumMap-zoom1.jpg">
-        <img class="halfcolumn last" src="<?php echo $cf_url; ?>//img/infographics/spectrumMap-zoom2.jpg">
+        <img class="threecolumn first" src="<?php echo $cf_url; ?>/img/infographics/SpectrumMap-Full.jpg">
+        <img class="halfcolumn" src="<?php echo $cf_url; ?>/img/infographics/SpectrumMap-zoom1.jpg">
+        <img class="halfcolumn last" src="<?php echo $cf_url; ?>/img/infographics/SpectrumMap-zoom2.jpg">
         <img class="twocolumn center" src="<?php echo $cf_url; ?>/img/infographics/realtimeentertainment.png">
         <img class="threecolumn" src="<?php echo $cf_url; ?>/img/infographics/schoolsupplies.jpg">
         <img class="threecolumn" src="<?php echo $cf_url; ?>/img/infographics/millionyears-Full1.jpg">

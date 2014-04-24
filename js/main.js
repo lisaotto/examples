@@ -93,7 +93,7 @@ function loadElements(data) {
 		banner = newProjects.find('.banner'),
 		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
 	
-	banner.addClass('fader faded');
+	banner.children().addClass('fader faded');
 	newReadyElements.addClass('fader faded');
 	newScrollingElements.addClass('fader faded');
 
@@ -102,12 +102,13 @@ function loadElements(data) {
 		newElements.appendTo(curProjects);
 
 		setTimeout(function(){
+			banner.find('.hgroup').removeClass('faded');
 			newReadyElements.removeClass('faded');
 		}, 100);
 
 		banner.imagesLoaded()
 			.done(function(){
-				banner.removeClass('faded');
+				banner.children().removeClass('faded');
 			});
 
 		$('.project-sample').each(function(){
@@ -160,6 +161,7 @@ function loadPage(e) {
 		success: loadElements
 	});
 }
-body.on('click', '.navigation .next, .project-sample, .back, h1 a', loadPage);
-
+if ( !$('html').hasClass('oldie')) {
+	body.on('click', '.navigation .next, .project-sample, .back, h1 a', loadPage);
+}
 }(jQuery));

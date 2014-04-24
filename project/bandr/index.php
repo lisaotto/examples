@@ -1,10 +1,11 @@
 <?php
 $title = 'B and R';
+$slug = 'project/bandr';
 include('../../includes/header.php'); ?>
 
 <main id="projects">
     <div class="banner"> 
-        <div class="bannerimg"><img src="<?php echo $cf_url; ?>/img/bandr/bandr-header.jpg" alt="B&R"></div>
+        <div class="bannerimg"><img src="<?php echo $cf_url; ?>/img/bandr/bandr-header.jpg" alt="B and R"></div>
         <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">B &amp; R</h2></div>
     </div>
     <div class="navigation">
@@ -20,8 +21,8 @@ include('../../includes/header.php'); ?>
             <li>UX</li>
             <li>UI</li>
         </ul>
-        <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" alt="Parsley and Sprouts, LLC">Parsley &amp;Sprouts</a></p>
-         <p>Photos taken by <a href="http://nateryan.com" alt="Nate Ryan" target="_blank">Nate Ryan</a></p>
+        <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" title="Parsley and Sprouts, LLC">Parsley &amp; Sprouts</a></p>
+         <p>Photos taken by <a href="http://nateryan.com" title="Nate Ryan" target="_blank">Nate Ryan</a></p>
         </div>
     </div>
     <div class="content outerpadding clearfix">

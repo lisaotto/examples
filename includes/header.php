@@ -5,24 +5,25 @@ $dev = false;
 
 $url = $dev ? 'http://localhost/portfolio' : 'http://lisaotto.co';
 $cf_url = $dev ? 'http://localhost/portfolio' : 'https://d1yxcutiq9bg66.cloudfront.net'; 
-
-    function getUrl() {
-        $the_url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
-        $the_url .= ( $_SERVER["SERVER_PORT"] !== 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
-        $the_url .= $_SERVER["REQUEST_URI"];
-        return $the_url;
-    }
-
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>      <html class="no-js oldie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js oldie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js oldie lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js oldie"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><?= $title; ?></title>
+        <title>
+            <?php 
+            if ($title === 'Lisa Otto') {
+                echo 'Lisa Otto';
+            } else {
+                echo 'Lisa Otto - ' . $title;
+            }
+            ?>
+        </title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,17 +34,22 @@ $cf_url = $dev ? 'http://localhost/portfolio' : 'https://d1yxcutiq9bg66.cloudfro
         <script src="<?= $url; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 
-    <?php $body_class = strpos(getUrl(), '/project/') >= 0 ? 'teasers-open' : 'home'; ?>
+    <?php 
+    $body_class = $title !== 'Lisa Otto' ? 'teasers-open' : 'home'; 
+    $body_class = isset($slug) ? $body_class . ' ' . str_replace('project/', '', $slug) : $body_class;
+    ?>
 
     <body class="<?= $body_class; ?>">
-        <!--[if lt IE 7]>
+        <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <header>
 
-        <div hidden id="page-url"><?= getUrl(); ?></div>
-
+        <?php if ($title !== 'Page Not Found') { ?>
+            <div hidden id="page-url"><?php echo $url . '/' . $slug; ?></div>
+        <?php } ?>
+    
         <div>
 
             <h1>
@@ -55,10 +61,10 @@ $cf_url = $dev ? 'http://localhost/portfolio' : 'https://d1yxcutiq9bg66.cloudfro
                     <a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"><p>otto.elizabeth@gmail.com</p></a>
                 </div>
                 <div>
-                    <a href="http://dribbble.com/Lisaotto" class="icon-dribbble"><p>@lisaotto</p></a>
+                    <a href="http://dribbble.com/Lisaotto" class="icon-dribbble" target="_blank"><p>@lisaotto</p></a>
                 </div>
                 <div>
-                    <a href="https://goo.gl/maps/e7AoR" class="icon-pin" alt="Washington DC"><p>Washington&nbsp;DC</p></a>
+                    <a href="https://goo.gl/maps/e7AoR" class="icon-pin" alt="Washington DC" target="_blank"><p>Washington&nbsp;DC</p></a>
                 </div>
             </div>
         </div>
