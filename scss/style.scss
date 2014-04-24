@@ -1091,7 +1091,20 @@ body.teasers-open {
         padding-top: 4.5%;
     }
 }
+////parental controls////
 
+@media screen and (max-width: 766px) {
+    h2.shrink {
+       font-size: 55px;
+       line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h2.shrink {
+       font-size: 35px !important;
+    }
+}
 //////////////////Work Pages Responsive//////////////////
 
 @media screen and (max-width: 960px) {
@@ -1113,6 +1126,14 @@ body.teasers-open {
             bottom: 0;
             margin-bottom: -220px;
         }
+    }
+
+    #projects {
+        .whitetitle {
+            color: $grey;
+            text-shadow: 0 0 0;
+        }   
+
     }
 
 }
@@ -1161,6 +1182,11 @@ body.teasers-open {
     .outerpadding{
         margin: 0 $paddingscreen 0 $paddingscreen;
     }
+
+    .alignright {
+        text-align: left;
+    }
+
 
     ////grid////
     .onecolumn, .twocolumn, .halfcolumn, .threecolumn {
