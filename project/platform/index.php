@@ -37,11 +37,11 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
             <img class="threecolumn" src="<?php echo $cf_url; ?>/img/platform/platform-home.jpg">
-            <img class="threecolumn gridoverlay" src="<?php echo $url; ?>/img/platform/home-grid.png">
+            <img class="threecolumn gridoverlay" src="<?php echo $cf_url; ?>/img/platform/home-grid.png">
         </div>
         <div class="clearfix">
             <p class="twocolumn">Because the blog was being integrated into an existing site, all of the features had to fit into the existing grid system. </p>
-            <div class="onecolumn last"> <p  class="gridbutton">VIEW GRID</p></div>
+            <div class="onecolumn last"> <p class="gridbutton">VIEW GRID</p></div>
         </div>
         <div class="clearfix extrapadding">
             <img class="twocolumn" src="<?php echo $cf_url; ?>/img/platform/menu.gif">
