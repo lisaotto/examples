@@ -17,7 +17,7 @@ win.resize( headerThings );
 function toggle() {
 	$( this.getAttribute('data-toggle') ).toggleClass( this.getAttribute('data-toggle-class') );
 }
-$('[data-toggle]').click( toggle );
+body.on('click', '[data-toggle]', toggle);
 
 function toggleGridOverlay() {
 	var overlay = $('.gridoverlay');

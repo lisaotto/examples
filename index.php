@@ -1,8 +1,7 @@
 <?php
 $title = 'Lisa Otto';
 include('includes/header.php'); ?>
- 
-<main id="projects">
+
     <a href="<?php echo $url; ?>/project/platform" class="project-sample full">
         <img src="<?= $cf_url ?>/img/teaser-platform.jpg">
         <div class="overlay">
@@ -52,7 +51,5 @@ include('includes/header.php'); ?>
             <div><p class="icon-arrow-box"></p></div>
         </div>             
     </a>
-    <div class="nolink-box"></div>
-</main>
 
 <?php include('includes/footer.php'); ?>

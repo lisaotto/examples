@@ -3,7 +3,6 @@ $title = 'Infographics';
 $slug = 'project/infographics';
 include('../../includes/header.php'); ?>
 
-<main id="projects">
     <div class="banner"> 
         <div class="bannerimg"><img src="<?php echo $cf_url; ?>/img/infographics/header-infographics.png" alt=""></div>
         <div class="hgroup"><h3>Various Illustrations</h3><h2>INFOGRAPHICS</h2></div>
@@ -43,7 +42,5 @@ include('../../includes/header.php'); ?>
         <a class="backup" href="#projects"><span class="title">BACK UP</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
-
-</main>
 
 <?php include('../../includes/footer.php'); ?>

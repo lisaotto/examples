@@ -4,7 +4,7 @@
 $dev = true;
 
 $url = $dev ? 'http://localhost/portfolio' : 'http://lisaotto.co';
-$cf_url = $dev ? 'http://localhost/portfolio' : 'https://d1yxcutiq9bg66.cloudfront.net'; 
+$cf_url = $dev ? 'http://localhost/portfolio' : 'http://d1yxcutiq9bg66.cloudfront.net'; 
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js oldie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -72,3 +72,5 @@ $cf_url = $dev ? 'http://localhost/portfolio' : 'https://d1yxcutiq9bg66.cloudfro
         <p class="tab" data-toggle="body" data-toggle-class="teasers-open"><span class="work-title">WORK</span><span class="bio-title">BIO</span><span class="icon-arrow"></span></p>
 
         </header>
+
+        <main id="projects">

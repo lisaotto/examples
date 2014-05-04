@@ -3,7 +3,6 @@ $title = 'Platform';
 $slug = 'project/platform';
 include('../../includes/header.php'); ?>
 
-<main id="projects">
     <div class="banner"> 
         <div class="bannerimg"><img src="<?php echo $cf_url; ?>/img/platform/platform-header.png"></div>
         <div class="hgroup"><h3>Blog Integration</h3><h2>PLATFORM</h2></div>
@@ -67,7 +66,5 @@ include('../../includes/header.php'); ?>
         <a class="backup" href="#projects"><span class="title">BACK UP</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
-
-</main>
 
 <?php include('../../includes/footer.php'); ?>
