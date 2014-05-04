@@ -63,6 +63,12 @@ $paddingmobile: 12%;
     }
 }
 
+::selection {
+    background: $blue; /* Safari */
+    }
+::-moz-selection {
+    background: $blue; /* Firefox */
+}
 
 //////////////////icomoon//////////////////
 

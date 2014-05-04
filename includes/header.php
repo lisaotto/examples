@@ -1,7 +1,7 @@
 <?php 
 
 // set this to false when scraping HTML for live site
-$dev = false;
+$dev = true;
 
 $url = $dev ? 'http://localhost/portfolio' : 'http://lisaotto.co';
 $cf_url = $dev ? 'http://localhost/portfolio' : 'https://d1yxcutiq9bg66.cloudfront.net'; 
