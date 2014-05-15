@@ -141,6 +141,9 @@ function loadElements(data) {
 			}
 		});
 	});
+
+	// send a pageview
+	ga('send', 'pageview');
 }
 
 var loadedFromElement;
