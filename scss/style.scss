@@ -817,10 +817,11 @@ body.teasers-open {
 }
 
 .navigation{
-    position:absolute;
+    position:fixed;
     top:0;
-    width: 100%;
+    width: 75%;
     height:50px;
+    z-index:1000;
 
     span {
         top:2px;
@@ -870,7 +871,7 @@ body.teasers-open {
 .back{
     left:0;
     top:0;
-    z-index:1000;
+    z-index:10002;
 }
 
 .next{
@@ -1131,6 +1132,7 @@ body.teasers-open {
     .navigation{
         position:relative;
         margin-bottom: 220px;
+        width:100%;
     }
 
     .banner {
