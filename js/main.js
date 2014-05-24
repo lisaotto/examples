@@ -34,10 +34,36 @@ body.on('click', '.gridbutton', toggleGridOverlay);
 
 function scrollUp() {
 	$('html, body').animate({
-		scrollTop: 0
+		scrollTop: $('#projects').offset().top
 	}, 500);
 }
 body.on('click', '.backup .title', scrollUp);
+
+// Scroll down for more button
+function promptScrollOn() {
+	console.log('prompting the user to scroll');
+	$('.scroll').addClass('prompting');
+}
+
+function promptScrollOff() {
+	$('.scroll').removeClass('prompting');
+}
+
+function decideWhenToPrompt() {
+	if (document.title !== 'Lisa Otto' && document.title !== 'Lisa Otto - Page Not Found') {
+		setTimeout(promptScrollOn, 2500);	
+	}
+}
+
+body.on('click', '.scroll', function() {
+	promptScrollOff();
+	$('html, body').animate({
+		scrollTop: '+=' + (win.height() * 0.75)
+	}, 500);
+});
+
+decideWhenToPrompt();
+win.scroll(promptScrollOff);
 
 // Internal AJAX loading
 function loadElements(data) {
@@ -45,6 +71,8 @@ function loadElements(data) {
 	if (loadedFromElement.closest('#projects').length > 0) {
 		loadedFromElement.fadeOut();
 	}
+
+	promptScrollOff();
 
 	var delay = 500;
 
@@ -58,11 +86,9 @@ function loadElements(data) {
 		curElements.fadeOut(delay);
 	}
 	setTimeout(function(){
-		if (loadedFromElement.hasClass('back') || loadedFromElement.hasClass('project-sample')) {
-			$('html, body').animate({
-				scrollTop: 0
-			}, 1);
-		}
+		$('html, body').animate({
+			scrollTop: curProjects.offset().top
+		}, 1);
 		curElements.remove();
 	}, delay + 1);
 
@@ -87,6 +113,8 @@ function loadElements(data) {
 		window.history.pushState({}, title, url);
 		document.title = title;
 	}
+
+	decideWhenToPrompt();
 
 	var newElements = newProjects.children(),
 		newReadyElements = newProjects.find('.navigation, .intro'),

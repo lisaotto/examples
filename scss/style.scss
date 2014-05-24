@@ -56,7 +56,7 @@ $paddingmobile: 12%;
         opacity: 0 !important;
     }
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 959px) {
         &.faded {
             opacity: 1 !important;
         }
@@ -132,7 +132,7 @@ a{
     text-decoration:none;
 }
 
-h1, h2, h3, h4, p, a, li {
+h1, h2, h3, h4, p, a, li, button {
     font-family: 'andes', Arial, sans-serif;
     font-weight:normal;
 }
@@ -527,7 +527,7 @@ main {
 }
 
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 959px){
     @include overlay;
 
     .nolink-box {
@@ -631,7 +631,7 @@ body.teasers-open {
 
 //////////////////Media Query < 960 //////////////////
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
 
     body{
         overflow: visible;
@@ -1095,7 +1095,7 @@ body.teasers-open {
 }
 
 ///booksatwork////
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 551px) {
     .loweredblurb {
         padding-top: 4.5%;
     }
@@ -1132,7 +1132,7 @@ body.teasers-open {
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
     .tab {
         cursor:default;
     }
@@ -1145,6 +1145,7 @@ body.teasers-open {
         position:relative;
         margin-bottom: 220px;
         width:100%;
+        left:0;
     }
 
     .banner {
@@ -1160,6 +1161,10 @@ body.teasers-open {
             text-shadow: 0 0 0;
         }   
 
+    }
+
+    .scroll {
+        display: none;
     }
 
 }
@@ -1255,20 +1260,29 @@ body.teasers-open {
 }
 //////////////Scroll////////////////
 
-.scroll{
+.scroll {
     width:160px;
     position:fixed;
-    bottom: 0;
+    bottom: -50px;
     right: 37.5%;
     margin-right: -80px;
     font-size:22px;
     color:$blue;
     text-align:center;
     background-color:$grey;
-    opacity:.4;
-    transition: opacity .3s ease;
+    opacity: 0.6;
+    transition: 0.5s;
     height:50px;
     border: none;
+    text-transform: uppercase;
+
+    &.prompting {
+        bottom: 0;
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 //////////////404////////////////
@@ -1310,7 +1324,12 @@ body.teasers-open {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
+
+    .error-content {
+        top: 0 !important; 
+    }
+
     #projects{
 
         .error {

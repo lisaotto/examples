@@ -13,7 +13,7 @@
 	            var win = $(window),
 	                projects = $('#projects'),
 	                container = projects.find('.error'),
-	                content = $('.404-content');
+	                content = $('.error-content');
 	            function center404() {
 	                projects.height('auto');
 	                if (win.height() > projects.height()) {
