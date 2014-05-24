@@ -8,7 +8,7 @@ include('../../includes/header.php'); ?>
         <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">TEACH INCTRL</h2></div>
     </div>
     <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
+        <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">ALL</span></a>
         <a class="next" href="<?php echo $url; ?>/project/platform/" target="_blank"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
