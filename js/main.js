@@ -16,6 +16,7 @@ win.resize( headerThings );
 
 function toggle() {
 	$( this.getAttribute('data-toggle') ).toggleClass( this.getAttribute('data-toggle-class') );
+	promptScrollOff();
 }
 body.on('click', '[data-toggle]', toggle);
 
