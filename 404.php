@@ -7,7 +7,7 @@ include('includes/header.php'); ?>
             <h2>404</h2>
             <h3>PAGE NOT FOUND</h3>
             <p>Nobody here but us bunnies.</p>
-            <img src="<?php echo $cf_url; ?>/img/bunnies.gif">
+            <img src="<?php echo $url; ?>/img/bunnies.gif">
         </div>
     </div>
 

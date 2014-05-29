@@ -4,7 +4,7 @@ $slug = 'project/lefkowitz';
 include('../../includes/header.php'); ?>
 
     <div class="banner"> 
-        <div class="bannerimg"><img src="<?php echo $cf_url; ?>/img/lefkowitz/lefko-header.jpg" alt=""></div>
+        <div class="bannerimg"><img src="<?php echo $url; ?>/img/lefkowitz/lefko-header.jpg" alt=""></div>
         <div class="hgroup"><h3>Website Redesign</h3><h2 class="shrink">DAVID LEFKOWITZ</h2></div>
     </div>
     <div class="navigation">
@@ -24,15 +24,15 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
     <div class="content outerpadding clearfix">
-        <img class="threecolumn first" src="<?php echo $cf_url; ?>/img/lefkowitz/lefkowitz-home.jpg">
-        <img class="threecolumn" src="<?php echo $cf_url; ?>/img/lefkowitz/lefkowitz-menu.jpg">
-        <img class="threecolumn" src="<?php echo $cf_url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
-        <img class="threecolumn" src="<?php echo $cf_url; ?>/img/lefkowitz/lefko-tablet.jpg">
-        <img class="threecolumn" src="<?php echo $cf_url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
-        <img class="threecolumn" src="<?php echo $cf_url; ?>/img/lefkowitz/lefko-responsive.png">
+        <img class="threecolumn first" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-home.jpg">
+        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-menu.jpg">
+        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
+        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
+        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
+        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-responsive.png">
         <p class="onecolumn alignright">Since the navigation's design and structure was a major part of the site, we did not want to drop or overly simplify it for mobile. The ultimate solution we found was to develop a responsive-adaptive blended site. The site is responsive up to a certain point where it has a minimum width. However, on narrow touch screens, it reconfigures to display the navigation in an alternate formation.</p>
-        <img class="onecolumn" src="<?php echo $cf_url; ?>/img/lefkowitz/lefko-mobile.jpg">
-        <img class="onecolumn last finalblock" src="<?php echo $cf_url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
+        <img class="onecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile.jpg">
+        <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
         <a class="visitsite" href="http://www.davidlefkowitz.net/" target="_blank" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>
     </div>
 

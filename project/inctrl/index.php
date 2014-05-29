@@ -4,7 +4,7 @@ $slug = 'project/inctrl';
 include('../../includes/header.php'); ?>
 
     <div class="banner"> 
-        <div class="bannerimg"><img src="<?php echo $cf_url; ?>/img/inctrl/header_cloth.jpg" alt=""></div>
+        <div class="bannerimg"><img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt=""></div>
         <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">TEACH INCTRL</h2></div>
     </div>
     <div class="navigation">
@@ -26,19 +26,19 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
     <div class="content outerpadding clearfix">
-        <img class="onecolumn first" src="<?php echo $cf_url; ?>/img/inctrl/digitalcitizen.png">
-        <img class="onecolumn first" src="<?php echo $cf_url; ?>/img/inctrl/privacy.png">
-        <img class="onecolumn first last" src="<?php echo $cf_url; ?>/img/inctrl/infoliteracy.png">
-        <img class="onecolumn" src="<?php echo $cf_url; ?>/img/inctrl/collaboration.png">
-        <img class="onecolumn" src="<?php echo $cf_url; ?>/img/inctrl/ethics.png">
-        <img class="onecolumn last" src="<?php echo $cf_url; ?>/img/inctrl/medialiteracy.png">
-        <img class="threecolumn last" src="<?php echo $cf_url; ?>/img/inctrl/inctrl_home.png">
+        <img class="onecolumn first" src="<?php echo $url; ?>/img/inctrl/digitalcitizen.png">
+        <img class="onecolumn first" src="<?php echo $url; ?>/img/inctrl/privacy.png">
+        <img class="onecolumn first last" src="<?php echo $url; ?>/img/inctrl/infoliteracy.png">
+        <img class="onecolumn" src="<?php echo $url; ?>/img/inctrl/collaboration.png">
+        <img class="onecolumn" src="<?php echo $url; ?>/img/inctrl/ethics.png">
+        <img class="onecolumn last" src="<?php echo $url; ?>/img/inctrl/medialiteracy.png">
+        <img class="threecolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_home.png">
        <div class="clearfix finalblock">
             <div class="onecolumn"> 
                 <p></p>
-                 <img class="threecolumn" src="<?php echo $cf_url; ?>/img/inctrl/inctrl_mobile.png">
+                 <img class="threecolumn" src="<?php echo $url; ?>/img/inctrl/inctrl_mobile.png">
             </div>
-            <img class="twocolumn last" src="<?php echo $cf_url; ?>/img/inctrl/inctrl_tablet.png">
+            <img class="twocolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_tablet.png">
         </div>
         <a class="visitsite" target="_blank" href="http://www.teachinctrl.org">VISIT SITE<span class="icon-arrow"></span></a>
     </div>

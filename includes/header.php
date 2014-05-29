@@ -1,10 +1,9 @@
 <?php 
 
 // set this to false when scraping HTML for live site
-$dev = true;
+$dev = false;
+$url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
 
-$url = $dev ? 'http://localhost/portfolio' : 'http://lisaotto.co';
-$cf_url = $dev ? 'http://localhost/portfolio' : 'http://d1yxcutiq9bg66.cloudfront.net'; 
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js oldie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
