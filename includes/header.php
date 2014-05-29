@@ -1,7 +1,7 @@
 <?php 
 
 // set this to false when scraping HTML for live site
-$dev = false;
+$dev = true;
 
 $url = $dev ? 'http://localhost/portfolio' : 'http://lisaotto.co';
 $cf_url = $dev ? 'http://localhost/portfolio' : 'http://d1yxcutiq9bg66.cloudfront.net'; 
@@ -53,7 +53,7 @@ $cf_url = $dev ? 'http://localhost/portfolio' : 'http://d1yxcutiq9bg66.cloudfron
         <div>
 
             <h1>
-                <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.svg" alt="Lisa Otto as an Illustration"><div class="arrow-portrait"></div></div></a><span class="bio"> is a user experience and interface designer who, sometimes, dabbles in illustration.</span>
+                <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.jpg" alt="Lisa Otto in the Flesh and Pixels"><div class="arrow-portrait"></div></div></a><span class="bio"> is a user experience and interface designer who, sometimes, dabbles in illustration.</span>
             </h1>
 
             <div class="icons">
@@ -64,7 +64,7 @@ $cf_url = $dev ? 'http://localhost/portfolio' : 'http://d1yxcutiq9bg66.cloudfron
                     <a href="http://dribbble.com/Lisaotto" class="icon-dribbble" target="_blank"><p>@lisaotto</p></a>
                 </div>
                 <div>
-                    <a href="https://goo.gl/maps/e7AoR" class="icon-pin" alt="Washington DC" target="_blank"><p>Washington&nbsp;DC</p></a>
+                    <a href="https://www.google.com/maps/place/New+York,+NY/@40.7056308,-73.9780035,10z/data=!3m1!4b1!4m2!3m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62" class="icon-pin" alt="New York City" target="_blank"><p>New&nbsp;York&nbsp;City</p></a>
                 </div>
             </div>
         </div>

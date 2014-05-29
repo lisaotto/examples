@@ -176,14 +176,15 @@ h1, h1 a {
 
 .portrait {
     position: absolute;
-    margin-top:-225px;
+    margin-top:-235px;
     margin-left:20px;
     opacity:0;
     transition: opacity .5s ease;
-///display none until done///
-    display:none;
 
-
+    img {
+        width:110px;
+        height:164px;
+    }
 }
 
 
@@ -347,7 +348,7 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
         .arrow-portrait {
             border-top:none;
             border-bottom: 14px solid $lightgrey;
-            margin-top:-164px;
+            margin-top:-178px;
         }
 
         .icons {
@@ -683,6 +684,11 @@ body.teasers-open {
         max-width: 500px;
     }
 
+    .portrait {
+        margin-top: -225px;
+        margin-left: 0px;
+    }
+
     .tab {
         font-size:26px;
         width: 180px;
@@ -730,7 +736,16 @@ body.teasers-open {
         max-width: 340px;
     }
 
-       .tab {
+    .name {
+        border-bottom: 2px solid $yellow;
+    }
+
+    .portrait {
+        margin-top: -215px;
+        margin-left: -15px;
+    }
+
+    .tab {
         font-size:20px;
         width: 160px;
         height: 50px;
@@ -739,6 +754,11 @@ body.teasers-open {
 
     .icon-dribbble, .icon-envelope, .icon-pin {
         margin:30px;
+    }
+
+    a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
+        opacity:0;
+
     }
 
     div.icons {
@@ -776,15 +796,7 @@ body.teasers-open {
 }
 
 
-//////////////////Media Query < 440 //////////////////
-
-@media screen and (max-width: 550px) {
-
-    a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
-        opacity:0;
-
-    }
-}
+//////////////////Media Query < 360 //////////////////
 
 @media screen and (max-width: 360px) {
 
