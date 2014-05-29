@@ -1,7 +1,7 @@
 <?php 
 
 // set this to false when scraping HTML for live site
-$dev = false;
+$dev = true;
 $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
 
 ?>
