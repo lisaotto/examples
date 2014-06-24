@@ -5,6 +5,10 @@ from boto.s3.key import Key
 # CONFIG
 url = 'http://localhost/portfolio/' # locan endpoint
 bucket_name = 'lisa.codes' # name of the bucket we want to use
+
+S3 = boto.connect_s3()
+bucket = S3.get_bucket(bucket_name)
+
 html = [
 	'index.php',
 	'404.php',
@@ -17,15 +21,27 @@ html = [
 	'project/platform/index.php'
 ]
 
-S3 = boto.connect_s3()
-
-bucket = S3.get_bucket(bucket_name)
-
 for slug in html:
 
-	r = requests.get( url + slug )
+	r = requests.get( url + slug + '/?deploy=true' )
+
+	print 'deploying ' + slug
 
 	k = Key(bucket)
 	k.key = slug.replace('.php', '.html')
 	k.content_type = 'text/html'
+	k.set_contents_from_string(r.content)
+
+css = [
+	'css/style.css'
+]
+
+for slug in css:
+
+	r = requests.get( url + slug )
+
+	print 'deploying ' + slug
+
+	k = Key(bucket)
+	k.content_type = 'text/css'
 	k.set_contents_from_string(r.content)

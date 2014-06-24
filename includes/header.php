@@ -1,7 +1,6 @@
 <?php 
 
-// set this to false when scraping HTML for live site
-$dev = true;
+$dev = isset($_GET['deploy']) && $_GET['deploy'] === 'true' ? false : true;
 $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
 
 ?>
