@@ -31,7 +31,7 @@ include('../../includes/header.php'); ?>
         <p class="onecolumn last">In order to make the navigation manageable for the user on mobile devices, the two-tiered desktop navigation collapses into a single column. Through off-canvas navigation, the the long column of content takes up as little of the screen as possible while allowing the user to easily switch between navigation and content.</p>
         <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-choose.png">
         <img class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
-        <img class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
+        <img class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-control.png">
         <img class="threecolumn last finalblock" src="<?php echo $url; ?>/img/parentalcontrols/pc-landing.jpg">
 
         <p class="visitsite">SITE IS UNDER DEVELOPMENT</p>
