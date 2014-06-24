@@ -43,5 +43,6 @@ for slug in css:
 	print 'deploying ' + slug
 
 	k = Key(bucket)
+	k.key = slug
 	k.content_type = 'text/css'
 	k.set_contents_from_string(r.content)
