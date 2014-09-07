@@ -62,7 +62,7 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
         <div>
 
             <h1>
-                <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.jpg" alt="Lisa Otto in the Flesh and Pixels"><div class="arrow-portrait"></div></div></a><span class="bio"> is a user experience and interface designer who, sometimes, dabbles in illustration.</span>
+                <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.jpg" alt="Lisa Otto in the Flesh and Pixels"><div class="arrow-portrait"></div></div></a><span class="bio"> is a UI/UX designer who, sometimes, dabbles in illustration.</span>
             </h1>
 
             <div class="icons">
