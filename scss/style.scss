@@ -5,6 +5,7 @@ $grey: #3f4144;
 $lightgrey: #585b5e;
 $yellow: #dfc48c;
 $blue: #03adb0;
+$dblue: #009999;
 //Content Grid
 $paddingscreen: 8%; 
 $innerpaddingscreen: 5%;
@@ -124,9 +125,6 @@ html {
     position: relative;
 }
 
-body{
-    overflow:hidden;
-}
 
 a{
     text-decoration:none;
@@ -146,24 +144,54 @@ img {
 //////////////////header//////////////////
 
 header {
-    width: 75%;
+    width: 30%;
     float: left;
     position:fixed;
     // transition: width 0.25s;   
 
     > div {
-        top: 50%;
-        transform: translateY(-50%);
+        height:100%;
+        top: auto;
+        transform: translateY(0%);
     }
 }
 
+nav {
+
+	border-bottom: 2px solid $yellow;
+
+	ul{
+		padding:0;
+		margin: 0;
+	}
+
+	li{
+		display: inline-block; 
+		text-align: center;
+		height: 50px;
+		width: 24%;
+		border-right: 1px solid $yellow;
+	}
+
+		li:last-child{
+			border-right: 0;
+		}
+
+	a {
+		color: $yellow;
+		font-size: 20px;
+	}
+}
 
 h1, h1 a { 
-    text-align:center;
+	top: 50%;
+    transform: translateY(-50%);
+	width: 60%;
+    text-align: center;
     color:$yellow;
-    font-size:40px;
+    font-size:30px;
     max-width: 600px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .name {
@@ -176,7 +204,7 @@ h1, h1 a {
 
 .portrait {
     position: absolute;
-    margin-top:-235px;
+    margin-top:28px;
     margin-left:20px;
     opacity:0;
     transition: opacity .5s ease;
@@ -197,28 +225,34 @@ h1 a:hover > .portrait{
     height: 0; 
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;
-    border-top: 14px solid $lightgrey;
+    border-bottom: 14px solid $lightgrey;
     left:41px;
+    margin-top:-178px;
 }
 
 .icons {
-    text-align:center;
+    text-align:left;
+    position: fixed;
+    float: left ;
+    bottom: 120px;
+    text-align:left;
 
     p {
         position:absolute;
         font-size:18px;
         color:$blue;
+        text-align: left;
     }
 
     div {
-        display:inline-block;
+        display:block;
         padding-top:50px
     }
 }
 
 .icon-dribbble, .icon-envelope, .icon-pin {
-    font-size:30px;
-    margin:60px;
+    font-size:20px;
+    margin:35px;
 }
 
 a.icon-dribbble, a.icon-envelope, a.icon-pin {
@@ -250,196 +284,56 @@ a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
     padding:4px;
 }
 
-.tab {
-    position: fixed;
-    top: 50%;
-    margin-top: -100px;
-    margin-right: 30px;
-    right: 25%;
-    font-size:30px;
-    color:$grey;
-    width:200px;
-    text-align:center;
-    padding-top:10px;
-    height:60px;
-    background-color:$blue;
-    cursor:pointer;
-    transform-origin: 100% 50%;
-    transform: translateY(-50%) rotate(-90deg);
-
-    transition: opacity 0.2s, right 0.25s;
-
-        span {
-            top: 4px;
-            padding-left: 6px;
-        }
-}
-
 .bio-title {
-   display:none; 
+    display:inline; 
 }
 
-.work-title {
-   display:inline; 
-}
-
-.tab:hover {
-
-  /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=8)";
-
-  /* Netscape */
-  -moz-opacity: 0.8;
-
-  /* Safari 1.x */
-  -khtml-opacity: 0.8;
-
-  /* Good browsers */
-  opacity: 0.8;
-
-}
-
-//////////////////header hover//////////////////
-
-@media screen and (min-width: 960px) {
-
-    .teasers-open{
-
-        header{
-            width:25%;
-              
-             > div {
-                height:100%;
-                top: auto;
-                transform: translateY(0%);
-            }
-        }
-
-        h1{
-            text-align: left;
-            padding-left: 35px;
-            margin-top:60px;
-        }
-
-        .bio{
-            display:none;
-        }
-
-        .tab{
-            transform: rotate(90deg); 
-            margin-top:70px;
-            right: 75%;
-        }
-
-        .work-title {
-           display:none ; 
-        }
-
-        .bio-title {
-           display:inline; 
-        }
-
-        .portrait {
-            position: absolute;
-            margin-top:28px;
-            margin-left:20px;
-        }
-
-        .arrow-portrait {
-            border-top:none;
-            border-bottom: 14px solid $lightgrey;
-            margin-top:-178px;
-        }
-
-        .icons {
-            position: fixed;
-            float: left ;
-            bottom: 120px;
-            text-align:left;
-
-            div {
-                display:block;
-            }
-
-            p {
-                text-align: left;
-            }
-        }
-
-        .icon-dribbble, .icon-envelope, .icon-pin{
-            margin: 35px;
-        }
-
-    }
-
-}
 
 
 @media screen and (min-width: 1350px) {
 
-    .teasers-open {
-        .icon-envelope p, .icon-dribbble p, .icon-pin p {
-            margin-left: 50px;
-            top: -16px;
-        }
+    .icon-envelope p, .icon-dribbble p, .icon-pin p {
+        margin-left: 50px;
+        top: -16px;
     }
+
 }
 
 
+//////////////////Work//////////////////
 
-//////////////////Portolio Teaser//////////////////
 
 main {
-    width:75%;
+    width:70%;
     float:right;
-    margin-right:-50%;
-    transition: margin 0.25s;
+    margin-right:0;
 }
 
-.nolink-box {
-    cursor: pointer;
-    position: fixed;
-    width:25%;
-    top:0;
-    right:0;
-    height: 100%;
-    z-index: 9999;
-}
-
-
-.full {
-    width: 100%;
-    clear:both;
-}
-
-.half {
-    width: 50%;
-    float: left;
-}
 
 .project-sample {
+	background: $blue;
     padding-bottom:22.73%;
     display:block;
+    width: 100%;
+    clear:both;
+    border-bottom: 2px solid $dblue;
+
 
     img{
         position:absolute;
         width:100%;
-        transition: opacity .5s ease;
     }
 }
 
 .overlay {
     width: 70%;
     height: 60%;
-    background-color: $blue;
     position:absolute;
     margin: 4.5% 15%;
     text-align:center;
-    opacity: 0;
     transition: opacity .5s ease;
     transition-delay: .1s;
     overflow:hidden;
-
 
         > div {
             display:inline-block;
@@ -462,95 +356,51 @@ main {
         }
 
         .hgroup {
-            top: 40%;
+            top: 50%;
+            transform: translateY(-50%);
             padding-right: 30px;
-            transition: .4s ease;
-            transition-delay: .1s;
         }
 
         p {
             color: $grey;
             text-align:center;
-            font-size: 30px;
+            font-size: 20px;
             margin: 0;
-            top: 60%;
+            top: 80%;
+            opacity:0;
             transition: .4s ease;
             transition-delay: .1s;
         }
- }
-
- .half .overlay {
-    margin: 9.5% 15%;
  }
 
 .icon-arrow-box {
     display:block;
 }  
 
+a.project-sample:hover {
 
+	
+	background: $dblue;
+ 
 
-
-//////////////////Portolio Teaser Hover//////////////////
-@media screen and (min-width: 960px) {
-
-    .teasers-open{
-        main {
-            width:75%;
-            margin-right:0;
-        }
+    img {
+        opacity:.8;
     }
 
-}
-
-@mixin overlay {
-
-    a.project-sample:hover {
-
-        img {
-            opacity:.8;
-        }
-
-        .overlay {
-            opacity:.95;
-        }
-
-        .hgroup {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        p { 
-            top: 50%;
-            transform: translateY(-50%);
-        }   
+    .overlay p{
+        opacity:.95;
     }
 
+    p { 
+        top: 50%;
+        transform: translateY(-50%);
+    }   
 }
 
 
-@media screen and (max-width: 959px){
-    @include overlay;
-
-    .nolink-box {
-        display:none;
-    }
-}
 
 
-.teasers-open {
-    @include overlay;
-    
-    .nolink-box {
-        display:none;
-    }
-}
-
-body.teasers-open {
-    overflow: visible !important;
-}
-
-
-//////////////////Portfolio Teaser Touch//////////////
+//////////////////Portfolio Touch//////////////
 
 .touch {
     .hgroup{
@@ -620,14 +470,12 @@ body.teasers-open {
 
 @media screen and (min-width: 960px) and (max-width: 1350px) {
 
-    .teasers-open{
-
-        .icon-envelope p, .icon-dribbble p, .icon-pin p {
-            margin-left: -5px;
-            top: 22px;
-            font-size: 15px;
-        }
+    .icon-envelope p, .icon-dribbble p, .icon-pin p {
+        margin-left: -5px;
+        top: 22px;
+        font-size: 15px;
     }
+ 
 
 }
 
@@ -635,25 +483,12 @@ body.teasers-open {
 
 @media screen and (max-width: 959px) {
 
-    body{
-        overflow: visible;
-    }
-
     header {
         width:100%;
         float:none;
         position:relative;
     }
 
-    .tab {
-        position: absolute;
-        top:auto;
-        bottom: 0px;
-        right: 50%;
-        transform-origin:0;
-        transform: translateY(0%) rotate(0deg) translateX(50%) ;
-        margin:0;
-    }
 
     main {
         width:100%; 
@@ -690,12 +525,6 @@ body.teasers-open {
         margin-left: 0px;
     }
 
-    .tab {
-        font-size:26px;
-        width: 180px;
-        height: 50px;
-        padding-top:6px;
-    }
 
     .overlay {
         h3 {
@@ -742,12 +571,6 @@ body.teasers-open {
         margin-left: -15px;
     }
 
-    .tab {
-        font-size:20px;
-        width: 160px;
-        height: 50px;
-        padding-top:9px;
-    }
 
     .icon-dribbble, .icon-envelope, .icon-pin {
         margin:30px;
@@ -898,7 +721,6 @@ body.teasers-open {
         transform:rotate(180deg);
     }
 }
-
 
 
 .banner{
@@ -1138,13 +960,6 @@ body.teasers-open {
 }
 
 @media screen and (max-width: 959px) {
-    .tab {
-        cursor:default;
-    }
-
-    .tab:hover {
-        opacity:1;
-    }
 
     .navigation{
         position:relative;

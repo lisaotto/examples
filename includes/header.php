@@ -61,6 +61,16 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
     
         <div>
 
+            <nav>
+                <ul>
+                    <li><a href="<?php echo $url; ?>/">home</a></li>
+                    <li><a href="<?php echo $url; ?>/">about</a></li>
+                    <li><a href="<?php echo $url; ?>/">contac</a></li>
+                    <li><a class="icon-arrow" href="<?php echo $url; ?>/">work</a></li>
+                </ul>
+
+            </nav>
+
             <h1>
                 <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.jpg" alt="Lisa Otto in the Flesh and Pixels"><div class="arrow-portrait"></div></div></a><span class="bio"> is a UI/UX designer who, sometimes, dabbles in illustration.</span>
             </h1>
@@ -77,8 +87,6 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
                 </div>
             </div>
         </div>
-
-        <p class="tab" data-toggle="body" data-toggle-class="teasers-open"><span class="work-title">WORK</span><span class="bio-title">BIO</span><span class="icon-arrow"></span></p>
 
         </header>
 
