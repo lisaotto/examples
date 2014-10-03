@@ -62,11 +62,11 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
         <div>
 
             <nav>
-                <ul>
-                    <li><a href="<?php echo $url; ?>/">home</a></li>
-                    <li><a href="<?php echo $url; ?>/">about</a></li>
-                    <li><a href="<?php echo $url; ?>/">contac</a></li>
-                    <li><a class="icon-arrow" href="<?php echo $url; ?>/">work</a></li>
+                <ul class="clearfix">
+                    <li><a href="<?php echo $url; ?>/"><p>home</p></a></li>
+                    <li><a href="<?php echo $url; ?>/"><p>about</p></a></li>
+                    <li><a href="<?php echo $url; ?>/"><p>contact</p></a></li>
+                    <li><a href="<?php echo $url; ?>/"><p class="blue">work</p><span  class="icon-arrow blue"></span></a></li>
                 </ul>
 
             </nav>
@@ -81,6 +81,9 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
                 </div>
                 <div>
                     <a href="http://dribbble.com/Lisaotto" class="icon-dribbble" target="_blank"><p>@lisaotto</p></a>
+                </div>
+                <div>
+                    <a href="twitter.com/lisa_otto" class="icon-twitter"><p>@lisa_otto</p></a>
                 </div>
                 <div>
                     <a href="https://www.google.com/maps/place/New+York,+NY/@40.7056308,-73.9780035,10z/data=!3m1!4b1!4m2!3m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62" class="icon-pin" alt="New York City" target="_blank"><p>New&nbsp;York&nbsp;City</p></a>

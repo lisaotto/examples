@@ -8,8 +8,7 @@ include('../../includes/header.php'); ?>
         <div class="hgroup"><h3>Various Illustrations</h3><h2>INFOGRAPHICS</h2></div>
     </div>
     <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">ALL</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/inctrl"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
+        <a class="next" href="<?php echo $url; ?>/project/inctrl"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
     <div class="intro clearfix outerpadding">
@@ -38,8 +37,7 @@ include('../../includes/header.php'); ?>
     </div>
 
     <div class="bottom-navigation">
-        <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
-        <a class="backup" href="#projects"><span class="title">BACK UP</span><span class="icon-arrow-box"></span></a>
+        <a class="backup" href="#projects"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
 
