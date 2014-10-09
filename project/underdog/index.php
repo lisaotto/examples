@@ -27,19 +27,22 @@ include('../../includes/header.php'); ?>
             <img class="threecolumn" src="<?php echo $url; ?>/img/underdog/underdog-onboarding.png">
         </div>
         <div class="clearfix">
-            <h3>The process</h3>
-            <p class="threecolumn">Early wireframes laid out three content types — posts, 'news from elsewhere' (curated links from around the web), and industry data stats. The original design gave prominence to featured content.</p>
-        </div>
-         <div class="clearfix">
-            <img class="threecolumn" src="<?php echo $url; ?>/img/underdog/underdog-flowsketch.jpg">
-            <p class="threecolumn">Because the blog was being integrated into an existing site, all of the features had to fit into the existing grid system. </p>
+            <h5>The Process</h5>
+            <p class="threecolumn">After intial conversations fleshy out user motivation, I brainstormed and sketched proposed flows for entering into the app. </p>
         </div>
         <div class="clearfix">
-            <img class="halfcolumn" src="<?php echo $url; ?>/img/underdog/underdog-wireframe.png">
-            <p class="onecolumn floatright last">Because the blog was being integrated into an existing site, all of the features had to fit into the existing grid system. </p>
+            <img class="halfcolumn" src="<?php echo $url; ?>/img/underdog/sketch-1.jpg">
+            <img class="halfcolumn last" src="<?php echo $url; ?>/img/underdog/sketch-2.jpg">
         </div>
         <div class="clearfix">
-            <h3>2. Searching for Candidates</h3>
+            <p class="onecolumn">Higher fidelity wireframes were created in Illustrator to map out and test the elements of the interface. For example, in early wireframes reaching the profile screen quickly was always a part of the flow but users were only given a gimpse of their profile through a transparent background. After considering the what users saw as a key benefit of Underdog -- simple to get started -- we wanted to give users a better sense of accomplishment after filling out the intial form.  </p>
+            <img class="twocolumn last" src="<?php echo $url; ?>/img/underdog/underdog-wireframe.png">
+        </div>
+        <div class="clearfix">
+            <p class="threecolumn"> I also create a simple working prototype using <a href="http://invisionapp.com">Invision</a> to demonstrate interactions during the sign up process.</p>
+        </div>
+        <div class="clearfix">
+            <h5>UI Patterns</h5>
             <p class="threecolumn">Early wireframes laid out three content types — posts, 'news from elsewhere' (curated links from around the web), and industry data stats. The original design gave prominence to featured content.</p>
         </div>
         <div class="clearfix">

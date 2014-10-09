@@ -142,7 +142,7 @@ a{
     text-decoration:none;
 }
 
-h1, h2, h3, h4, p, a, li, button {
+h1, h2, h3, h4, h5, p, a, li, button {
     font-family: 'brandon', Arial, sans-serif;
     font-weight:normal;
 }
@@ -648,6 +648,14 @@ a.project-sample:hover {
         color: $grey;
     }
 
+    h5{
+        color: $blue;
+        text-align:center;
+        font-size: 26px;
+        margin-top: 8%;
+        margin-bottom: -4%;
+    }
+
     p{
         a{ 
             color:$blue; 
@@ -841,8 +849,9 @@ a.project-sample:hover {
         transform: rotate(-90deg);
     }
 
-
 }
+
+
 
 
 //setting up grid//
