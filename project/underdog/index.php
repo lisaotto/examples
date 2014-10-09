@@ -1,6 +1,6 @@
 <?php
-$title = 'Platform';
-$slug = 'project/platform';
+$title = 'Underdog';
+$slug = 'project/underdog';
 include('../../includes/header.php'); ?>
 
     <div class="banner"> 
