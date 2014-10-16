@@ -4,7 +4,7 @@ from boto.s3.key import Key
 
 # CONFIG
 url = 'http://localhost/portfolio/' # locan endpoint
-bucket_name = 'lisa.codes' # name of the bucket we want to use
+bucket_name = 'lisaot.to' # name of the bucket we want to use
 
 S3 = boto.connect_s3()
 bucket = S3.get_bucket(bucket_name)
