@@ -63,7 +63,6 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
 
             <nav>
                 <ul class="clearfix">
-                    <li><a href="<?php echo $url; ?>/"><p>home</p></a></li>
                     <li><a href="<?php echo $url; ?>/"><p>about</p></a></li>
                     <li><a href="<?php echo $url; ?>/"><p>contact</p></a></li>
                     <li><a href="<?php echo $url; ?>/"><p class="blue">work</p><span  class="icon-arrow blue"></span></a></li>
