@@ -43,7 +43,7 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
             <img class="halfcolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-prototype1.jpg">
-            <img class="halfcolumn last final block" src="<?php echo $url; ?>/img/zeno-app/zenoapp-prototype2.jpg">
+            <img class="halfcolumn last finalblock" src="<?php echo $url; ?>/img/zeno-app/zenoapp-prototype2.jpg">
         </div>
 
 
