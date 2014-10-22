@@ -184,7 +184,7 @@ nav {
     }
 
     li{
-        width:33.3%;
+        width:50%;
         text-align: center;
         border-right: 1px solid $lightgrey;
         float:left;
@@ -269,6 +269,14 @@ h1 a:hover > .portrait{
     border-bottom: 14px solid $lightgrey;
     left:41px;
     margin-top:-178px;
+}
+
+.iconz {
+    text-align: center;
+
+    a {
+        margin: 0 40px 0 40px;
+    }
 }
 
 .icons {
@@ -1129,6 +1137,13 @@ a.project-sample:hover {
         outline: none;
     }
 }
+
+//////////////About////////////////
+
+.bio{
+    font-size:20px;
+}
+
 
 //////////////404////////////////
 

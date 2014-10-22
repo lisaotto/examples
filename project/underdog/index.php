@@ -8,7 +8,7 @@ include('../../includes/header.php'); ?>
         <div class="hgroup"><h3>User Onboarding</h3><h2>UNDERDOG</h2></div>
     </div>
     <div class="navigation">
-        <a class="next" href="<?php echo $url; ?>/project/zenoapp"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
+        <a class="next" href="<?php echo $url; ?>/project/zenoandroid"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
     <div class="intro clearfix outerpadding">

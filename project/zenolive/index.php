@@ -34,11 +34,7 @@ include('../../includes/header.php'); ?>
             <p class="threecolumn">After intial conversations flesh out user motivation (for both the canidates and companies who would be receiving the input information), I brainstormed and sketched proposed flows for entering into the app.</p>
         </div>
         <div class="clearfix">
-            <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-callin.png">
-        </div>
-
-        <div class="clearfix">
-            <p class="threecolumn"> I also created a simple working prototype using Invision to demonstrate and test interactions during the sign up process.</p>
+            <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-iterations.png">
         </div>
         <div class="clearfix">
             <h5>UI Patterns</h5>
