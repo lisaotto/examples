@@ -87,11 +87,11 @@ $paddingmobile: 12%;
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?-v24xao');
-    src:url('../fonts/icomoon.eot?#iefix-v24xao') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?-v24xao') format('woff'),
-        url('../fonts/icomoon.ttf?-v24xao') format('truetype'),
-        url('../fonts/icomoon.svg?-v24xao#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?ym45yj');
+    src:url('../fonts/icomoon.eot?#iefixym45yj') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?ym45yj') format('woff'),
+        url('../fonts/icomoon.ttf?ym45yj') format('truetype'),
+        url('../fonts/icomoon.svg?ym45yj#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -110,21 +110,22 @@ $paddingmobile: 12%;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-dribbble:before {
-    content: "\e601";
-}
-.icon-pin:before {
-    content: "\e602";
-}
 .icon-arrow:before {
     content: "\e603";
 }
 .icon-arrow-box:before {
-    content: "\e600";
-}
-.icon-envelope:before {
     content: "\e604";
 }
+.icon-envelope:before {
+    content: "\e600";
+}
+.icon-twitter:before {
+    content: "\e601";
+}
+.icon-dribbble:before {
+    content: "\e602";
+}
+
 
 ////resuable////
 
@@ -229,9 +230,11 @@ h1, h1 a {
 	width: 60%;
     text-align: center;
     color:$yellow;
-    font-size:30px;
+    font-size:40px;
     max-width: 600px;
-    margin: 80px auto;
+    margin: 0 auto;
+    top: 30%;
+    transform: translateY(-50%);
 }
 
 .name {
@@ -271,47 +274,22 @@ h1 a:hover > .portrait{
     margin-top:-178px;
 }
 
-.iconz {
-    text-align: center;
-
-    a {
-        margin: 0 40px 0 40px;
-    }
-}
-
-.icons {
-    text-align:center;
-
-    p {
-        font-size:18px;
-        color:$blue;
+#content {
+    .iconz {
         text-align: center;
+        margin-top: 60px;
+
+        a {
+            margin: 0 40px 0 40px;
+            padding: 10px;
+            font-size: 20px;
+            display:inline-block;
+        }
+
+        a:hover {
+            color:$lightgrey;
+        }
     }
-
-    div {
-        display:block;
-    }
-}
-
-.icon-dribbble, .icon-envelope, .icon-pin {
-    font-size:20px;
-}
-
-a.icon-dribbble, a.icon-envelope, a.icon-pin {
-    color:$blue;
-}
-
-.icons p {
-    opacity:0;
-    font-size: 16px;
-    padding-bottom: 16px;
-}
-
-a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
-    opacity:1;
-    transition: all .5s ease;
-
-
 }
 
 
@@ -489,18 +467,6 @@ a.project-sample:hover {
 }
 
 
-//////////////////Media Query < 1350 //////////////////
-
-@media screen and (min-width: 960px) and (max-width: 1350px) {
-
-    .icon-envelope p, .icon-dribbble p, .icon-pin p {
-        margin-left: -5px;
-        top: 22px;
-        font-size: 15px;
-    }
- 
-
-}
 
 //////////////////Media Query < 960 //////////////////
 
@@ -596,19 +562,6 @@ a.project-sample:hover {
     }
 
 
-    .icon-dribbble, .icon-envelope, .icon-pin {
-        margin:30px;
-    }
-
-    a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
-        opacity:0;
-
-    }
-
-    div.icons {
-        padding-top: 10px;
-    }
-
     .overlay {
         h3 {
             display:none;
@@ -649,7 +602,7 @@ a.project-sample:hover {
 
 //////////////////Work Pages //////////////////
 
-#projects{
+#content{
     background-color:#E0E2E0;
 
     h2, h3, h4, p {
@@ -833,7 +786,7 @@ a.project-sample:hover {
     }
 }
 
-#projects {
+#content {
 
  a.visitsite , a.visitsite:visited, p.visitsite{
     text-align:center;
@@ -931,7 +884,7 @@ a.project-sample:hover {
 
 //////////////////Work Pages Custon//////////////////
 
-#projects {
+#content {
     .whitetitle {
         color: #e0e2e0;
         text-shadow: 2px 2px 8px transparentize($grey, 0.5);
@@ -1008,7 +961,7 @@ a.project-sample:hover {
         }
     }
 
-    #projects {
+    #content {
         .whitetitle {
             color: $grey;
             text-shadow: 0 0 0;
@@ -1144,10 +1097,16 @@ a.project-sample:hover {
     font-size:20px;
 }
 
+.vcenter {
+    .halfcolumn, .onecolumn, .threecoulmn, .twocolumn {
+        margin-top: 0;
+    }
+}
+
 
 //////////////404////////////////
 
-#projects {
+#content {
     
     .error {
 
@@ -1177,20 +1136,13 @@ a.project-sample:hover {
             padding-bottom: 60px;
         }
     }
-
-    .error.outerpadding {
-        margin-top:2%;
-    }
 }
 
 
 @media screen and (max-width: 959px) {
 
-    .error-content {
-        top: 0 !important; 
-    }
 
-    #projects{
+    #content{
 
         .error {
             img {
@@ -1210,7 +1162,7 @@ a.project-sample:hover {
 }
 
 @media screen and (max-width: 550px) {
-    #projects{
+    #content{
         .error {
             img {
                 width:100%;

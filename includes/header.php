@@ -44,11 +44,11 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
     </head>
 
     <?php 
-    $body_class = $title !== 'Lisa Otto' ? 'teasers-open' : 'home'; 
+    $body_class = $title !== 'Lisa Otto' ? '' : 'home'; 
     $body_class = isset($slug) ? $body_class . ' ' . str_replace('project/', '', $slug) : $body_class;
     ?>
 
-    <body class="<?= $body_class; ?>">
+    <body class="<?= $body_class; ?>" data-scroll="<?= isset($scroll) ? $scroll : ''; ?>">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -63,18 +63,27 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
 
             <nav>
                 <ul class="clearfix">
-                    <li><a href="<?php echo $url; ?>/about"><p>about</p></a></li>
-                    <li><a href="<?php echo $url; ?>/"><p class="blue">work</p><span  class="icon-arrow blue"></span></a></li>
+                    <li>
+                        <a href="<?php echo $url; ?>/about">
+                            <p class="<?= $title === 'About' ? 'blue' : ''; ?>">about</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $url; ?>/">
+                            <p class="<?= $title !== 'About' ? 'blue' : ''; ?>">work</p>
+                            <?php if ($title !== 'About') { ?><span class="icon-arrow blue"></span><?php } ?>
+                        </a>
+                    </li>
                 </ul>
 
             </nav>
 
             <h1>
-                <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.jpg" alt="Lisa Otto in the Flesh and Pixels"><div class="arrow-portrait"></div></div></a>
+               Lisa Otto
             </h1>
             </div>
         </div>
 
         </header>
 
-        <main id="projects">
+        <main id="content">

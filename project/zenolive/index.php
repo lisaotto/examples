@@ -12,7 +12,7 @@ include('../../includes/header.php'); ?>
         <div class="bar"></div>
     </div>
     <div class="intro clearfix outerpadding">
-        <p class="description">Underdog is a startup that works to connect job seekers with NYC tech start-ups. Their mission is to keep the process simple for job applicants who often spend hours setting up profiles accross different sites while looking for jobs. In onboarding job applicants the goal was to keep the sign up process as as easy as and painless as possible while getting companies the information they didn't to to reach out to candidates. </p>
+        <p class="description">ZenoRadio's broadcaster dashboard provides tools for individual broadcasters to host talk programs with callers from a variety of mediums (online widgets and telephone calling). I spent time sitting down with broadcasters to see how they manage their programs using the tools available in the market today. Without a unified platform to manage callers and their stream, hosts end up having to juggle many program windows, dashboards microphones, and speakers. Zeno's platform aims to streamline the process allowing hosts to manage their callers, share media files and regulate their regular stream through one interface.  </p>
         <div class="role">
         <h4>My Role</h4>
         <ul>
@@ -31,18 +31,21 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
             <h5>The Process</h5>
-            <p class="threecolumn">After intial conversations flesh out user motivation (for both the canidates and companies who would be receiving the input information), I brainstormed and sketched proposed flows for entering into the app.</p>
+            <p class="threecolumn">Particular attention was paid to how callers were managed as this is a major challenge for broadcasters ( who often find creative uses of conference calling software in tandem with streaming software). Originally, each caller was paired with a robust set of tools for the broadcaster to manage. Given how little attention the host can give to controlling the callers while also talking on air and managing media files, the callers controls were eventaully parred down or hidden for the more advanced user. </p>
         </div>
         <div class="clearfix">
             <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-iterations.png">
         </div>
         <div class="clearfix">
-            <h5>UI Patterns</h5>
-            <p class="threecolumn">Part of the onboarding development process that carried into other elements of the site was the creation of resuable UI patterns. Elements like forms specifications were developed which could be used throughout the site unify the product visually and keep the coding manageable.</p>
+            <h5>Specs For Development</h5>
+            <p class="threecolumn">As interaction as iterated on, I developed set of UI patterns for developers to use as they coded the site in order to maintain consistency even as we revised features. </p>
         </div>
         <div class="clearfix">
-            <p class="onecolumn">Hello</p>
-            <img class="twocolumn last finalblock" src="<?php echo $url; ?>/img/zeno-live/zenolive-textinputs.jpg">
+            <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-specs.png">
+        </div>
+        <div class="clearfix">
+            <h5>Ongoing Testing</h5>
+            <p class="threecolumn finalblock">Live.Zeno is still being beta tested and undergoing user testing to determine which features are most desirable to the the small talk show broadcasters. More to come as the platform develops.</p>
         </div>
     </div>
 
