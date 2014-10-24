@@ -28,10 +28,10 @@ include('../../includes/header.php'); ?>
         <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-responsive.png">
         <p class="onecolumn alignright">Since the navigation's design and structure was a major part of the site, we did not want to drop or overly simplify it for mobile. The ultimate solution we found was to develop a responsive-adaptive blended site. The site is responsive up to a certain point where it has a minimum width. However, on narrow touch screens, it reconfigures to display the navigation in an alternate formation.</p>
         <img class="onecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile.jpg">
-        <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
+        <img class="onecolumn last" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
         <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
         <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
-        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
+        <img class="threecolumn finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
 
         <a class="visitsite" href="http://www.davidlefkowitz.net/" target="_blank" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>
     </div>

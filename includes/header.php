@@ -37,7 +37,7 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-9215814-15', 'lisa.codes');
+          ga('create', 'UA-9215814-16', 'auto');
           ga('send', 'pageview');
 
         </script>
