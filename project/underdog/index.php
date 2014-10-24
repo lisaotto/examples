@@ -12,7 +12,7 @@ include('../../includes/header.php'); ?>
         <div class="bar"></div>
     </div>
     <div class="intro clearfix outerpadding">
-        <p class="description">Underdog is a startup that works to connect job seekers with NYC tech start-ups. Their mission is to keep the process simple for job applicants who often spend hours setting up profiles accross different sites while looking for jobs. In onboarding job applicants the goal was to keep the sign up process as as easy as and painless as possible while getting companies the information they didn't to to reach out to candidates. </p>
+        <p class="description">Underdog is a start-up that works to connect job seekers with NYC tech start-ups. Their mission is to keep the process simple for job applicants who often spend hours setting up profiles accross different sites while looking for jobs. In onboarding job applicants the goal was to keep the sign up process as easy and painless as possible while getting companies the information they need to reach out to candidates.</p>
         <div class="role">
         <h4>My Role</h4>
         <ul>
@@ -28,22 +28,22 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
             <h5>The Process</h5>
-            <p class="threecolumn">After intial conversations flesh out user motivation (for both the canidates and companies who would be receiving the input information), I brainstormed and sketched proposed flows for entering into the app.</p>
+            <p class="threecolumn">After initial conversations to flesh out user motivation (for both the candidates and companies who would be receiving the input information), I brainstormed and sketched proposed flows for entering into the app.</p>
         </div>
         <div class="clearfix">
             <img class="halfcolumn" src="<?php echo $url; ?>/img/underdog/sketch-1.jpg">
             <img class="halfcolumn last" src="<?php echo $url; ?>/img/underdog/sketch-2.jpg">
         </div>
         <div class="clearfix">
-            <p class="onecolumn loweredblurb">I created higher fidelity wireframes in Illustrator to map out and test the elements of the interface. For example, in early wireframes, when users completed the initial form, they were only given a gimpse of their profile through a transparent background until they created account information. After considering the what users saw as a key benefit of Underdog &#8212; it's ease of entry &#8212; we wanted to give users a better sense of accomplishment after filling out the intial form.  </p>
+            <p class="onecolumn loweredblurb">I created higher fidelity wireframes in Illustrator to map out and test the elements of the interface. For example, in early wireframes, when users completed the initial form, they were only given a glimpse of their profile through a transparent background until they created account information. After considering what users saw as a key benefit of Underdog &#8212; its ease of entry &#8212; we wanted to give users a better sense of accomplishment after filling out the initial form.</p>
             <img class="twocolumn last" src="<?php echo $url; ?>/img/underdog/underdog-wireframe.png">
         </div>
         <div class="clearfix">
-            <p class="threecolumn"> I also created a simple working prototype using Invision to demonstrate and test interactions during the sign up process.</p>
+            <p class="threecolumn">I also created a simple working prototype using Invision to demonstrate and test interactions during the sign up process.</p>
         </div>
         <div class="clearfix">
             <h5>UI Patterns</h5>
-            <p class="threecolumn">Part of the onboarding development process that carried into other elements of the site was the creation of resuable UI patterns. Elements like forms specifications were developed which could be used throughout the site unify the product visually and keep the coding manageable.</p>
+            <p class="threecolumn">Part of the onboarding development process that carried into other elements of the site was the creation of resuable UI patterns. Elements like form specifications were developed which could be used throughout the site to unify the product visually and keep the coding manageable.</p>
         </div>
         <div class="clearfix">
             <img class="halfcolumn" src="<?php echo $url; ?>/img/underdog/underdog-styleelements.jpg">

@@ -1,7 +1,7 @@
 <?php 
 
 $dev = isset($_GET['deploy']) && $_GET['deploy'] === 'true' ? false : true;
-$url = $dev ? 'http://localhost/portfolio' : 'http://lisa.codes';
+$url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
 
 ?>
 <!DOCTYPE html>
