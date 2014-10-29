@@ -1,8 +1,10 @@
 @import "normalize";
 @import "main";
+@import url("//hello.myfonts.net/count/2c6f59");
 
 $grey: #3f4144;
 $lightgrey: #585b5e;
+$lightestgrey: #E0E2E0;
 $yellow: #dfc48c;
 $blue: #03adb0;
 $dblue: #009999;
@@ -48,6 +50,9 @@ $paddingmobile: 12%;
  *
  */
 
+  
+@font-face {font-family: 'Brandon-bold';src: url('../fonts/2C6F59_0_0.eot');src: url('../fonts/2C6F59_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2C6F59_0_0.woff2') format('woff2'),url('../fonts/2C6F59_0_0.woff') format('woff'),url('../fonts/2C6F59_0_0.ttf') format('truetype');}
+
 @font-face {
     font-family: 'brandon';
     src: url('../fonts/Brandon_reg-webfont.eot');
@@ -56,6 +61,32 @@ $paddingmobile: 12%;
          url('../fonts/Brandon_reg-webfont.woff') format('woff'),
          url('../fonts/Brandon_reg-webfont.ttf') format('truetype'),
          url('../fonts/Brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archivo';
+    src: url('../fonts/archivoblack-regular-webfont.eot');
+    src: url('../fonts/archivoblack-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/archivoblack-regular-webfont.woff2') format('woff2'),
+         url('../fonts/archivoblack-regular-webfont.woff') format('woff'),
+         url('../fonts/archivoblack-regular-webfont.ttf') format('truetype'),
+         url('../fonts/archivoblack-regular-webfont.svg#archivo_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'antonio';
+    src: url('../fonts/antonio-bold-webfont.eot');
+    src: url('../fonts/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/antonio-bold-webfont.woff2') format('woff2'),
+         url('../fonts/antonio-bold-webfont.woff') format('woff'),
+         url('../fonts/antonio-bold-webfont.ttf') format('truetype'),
+         url('../fonts/antonio-bold-webfont.svg#antoniobold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -143,8 +174,13 @@ a{
     text-decoration:none;
 }
 
-h1, h2, h3, h4, h5, p, a, li, button {
+h2, h3, h4, h5, p, a, li, button {
     font-family: 'brandon', Arial, sans-serif;
+    font-weight:normal;
+}
+
+h1 {
+    font-family: 'brandon-bold', Arial, sans-serif;
     font-weight:normal;
 }
 
@@ -198,7 +234,7 @@ nav {
     a {
         height:50px;
         display:block;
-        color: $yellow;
+        color: $lightestgrey;
 
         p, .icon-arrow {
             top: 9px;
@@ -223,22 +259,30 @@ nav {
     }
 }
 
-
-
-h1, h1 a { 
-    //transform: translateY(-50%);
-	width: 60%;
-    text-align: center;
-    color:$yellow;
-    font-size:40px;
-    max-width: 600px;
-    margin: 0 auto;
-    top: 30%;
-    transform: translateY(-50%);
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
 }
 
+h1 {
+    max-width: 600px;
+    font-size: 80px;
+    text-align: center;
+    margin: 0 auto;
+    top: 30%;
+    line-height:100%;
+    color:$lightestgrey;
+    text-transform: Uppercase;
+    background: url(../img/background.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-position: 0px 0px;
+    animation: animatedBackground 40s linear infinite;
+}
+
+
 .name {
-    border-bottom: 3px solid $yellow; 
+    border-bottom: 3px solid $lightestgrey; 
     cursor:pointer; 
     .home & {
         cursor: default;
@@ -603,7 +647,7 @@ a.project-sample:hover {
 //////////////////Work Pages //////////////////
 
 #content{
-    background-color:#E0E2E0;
+    background-color:$lightestgrey;
 
     h2, h3, h4, p {
         color: $grey;

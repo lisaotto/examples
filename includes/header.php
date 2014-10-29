@@ -79,7 +79,7 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://grad.lisaot.to';
             </nav>
 
             <h1>
-               Lisa Otto
+               Lisa<br/> Otto
             </h1>
             </div>
         </div>
