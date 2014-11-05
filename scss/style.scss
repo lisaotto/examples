@@ -118,11 +118,11 @@ $paddingmobile: 12%;
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?ym45yj');
-    src:url('../fonts/icomoon.eot?#iefixym45yj') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?ym45yj') format('woff'),
-        url('../fonts/icomoon.ttf?ym45yj') format('truetype'),
-        url('../fonts/icomoon.svg?ym45yj#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?-j5okik');
+    src:url('../fonts/icomoon.eot?#iefix-j5okik') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-j5okik') format('woff'),
+        url('../fonts/icomoon.ttf?-j5okik') format('truetype'),
+        url('../fonts/icomoon.svg?-j5okik#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -141,25 +141,21 @@ $paddingmobile: 12%;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow:before {
-    content: "\e603";
-}
-.icon-arrow-box:before {
-    content: "\e604";
-}
 .icon-envelope:before {
     content: "\e600";
 }
-.icon-twitter:before {
+.icon-arrow:before {
     content: "\e601";
 }
-.icon-dribbble:before {
+.icon-arrow-box:before {
     content: "\e602";
 }
-
-
-////resuable////
-
+.icon-twitter:before {
+    content: "\e603";
+}
+.icon-dribbble:before {
+    content: "\e604";
+}
 
 ///end icomoon///
 
@@ -321,23 +317,26 @@ h1 a:hover > .portrait{
     margin-top:-178px;
 }
 
-#content {
-    .iconz {
-        text-align: center;
-        margin-top: 60px;
 
-        a {
-            margin: 0 40px 0 40px;
-            padding: 10px;
-            font-size: 20px;
-            display:inline-block;
-        }
+.social {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+    position: absolute;
 
-        a:hover {
-            color:$lightgrey;
-        }
+    a {
+        margin: 0 40px 0 40px;
+        padding: 10px;
+        font-size: 18px;
+        display:inline-block;
+        color: $blue;
+    }
+
+    a:hover {
+        color:$dblue;
     }
 }
+
 
 
 
@@ -425,7 +424,7 @@ main {
     display:block;
 }  
 
-a.project-sample:hover {
+a.project-sample:hover, .touch a.project-sample {
 
 	
 	background: $dblue;
@@ -450,39 +449,7 @@ a.project-sample:hover {
 
 //////////////////Portfolio Touch//////////////
 
-.touch {
-    .hgroup{
-        display:none;
-    }
 
-    .overlay {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        margin: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 1;
-
-
-        > div {
-            display:inline-block;
-            height: 100%;
-            vertical-align:top;
-        }
-
-        p.icon-arrow-box {
-            font-size: 30px;
-            top: 50%;
-            margin: 0 auto;
-            transform: translateY(-50%);
-        }
-    }
-
-    a.project-sample:hover img {
-        opacity:1;
-    }
-}
 
 //////////////////Media Query > 1450 //////////////////
 
@@ -508,7 +475,7 @@ a.project-sample:hover {
         }
 
         p{
-            font-size: 40px;
+            font-size: 26px;
         }
     }
 }
@@ -533,16 +500,21 @@ a.project-sample:hover {
     }
 
     .overlay {
-        h3 {
-            display:none;
-        }
 
         h2, p {
             font-size: 25px;
         }
-        
-        .hgroup {
-            padding-right:12px;
+
+        h3{ 
+            font-size: 18px;
+        }
+    }
+
+    nav {
+        a {
+            .icon-arrow {
+                display:none;
+            }
         }
     }
 }
@@ -550,11 +522,6 @@ a.project-sample:hover {
 //////////////////Media Query < 700 //////////////////
 
 @media screen and (max-width: 700px) {
-
-    h1, h1 a { 
-        font-size:32px;
-        max-width: 500px;
-    }
 
     .portrait {
         margin-top: -225px;
@@ -564,27 +531,13 @@ a.project-sample:hover {
 
 
     .overlay {
-        h3 {
-            display:none;
-        }
 
         h2, p {
             font-size: 20px;
         }
-        
-        .hgroup {
-            padding-right:12px;
-        }
-    }
 
-    .touch {
-        .overlay {
-            width: 50px;
-            height: 50px; 
-
-            p {
-                font-size: 26px;
-            }
+        h3 {
+            font-size: 16px;
         }
     }
 
@@ -593,11 +546,6 @@ a.project-sample:hover {
 //////////////////Media Query < 550 //////////////////
 
 @media screen and (max-width: 550px) {
-
-    h1, h1 a { 
-        font-size:24px;
-        max-width: 340px;
-    }
 
     .name {
         border-bottom: 2px solid $yellow;
@@ -610,27 +558,9 @@ a.project-sample:hover {
 
 
     .overlay {
-        h3 {
-            display:none;
-        }
-
-        h2, p {
-            font-size: 16px;
-        }
         
         .hgroup {
             padding-right:8px;
-        }
-    }
-
-    .touch {
-        .overlay {
-            width: 40px;
-            height: 40px; 
-
-            p {
-                font-size: 20px;
-            }
         }
     }
 }
@@ -641,7 +571,7 @@ a.project-sample:hover {
 @media screen and (max-width: 360px) {
 
     h1, h1 a {
-        font-size:20px;
+        font-size:60px;
 
     }
 }

@@ -8,6 +8,7 @@ include('../../includes/header.php'); ?>
         <div class="hgroup"><h3>Website Redesign</h3><h2>BOOKS@WORK</h2></div>
     </div>
     <div class="navigation">
+        <a class="back" href="<?php echo $url; ?>/project/platform"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
         <a class="next" href="<?php echo $url; ?>/project/lefkowitz"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
