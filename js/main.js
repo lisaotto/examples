@@ -94,7 +94,7 @@ $('#work-link').click(scrollToWork);
 
 // On small screens, for various conditions, should scroll to where content starts
 function scrollDown() {
-	console.log(document.referrer);
+
 	if ( win.width() < 960 ) {
 
 		if ( isAbout() || ( isHome() && comingFromProject() ) ) {
@@ -106,10 +106,10 @@ function scrollDown() {
 }
 scrollDown();
 
-// Internal AJAX loading
+// Smooth AJAX loading!
 function loadElements(data) {
 
-	if (loadedFromElement.closest('#content').length > 0) {
+	if ( loadedFromElement.closest('#content').length > 0 ) {
 		loadedFromElement.fadeOut();
 	}
 
@@ -118,35 +118,45 @@ function loadElements(data) {
 	var delay = 500;
 
 	// Fade out and remove current project elements
-	var curProjects = $('#content'),
-		curElements = curProjects.children();
-	curProjects.height(curProjects.height());
-	if (curProjects.find('.fader').length > 0) {
-		curProjects.find('.fader').addClass('faded');
-	} else {
-		curElements.fadeOut(delay);
-	}
+	var curContent = $('#content')
+	curContent.height( curContent.height() );
+	curContent.find('*').fadeOut(delay);
+
+	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
 		$('html, body').animate({
-			scrollTop: curProjects.offset().top
+			scrollTop: curContent.offset().top
 		}, 1);
-		curElements.remove();
+		curContent.find('*').remove();
 	}, delay + 1);
 
 	var $data = $(data),
 		url,
 		title,
-		newProjects;
+		newContent;
+
+	var newBody = data.slice(data.indexOf('<body'));
+	newBody = newBody.slice(0, newBody.indexOf('>') + 1);
+	var newBodyClass = newBody.slice(newBody.indexOf('class="') + 7);
+	newBodyClass = newBodyClass.slice(0, newBodyClass.indexOf('"'));
+	var newBodyScroll = newBody.slice(newBody.indexOf('data-scroll="') + 13);
+	newBodyScroll = newBodyScroll.slice(0, newBodyScroll.indexOf('"'));
+
+	body.attr('class', newBodyClass);
+	body.attr('data-scroll', newBodyScroll);
 
 	for ( var i = 0; i < $data.length; i++ ) {
-		if ($data[i].tagName === 'HEADER') {
-			url = $($data[i]).find('#page-url').html();
+		var el = $data[i];
+		// console.log(el);
+		if (el.tagName === 'HEADER') {
+			url = $(el).find('#page-url').html();
 		}
-		if ($data[i].tagName === 'TITLE') {
-			title = $data[i].innerHTML;
+		if (el.tagName === 'TITLE') {
+
+			title = el.innerHTML;
 		}
-		if ($data[i].id === 'content') {
-			newProjects = $($data[i]);
+		if (el.id === 'content') {
+			newContent = $(el);
 		}
 	}
 
@@ -157,18 +167,20 @@ function loadElements(data) {
 
 	decideWhenToPrompt();
 
-	var newElements = newProjects.children(),
-		newReadyElements = newProjects.find('.navigation, .intro'),
-		banner = newProjects.find('.banner'),
+	var newElements = newContent.children(),
+		projectSamples = newContent.find('.project-sample'),
+		newReadyElements = newContent.find('.navigation, .intro'),
+		banner = newContent.find('.banner'),
 		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
 
 	banner.children().addClass('fader faded');
+	projectSamples.addClass('fader faded');
 	newReadyElements.addClass('fader faded');
 	newScrollingElements.addClass('fader faded');
 
 	setTimeout(function(){
 
-		newElements.appendTo(curProjects);
+		newElements.appendTo(curContent);
 
 		setTimeout(function(){
 			banner.find('.hgroup').removeClass('faded');
@@ -180,15 +192,20 @@ function loadElements(data) {
 				banner.children().removeClass('faded');
 			});
 
-		$('.project-sample').each(function(){
+		projectSamples.each(function(){
 			var $this = $(this);
 			setTimeout(function(){
-				$this.find('img').removeClass('faded');
+				$this.removeClass('faded');
 			}, $this.index() * delay / 2);
 		});
 
-		curProjects.height('auto');
+		centerPageContent();
+		newElements.find('.faded').removeClass('faded');
+		curContent.height('auto');
+
 	}, delay + 2);
+
+	setTimeout(scrollDown, delay + 100);
 
 	win.scroll(function() {
 		newScrollingElements.each(function(){
@@ -234,7 +251,7 @@ function loadPage(e) {
 	});
 }
 if ( !$('html').hasClass('oldie')) {
-	body.on('click', '.navigation .next, .project-sample, .back, h1 a', loadPage);
+	body.on('click', '.navigation .next, .project-sample, .back, nav a', loadPage);
 }
 
 function shouldWeCenter() {
@@ -246,8 +263,11 @@ function centerPageContent() {
 		var content = $('#content'),
 			vcenter = $('.vcenter');
         content.height('auto');
-        if (win.height() > content.height()) {
+        if ( win.height() > content.height() ) {
             content.height(win.height());
+			setTimeout(function(){
+				content.height(win.height());
+			}, 1);
         }
         if (content.height() > vcenter.height() + 2 * Math.round(parseInt( vcenter.parent().css('margin-top'), 10))) {
             vcenter.css({
