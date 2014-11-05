@@ -69,7 +69,7 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://grad.lisaot.to';
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo $url; ?>/">
+                        <a href="<?php echo $url; ?>/" id="work-link">
                             <p class="<?= $title !== 'About' ? 'blue' : ''; ?>">work</p>
                             <?php if ($title !== 'About') { ?><span class="icon-arrow blue"></span><?php } ?>
                         </a>

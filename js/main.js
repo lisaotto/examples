@@ -7,9 +7,7 @@ var win = $(window),
 	tab = $('.tab');
 
 function headerThings() {
-
 	headerContainer.height( win.height() );
-
 }
 headerThings();
 win.resize( headerThings );
@@ -32,7 +30,6 @@ function toggleGridOverlay() {
 body.on('click', '.gridbutton', toggleGridOverlay);
 
 // Scroll back up to the top
-
 function scrollUp() {
 	$('html, body').animate({
 		scrollTop: $('#content').offset().top
@@ -70,6 +67,45 @@ body.on('click', '.scroll', function() {
 decideWhenToPrompt();
 win.scroll(promptScrollOff);
 
+// Return booleans for home page, about page, and just having been on a project page
+function isHome() {
+	return location.href === 'http://localhost/portfolio/' || location.pathname === '/';
+}
+function isAbout() {
+	return location.href === 'http://localhost/portfolio/about/' || location.pathname === '/about/';
+}
+function comingFromProject() {
+	return document.referrer && document.referrer.indexOf('/project/') >= 0;
+}
+
+// click on the work link: if on the work page, should scroll to where the content starts
+function scrollToWork(e) {
+	e.preventDefault();
+	if ( isHome() ) {
+		$('html, body').animate({
+			scrollTop: $('#content').offset().top
+		}, 500);
+	} else {
+		location.href = this.href;
+	}
+}
+
+$('#work-link').click(scrollToWork);
+
+// On small screens, for various conditions, should scroll to where content starts
+function scrollDown() {
+	console.log(document.referrer);
+	if ( win.width() < 960 ) {
+
+		if ( isAbout() || ( isHome() && comingFromProject() ) ) {
+			$('html, body').animate({
+				scrollTop: $('#content').offset().top
+			}, 500);
+		}
+	}
+}
+scrollDown();
+
 // Internal AJAX loading
 function loadElements(data) {
 
@@ -101,7 +137,7 @@ function loadElements(data) {
 		url,
 		title,
 		newProjects;
-	
+
 	for ( var i = 0; i < $data.length; i++ ) {
 		if ($data[i].tagName === 'HEADER') {
 			url = $($data[i]).find('#page-url').html();
@@ -125,7 +161,7 @@ function loadElements(data) {
 		newReadyElements = newProjects.find('.navigation, .intro'),
 		banner = newProjects.find('.banner'),
 		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
-	
+
 	banner.children().addClass('fader faded');
 	newReadyElements.addClass('fader faded');
 	newScrollingElements.addClass('fader faded');
