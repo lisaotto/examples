@@ -558,10 +558,12 @@ a.project-sample:hover, .touch a.project-sample {
 
 
     .overlay {
-        
+
         .hgroup {
             padding-right:8px;
         }
+
+        
     }
 }
 
@@ -572,8 +574,23 @@ a.project-sample:hover, .touch a.project-sample {
 
     h1, h1 a {
         font-size:60px;
-
     }
+
+    .social {
+
+        a {
+            margin: 0 20px 0 20px;
+        }
+    }
+
+    .overlay {
+
+        h2 {
+            display:none;
+        }
+    }
+           
+
 }
 
 
