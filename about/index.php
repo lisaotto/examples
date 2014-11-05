@@ -10,7 +10,8 @@ include('../includes/header.php'); ?>
             <img class="halfcolumn" src="<?php echo $url; ?>/img/about/lisa.jpg">
             <div class="halfcolumn last">
             	<p class="bio">Lisa is currently a UI/UX designer living in New York City. She is interested in designing experiences that balance between functional usability and aesthetic playfulness.</p>
-                <p>This site was built by hand by Lisa with JavaScript (and moral) support from <a href="http://scottdonaldson.net" target="_blank">Scott Donaldson</a>.</p>
+            	<p class="bio">Get in touch at <a href="mailto:otto.elizabeth@gmail.com">otto.elizabeth@gmail.com</a>.</p>
+               
             </div>
 
         </div>

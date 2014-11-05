@@ -118,11 +118,11 @@ $paddingmobile: 12%;
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?-j5okik');
-    src:url('../fonts/icomoon.eot?#iefix-j5okik') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?-j5okik') format('woff'),
-        url('../fonts/icomoon.ttf?-j5okik') format('truetype'),
-        url('../fonts/icomoon.svg?-j5okik#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?-eukg1h');
+    src:url('../fonts/icomoon.eot?#iefix-eukg1h') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-eukg1h') format('woff'),
+        url('../fonts/icomoon.ttf?-eukg1h') format('truetype'),
+        url('../fonts/icomoon.svg?-eukg1h#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -142,20 +142,24 @@ $paddingmobile: 12%;
 }
 
 .icon-envelope:before {
-    content: "\e600";
-}
-.icon-arrow:before {
     content: "\e601";
 }
 .icon-arrow-box:before {
+    content: "\e600";
+}
+.icon-arrow:before {
     content: "\e602";
 }
-.icon-twitter:before {
+.icon-instagram:before {
     content: "\e603";
 }
-.icon-dribbble:before {
+.icon-twitter:before {
     content: "\e604";
 }
+.icon-dribbble:before {
+    content: "\e605";
+}
+
 
 ///end icomoon///
 
@@ -165,8 +169,7 @@ html {
     position: relative;
 }
 
-
-a{
+a {
     text-decoration:none;
 }
 
@@ -178,11 +181,6 @@ h2, h3, h4, h5, p, a, li, button {
 h1 {
     font-family: 'brandon-bold', Arial, sans-serif;
     font-weight:normal;
-}
-
-img {
-
-    //background-color: $blue;
 }
 
 .blue {
@@ -197,17 +195,14 @@ header {
     width: 30%;
     float: left;
     position:fixed;
-    // transition: width 0.25s;   
 
     > div {
         height:100%;
         top: auto;
-        transform: translateY(0%);
     }
 }
 
 nav {
-
     border-bottom: 2px solid $lightgrey;
     height: 50px;
 
@@ -223,9 +218,9 @@ nav {
         float:left;
     }
 
-        li:last-child{
-            border-right: 0;
-        }
+    li:last-child{
+        border-right: 0;
+    }
 
     a {
         height:50px;
@@ -237,7 +232,6 @@ nav {
             font-size: 20px;
             margin:0;
             display: inline-block;
-
         }
 
         .icon-arrow{
@@ -247,20 +241,17 @@ nav {
 
     }
 
-
     a:hover, a:active, a:focus{
         background-color: $lightgrey;
-
-
     }
 }
+
+   //// ANIMATED NAME //////
 
 @keyframes animatedBackground {
     from { background-position: 500px 0, 0 -500px, 0 0;}
     to { background-position: 0 -500px, 500px 0, 0 0;}
 }
-
-
 
 h1 {
     max-width: 600px;
@@ -273,50 +264,10 @@ h1 {
     color:$lightestgrey;
     text-transform: Uppercase;
     background: url(../img/background.png), url(../img/background1.png), url(../img/background.jpg), no-repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-     background-position: 0px 0px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     animation: animatedBackground 25s linear infinite;
 }
-
-
-.name {
-    border-bottom: 3px solid $lightestgrey; 
-    cursor:pointer; 
-    .home & {
-        cursor: default;
-    }
-}
-
-.portrait {
-    position: absolute;
-    margin-top:28px;
-    margin-left:20px;
-    opacity:0;
-    transition: opacity .5s ease;
-    z-index:1;
-
-    img {
-        width:110px;
-        height:164px;
-    }
-}
-
-
-h1 a:hover > .portrait{
-    opacity:1;
-}
-
-.arrow-portrait {
-    width: 0; 
-    height: 0; 
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-    border-bottom: 14px solid $lightgrey;
-    left:41px;
-    margin-top:-178px;
-}
-
 
 .social {
     width: 100%;
@@ -325,46 +276,37 @@ h1 a:hover > .portrait{
     position: absolute;
 
     a {
-        margin: 0 40px 0 40px;
+        margin: 0 20px 0 20px;
         padding: 10px;
         font-size: 18px;
         display:inline-block;
         color: $blue;
+        transition: opacity .2s ease;
     }
 
     a:hover {
-        color:$dblue;
+        opacity: .5;
     }
 }
-
-
-
-
-
-.bio-title {
-    display:inline; 
-}
-
 
 
 //////////////////Work//////////////////
 
 
 main {
-    width:70%;
-    float:right;
-    margin-right:0;
+    width: 70%;
+    float: right;
+    margin-right: 0;
 }
 
 
 .project-sample {
 	background: $blue;
-    padding-bottom:22.73%;
-    display:block;
+    padding-bottom: 22.73%;
+    display: block;
     width: 100%;
-    clear:both;
+    clear: both;
     border-bottom: 2px solid $dblue;
-
 
     img{
         position:absolute;
@@ -375,9 +317,9 @@ main {
 .overlay {
     width: 70%;
     height: 60%;
-    position:absolute;
+    position: absolute;
     margin: 4.5% 20%;
-    text-align:left;
+    text-align: left;
     transition: opacity .5s ease;
     transition-delay: .1s;
     overflow:hidden;
@@ -385,20 +327,20 @@ main {
         > div {
             display:inline-block;
             height: 100%;
-            vertical-align:top;
+            vertical-align: top;
         }
 
         h2 {
             font-size: 36px;
             color: $grey;
-            text-align:left;
+            text-align: left;
             margin: 0;
         }
 
         h3 {
             font-size: 18px;
             color: $grey;
-            text-align:left;
+            text-align :left;
             margin: 0;
         }
 
@@ -415,7 +357,7 @@ main {
             margin: 0;
             top: 80%;
             opacity:0;
-            transition: .4s ease;
+            transition: .2s ease;
             transition-delay: .1s;
         }
  }
@@ -425,13 +367,11 @@ main {
 }  
 
 a.project-sample:hover, .touch a.project-sample {
-
 	
 	background: $dblue;
- 
 
     img {
-        opacity:.8;
+        opacity: .8;
     }
 
     .overlay p{
@@ -443,13 +383,6 @@ a.project-sample:hover, .touch a.project-sample {
         transform: translateY(-50%);
     }   
 }
-
-
-
-
-//////////////////Portfolio Touch//////////////
-
-
 
 //////////////////Media Query > 1450 //////////////////
 
@@ -526,7 +459,6 @@ a.project-sample:hover, .touch a.project-sample {
     .portrait {
         margin-top: -225px;
         margin-left: 0px;
-
     }
 
 
@@ -540,7 +472,6 @@ a.project-sample:hover, .touch a.project-sample {
             font-size: 16px;
         }
     }
-
 }
 
 //////////////////Media Query < 550 //////////////////
@@ -556,14 +487,11 @@ a.project-sample:hover, .touch a.project-sample {
         margin-left: -15px;
     }
 
-
     .overlay {
 
         .hgroup {
             padding-right:8px;
-        }
-
-        
+        } 
     }
 }
 
@@ -577,20 +505,16 @@ a.project-sample:hover, .touch a.project-sample {
     }
 
     .social {
-
         a {
-            margin: 0 20px 0 20px;
+            margin: 0 10px 0 10px;
         }
     }
 
     .overlay {
-
         h2 {
             display:none;
         }
     }
-           
-
 }
 
 
@@ -614,40 +538,40 @@ a.project-sample:hover, .touch a.project-sample {
     p{
         a{ 
             color:$blue; 
+            transition: opacity .2s ease;
         }
 
         a:hover{
-            opacity:.8;
+            opacity:.5;
         }
     }
 
 }
 
 .navigation{
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
     width: 70%;
-    height:50px;
-    z-index:1000;
+    height: 50px;
+    z-index: 1000;
     left: 30%;
     transition: left 0.25s;
-    //border-bottom: 2px solid rgba(63, 65, 68, 0.4);
 
     span {
-        display:inline-block;
+        display: inline-block;
         padding: 10px;
     }
 
     .icon-arrow-box {
-        top:2px;
+        top: 2px;
     }
 }
 
 .bottom-navigation{
-    position:relative;
-    bottom:0;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    height:50px;
+    height: 50px;
 
     span {
         display:inline-block;
@@ -657,7 +581,6 @@ a.project-sample:hover, .touch a.project-sample {
     .icon-arrow-box {
         top:2px;
     }
-
 }
 
 .bar{
@@ -790,10 +713,14 @@ a.project-sample:hover, .touch a.project-sample {
     color:$blue;
     text-decoration:none;
     font-size: 30px;
-    transition: opacity .4s ease;
+    transition: opacity .2s ease;
     margin-bottom:10%;
     }
    
+}
+
+a.visitsite:hover {
+    opacity:.5
 }
 
 .visitsite {
@@ -803,9 +730,7 @@ a.project-sample:hover, .touch a.project-sample {
         display:inline-block;
         transform: rotate(-90deg);
     }
-
 }
-
 
 
 
@@ -902,7 +827,7 @@ a.project-sample:hover, .touch a.project-sample {
     margin: 0;
     padding-top: 14px;
     font-size: 18px;
-    transition: opacity .4s ease;
+    transition: opacity .2s ease;
 }
 
 .gridbutton:hover {
