@@ -249,8 +249,8 @@ nav {
    //// ANIMATED NAME //////
 
 @keyframes animatedBackground {
-    from { background-position: 500px 0, 0 -500px, 0 0;}
-    to { background-position: 0 -500px, 500px 0, 0 0;}
+    from { background-position: 0 0,500px 0, 0 -500px, 0 0;}
+    to { background-position: 0 0, 0 -500px, 500px 0, 0 0;}
 }
 
 h1 {
@@ -261,12 +261,11 @@ h1 {
     padding: 10px 0;
     top: 30%;
     line-height:100%;
-    color: $lightestgrey;
     text-transform: uppercase;
-    background: no-repeat;
-    background-clip: text;
+    color: $lightestgrey;
+    background: -webkit-linear-gradient(transparent, transparent), url(../img/background.png), url(../img/background1.png), url(../img/background.jpg), no-repeat;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(transparent, transparent), url(../img/background.png), url(../img/background1.png), url(../img/background.jpg), no-repeat;
     animation: animatedBackground 25s linear infinite;
 }
  
