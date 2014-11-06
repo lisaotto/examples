@@ -30,6 +30,20 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://grad.lisaot.to';
         <link rel="stylesheet" href="<?= $url; ?>/css/style.css">
         
         <script src="<?= $url; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script>
+              Modernizr.addTest('backgroundclip',function() {
+
+                var div = document.createElement('div');
+
+                if ('backgroundClip' in div.style)
+                  return true;
+
+                'Webkit Moz O ms Khtml'.replace(/([A-Za-z]*)/g,function(val) { 
+                  if (val+'BackgroundClip' in div.style) return true;
+                });
+
+              });
+        </script>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
