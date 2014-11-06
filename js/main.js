@@ -12,6 +12,16 @@ var siteURLs = [
 	'grad.lisaot.to'
 ];
 
+// scroll to the content...
+// different for mobile
+function scrollToContent(amount, time) {
+	var top = amount || $('#content').offset().top,
+		el = navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/) ? body : $('html, body');
+	el.animate({
+		scrollTop: top
+	}, time || 500);
+}
+
 function headerThings() {
 	headerContainer.height( win.height() );
 }
@@ -35,13 +45,8 @@ function toggleGridOverlay() {
 }
 body.on('click', '.gridbutton', toggleGridOverlay);
 
-// Scroll back up to the top
-function scrollUp() {
-	$('html, body').animate({
-		scrollTop: $('#content').offset().top
-	}, 500);
-}
-body.on('click', '.backup .title', scrollUp);
+// scroll "back up"
+body.on('click', '.backup .title', scrollToContent);
 
 // Scroll down for more button
 function promptScrollOn() {
@@ -65,9 +70,7 @@ function decideWhenToPrompt() {
 
 body.on('click', '.scroll', function() {
 	promptScrollOff();
-	$('html, body').animate({
-		scrollTop: '+=' + (win.height() * 0.75)
-	}, 500);
+	scrollToContent( win.height() * 0.75 );
 });
 
 decideWhenToPrompt();
@@ -91,9 +94,7 @@ function comingFromInternal() {
 function scrollToWork(e) {
 	e.preventDefault();
 	if ( isHome() ) {
-		$('html, body').animate({
-			scrollTop: $('#content').offset().top
-		}, 500);
+		scrollToContent();
 	} else {
 		location.href = this.href;
 	}
@@ -108,9 +109,7 @@ function scrollDown() {
 	if ( win.width() < 960 ) {
 
 		if ( isAbout() || is404() || ( isHome() && comingFromInternal() ) ) {
-			$('html, body').animate({
-				scrollTop: $('#content').offset().top
-			}, 500);
+			scrollToContent();
 		}
 	}
 }
@@ -134,9 +133,7 @@ function loadElements(data) {
 
 	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
-		$('html, body').animate({
-			scrollTop: curContent.offset().top
-		}, 1);
+		scrollToContent(null, 1);
 		curContent.find('*').remove();
 	}, delay + 1);
 
@@ -249,9 +246,7 @@ function loadPage(e) {
 	loadedFromElement = $(this);
 
 	if (loadedFromElement.hasClass('next') && win.width() < 960) {
-		$('html, body').animate({
-			scrollTop: $('#content').offset().top
-		}, 500);
+		scrollToContent();
 	}
 
 	var url = this.href;
