@@ -8,8 +8,8 @@ include('../../includes/header.php'); ?>
         <div class="hgroup"><h3>Website Redesign</h3><h2 class="shrink">DAVID LEFKOWITZ</h2></div>
     </div>
     <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">ALL</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/infographics/"><span class="title">NEXT</span><span class="icon-arrow-box"></span></a>
+        <a class="back" href="<?php echo $url; ?>/project/booksatwork"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
+        <a class="next" href="<?php echo $url; ?>/project/infographics/"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
     <div class="intro clearfix outerpadding">
@@ -26,19 +26,19 @@ include('../../includes/header.php'); ?>
     <div class="content outerpadding clearfix">
         <img class="threecolumn first" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-home.jpg">
         <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-menu.jpg">
-        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
-        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
-        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
         <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-responsive.png">
         <p class="onecolumn alignright">Since the navigation's design and structure was a major part of the site, we did not want to drop or overly simplify it for mobile. The ultimate solution we found was to develop a responsive-adaptive blended site. The site is responsive up to a certain point where it has a minimum width. However, on narrow touch screens, it reconfigures to display the navigation in an alternate formation.</p>
         <img class="onecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile.jpg">
-        <img class="onecolumn last finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
+        <img class="onecolumn last" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
+        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
+        <img class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
+        <img class="threecolumn finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
+
         <a class="visitsite" href="http://www.davidlefkowitz.net/" target="_blank" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>
     </div>
 
     <div class="bottom-navigation">
-        <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
-        <a class="backup" href="#projects"><span class="title">BACK UP</span><span class="icon-arrow-box"></span></a>
+        <a class="backup" href="#projects"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
 

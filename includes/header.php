@@ -30,6 +30,20 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
         <link rel="stylesheet" href="<?= $url; ?>/css/style.css">
         
         <script src="<?= $url; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script>
+              Modernizr.addTest('backgroundclip',function() {
+
+                var div = document.createElement('div');
+
+                if ('backgroundClip' in div.style)
+                  return true;
+
+                'Webkit Moz O ms Khtml'.replace(/([A-Za-z]*)/g,function(val) { 
+                  if (val+'BackgroundClip' in div.style) return true;
+                });
+
+              });
+        </script>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -37,18 +51,18 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-9215814-15', 'lisa.codes');
+          ga('create', 'UA-9215814-16', 'auto');
           ga('send', 'pageview');
 
         </script>
     </head>
 
     <?php 
-    $body_class = $title !== 'Lisa Otto' ? 'teasers-open' : 'home'; 
+    $body_class = $title !== 'Lisa Otto' ? '' : 'home'; 
     $body_class = isset($slug) ? $body_class . ' ' . str_replace('project/', '', $slug) : $body_class;
     ?>
 
-    <body class="<?= $body_class; ?>">
+    <body class="<?= $body_class; ?>" data-scroll="<?= isset($scroll) ? $scroll : ''; ?>">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -61,25 +75,30 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
     
         <div>
 
-            <h1>
-                <a href="<?php echo $url; ?>" class="name">Lisa Otto<div class="portrait"><img src="<?php echo $url; ?>/img/portrait.jpg" alt="Lisa Otto in the Flesh and Pixels"><div class="arrow-portrait"></div></div></a><span class="bio"> is a UI/UX designer who, sometimes, dabbles in illustration.</span>
-            </h1>
+            <nav>
+                <ul class="clearfix">
+                    <li>
+                        <a href="<?php echo $url; ?>/about">
+                            <p class="<?= $title === 'About' ? 'blue' : ''; ?>">about</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $url; ?>/" id="work-link">
+                            <p class="<?= $title !== 'About' ? 'blue' : ''; ?>">work</p>
+                            <?php if ($title !== 'About') { ?><span class="icon-arrow blue"></span><?php } ?>
+                        </a>
+                    </li>
+                </ul>
 
-            <div class="icons">
-                <div>
-                    <a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"><p>otto.elizabeth@gmail.com</p></a>
-                </div>
-                <div>
-                    <a href="http://dribbble.com/Lisaotto" class="icon-dribbble" target="_blank"><p>@lisaotto</p></a>
-                </div>
-                <div>
-                    <a href="https://www.google.com/maps/place/New+York,+NY/@40.7056308,-73.9780035,10z/data=!3m1!4b1!4m2!3m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62" class="icon-pin" alt="New York City" target="_blank"><p>New&nbsp;York&nbsp;City</p></a>
-                </div>
+            </nav>
+
+            <h1>
+               Lisa<br/>otto
+            </h1>
+            <p class="social"><a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"></a><a href="http://dribbble.com/lisaotto" target="_blank" class="icon-dribbble"></a><a href="http://www.twitter.com/lisa_otto" target"_blank" class="icon-twitter"></a><a href="http://instagram.com/lisa_otto" target="_blank" class="icon-instagram"></a></p>
             </div>
         </div>
 
-        <p class="tab" data-toggle="body" data-toggle-class="teasers-open"><span class="work-title">WORK</span><span class="bio-title">BIO</span><span class="icon-arrow"></span></p>
-
         </header>
 
-        <main id="projects">
+        <main id="content">

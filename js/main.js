@@ -6,10 +6,24 @@ var win = $(window),
 	header = $('#header'),
 	tab = $('.tab');
 
+var siteURLs = [
+	'lisaot.to',
+	'localhost',
+	'grad.lisaot.to'
+];
+
+// scroll to the content...
+// different for mobile
+function scrollToContent(amount, time) {
+	var top = amount || $('#content').offset().top,
+		el = navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/) ? body : $('html, body');
+	el.animate({
+		scrollTop: top
+	}, time || 500);
+}
+
 function headerThings() {
-
 	headerContainer.height( win.height() );
-
 }
 headerThings();
 win.resize( headerThings );
@@ -31,18 +45,11 @@ function toggleGridOverlay() {
 }
 body.on('click', '.gridbutton', toggleGridOverlay);
 
-// Scroll back up to the top
-
-function scrollUp() {
-	$('html, body').animate({
-		scrollTop: $('#projects').offset().top
-	}, 500);
-}
-body.on('click', '.backup .title', scrollUp);
+// scroll "back up"
+body.on('click', '.backup .title', scrollToContent);
 
 // Scroll down for more button
 function promptScrollOn() {
-	console.log('prompting the user to scroll');
 	$('.scroll').addClass('prompting');
 }
 
@@ -51,25 +58,70 @@ function promptScrollOff() {
 }
 
 function decideWhenToPrompt() {
-	if (document.title !== 'Lisa Otto' && document.title !== 'Lisa Otto - Page Not Found') {
-		setTimeout(promptScrollOn, 2500);	
+	var url = location.href;
+	url = url.split('/');
+	for ( var i = 0; i < url.length; i++ ) {
+		if ( url[i] === 'project' ) {
+			setTimeout(promptScrollOn, 2500);
+			return;
+		}
 	}
 }
 
 body.on('click', '.scroll', function() {
 	promptScrollOff();
-	$('html, body').animate({
-		scrollTop: '+=' + (win.height() * 0.75)
-	}, 500);
+	scrollToContent( win.height() * 0.75 );
 });
 
 decideWhenToPrompt();
 win.scroll(promptScrollOff);
 
-// Internal AJAX loading
+// Return booleans for home page, about page, and just having been on a project page
+function isHome() {
+	return location.href === 'localhost/portfolio/' || location.pathname === '/';
+}
+function isAbout() {
+	return location.href === 'http://localhost/portfolio/about/' || location.pathname === '/about/';
+}
+function is404() {
+	return $('.error').length > 0;
+}
+function comingFromInternal() {
+	siteURLs.forEach(function(url) {
+		if ( document.referrer.indexOf(url) >= 0 ) return true;
+	});
+	return false;
+}
+
+// click on the work link: if on the work page, should scroll to where the content starts
+function scrollToWork(e) {
+	e.preventDefault();
+	if ( isHome() ) {
+		scrollToContent();
+	} else {
+		location.href = this.href;
+	}
+}
+
+$('#work-link').click(scrollToWork);
+
+// On small screens, for various conditions, should scroll to where content starts
+function scrollDown() {
+	console.log(is404());
+
+	if ( win.width() < 960 ) {
+
+		if ( isAbout() || is404() || ( isHome() && comingFromInternal() ) ) {
+			scrollToContent();
+		}
+	}
+}
+scrollDown();
+
+// Smooth AJAX loading!
 function loadElements(data) {
 
-	if (loadedFromElement.closest('#projects').length > 0) {
+	if ( loadedFromElement.closest('#content').length > 0 ) {
 		loadedFromElement.fadeOut();
 	}
 
@@ -78,35 +130,43 @@ function loadElements(data) {
 	var delay = 500;
 
 	// Fade out and remove current project elements
-	var curProjects = $('#projects'),
-		curElements = curProjects.children();
-	curProjects.height(curProjects.height());
-	if (curProjects.find('.fader').length > 0) {
-		curProjects.find('.fader').addClass('faded');
-	} else {
-		curElements.fadeOut(delay);
-	}
+	var curContent = $('#content')
+	curContent.height( curContent.height() );
+	curContent.find('*').fadeOut(delay);
+
+	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
-		$('html, body').animate({
-			scrollTop: curProjects.offset().top
-		}, 1);
-		curElements.remove();
+		scrollToContent(null, 1);
+		curContent.find('*').remove();
 	}, delay + 1);
 
 	var $data = $(data),
 		url,
 		title,
-		newProjects;
-	
+		newContent;
+
+	var newBody = data.slice(data.indexOf('<body'));
+	newBody = newBody.slice(0, newBody.indexOf('>') + 1);
+	var newBodyClass = newBody.slice(newBody.indexOf('class="') + 7);
+	newBodyClass = newBodyClass.slice(0, newBodyClass.indexOf('"'));
+	var newBodyScroll = newBody.slice(newBody.indexOf('data-scroll="') + 13);
+	newBodyScroll = newBodyScroll.slice(0, newBodyScroll.indexOf('"'));
+
+	body.attr('class', newBodyClass);
+	body.attr('data-scroll', newBodyScroll);
+
 	for ( var i = 0; i < $data.length; i++ ) {
-		if ($data[i].tagName === 'HEADER') {
-			url = $($data[i]).find('#page-url').html();
+		var el = $data[i];
+		// console.log(el);
+		if (el.tagName === 'HEADER') {
+			url = $(el).find('#page-url').html();
 		}
-		if ($data[i].tagName === 'TITLE') {
-			title = $data[i].innerHTML;
+		if (el.tagName === 'TITLE') {
+
+			title = el.innerHTML;
 		}
-		if ($data[i].id === 'projects') {
-			newProjects = $($data[i]);
+		if (el.id === 'content') {
+			newContent = $(el);
 		}
 	}
 
@@ -117,18 +177,20 @@ function loadElements(data) {
 
 	decideWhenToPrompt();
 
-	var newElements = newProjects.children(),
-		newReadyElements = newProjects.find('.navigation, .intro'),
-		banner = newProjects.find('.banner'),
+	var newElements = newContent.children(),
+		projectSamples = newContent.find('.project-sample'),
+		newReadyElements = newContent.find('.navigation, .intro'),
+		banner = newContent.find('.banner'),
 		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
-	
+
 	banner.children().addClass('fader faded');
+	projectSamples.addClass('fader faded');
 	newReadyElements.addClass('fader faded');
 	newScrollingElements.addClass('fader faded');
 
 	setTimeout(function(){
 
-		newElements.appendTo(curProjects);
+		newElements.appendTo(curContent);
 
 		setTimeout(function(){
 			banner.find('.hgroup').removeClass('faded');
@@ -140,15 +202,20 @@ function loadElements(data) {
 				banner.children().removeClass('faded');
 			});
 
-		$('.project-sample').each(function(){
+		projectSamples.each(function(){
 			var $this = $(this);
 			setTimeout(function(){
-				$this.find('img').removeClass('faded');
+				$this.removeClass('faded');
 			}, $this.index() * delay / 2);
 		});
 
-		curProjects.height('auto');
+		centerPageContent();
+		newElements.find('.faded').removeClass('faded');
+		curContent.height('auto');
+
 	}, delay + 2);
+
+	setTimeout(scrollDown, delay + 100);
 
 	win.scroll(function() {
 		newScrollingElements.each(function(){
@@ -182,18 +249,47 @@ function loadPage(e) {
 	loadedFromElement = $(this);
 
 	if (loadedFromElement.hasClass('next') && win.width() < 960) {
-		$('html, body').animate({
-			scrollTop: $('#projects').offset().top
-		}, 500);
+		scrollToContent();
 	}
 
 	var url = this.href;
-	$.ajax({
-		url: url,
-		success: loadElements
-	});
+
+	if ( url !== location.href && url + '/' !== location.href) {
+		$.ajax({
+			url: url,
+			success: loadElements
+		});
+	}
 }
 if ( !$('html').hasClass('oldie')) {
-	body.on('click', '.navigation .next, .project-sample, .back, h1 a', loadPage);
+	body.on('click', '.navigation .next, .project-sample, .back, nav a', loadPage);
 }
+
+function shouldWeCenter() {
+	return body.attr('data-scroll') === 'false';
+}
+
+function centerPageContent() {
+	if ( shouldWeCenter() ) {
+		var content = $('#content'),
+			vcenter = $('.vcenter');
+        content.height('auto');
+        if ( win.height() > content.height() ) {
+            content.height(win.height());
+			setTimeout(function(){
+				content.height(win.height());
+			}, 1);
+        }
+        if (content.height() > vcenter.height() + 2 * Math.round(parseInt( vcenter.parent().css('margin-top'), 10))) {
+            vcenter.css({
+                top: (content.height() - vcenter.height() - 2 * parseInt( vcenter.parent().css('margin-top'), 10)) / 2
+            });
+        } else {
+            vcenter.css({ top: 0 });
+        }
+    }
+}
+centerPageContent();
+win.on('load resize', centerPageContent);
+
 }(jQuery));

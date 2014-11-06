@@ -1,12 +1,15 @@
 @import "normalize";
 @import "main";
+@import url("//hello.myfonts.net/count/2c6f59");
 
 $grey: #3f4144;
 $lightgrey: #585b5e;
+$lightestgrey: #E0E2E0;
 $yellow: #dfc48c;
 $blue: #03adb0;
+$dblue: #009999;
 //Content Grid
-$paddingscreen: 8%; 
+$paddingscreen: 8%;
 $innerpaddingscreen: 5%;
 $columnscreen: 30%;
 $twocolumnscreen: 63%;
@@ -22,27 +25,68 @@ $paddingmobile: 12%;
 	position: relative;
 
 }
- 
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      HVD Fonts
+ * License URL: http://www.fontspring.com/licenses/hvd-fonts/webfont
+ *
+ *
+ */
+
+
+@font-face {font-family: 'Brandon-bold';src: url('../fonts/2C6F59_0_0.eot');src: url('../fonts/2C6F59_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2C6F59_0_0.woff2') format('woff2'),url('../fonts/2C6F59_0_0.woff') format('woff'),url('../fonts/2C6F59_0_0.ttf') format('truetype');}
+
 @font-face {
-    font-family: 'andes';
-    src: url('../fonts/Andes-Condensed-Regular-webfont.eot');
-    src: url('../fonts/Andes-Condensed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Andes-Condensed-Regular-webfont.woff') format('woff'),
-         url('../fonts/Andes-Condensed-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Andes-Condensed-Regular-webfont.svg#andes_condensedregular') format('svg');
+    font-family: 'brandon';
+    src: url('../fonts/Brandon_reg-webfont.eot');
+    src: url('../fonts/Brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Brandon_reg-webfont.woff2') format('woff2'),
+         url('../fonts/Brandon_reg-webfont.woff') format('woff'),
+         url('../fonts/Brandon_reg-webfont.ttf') format('truetype'),
+         url('../fonts/Brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+@font-face {
+    font-family: 'archivo';
+    src: url('../fonts/archivoblack-regular-webfont.eot');
+    src: url('../fonts/archivoblack-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/archivoblack-regular-webfont.woff2') format('woff2'),
+         url('../fonts/archivoblack-regular-webfont.woff') format('woff'),
+         url('../fonts/archivoblack-regular-webfont.ttf') format('truetype'),
+         url('../fonts/archivoblack-regular-webfont.svg#archivo_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
-    font-family: 'desyrel';
-    src: url('../desyrel-webfont.eot');
-    src: url('../desyrel-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../desyrel-webfont.woff') format('woff'),
-         url('../desyrel-webfont.ttf') format('truetype'),
-         url('../desyrel-webfont.svg#desyrelregular') format('svg');
+    font-family: 'antonio';
+    src: url('../fonts/antonio-bold-webfont.eot');
+    src: url('../fonts/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/antonio-bold-webfont.woff2') format('woff2'),
+         url('../fonts/antonio-bold-webfont.woff') format('woff'),
+         url('../fonts/antonio-bold-webfont.ttf') format('truetype'),
+         url('../fonts/antonio-bold-webfont.svg#antoniobold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -51,7 +95,7 @@ $paddingmobile: 12%;
 .fader {
     opacity: 1;
     transition: opacity 0.5s;
-    
+
     &.faded {
         opacity: 0 !important;
     }
@@ -74,11 +118,11 @@ $paddingmobile: 12%;
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?-v24xao');
-    src:url('../fonts/icomoon.eot?#iefix-v24xao') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?-v24xao') format('woff'),
-        url('../fonts/icomoon.ttf?-v24xao') format('truetype'),
-        url('../fonts/icomoon.svg?-v24xao#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?-eukg1h');
+    src:url('../fonts/icomoon.eot?#iefix-eukg1h') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-eukg1h') format('woff'),
+        url('../fonts/icomoon.ttf?-eukg1h') format('truetype'),
+        url('../fonts/icomoon.svg?-eukg1h#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -97,499 +141,253 @@ $paddingmobile: 12%;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-dribbble:before {
+.icon-envelope:before {
     content: "\e601";
-}
-.icon-pin:before {
-    content: "\e602";
-}
-.icon-arrow:before {
-    content: "\e603";
 }
 .icon-arrow-box:before {
     content: "\e600";
 }
-.icon-envelope:before {
+.icon-arrow:before {
+    content: "\e602";
+}
+.icon-instagram:before {
+    content: "\e603";
+}
+.icon-twitter:before {
     content: "\e604";
 }
-
-////resuable////
+.icon-dribbble:before {
+    content: "\e605";
+}
 
 
 ///end icomoon///
 
 
 html {
-    background-color: $grey; 
+    background-color: $grey;
     position: relative;
 }
 
-body{
-    overflow:hidden;
-}
-
-a{
+a {
     text-decoration:none;
 }
 
-h1, h2, h3, h4, p, a, li, button {
-    font-family: 'andes', Arial, sans-serif;
+h2, h3, h4, h5, p, a, li, button {
+    font-family: 'brandon', Arial, sans-serif;
     font-weight:normal;
 }
 
-img {
+h1 {
+    font-family: 'brandon-bold', Arial, sans-serif;
+    font-weight:normal;
+}
 
-    //background-color: $blue;
+.blue {
+    color: $blue;
+
 }
 
 
 //////////////////header//////////////////
 
 header {
-    width: 75%;
+    width: 30%;
     float: left;
     position:fixed;
-    // transition: width 0.25s;   
 
     > div {
-        top: 50%;
-        transform: translateY(-50%);
+        height:100%;
+        top: auto;
     }
 }
 
+nav {
+    border-bottom: 2px solid $lightgrey;
+    height: 50px;
 
-h1, h1 a { 
-    text-align:center;
-    color:$yellow;
-    font-size:40px;
+    ul{
+        padding:0;
+        margin: 0;
+    }
+
+    li{
+        width:50%;
+        text-align: center;
+        border-right: 1px solid $lightgrey;
+        float:left;
+    }
+
+    li:last-child{
+        border-right: 0;
+    }
+
+    a {
+        height:50px;
+        display:block;
+        color: $lightestgrey;
+
+        p, .icon-arrow {
+            top: 9px;
+            font-size: 20px;
+            margin:0;
+            display: inline-block;
+        }
+
+        .icon-arrow{
+            transform:rotate(-90deg);
+            padding-right:10px;
+        }
+
+    }
+
+    a:hover, a:active, a:focus{
+        background-color: $lightgrey;
+    }
+}
+
+   //// ANIMATED NAME //////
+
+@keyframes animatedBackground {
+    from { background-position: 0 0,500px 0, 0 -500px, 0 0;}
+    to { background-position: 0 0, 0 -500px, 500px 0, 0 0;}
+}
+
+h1 {
     max-width: 600px;
-    margin:0 auto;
+    font-size: 80px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    top: 30%;
+    line-height:100%;
+    text-transform: uppercase;
+    color: $lightestgrey;
+    background: -webkit-linear-gradient(transparent, transparent), url(../img/background.png), url(../img/background1.png), url(../img/background.jpg), no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    animation: animatedBackground 25s linear infinite;
 }
-
-.name {
-    border-bottom: 3px solid $yellow; 
-    cursor:pointer; 
-    .home & {
-        cursor: default;
-    }
-}
-
-.portrait {
+ 
+.social {
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
     position: absolute;
-    margin-top:-235px;
-    margin-left:20px;
-    opacity:0;
-    transition: opacity .5s ease;
 
-    img {
-        width:110px;
-        height:164px;
-    }
-}
-
-
-h1 a:hover > .portrait{
-    opacity:1;
-}
-
-.arrow-portrait {
-    width: 0; 
-    height: 0; 
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-    border-top: 14px solid $lightgrey;
-    left:41px;
-}
-
-.icons {
-    text-align:center;
-
-    p {
-        position:absolute;
-        font-size:18px;
-        color:$blue;
-    }
-
-    div {
+    a {
+        margin: 0 20px 0 20px;
+        padding: 10px;
+        font-size: 18px;
         display:inline-block;
-        padding-top:50px
-    }
-}
-
-.icon-dribbble, .icon-envelope, .icon-pin {
-    font-size:30px;
-    margin:60px;
-}
-
-a.icon-dribbble, a.icon-envelope, a.icon-pin {
-    color:$blue;
-}
-
-.icons p {
-    opacity:0;
-}
-
-a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
-    opacity:1;
-    transition: all .5s ease;
-}
-
-
-.icon-envelope p {
-    margin-left: -72px;
-    padding:4px;
-}
-
-.icon-dribbble p {
-    margin-left: -22px;
-    padding:4px;
-}
-
-.icon-pin p {
-    margin-left: -42px;
-    padding:4px;
-}
-
-.tab {
-    position: fixed;
-    top: 50%;
-    margin-top: -100px;
-    margin-right: 30px;
-    right: 25%;
-    font-size:30px;
-    color:$grey;
-    width:200px;
-    text-align:center;
-    padding-top:10px;
-    height:60px;
-    background-color:$blue;
-    cursor:pointer;
-    transform-origin: 100% 50%;
-    transform: translateY(-50%) rotate(-90deg);
-
-    transition: opacity 0.2s, right 0.25s;
-
-        span {
-            top: 4px;
-            padding-left: 6px;
-        }
-}
-
-.bio-title {
-   display:none; 
-}
-
-.work-title {
-   display:inline; 
-}
-
-.tab:hover {
-
-  /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=8)";
-
-  /* Netscape */
-  -moz-opacity: 0.8;
-
-  /* Safari 1.x */
-  -khtml-opacity: 0.8;
-
-  /* Good browsers */
-  opacity: 0.8;
-
-}
-
-//////////////////header hover//////////////////
-
-@media screen and (min-width: 960px) {
-
-    .teasers-open{
-
-        header{
-            width:25%;
-              
-             > div {
-                height:100%;
-                top: auto;
-                transform: translateY(0%);
-            }
-        }
-
-        h1{
-            text-align: left;
-            padding-left: 35px;
-            margin-top:60px;
-        }
-
-        .bio{
-            display:none;
-        }
-
-        .tab{
-            transform: rotate(90deg); 
-            margin-top:70px;
-            right: 75%;
-        }
-
-        .work-title {
-           display:none ; 
-        }
-
-        .bio-title {
-           display:inline; 
-        }
-
-        .portrait {
-            position: absolute;
-            margin-top:28px;
-            margin-left:20px;
-        }
-
-        .arrow-portrait {
-            border-top:none;
-            border-bottom: 14px solid $lightgrey;
-            margin-top:-178px;
-        }
-
-        .icons {
-            position: fixed;
-            float: left ;
-            bottom: 120px;
-            text-align:left;
-
-            div {
-                display:block;
-            }
-
-            p {
-                text-align: left;
-            }
-        }
-
-        .icon-dribbble, .icon-envelope, .icon-pin{
-            margin: 35px;
-        }
-
+        color: $blue;
+        transition: opacity .2s ease;
     }
 
-}
-
-
-@media screen and (min-width: 1350px) {
-
-    .teasers-open {
-        .icon-envelope p, .icon-dribbble p, .icon-pin p {
-            margin-left: 50px;
-            top: -16px;
-        }
+    a:hover {
+        opacity: .5;
     }
 }
 
 
+//////////////////Work//////////////////
 
-//////////////////Portolio Teaser//////////////////
 
 main {
-    width:75%;
-    float:right;
-    margin-right:-50%;
-    transition: margin 0.25s;
+    width: 70%;
+    float: right;
+    margin-right: 0;
 }
 
-.nolink-box {
-    cursor: pointer;
-    position: fixed;
-    width:25%;
-    top:0;
-    right:0;
-    height: 100%;
-    z-index: 9999;
-}
-
-
-.full {
-    width: 100%;
-    clear:both;
-}
-
-.half {
-    width: 50%;
-    float: left;
-}
 
 .project-sample {
-    padding-bottom:22.73%;
-    display:block;
+	background: $blue;
+    padding-bottom: 22.73%;
+    display: block;
+    width: 100%;
+    clear: both;
+    border-bottom: 2px solid $dblue;
 
     img{
         position:absolute;
         width:100%;
-        transition: opacity .5s ease;
     }
 }
 
 .overlay {
     width: 70%;
     height: 60%;
-    background-color: $blue;
-    position:absolute;
-    margin: 4.5% 15%;
-    text-align:center;
-    opacity: 0;
+    position: absolute;
+    margin: 4.5% 20%;
+    text-align: left;
     transition: opacity .5s ease;
     transition-delay: .1s;
     overflow:hidden;
 
-
         > div {
             display:inline-block;
             height: 100%;
-            vertical-align:top;
+            vertical-align: top;
         }
 
         h2 {
-            font-size: 30px;
+            font-size: 36px;
             color: $grey;
-            text-align:center;
+            text-align: left;
             margin: 0;
         }
 
         h3 {
             font-size: 18px;
             color: $grey;
-            text-align:center;
+            text-align :left;
             margin: 0;
         }
 
         .hgroup {
-            top: 40%;
+            top: 50%;
+            transform: translateY(-50%);
             padding-right: 30px;
-            transition: .4s ease;
-            transition-delay: .1s;
         }
 
         p {
             color: $grey;
             text-align:center;
-            font-size: 30px;
+            font-size: 20px;
             margin: 0;
-            top: 60%;
-            transition: .4s ease;
+            top: 80%;
+            opacity:0;
+            transition: .2s ease;
             transition-delay: .1s;
         }
  }
 
- .half .overlay {
-    margin: 9.5% 15%;
- }
-
 .icon-arrow-box {
     display:block;
-}  
-
-
-
-
-//////////////////Portolio Teaser Hover//////////////////
-@media screen and (min-width: 960px) {
-
-    .teasers-open{
-        main {
-            width:75%;
-            margin-right:0;
-        }
-    }
-
 }
 
-@mixin overlay {
+a.project-sample:hover, .touch a.project-sample {
 
-    a.project-sample:hover {
+	background: $dblue;
 
-        img {
-            opacity:.8;
-        }
-
-        .overlay {
-            opacity:.95;
-        }
-
-        .hgroup {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        p { 
-            top: 50%;
-            transform: translateY(-50%);
-        }   
+    img {
+        opacity: .8;
     }
 
-}
-
-
-@media screen and (max-width: 959px){
-    @include overlay;
-
-    .nolink-box {
-        display:none;
-    }
-}
-
-
-.teasers-open {
-    @include overlay;
-    
-    .nolink-box {
-        display:none;
-    }
-}
-
-body.teasers-open {
-    overflow: visible !important;
-}
-
-
-//////////////////Portfolio Teaser Touch//////////////
-
-.touch {
-    .hgroup{
-        display:none;
+    .overlay p{
+        opacity:.95;
     }
 
-    .overlay {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        margin: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 1;
-
-
-        > div {
-            display:inline-block;
-            height: 100%;
-            vertical-align:top;
-        }
-
-        p.icon-arrow-box {
-            font-size: 30px;
-            top: 50%;
-            margin: 0 auto;
-            transform: translateY(-50%);
-        }
-    }
-
-    a.project-sample:hover img {
-        opacity:1;
+    p {
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
 //////////////////Media Query > 1450 //////////////////
 
 @media screen and (min-width: 1450px){
-    
+
     .intro > p {
         font-size: 22px !important;
         line-height:150%;
@@ -610,34 +408,16 @@ body.teasers-open {
         }
 
         p{
-            font-size: 40px;
+            font-size: 26px;
         }
     }
 }
 
 
-//////////////////Media Query < 1350 //////////////////
-
-@media screen and (min-width: 960px) and (max-width: 1350px) {
-
-    .teasers-open{
-
-        .icon-envelope p, .icon-dribbble p, .icon-pin p {
-            margin-left: -5px;
-            top: 22px;
-            font-size: 15px;
-        }
-    }
-
-}
 
 //////////////////Media Query < 960 //////////////////
 
 @media screen and (max-width: 959px) {
-
-    body{
-        overflow: visible;
-    }
 
     header {
         width:100%;
@@ -645,93 +425,58 @@ body.teasers-open {
         position:relative;
     }
 
-    .tab {
-        position: absolute;
-        top:auto;
-        bottom: 0px;
-        right: 50%;
-        transform-origin:0;
-        transform: translateY(0%) rotate(0deg) translateX(50%) ;
-        margin:0;
-    }
 
     main {
-        width:100%; 
-        float:none; 
-        position:relative;   
+        width:100%;
+        float:none;
+        position:relative;
     }
 
     .overlay {
-        h3 {
-            display:none;
-        }
 
         h2, p {
             font-size: 25px;
         }
-        
-        .hgroup {
-            padding-right:12px;
+
+        h3{
+            font-size: 18px;
+        }
+    }
+
+    nav {
+        a {
+            .icon-arrow {
+                display:none;
+            }
         }
     }
 }
- 
+
 //////////////////Media Query < 700 //////////////////
 
 @media screen and (max-width: 700px) {
-
-    h1, h1 a { 
-        font-size:32px;
-        max-width: 500px;
-    }
 
     .portrait {
         margin-top: -225px;
         margin-left: 0px;
     }
 
-    .tab {
-        font-size:26px;
-        width: 180px;
-        height: 50px;
-        padding-top:6px;
-    }
 
     .overlay {
-        h3 {
-            display:none;
-        }
 
         h2, p {
             font-size: 20px;
         }
-        
-        .hgroup {
-            padding-right:12px;
+
+        h3 {
+            font-size: 16px;
         }
     }
-
-    .touch {
-        .overlay {
-            width: 50px;
-            height: 50px; 
-
-            p {
-                font-size: 26px;
-            }
-        }
-    }
-
 }
 
 //////////////////Media Query < 550 //////////////////
 
 @media screen and (max-width: 550px) {
-
-    h1, h1 a { 
-        font-size:24px;
-        max-width: 340px;
-    }
 
     .name {
         border-bottom: 2px solid $yellow;
@@ -742,48 +487,10 @@ body.teasers-open {
         margin-left: -15px;
     }
 
-    .tab {
-        font-size:20px;
-        width: 160px;
-        height: 50px;
-        padding-top:9px;
-    }
-
-    .icon-dribbble, .icon-envelope, .icon-pin {
-        margin:30px;
-    }
-
-    a.icon-dribbble:hover p, a.icon-envelope:hover p, a.icon-pin:hover p {
-        opacity:0;
-
-    }
-
-    div.icons {
-        padding-top: 10px;
-    }
-
     .overlay {
-        h3 {
-            display:none;
-        }
 
-        h2, p {
-            font-size: 16px;
-        }
-        
         .hgroup {
             padding-right:8px;
-        }
-    }
-
-    .touch {
-        .overlay {
-            width: 40px;
-            height: 40px; 
-
-            p {
-                font-size: 20px;
-            }
         }
     }
 }
@@ -794,61 +501,86 @@ body.teasers-open {
 @media screen and (max-width: 360px) {
 
     h1, h1 a {
-        font-size:20px;
+        font-size:60px;
+    }
 
+    .social {
+        a {
+            margin: 0 10px 0 10px;
+        }
+    }
+
+    .overlay {
+        h2 {
+            display:none;
+        }
     }
 }
 
 
 //////////////////Work Pages //////////////////
 
-#projects{
-    background-color:#E0E2E0;
+#content{
+    background-color:$lightestgrey;
 
     h2, h3, h4, p {
         color: $grey;
     }
 
+    h5{
+        color: $blue;
+        text-align:center;
+        font-size: 34px;
+        margin-top: 8%;
+        margin-bottom: -4%;
+    }
+
     p{
-        a{ 
-            color:$blue; 
+        a{
+            color:$blue;
+            transition: opacity .2s ease;
         }
 
         a:hover{
-            opacity:.8;
+            opacity:.5;
         }
     }
 
 }
 
 .navigation{
-    position:fixed;
-    top:0;
-    width: 75%;
-    height:50px;
-    z-index:1000;
-    left: 75%;
+    position: fixed;
+    top: 0;
+    width: 70%;
+    height: 50px;
+    z-index: 1000;
+    left: 30%;
     transition: left 0.25s;
 
     span {
-        top:2px;
-        display:inline-block;
+        display: inline-block;
         padding: 10px;
+    }
+
+    .icon-arrow-box {
+        top: 2px;
     }
 }
 
 .bottom-navigation{
-    position:relative;
-    bottom:0;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    height:50px;
+    height: 50px;
 
     span {
-        top:2px;
         display:inline-block;
         padding: 10px;
     }
 
+    .icon-arrow-box {
+        top:2px;
+    }
 }
 
 .bar{
@@ -861,14 +593,15 @@ body.teasers-open {
 }
 
 .back, .next, .backup {
-    width:160px;
+    width:180px;
     position:absolute;
-    font-size:22px;
+    font-size:20px;
     color:$blue;
     text-align:center;
     background-color:$grey;
     opacity:.4;
     transition: opacity .3s ease;
+    height: 50px;
 }
 
 .back:hover, .next:hover, .backup:hover {
@@ -879,13 +612,14 @@ body.teasers-open {
     left:0;
     top:0;
     z-index:10002;
+
 }
 
 .next{
     right:0;
     top:0;
     z-index:10001;
-} 
+}
 
 .backup{
     right:0;
@@ -900,12 +634,11 @@ body.teasers-open {
 }
 
 
-
 .banner{
     background-color: $blue;
     img{
         width:100%
-    }  
+    }
 
     .hgroup{
         position: absolute;
@@ -970,7 +703,7 @@ body.teasers-open {
     }
 }
 
-#projects {
+#content {
 
  a.visitsite , a.visitsite:visited, p.visitsite{
     text-align:center;
@@ -980,10 +713,14 @@ body.teasers-open {
     color:$blue;
     text-decoration:none;
     font-size: 30px;
-    transition: opacity .4s ease;
+    transition: opacity .2s ease;
     margin-bottom:10%;
     }
-   
+
+}
+
+a.visitsite:hover {
+    opacity:.5
 }
 
 .visitsite {
@@ -993,9 +730,8 @@ body.teasers-open {
         display:inline-block;
         transform: rotate(-90deg);
     }
-
-
 }
+
 
 
 //setting up grid//
@@ -1067,11 +803,11 @@ body.teasers-open {
 
 //////////////////Work Pages Custon//////////////////
 
-#projects {
+#content {
     .whitetitle {
         color: #e0e2e0;
         text-shadow: 2px 2px 8px transparentize($grey, 0.5);
-    }   
+    }
 
 }
 
@@ -1091,7 +827,7 @@ body.teasers-open {
     margin: 0;
     padding-top: 14px;
     font-size: 18px;
-    transition: opacity .4s ease;
+    transition: opacity .2s ease;
 }
 
 .gridbutton:hover {
@@ -1126,25 +862,9 @@ body.teasers-open {
     }
 }
 //////////////////Work Pages Responsive//////////////////
-@media screen and (min-width: 960px) {
-    .teasers-open {
-        .navigation {
-            position: fixed;
-            width: 75%;
-            left:25%;
-           
-        }  
-    }
-}
+
 
 @media screen and (max-width: 959px) {
-    .tab {
-        cursor:default;
-    }
-
-    .tab:hover {
-        opacity:1;
-    }
 
     .navigation{
         position:relative;
@@ -1160,12 +880,20 @@ body.teasers-open {
         }
     }
 
-    #projects {
+    #content {
+		// override some JS that makes it height of window
+		// on larger screens
+		height: auto !important;
+
         .whitetitle {
             color: $grey;
             text-shadow: 0 0 0;
-        }   
+        }
 
+		// see above note
+		.vcenter {
+			top: 0 !important;
+		}
     }
 
     .scroll {
@@ -1193,7 +921,7 @@ body.teasers-open {
         img{
             height:220px;
             margin-left: -20%;
-            width:auto;   
+            width:auto;
         }
 
         h3{
@@ -1247,7 +975,7 @@ body.teasers-open {
 
         img{
             height:220px;
-            width:auto;   
+            width:auto;
         }
 
         h3{
@@ -1290,10 +1018,29 @@ body.teasers-open {
     }
 }
 
+//////////////About////////////////
+
+.bio{
+    font-size:20px;
+}
+
+.vcenter {
+    .halfcolumn, .onecolumn, .threecoulmn, .twocolumn {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .about-container {
+        padding: 10% 0 10% 0;
+    }
+}
+
+
 //////////////404////////////////
 
-#projects {
-    
+#content {
+
     .error {
 
         h2 {
@@ -1322,20 +1069,13 @@ body.teasers-open {
             padding-bottom: 60px;
         }
     }
-
-    .error.outerpadding {
-        margin-top:2%;
-    }
 }
 
 
 @media screen and (max-width: 959px) {
 
-    .error-content {
-        top: 0 !important; 
-    }
 
-    #projects{
+    #content{
 
         .error {
             img {
@@ -1355,7 +1095,7 @@ body.teasers-open {
 }
 
 @media screen and (max-width: 550px) {
-    #projects{
+    #content{
         .error {
             img {
                 width:100%;

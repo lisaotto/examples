@@ -12,13 +12,17 @@ bucket = S3.get_bucket(bucket_name)
 html = [
 	'index.php',
 	'404.php',
+	'about/index.php',
 	'project/bandr/index.php',
 	'project/booksatwork/index.php',
 	'project/inctrl/index.php',
 	'project/infographics/index.php',
 	'project/lefkowitz/index.php',
 	'project/parentalcontrols/index.php',
-	'project/platform/index.php'
+	'project/platform/index.php',
+	'project/underdog/index.php',
+	'project/zenoandroid/index.php',
+	'project/zenolive/index.php'
 ]
 
 for slug in html:
@@ -45,4 +49,19 @@ for slug in css:
 	k = Key(bucket)
 	k.key = slug
 	k.content_type = 'text/css'
+	k.set_contents_from_string(r.content)
+
+js = [
+	'js/main.js'
+]
+
+for slug in js:
+
+	r = requests.get( url + slug )
+
+	print 'deploying ' + slug
+
+	k = Key(bucket)
+	k.key = slug
+	k.content_type = 'application/x-javascript'
 	k.set_contents_from_string(r.content)
