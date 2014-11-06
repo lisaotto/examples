@@ -5,7 +5,7 @@ $scroll = 'false';
 include('../includes/header.php'); ?>
 
 
-   <div class="outerpadding">
+   <div class="about-container outerpadding">
         <div class="vcenter clearfix">
             <img class="halfcolumn" src="<?php echo $url; ?>/img/about/lisa.jpg">
             <div class="halfcolumn last">
