@@ -78,7 +78,7 @@ win.scroll(promptScrollOff);
 
 // Return booleans for home page, about page, and just having been on a project page
 function isHome() {
-	return location.href === 'http://localhost/portfolio/' || location.pathname === '/';
+	return location.href === 'localhost/portfolio/' || location.pathname === '/';
 }
 function isAbout() {
 	return location.href === 'http://localhost/portfolio/about/' || location.pathname === '/about/';
@@ -87,7 +87,10 @@ function is404() {
 	return $('.error').length > 0;
 }
 function comingFromInternal() {
-	return siteURLs.indexOf(location.hostname) > -1;
+	siteURLs.forEach(function(url) {
+		if ( document.referrer.indexOf(url) >= 0 ) return true;
+	});
+	return false;
 }
 
 // click on the work link: if on the work page, should scroll to where the content starts
