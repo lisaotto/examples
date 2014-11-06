@@ -9,7 +9,7 @@ $yellow: #dfc48c;
 $blue: #03adb0;
 $dblue: #009999;
 //Content Grid
-$paddingscreen: 8%; 
+$paddingscreen: 8%;
 $innerpaddingscreen: 5%;
 $columnscreen: 30%;
 $twocolumnscreen: 63%;
@@ -33,7 +33,7 @@ $paddingmobile: 12%;
  * Fully installable fonts can be purchased at http://www.fontspring.com
  *
  * The fonts included in this stylesheet are subject to the End User License you purchased
- * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * from Fontspring. The fonts are protected under domestic and international trademark and
  * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
  * distributing this font software.
  *
@@ -50,7 +50,7 @@ $paddingmobile: 12%;
  *
  */
 
-  
+
 @font-face {font-family: 'Brandon-bold';src: url('../fonts/2C6F59_0_0.eot');src: url('../fonts/2C6F59_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2C6F59_0_0.woff2') format('woff2'),url('../fonts/2C6F59_0_0.woff') format('woff'),url('../fonts/2C6F59_0_0.ttf') format('truetype');}
 
 @font-face {
@@ -95,7 +95,7 @@ $paddingmobile: 12%;
 .fader {
     opacity: 1;
     transition: opacity 0.5s;
-    
+
     &.faded {
         opacity: 0 !important;
     }
@@ -165,7 +165,7 @@ $paddingmobile: 12%;
 
 
 html {
-    background-color: $grey; 
+    background-color: $grey;
     position: relative;
 }
 
@@ -364,10 +364,10 @@ main {
 
 .icon-arrow-box {
     display:block;
-}  
+}
 
 a.project-sample:hover, .touch a.project-sample {
-	
+
 	background: $dblue;
 
     img {
@@ -378,16 +378,16 @@ a.project-sample:hover, .touch a.project-sample {
         opacity:.95;
     }
 
-    p { 
+    p {
         top: 50%;
         transform: translateY(-50%);
-    }   
+    }
 }
 
 //////////////////Media Query > 1450 //////////////////
 
 @media screen and (min-width: 1450px){
-    
+
     .intro > p {
         font-size: 22px !important;
         line-height:150%;
@@ -427,9 +427,9 @@ a.project-sample:hover, .touch a.project-sample {
 
 
     main {
-        width:100%; 
-        float:none; 
-        position:relative;   
+        width:100%;
+        float:none;
+        position:relative;
     }
 
     .overlay {
@@ -438,7 +438,7 @@ a.project-sample:hover, .touch a.project-sample {
             font-size: 25px;
         }
 
-        h3{ 
+        h3{
             font-size: 18px;
         }
     }
@@ -451,7 +451,7 @@ a.project-sample:hover, .touch a.project-sample {
         }
     }
 }
- 
+
 //////////////////Media Query < 700 //////////////////
 
 @media screen and (max-width: 700px) {
@@ -491,7 +491,7 @@ a.project-sample:hover, .touch a.project-sample {
 
         .hgroup {
             padding-right:8px;
-        } 
+        }
     }
 }
 
@@ -536,8 +536,8 @@ a.project-sample:hover, .touch a.project-sample {
     }
 
     p{
-        a{ 
-            color:$blue; 
+        a{
+            color:$blue;
             transition: opacity .2s ease;
         }
 
@@ -619,7 +619,7 @@ a.project-sample:hover, .touch a.project-sample {
     right:0;
     top:0;
     z-index:10001;
-} 
+}
 
 .backup{
     right:0;
@@ -638,7 +638,7 @@ a.project-sample:hover, .touch a.project-sample {
     background-color: $blue;
     img{
         width:100%
-    }  
+    }
 
     .hgroup{
         position: absolute;
@@ -716,7 +716,7 @@ a.project-sample:hover, .touch a.project-sample {
     transition: opacity .2s ease;
     margin-bottom:10%;
     }
-   
+
 }
 
 a.visitsite:hover {
@@ -807,7 +807,7 @@ a.visitsite:hover {
     .whitetitle {
         color: #e0e2e0;
         text-shadow: 2px 2px 8px transparentize($grey, 0.5);
-    }   
+    }
 
 }
 
@@ -881,11 +881,19 @@ a.visitsite:hover {
     }
 
     #content {
+		// override some JS that makes it height of window
+		// on larger screens
+		height: auto !important;
+
         .whitetitle {
             color: $grey;
             text-shadow: 0 0 0;
-        }   
+        }
 
+		// see above note
+		.vcenter {
+			top: 0 !important;
+		}
     }
 
     .scroll {
@@ -913,7 +921,7 @@ a.visitsite:hover {
         img{
             height:220px;
             margin-left: -20%;
-            width:auto;   
+            width:auto;
         }
 
         h3{
@@ -967,7 +975,7 @@ a.visitsite:hover {
 
         img{
             height:220px;
-            width:auto;   
+            width:auto;
         }
 
         h3{
@@ -1026,7 +1034,7 @@ a.visitsite:hover {
 //////////////404////////////////
 
 #content {
-    
+
     .error {
 
         h2 {

@@ -6,6 +6,12 @@ var win = $(window),
 	header = $('#header'),
 	tab = $('.tab');
 
+var siteURLs = [
+	'lisaot.to',
+	'localhost',
+	'grad.lisaot.to'
+];
+
 function headerThings() {
 	headerContainer.height( win.height() );
 }
@@ -47,7 +53,7 @@ function promptScrollOff() {
 }
 
 function decideWhenToPrompt() {
-	var url = window.location.href;
+	var url = location.href;
 	url = url.split('/');
 	for ( var i = 0; i < url.length; i++ ) {
 		if ( url[i] === 'project' ) {
@@ -74,8 +80,11 @@ function isHome() {
 function isAbout() {
 	return location.href === 'http://localhost/portfolio/about/' || location.pathname === '/about/';
 }
-function comingFromProject() {
-	return document.referrer && document.referrer.indexOf('/project/') >= 0;
+function is404() {
+	return $('.error').length > 0;
+}
+function comingFromInternal() {
+	return siteURLs.indexOf(location.hostname) > -1;
 }
 
 // click on the work link: if on the work page, should scroll to where the content starts
@@ -94,10 +103,11 @@ $('#work-link').click(scrollToWork);
 
 // On small screens, for various conditions, should scroll to where content starts
 function scrollDown() {
+	console.log(is404());
 
 	if ( win.width() < 960 ) {
 
-		if ( isAbout() || ( isHome() && comingFromProject() ) ) {
+		if ( isAbout() || is404() || ( isHome() && comingFromInternal() ) ) {
 			$('html, body').animate({
 				scrollTop: $('#content').offset().top
 			}, 500);
@@ -245,10 +255,13 @@ function loadPage(e) {
 	}
 
 	var url = this.href;
-	$.ajax({
-		url: url,
-		success: loadElements
-	});
+
+	if ( url !== location.href && url + '/' !== location.href) {
+		$.ajax({
+			url: url,
+			success: loadElements
+		});
+	}
 }
 if ( !$('html').hasClass('oldie')) {
 	body.on('click', '.navigation .next, .project-sample, .back, nav a', loadPage);
