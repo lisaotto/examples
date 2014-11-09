@@ -81,7 +81,7 @@ function isHome() {
 	return location.href === 'localhost/portfolio/' || location.pathname === '/';
 }
 function isAbout() {
-	return location.href === 'http://localhost/portfolio/about/' || location.pathname === '/about/';
+	return location.href === 'http://localhost/portfolio/about/' || location.href === 'http://localhost/portfolio/about' || location.pathname === '/about/';
 }
 function is404() {
 	return $('.error').length > 0;
@@ -100,6 +100,7 @@ function scrollToWork(e) {
 		scrollToContent();
 	} else {
 		location.href = this.href;
+		// TODO: make loadPage(e) work from about page
 	}
 }
 
@@ -107,7 +108,6 @@ $('#work-link').click(scrollToWork);
 
 // On small screens, for various conditions, should scroll to where content starts
 function scrollDown() {
-	console.log(is404());
 
 	if ( win.width() < 960 ) {
 
@@ -127,6 +127,7 @@ function loadElements(data) {
 
 	promptScrollOff();
 
+	// time delay
 	var delay = 500;
 
 	// Fade out and remove current project elements
@@ -138,7 +139,7 @@ function loadElements(data) {
 	setTimeout(function(){
 		scrollToContent(null, 1);
 		curContent.find('*').remove();
-	}, delay + 1);
+	}, delay + 5);
 
 	var $data = $(data),
 		url,
@@ -157,7 +158,7 @@ function loadElements(data) {
 
 	for ( var i = 0; i < $data.length; i++ ) {
 		var el = $data[i];
-		// console.log(el);
+
 		if (el.tagName === 'HEADER') {
 			url = $(el).find('#page-url').html();
 		}
@@ -209,11 +210,12 @@ function loadElements(data) {
 			}, $this.index() * delay / 2);
 		});
 
+		if ( isAbout() ) newElements.find('.faded').removeClass('faded');
+
 		centerPageContent();
-		newElements.find('.faded').removeClass('faded');
 		curContent.height('auto');
 
-	}, delay + 2);
+	}, delay + 10);
 
 	setTimeout(scrollDown, delay + 100);
 
