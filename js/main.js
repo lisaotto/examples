@@ -81,7 +81,7 @@ function isHome() {
 	return location.href === 'localhost/portfolio/' || location.pathname === '/';
 }
 function isAbout() {
-	return location.href === 'http://localhost/portfolio/about/' || location.href === 'http://localhost/portfolio/about' || location.pathname === '/about/';
+	return location.href === 'http://localhost/portfolio/about/' || location.href === 'http://localhost/portfolio/about' || location.pathname === '/about/' || location.pathname === '/about';
 }
 function is404() {
 	return $('.error').length > 0;
