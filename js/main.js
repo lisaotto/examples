@@ -100,7 +100,7 @@ function scrollToWork(e) {
 		scrollToContent();
 	} else {
 		location.href = this.href;
-		// TODO: make loadPage(e) work from about page
+		// TODO: make this work!
 	}
 }
 
@@ -255,6 +255,15 @@ function loadPage(e) {
 	}
 
 	var url = this.href;
+
+	// update nav highlighting
+	var aboutLink = $('#about-link'),
+		workLink = $('#work-link');
+	if ( loadedFromElement.closest('#about-link').length === 1 ) {
+		workLink.find('p').removeClass('blue');
+		workLink.find('span').remove();
+		aboutLink.find('p').addClass('blue');
+	}
 
 	if ( url !== location.href && url + '/' !== location.href) {
 		$.ajax({

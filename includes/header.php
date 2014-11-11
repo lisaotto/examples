@@ -82,7 +82,7 @@ if ( isset($_GET['deploy-url']) ) {
             <nav>
                 <ul class="clearfix">
                     <li>
-                        <a href="<?php echo $url; ?>/about">
+                        <a href="<?php echo $url; ?>/about" id="about-link">
                             <p class="<?= $title === 'About' ? 'blue' : ''; ?>">about</p>
                         </a>
                     </li>
