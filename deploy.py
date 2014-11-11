@@ -1,10 +1,21 @@
+import sys
 import requests
 import boto # AWS python SDK
 from boto.s3.key import Key
 
+# must accept one argument: www or grad
+if len(sys.argv) == 2:
+	target = sys.argv[1]
+else:
+	print 'Specify a target: www or grad'
+	sys.exit()
+
 # CONFIG
-url = 'http://localhost/portfolio/' # locan endpoint
-bucket_name = 'grad.lisaot.to' # name of the bucket we want to use
+url = 'http://localhost/portfolio/' # local endpoint
+if target == 'www':
+	bucket_name = 'lisaot.to'
+elif target == 'grad':
+	bucket_name = 'grad.lisaot.to'
 
 S3 = boto.connect_s3()
 bucket = S3.get_bucket(bucket_name)
@@ -27,7 +38,7 @@ html = [
 
 for slug in html:
 
-	r = requests.get( url + slug + '/?deploy=true' )
+	r = requests.get( url + slug + '/?deploy=true&deploy-url=http://' + bucket_name)
 
 	print 'deploying ' + slug
 
