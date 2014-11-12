@@ -49,7 +49,7 @@ $projects = array(
         'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'inctrl' => array(
-        'title' => 'Teach Inctrl',
+        'title' => 'Teach InCtrl',
         'subtitle' => 'Website Redesign',
         'show' => array('lisaot.to')
     )

@@ -43,7 +43,6 @@ include('../../includes/header.php'); ?>
     </div>
 
     <div class="bottom-navigation">
-        <a class="back" href="<?php echo $url; ?>"><span class="icon-arrow-box"></span><span class="title">BACK</span></a>
         <a class="backup" href="#projects"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
