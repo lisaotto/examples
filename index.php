@@ -40,7 +40,7 @@ include('includes/header.php'); ?>
     </a>
     <a href="<?php echo $url; ?>/project/inctrl" class="project-sample">
         <div class="overlay">
-            <div><div class="hgroup"><h2>Teach Inctrl</h2><h3>Website Redesign</h3></div></div>
+            <div><div class="hgroup"><h2>Teach InCtrl</h2><h3>Website Redesign</h3></div></div>
             <div><p class="icon-arrow-box"></p></div>
         </div>                 
     </a>
