@@ -3,15 +3,13 @@ $title = 'Zeno Android App';
 $slug = 'project/zenoandroid';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/zeno-app/zenoapp-header.jpg"></div>
         <div class="hgroup"><h3>Android App</h3><h2>ZenoRadio</h2></div>
     </div>
-    <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>/project/underdog"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/zenolive"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
         <p class="description">ZenoRadio provides tools both for broadcasters to produce a radio show and listeners to engage with those radio programs. The initial Android app for listening developed as a white label app for broadcasters to brand as their own. We chose to develop initially for Android as the user base was concentrated around that platform. In developing the Android app, I had to be particularly mindful about designing with the flexibility to expand features and revise. The first iteration of the app has minimal interactive features, allowing us to test user response and add in interactivity iteratively.</p>
         <div class="role">

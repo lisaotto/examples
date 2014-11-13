@@ -3,16 +3,15 @@ $title = 'InCtrl';
 $slug = 'project/inctrl';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/inctrl/header_cloth.jpg" alt=""></div>
         <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">TEACH INCTRL</h2></div>
     </div>
-    <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>/project/infographics"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/platform/" target="_blank"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
+        <h2><?php echo get_next_slug($slug, $projects); ?></h2>
         <p class="description">InCtrl is a series of lessons for teachers to integrate into their classrooms on safe and responsible Internet usage. InCtrl provides seven lessons with videos and instructions on topics ranging from cyberbullying to media literacy. The redesign project included illustrating badges that conveyed the theme of each lesson. </p>
         <div class="role">
         <h4>My Role</h4>
@@ -34,7 +33,7 @@ include('../../includes/header.php'); ?>
         <img class="onecolumn last" src="<?php echo $url; ?>/img/inctrl/medialiteracy.png">
         <img class="threecolumn last" src="<?php echo $url; ?>/img/inctrl/inctrl_home.png">
        <div class="clearfix finalblock">
-            <div class="onecolumn"> 
+            <div class="onecolumn">
                 <p></p>
                  <img class="threecolumn" src="<?php echo $url; ?>/img/inctrl/inctrl_mobile.png">
             </div>

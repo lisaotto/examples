@@ -3,15 +3,13 @@ $title = 'Books at Work';
 $slug = 'project/booksatwork';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/booksatwork/header_booksatwork.png" alt=""></div>
         <div class="hgroup"><h3>Website Redesign</h3><h2>BOOKS@WORK</h2></div>
     </div>
-    <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>/project/platform"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/lefkowitz"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
         <p class="description">Books@Work is a young non-profit that uses literature seminars to improve workplace morale and performance. The Books@Work team was looking for a website that would make the program (and Shakespeare) accessible to their new audience.</p>
         <div class="role">

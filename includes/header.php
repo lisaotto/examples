@@ -7,6 +7,8 @@ if ( isset($_GET['deploy-url']) ) {
     $url = $_GET['deploy-url'];
 }
 
+include('projects.php');
+
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js oldie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->

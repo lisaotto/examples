@@ -3,14 +3,13 @@ $title = 'Underdog';
 $slug = 'project/underdog';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/underdog/underdog-header.jpg"></div>
         <div class="hgroup"><h3>User Onboarding</h3><h2>UNDERDOG</h2></div>
     </div>
-    <div class="navigation">
-        <a class="next" href="<?php echo $url; ?>/project/zenoandroid"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
         <p class="description">Underdog is a start-up that works to connect job seekers with NYC tech start-ups. Their mission is to keep the process simple for job applicants who often spend hours setting up profiles accross different sites while looking for jobs. In onboarding job applicants the goal was to keep the sign up process as easy and painless as possible while getting companies the information they need to reach out to candidates.</p>
         <div class="role">

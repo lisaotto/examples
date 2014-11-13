@@ -3,15 +3,13 @@ $title = 'Infographics';
 $slug = 'project/infographics';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/infographics/header-infographics.png" alt=""></div>
         <div class="hgroup"><h3>Various Illustrations</h3><h2>INFOGRAPHICS</h2></div>
     </div>
-    <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>/project/parentalcontrols"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/inctrl"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
         <p class="description">Illustrated infographics that were made for various purposes — blog posts and web pages.</p>
         <div class="role">

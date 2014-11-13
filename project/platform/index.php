@@ -3,15 +3,13 @@ $title = 'Platform';
 $slug = 'project/platform';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/platform/platform-header.png"></div>
         <div class="hgroup"><h3>Blog Integration</h3><h2>PLATFORM</h2></div>
     </div>
-    <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>/project/inctrl"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/booksatwork"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
         <p class="description">NCTA was looking to integrate the external blog into the recently redesigned website. The NCTA blog covers a wide range of topics from the latest Internet technology to television programming, so the blog had to remain a place where all of the topics could come together cohesively. Part of the challenge was maintaining the structure and theme of the current site while giving the blog a distinct feel.</p>
         <div class="role">
@@ -29,10 +27,10 @@ include('../../includes/header.php'); ?>
             <img class="twocolumn first" src="<?php echo $url; ?>/img/platform/platform-wireframe1.png">
             <p class="onecolumn last raisedblurb">Early wireframes laid out three content types — posts, 'news from elsewhere' (curated links from around the web), and industry data stats. The original design gave prominence to featured content.</p>
         </div>
-        <div class="clearfix">  
-             <img class="twocolumn last floatright" src="<?php echo $url; ?>/img/platform/platform-wireframe2.png"> 
+        <div class="clearfix">
+             <img class="twocolumn last floatright" src="<?php echo $url; ?>/img/platform/platform-wireframe2.png">
             <p class="onecolumn floatright alignright">After reviewing visitor analytics and determining that most users visited the site from promoted article links, encouraging users to browse content became the priority in wireframing. In the final wireframe, sequential full articles allow the user to more naturally flow from reading one article to the&nbsp;next.</p>
-            
+
         </div>
         <div class="clearfix">
             <img class="threecolumn" src="<?php echo $url; ?>/img/platform/platform-home.jpg">

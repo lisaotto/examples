@@ -3,16 +3,15 @@ $title = 'B and R';
 $slug = 'project/bandr';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/bandr/bandr-header.jpg" alt="B and R"></div>
         <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">B &amp; R</h2></div>
     </div>
-    <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>/project/lefkowitz"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/parentalcontrols"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
+        <h2><?= $next; ?></h2>
         <p class="description">B &amp; R is an auto and truck salvage yard whose main goal with the website redesign was to keep the information accessible and easy to understand. They had an external vendor for used parts but wanted to create a gallery for bigger ticket items on their site. We worked with photographer Nate Ryan to give each visitor the feel that they are visiting the yard in person. </p>
         <div class="role">
         <h4>My Role</h4>

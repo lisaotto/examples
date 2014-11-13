@@ -3,15 +3,13 @@ $title = 'David Lefkowitz';
 $slug = 'project/lefkowitz';
 include('../../includes/header.php'); ?>
 
-    <div class="banner"> 
+    <div class="banner">
         <div class="bannerimg"><img src="<?php echo $url; ?>/img/lefkowitz/lefko-header.jpg" alt=""></div>
         <div class="hgroup"><h3>Website Redesign</h3><h2 class="shrink">DAVID LEFKOWITZ</h2></div>
     </div>
-    <div class="navigation">
-        <a class="back" href="<?php echo $url; ?>/project/booksatwork"><span class="icon-arrow-box"></span><span class="title">last project</span></a>
-        <a class="next" href="<?php echo $url; ?>/project/bandr"><span class="title">next project</span><span class="icon-arrow-box"></span></a>
-        <div class="bar"></div>
-    </div>
+
+    <?php the_navigation($url, $slug); ?>
+
     <div class="intro clearfix outerpadding">
         <p class="description">David Lefkowitz is a visual artist with a sense of humor. Much of David’s work involves visual puns and originally he wanted to incorporate one into the site’s navigation. Eventually, we settled on the <a href="https://www.google.com/search?q=cladogram&safe=active&es_sm=91&source=lnms&tbm=isch&sa=X&ei=yw1XU_mDOvLisASplYHYBA&ved=0CAgQ_AUoAQ&biw=1416&bih=777" target="_blank" title="Cladograms">cladogram</a> as inspiration for the navigation since it provides both structure for the many groupings of work and is a concept that David plays off in his <a href="http://www.davidlefkowitz.net/projects-installations/nrthfld-nirthfolde-visitors-bureau/" target="_blank" title="Beaver Cladogram in the background">work</a>. With the cladogram as a central theme, we designed a sleek minimal site to show off his work.</p>
         <div class="role">
