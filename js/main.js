@@ -14,7 +14,9 @@ var siteURLs = [
 
 // scroll to the content...
 // different for mobile
-function scrollToContent(amount, time) {
+function scrollToContent(e, amount, time) {
+	if (e) e.preventDefault();
+
 	var top = amount || $('#content').offset().top,
 		el = navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/) ? body : $('html, body');
 	el.animate({
@@ -68,9 +70,9 @@ function decideWhenToPrompt() {
 	}
 }
 
-body.on('click', '.scroll', function() {
+body.on('click', '.scroll', function(e) {
 	promptScrollOff();
-	scrollToContent( win.height() * 0.75 );
+	scrollToContent( e, win.height() * 0.75 );
 });
 
 decideWhenToPrompt();
@@ -137,7 +139,7 @@ function loadElements(data) {
 
 	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
-		scrollToContent(null, 1);
+		scrollToContent(null, null, 1);
 		curContent.find('*').remove();
 	}, delay + 5);
 

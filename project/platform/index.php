@@ -14,7 +14,7 @@ include('../../includes/header.php'); ?>
         <p class="description">NCTA was looking to integrate the external blog into the recently redesigned website. The NCTA blog covers a wide range of topics from the latest Internet technology to television programming, so the blog had to remain a place where all of the topics could come together cohesively. Part of the challenge was maintaining the structure and theme of the current site while giving the blog a distinct feel.</p>
         <div class="role">
         <h4>My Role</h4>
-            <p>As the sole designer on the in-house team, I worked with the content and tech members to define requirements and then created wireframes, UI mocks, developement specifications. I also provided direction and feedback to the external development team to ensure the designs were completed to spec and provide front-end HTML/CSS coding support where needed.</p>
+            <p>As the sole designer on the in-house team, I worked with the content and tech members to define requirements and then created wireframes, UI mocks, and development specifications. I also provided direction and feedback to the external development team to ensure the designs were completed to spec and provided front-end HTML/CSS coding support where needed.</p>
         <p>Work done with <a href="http://www.ncta.com" target="_blank" title="National Cable and Telecommunications Association">NCTA</a></p>
         </div>
     </div>

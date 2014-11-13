@@ -14,7 +14,7 @@ include('../../includes/header.php'); ?>
         <p class="description">ZenoRadio provides tools both for broadcasters to produce a radio show and listeners to engage with those radio programs. The initial Android app for listening developed as a white label app for broadcasters to brand as their own. We chose to develop initially for Android as the user base was concentrated around that platform. In developing the Android app, I had to be particularly mindful about designing with the flexibility to expand features and revise. The first iteration of the app has minimal interactive features, allowing us to test user response and add in interactivity iteratively.</p>
         <div class="role">
             <h4>My Role</h4>
-            <p>I was the sole designer on the project that was done in conjunction with the <a href="<?php echo $url; ?>/project/zenolive" alt="Zeno Broadcaster Dashboard">broadcaster dashboard</a>. I worked closely with the technical and marketing team to provide wireframes, UI mocks, interactive prototypes and UI patterns. I worked closely with the developers to ensure that shipped product matched user needs. </p>
+            <p>I was the sole designer on the project that was done in conjunction with the <a href="<?php echo $url; ?>/project/zenolive" alt="Zeno Broadcaster Dashboard">broadcaster dashboard</a>. I worked closely with the technical and marketing team to provide wireframes, UI mocks, interactive prototypes and UI patterns. I worked closely with the developers to ensure that the shipped product matched user needs. </p>
         </div>
     </div>
     <div class="content outerpadding clearfix">

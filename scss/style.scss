@@ -268,7 +268,7 @@ h1 {
         -webkit-text-fill-color: transparent;
     animation: animatedBackground 25s linear infinite;
 }
- 
+
 .social {
     width: 100%;
     text-align: center;
@@ -821,6 +821,7 @@ a.visitsite:hover {
 .gridoverlay {
     position: absolute;
     bottom: 0;
+	left: 0;
     opacity: 0;
 }
 

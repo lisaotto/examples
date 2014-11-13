@@ -14,7 +14,7 @@ include('../../includes/header.php'); ?>
         <p class="description">ZenoRadio's broadcaster dashboard provides tools for individual broadcasters to host talk programs with callers from a variety of mediums (online widgets and telephone calling). I spent time sitting down with broadcasters to see how they manage their programs using the tools available in the market today. Without a unified platform to manage callers and their stream, hosts end up having to juggle many program windows, dashboards, microphones, and speakers. Zeno's platform aims to streamline the process, allowing hosts to manage their callers, share media files and regulate their regular stream through one interface.</p>
         <div class="role">
             <h4>My Role</h4>
-            <p>I was the sole designer on the project that was done in conjunction with the <a href="<?php echo $url; ?>/project/zenoandroid" alt="Zeno Android Application">Android app</a>. I worked closely with the technical and marketing team to provide wireframes, UI mocks, interactive prototypes and UI patterns. I performed field studies with users. I also collaborated the off-site developers to ensure that shipped product matched user needs./p>
+            <p>I was the sole designer on the project that was done in conjunction with the <a href="<?php echo $url; ?>/project/zenoandroid" alt="Zeno Android Application">Android app</a>. I worked closely with the technical and marketing team to provide wireframes, UI mocks, interactive prototypes and UI patterns. I performed field studies with users. I also collaborated the off-site developers to ensure that shipped product matched user needs.</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
@@ -27,7 +27,7 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
             <h5>Defining the User</h5>
-            <p class="threecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their prespective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected.</p>
+            <p class="threecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their perspective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected.</p>
             <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-protopersona.png">
         </div>
         <div class="clearfix">
