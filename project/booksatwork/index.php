@@ -13,13 +13,9 @@ include('../../includes/header.php'); ?>
     <div class="intro clearfix outerpadding">
         <p class="description">Books@Work is a young non-profit that uses literature seminars to improve workplace morale and performance. The Books@Work team was looking for a website that would make the program (and Shakespeare) accessible to their new audience.</p>
         <div class="role">
-        <h4>My Role</h4>
-        <ul>
-            <li>UX</li>
-            <li>UI</li>
-            <li>Illustrations</li>
-        </ul>
-        <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" alt="Parsley and Sprouts, LLC">Parsley &amp; Sprouts</a></p>
+            <h4>My Role</h4>
+            <p>Provided site architecture, illustrations,  UI mocks and worked closely with developer <a href="http://scottdonaldson.net" alt="Scott Donadlson, Developer">Scott Donaldson</a> to create in-browser animated illustrations and to ensure site was developed to spec.
+            <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" alt="Parsley and Sprouts, LLC">Parsley &amp; Sprouts</a></p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
