@@ -520,8 +520,16 @@ a.project-sample:hover, .touch a.project-sample {
         }
     }
 
-    .hide-small{
-        display:none;
+    .navigation {
+        .hide-small{
+            display:none;
+        }
+
+        .back {
+            .icon-arrow-box {
+                margin-top: 5px;
+            }
+        }
     }
 }
 

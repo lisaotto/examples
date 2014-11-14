@@ -115,7 +115,7 @@ function the_navigation($url, $slug) { ?>
         <?php $next = get_next_slug($url, $slug); ?>
 
         <?php if ($prev) { ?>
-            <a class="back" href="<?= $url; ?>/project/<?= $prev; ?>"><span class="icon-arrow-box"></span><span class="title">last<span class="small-hide">project</span></span></a>
+            <a class="back" href="<?= $url; ?>/project/<?= $prev; ?>"><span class="icon-arrow-box"></span><span class="title">last<span class="hide-small">project</span></span></a>
         <?php }
         if ($next) { ?>
         <a class="next" href="<?= $url; ?>/project/<?= $next; ?>"><span class="title">next<span class="hide-small">project</span><span class="icon-arrow-box"></span></a>
