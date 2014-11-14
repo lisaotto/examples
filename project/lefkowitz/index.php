@@ -14,7 +14,7 @@ include('../../includes/header.php'); ?>
         <p class="description">David Lefkowitz is a visual artist with a sense of humor. Much of David’s work involves visual puns and originally he wanted to incorporate one into the site’s navigation. Eventually, we settled on the <a href="https://www.google.com/search?q=cladogram&safe=active&es_sm=91&source=lnms&tbm=isch&sa=X&ei=yw1XU_mDOvLisASplYHYBA&ved=0CAgQ_AUoAQ&biw=1416&bih=777" target="_blank" title="Cladograms">cladogram</a> as inspiration for the navigation since it provides both structure for the many groupings of work and is a concept that David plays off in his <a href="http://www.davidlefkowitz.net/projects-installations/nrthfld-nirthfolde-visitors-bureau/" target="_blank" title="Beaver Cladogram in the background">work</a>. With the cladogram as a central theme, we designed a sleek minimal site to show off his work.</p>
         <div class="role">
             <h4>My Role</h4>
-            <p>Designed site architecture, wireframes, UI mocks and worked closely with developer <a href="http://scottdonaldson.net" alt="Scott Donadlson, Developer">Scott Donaldson</a> to ensure site was developed to spec.</p>
+            <p>Designed site architecture, wireframes, UI mocks and worked closely with developer <a href="http://scottdonaldson.net" alt="Scott Donadlson, Developer" target="_blank">Scott Donaldson</a> to ensure site was developed to spec.</p>
             <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" title="Parsley and Sprouts, LLC">Parsley &amp; Sprouts</a></p>
         </div>
     </div>
