@@ -228,15 +228,19 @@ nav {
         color: $lightestgrey;
 
         p, .icon-arrow {
-            top: 9px;
             font-size: 20px;
             margin:0;
             display: inline-block;
         }
 
+        p{
+            top:10px;
+        }
+
         .icon-arrow{
             transform:rotate(-90deg);
             padding-right:10px;
+            top: 8px;
         }
 
     }
@@ -515,6 +519,10 @@ a.project-sample:hover, .touch a.project-sample {
             display:none;
         }
     }
+
+    .small-hide{
+        display:none;
+    }
 }
 
 
@@ -564,11 +572,12 @@ a.project-sample:hover, .touch a.project-sample {
 
     span {
         display: inline-block;
-        padding: 10px;
+        padding: 5px;
     }
 
     .icon-arrow-box {
         top: 2px;
+        margin: 0 4px;
     }
 }
 
@@ -912,6 +921,10 @@ a.visitsite:hover {
 
     .navigation{
         margin-bottom: 160px;
+    }
+
+    #content h5 {
+        margin-top: 16%;
     }
 
     .banner{

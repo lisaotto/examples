@@ -4,7 +4,7 @@ $slug = 'project/zenolive';
 include('../../includes/header.php'); ?>
 
     <div class="banner">
-        <div class="bannerimg"><img src="<?php echo $url; ?>/img/zeno-app/zenoapp-header.jpg"></div>
+        <div class="bannerimg"><img alt="" src="<?php echo $url; ?>/img/zeno-app/zenoapp-header.jpg"></div>
         <div class="hgroup"><h3>Broadcaster Dashboard</h3><h2>ZenoRadio Live</h2></div>
     </div>
 
@@ -19,35 +19,35 @@ include('../../includes/header.php'); ?>
     </div>
     <div class="content outerpadding clearfix">
         <div class="clearfix">
-            <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-full.png">
+            <img alt="Zeno Live Broadcaster Platform Interface" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-full.png">
         </div>
         <div class="clearfix">
-            <img class="halfcolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-profile.png">
-            <img class="halfcolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-media.png">
+            <img alt="Zeno Live Broadcaster Platform Station Profile Interface" class="halfcolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-profile.png">
+            <img alt="Zeno Live Broadcaster Media Interface" class="halfcolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-media.png">
         </div>
         <div class="clearfix">
             <h5>Defining the User</h5>
             <p class="threecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their perspective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected.</p>
-            <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-protopersona.png">
+            <img alt="Zeno Live Proto-Persona describing key features of Adama" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-protopersona.png">
         </div>
         <div class="clearfix">
             <h5>The Design Process</h5>
             <p class="threecolumn">Particular attention was paid to how callers were managed as this is a major challenge for broadcasters (who often find creative uses of conference calling software in tandem with streaming software). Originally, each caller was paired with a robust set of tools for the broadcaster to manage. Given how little attention the host can give to controlling the callers while also talking on air and managing media files, the callers' controls were eventaully pared down or hidden for the more advanced user.</p>
         </div>
         <div class="clearfix">
-            <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-iterations.png">
+            <img alt="Iterations of caller management interface for Zeno Live. Initially, toggle to change caller between public and private states. Then toggles integrates mute alternative called 'hold.' Then, toggle dropped entirely in favor of bucketing. Hold functionality to be added in a later iteration once user feedback has been gathered." class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-iterations.png">
         </div>
         <div class="clearfix">
             <h5>Specs For Development</h5>
             <p class="threecolumn">As interaction iterated on, I developed a set of UI patterns for developers to use as they coded the site in order to maintain consistency even as we revised features.</p>
         </div>
         <div class="clearfix">
-            <img class="threecolumn finalblock" src="<?php echo $url; ?>/img/zeno-live/zenolive-specs.png">
+            <img alt="Specification for the development of Zeno Live" class="threecolumn finalblock" src="<?php echo $url; ?>/img/zeno-live/zenolive-specs.png">
         </div>
     </div>
 
     <div class="bottom-navigation">
-        <a class="backup" href="#projects"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
+        <a class="backup"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
 

@@ -4,7 +4,7 @@ $slug = 'project/bandr';
 include('../../includes/header.php'); ?>
 
     <div class="banner">
-        <div class="bannerimg"><img src="<?php echo $url; ?>/img/bandr/bandr-header.jpg" alt="B and R"></div>
+        <div class="bannerimg"><img alt="" src="<?php echo $url; ?>/img/bandr/bandr-header.jpg" alt="B and R"></div>
         <div class="hgroup"><h3 class="whitetitle">Website Redesign</h3><h2 class="whitetitle">B &amp; R</h2></div>
     </div>
 
@@ -24,18 +24,18 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
     <div class="content outerpadding clearfix">
-        <img class="threecolumn first" src="<?php echo $url; ?>/img/bandr/bandr-home.jpg">
-        <img class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-home-mobile.jpg">
-        <img class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services-mobile.jpg">
+        <img alt="B &lt; R homepage design" class="threecolumn first" src="<?php echo $url; ?>/img/bandr/bandr-home.jpg">
+        <img alt="B &lt; R homepage design on mobile" class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-home-mobile.jpg">
+        <img alt="B &lt; R services page design on mobile" class="onecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services-mobile.jpg">
         <p class="onecolumn last">Ensuring that a site with full width images would work responsively meant repositioning the text in new content areas for mobile and considering horizontal breakpoints.</p>
-        <img class="threecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services.jpg">
-        <img class="halfcolumn" src="<?php echo $url; ?>/img/bandr/bandr-sales.jpg">
-        <img class="halfcolumn last  finalblock" src="<?php echo $url; ?>/img/bandr/bandr-sales-hover.jpg">
+        <img alt="B &lt; R services page design" class="threecolumn" src="<?php echo $url; ?>/img/bandr/bandr-services.jpg">
+        <img alt="B &lt; R sales page design" class="halfcolumn" src="<?php echo $url; ?>/img/bandr/bandr-sales.jpg">
+        <img alt="B &lt; R sales page design with hover" class="halfcolumn last  finalblock" src="<?php echo $url; ?>/img/bandr/bandr-sales-hover.jpg">
         <a class="visitsite" href="http://www.bandrautotrucksalvage.com/" target="_blank">VISIT SITE<span class="icon-arrow"></span></a>
     </div>
 
     <div class="bottom-navigation">
-        <a class="backup" href="#projects"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
+        <a class="backup"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
 

@@ -4,7 +4,7 @@ $slug = 'project/zenoandroid';
 include('../../includes/header.php'); ?>
 
     <div class="banner">
-        <div class="bannerimg"><img src="<?php echo $url; ?>/img/zeno-app/zenoapp-header.jpg"></div>
+        <div class="bannerimg"><img alt="" src="<?php echo $url; ?>/img/zeno-app/zenoapp-header.jpg"></div>
         <div class="hgroup"><h3>Android App</h3><h2>ZenoRadio</h2></div>
     </div>
 
@@ -19,15 +19,15 @@ include('../../includes/header.php'); ?>
     </div>
     <div class="content outerpadding clearfix">
         <div class="clearfix">
-            <img class="twocolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-multistation.png">
+            <img alt="Multistation app interface with overlayed play bar" class="twocolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-multistation.png">
             <p class="onecolumn last loweredblurb">For broadcasters with multiple stations, users will land in the multistation station listing when first accessing the device. One particular concern was users' tendency to lose their audio content when navigating away from the station screen. To ensure that users could maintain control and awareness of playing content, a small content bar is added to all screens when the station is playing.</p>
         </div>
         <div class="clearfix">
             <p class="onecolumn loweredblurb">A unique feature of ZenoRadio is that users are able to listen to content via voice or data. Users are familiar with data listening and so after hallway usability testing and technical constraints, we settled on giving voice listening secondary prominence for advanced users.</p>
-            <img class="twocolumn last" src="<?php echo $url; ?>/img/zeno-app/zenoapp-playscreen.png">
+            <img alt="Individual station scren with overlayed station information" class="twocolumn last" src="<?php echo $url; ?>/img/zeno-app/zenoapp-playscreen.png">
         </div>
         <div class="clearfix">
-            <img class="onecolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-voice.png">
+            <img alt="Listen via voice confirmation screen" class="onecolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-voice.png">
             <p class="twocolumn last loweredblurb">I tried to keep modals to a minimum, but because using voice can sometimes result in a phone service charge and also requires that the user leave the app, an interstitial confirmation was needed for the first time a user attempts to listen via voice.</p>
         </div>
         <div class="clearfix">
@@ -39,8 +39,7 @@ include('../../includes/header.php'); ?>
             <img class="threecolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-iterations.png">
         </div>
         <div class="clearfix">
-            <!-- <img class="onecolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-prototype1.jpg"> -->
-            <img class="twocolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-prototype2.jpg">
+            <img alt="Prototype demonstration of Zeno Android app" class="twocolumn" src="<?php echo $url; ?>/img/zeno-app/zenoapp-prototype2.jpg">
             <p class="onecolumn loweredblurb last">In order to test and demonstrate interactions in a more realistic environment, I created a prototype that could be downloaded on an Android phone to simulate the flow of the app.</p>
         </div>
         <div class="clearfix">
@@ -49,13 +48,13 @@ include('../../includes/header.php'); ?>
         </div>
 
         <div class="clearfix">
-            <img class="threecolumn finalblock" src="<?php echo $url; ?>/img/zeno-app/zenoapp-flow.jpg">
+            <img alt="User flow detail specifications for developers" class="threecolumn finalblock" src="<?php echo $url; ?>/img/zeno-app/zenoapp-flow.jpg">
         </div>
 
     </div>
 
     <div class="bottom-navigation">
-        <a class="backup" href="#projects"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
+        <a class="backup"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
     </div>
 
