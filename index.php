@@ -3,8 +3,10 @@ $title = 'Lisa Otto';
 include('includes/header.php');
 
 foreach ( $projects as $slug => $details ) {
-    $location = str_replace('http://', '', $url);
-    if ( $url === 'http://localhost/portfolio' || in_array($location, $details['show']) ) {
+
+    global $location;
+
+    if ( $location === 'staging' || in_array($location, $details['show']) ) {
     ?>
     <a href="<?= $url; ?>/project/<?= $slug; ?>" class="project-sample">
         <div class="overlay">
