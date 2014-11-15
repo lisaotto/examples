@@ -580,12 +580,12 @@ a.project-sample:hover, .touch a.project-sample {
 
     span {
         display: inline-block;
-        padding: 5px;
+        margin-top:10px;
     }
 
     .icon-arrow-box {
-        top: 2px;
-        margin: 0 4px;
+        top: 3px;
+        margin: 0 8px;
     }
 }
 
@@ -634,7 +634,6 @@ a.project-sample:hover, .touch a.project-sample {
     left:0;
     top:0;
     z-index:10002;
-
 }
 
 .next{

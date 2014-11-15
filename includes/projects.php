@@ -115,10 +115,22 @@ function the_navigation($url, $slug) { ?>
         <?php $next = get_next_slug($url, $slug); ?>
 
         <?php if ($prev) { ?>
-            <a class="back" href="<?= $url; ?>/project/<?= $prev; ?>"><span class="icon-arrow-box"></span><span class="title">last<span class="hide-small">project</span></span></a>
+            <a class="back" href="<?= $url; ?>/project/<?= $prev; ?>">
+                <div>
+                    <span class="icon-arrow-box"></span>
+                    <span class="title">last</span>
+                    <span class="hide-small">project</span>
+                </div>
+            </a>
         <?php }
         if ($next) { ?>
-        <a class="next" href="<?= $url; ?>/project/<?= $next; ?>"><span class="title">next<span class="hide-small">project</span><span class="icon-arrow-box"></span></a>
+        <a class="next" href="<?= $url; ?>/project/<?= $next; ?>">
+            <div class="internal-project-nav">
+                <span class="title">next</span>
+                <span class="hide-small">project</span>
+                <span class="icon-arrow-box"></span>
+            </div>
+        </a>
         <?php } ?>
         <div class="bar"></div>
     </div>
