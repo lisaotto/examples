@@ -60,12 +60,13 @@ function console($msg) {
 function get_next_slug($url, $slug) {
 
     global $projects;
-    global $location;
-
     reset($projects);
 
     // sanitize slug
     $slug = str_replace('project/', '', $slug);
+
+    // set the location
+    $location = str_replace('http://', '', $url);
 
     // set pointer of $projects to this one
     while ( key($projects) !== $slug ) {
@@ -74,7 +75,7 @@ function get_next_slug($url, $slug) {
     }
 
     $next = next($projects);
-    while ( $location !== 'staging' && !in_array($location, $next['show']) ) {
+    while ( $location !== 'localhost/portfolio' && !in_array($location, $next['show']) ) {
         $next = next($projects);
         if (!$next) break;
     }
@@ -84,12 +85,13 @@ function get_next_slug($url, $slug) {
 function get_prev_slug($url, $slug) {
 
     global $projects;
-    global $location;
-
     reset($projects);
 
     // sanitize slug
     $slug = str_replace('project/', '', $slug);
+
+    // set the location
+    $location = str_replace('http://', '', $url);
 
     // set pointer of $projects to this one
     while ( key($projects) !== $slug ) {
@@ -98,7 +100,7 @@ function get_prev_slug($url, $slug) {
     }
 
     $prev = prev($projects);
-    while ( $location !== 'staging' && !in_array($location, $prev['show']) ) {
+    while ( $location !== 'localhost/portfolio' && !in_array($location, $prev['show']) ) {
         $prev = prev($projects);
         if (!$prev) break;
     }
@@ -114,21 +116,21 @@ function the_navigation($url, $slug) { ?>
 
         <?php if ($prev) { ?>
             <a class="back" href="<?= $url; ?>/project/<?= $prev; ?>">
-+                <div>
-+                    <span class="icon-arrow-box"></span>
-+                    <span class="title">last</span>
-+                    <span class="hide-small">project</span>
-+                </div>
-+            </a>
+                <div>
+                    <span class="icon-arrow-box"></span>
+                    <span class="title">last</span>
+                    <span class="hide-small">project</span>
+                </div>
+            </a>
         <?php }
         if ($next) { ?>
         <a class="next" href="<?= $url; ?>/project/<?= $next; ?>">
-+            <div class="internal-project-nav">
-+                <span class="title">next</span>
-+                <span class="hide-small">project</span>
-+                <span class="icon-arrow-box"></span>
-+            </div>
-+        </a>
+            <div class="internal-project-nav">
+                <span class="title">next</span>
+                <span class="hide-small">project</span>
+                <span class="icon-arrow-box"></span>
+            </div>
+        </a>
         <?php } ?>
         <div class="bar"></div>
     </div>
