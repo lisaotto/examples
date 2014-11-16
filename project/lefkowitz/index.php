@@ -27,7 +27,7 @@ include('../../includes/header.php'); ?>
         <img alt="Lefkowitz home page design with menu open on mobile" class="onecolumn last" src="<?php echo $url; ?>/img/lefkowitz/lefko-mobile-swipe.jpg">
         <img alt="Lefkowitz content page design" class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefkowitz-internal.jpg">
         <img alt="Lefkowitz content page design on tablet" class="threecolumn" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet.jpg">
-        <img alt="Lefkowitz content page design with menu open on tablet" lass="threecolumn finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
+        <img calt="Lefkowitz content page design with menu open on tablet" lass="threecolumn finalblock" src="<?php echo $url; ?>/img/lefkowitz/lefko-tablet-slide2.jpg">
 
         <a class="visitsite" href="http://www.davidlefkowitz.net/" target="_blank" alt="David Lefkowitz">VISIT SITE<span class="icon-arrow"></span></a>
     </div>
