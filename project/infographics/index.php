@@ -14,7 +14,7 @@ include('../../includes/header.php'); ?>
         <p class="description">Illustrated infographics that were made for various purposes — blog posts and web pages.</p>
         <div class="role">
             <h4>My Role</h4>
-            <p>Worked closely with in-house content team to determine concept – provided sketches and final illustrations in a variety of formats. </p>
+            <p>I worked closely with in-house content team to determine concept – provided sketches and final illustrations in a variety of formats. </p>
             <p>Work done with <a href="http://www.ncta.com" target="_blank" alt="National Cable and Telecommunications Association">NCTA</a></p>
         </div>
     </div>
