@@ -7,7 +7,7 @@ from boto.s3.key import Key
 if len(sys.argv) == 2:
 	target = sys.argv[1]
 else:
-	print 'Specify a target: www, grad, or staging'
+	print 'Specify a target: www or grad'
 	sys.exit()
 
 # CONFIG
@@ -16,8 +16,6 @@ if target == 'www':
 	bucket_name = 'lisaot.to'
 elif target == 'grad':
 	bucket_name = 'grad.lisaot.to'
-elif target == 'staging':
-	bucket_name = 'staging.lisaot.to'
 
 S3 = boto.connect_s3()
 bucket = S3.get_bucket(bucket_name)
