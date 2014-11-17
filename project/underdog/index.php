@@ -11,7 +11,7 @@ include('../../includes/header.php'); ?>
     <?php the_navigation($url, $slug); ?>
 
     <div class="intro clearfix outerpadding">
-        <p class="description">Underdog is a start-up that works to connect job seekers with NYC tech start-ups. Their mission is to keep the process simple for job applicants who often spend hours setting up profiles accross different sites while looking for jobs. In onboarding job applicants the goal was to keep the sign up process as easy and painless as possible while getting companies the information they need to reach out to candidates.</p>
+        <p class="description">Underdog is a start-up that works to connect job seekers with NYC tech start-ups. Their mission is to keep the process simple for job applicants who often spend hours setting up profiles across different sites while looking for jobs. In onboarding job applicants the goal was to keep the sign up process as easy and painless as possible while getting companies the information they need to reach out to candidates.</p>
         <div class="role">
             <h4>My Role</h4>
             <p>I designed wireframes, simple interactive prototypes, UI mock-ups, and UI patterns based on the team's requirements and feedback.</p>

@@ -11,10 +11,10 @@ include('../../includes/header.php'); ?>
     <?php the_navigation($url, $slug); ?>
 
     <div class="intro clearfix outerpadding">
-        <p class="description">ZenoRadio's broadcaster dashboard provides tools for individual broadcasters to host talk programs with callers from a variety of mediums (online widgets and telephone calling). I spent time sitting down with broadcasters to see how they manage their programs using the tools available in the market today. Without a unified platform to manage callers and their stream, hosts end up having to juggle many program windows, dashboards, microphones, and speakers. Zeno's platform aims to streamline the process, allowing hosts to manage their callers, share media files and regulate their regular stream through one interface.</p>
+        <p class="description">ZenoRadio's broadcaster dashboard provides tools for individual broadcasters to host talk programs with callers from a variety of media (online widgets and telephone calling). I spent time sitting down with broadcasters to see how they manage their programs using the tools available in the market today. Without a unified platform to manage callers and their stream, hosts end up having to juggle many program windows, dashboards, microphones, and speakers. Zeno's platform aims to streamline the process, allowing hosts to manage their callers, share media files and regulate their regular stream through one interface.</p>
         <div class="role">
             <h4>My Role</h4>
-            <p>I was the sole designer on the project that was done in conjunction with the <a href="<?php echo $url; ?>/project/zenoandroid" alt="Zeno Android Application">Android app</a>. I worked closely with the technical and marketing team to provide wireframes, UI mocks, interactive prototypes and UI patterns. I performed field studies with users. I also collaborated the off-site developers to ensure that shipped product matched user needs.</p>
+            <p>I was the sole designer on the project that was done in conjunction with the <a href="<?php echo $url; ?>/project/zenoandroid" alt="Zeno Android Application">Android app</a>. I worked closely with the technical and marketing team to provide wireframes, UI mocks, interactive prototypes and UI patterns. I performed field studies with users. I also collaborated with off-site developers to ensure that shipped product matched user needs.</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
@@ -32,7 +32,7 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
             <h5>The Design Process</h5>
-            <p class="threecolumn">Particular attention was paid to how callers were managed as this is a major challenge for broadcasters (who often find creative uses of conference calling software in tandem with streaming software). Originally, each caller was paired with a robust set of tools for the broadcaster to manage. Given how little attention the host can give to controlling the callers while also talking on air and managing media files, the callers' controls were eventaully pared down or hidden for the more advanced user.</p>
+            <p class="threecolumn">Particular attention was paid to how callers were managed as this is a major challenge for broadcasters (who often find creative uses of conference calling software in tandem with streaming software). Originally, each caller was paired with a robust set of tools for the broadcaster to manage. Given how little attention the host can give to controlling the callers while also talking on air and managing media files, the callers' controls were eventually pared down or hidden for the more advanced user.</p>
         </div>
         <div class="clearfix">
             <img alt="Iterations of caller management interface for Zeno Live. Initially, toggle to change caller between public and private states. Then toggles integrates mute alternative called 'hold.' Then, toggle dropped entirely in favor of bucketing. Hold functionality to be added in a later iteration once user feedback has been gathered." class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-iterations.png">
