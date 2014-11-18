@@ -9,7 +9,9 @@ if ( isset($_GET['deploy-url']) ) {
 
 // set the location
 $location = str_replace('http://', '', $url);
-$location = 'localhost/portfolio' || 'staging.lisaot.to' ? 'staging' : $location;
+if ( $location === 'localhost/portfolio' || $location === 'staging.lisaot.to' ) {
+    $location = 'staging';
+}
 
 include('projects.php');
 
