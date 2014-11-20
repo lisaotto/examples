@@ -243,6 +243,9 @@ function loadPage(e) {
 		aboutLink.find('p').addClass('blue');
 	} else {
 		workLink.find('p').addClass('blue');
+		if ( workLink.find('span').length === 0 ) {
+			workLink.append('<span class="icon-arrow blue">');
+		}
 		aboutLink.find('p').removeClass('blue');
 	}
 
