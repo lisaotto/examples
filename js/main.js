@@ -90,10 +90,12 @@ function is404() {
 	return $('.error').length > 0;
 }
 function comingFromInternal() {
+	var referrer = document.referrer || loadedFromPage,
+	 	internal;
 	siteURLs.forEach(function(url) {
-		if ( document.referrer.indexOf(url) >= 0 ) return true;
+		if ( referrer.indexOf(url) >= 0 ) return internal = true;
 	});
-	return false;
+	return internal ? true : false;
 }
 
 // click on the work link: if on the work page, should scroll to where the content starts
@@ -101,8 +103,6 @@ function scrollToWork(e) {
 	e.preventDefault();
 	if ( isHome() ) {
 		scrollToContent();
-	} else {
-		loadPage(e);
 	}
 }
 
@@ -121,13 +121,20 @@ function loadElements(data) {
 	var delay = 500;
 
 	// Fade out and remove current project elements
-	var curContent = $('#content')
+	var curContent = $('#content');
+
 	curContent.height( curContent.height() );
 	curContent.find('*').fadeOut(delay);
 
 	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
-		if (win.width() > 960) scrollToContent(null, null, 1);
+		if (win.width() > 960) {
+			scrollToContent(null, null, 1);
+		} else {
+			if ( comingFromInternal() && (isHome() || isAbout()) ) {
+				scrollToContent(null, null);
+			}
+		}
 		curContent.find('*').remove();
 	}, delay + 5);
 
@@ -225,11 +232,13 @@ function loadElements(data) {
 	ga('send', 'pageview');
 }
 
-var loadedFromElement;
+var loadedFromPage,
+	loadedFromElement;
 function loadPage(e) {
 	if (e) e.preventDefault();
 
 	loadedFromElement = $(this);
+	loadedFromPage = location.href;
 
 	var url = this.href;
 

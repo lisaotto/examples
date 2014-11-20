@@ -1,5 +1,6 @@
 <?php
 $title = 'Lisa Otto';
+$scroll = 'false';
 include('includes/header.php');
 
 foreach ( $projects as $slug => $details ) {

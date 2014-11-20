@@ -1135,6 +1135,11 @@ a.visitsite:hover {
              margin-top:0%;
              padding-top: 10%;
         }
+
+		// don't adjust height on about page
+		.about & {
+			height: auto !important;
+		}
     }
 }
 
