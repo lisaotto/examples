@@ -514,6 +514,12 @@ a.project-sample:hover, .touch a.project-sample {
         }
     }
 
+    .banner {
+        h2 {
+            font-size:30px;
+        }
+    }
+
     .overlay {
         h3 {
             display:none;
@@ -646,6 +652,7 @@ a.project-sample:hover, .touch a.project-sample {
     right:0;
     bottom:0;
     z-index:10001;
+    cursor: pointer;
 }
 
 .back {
@@ -669,7 +676,7 @@ a.project-sample:hover, .touch a.project-sample {
 
     h2 {
         margin: 10px 0;
-        font-size: 80px;
+        font-size: 70px;
         line-height: 70%;
     }
 
@@ -871,16 +878,28 @@ a.visitsite:hover {
 }
 ////parental controls////
 
-@media screen and (max-width: 766px) {
-    h2.shrink {
-       font-size: 55px;
-       line-height: 100%;
+@media screen and (max-width: 750px) {
+    .banner {
+        h2.shrink {
+           font-size: 40px;
+           line-height: 100%;
+        }
     }
 }
 
-@media screen and (max-width: 425px) {
-    h2.shrink {
-       font-size: 35px !important;
+@media screen and (max-width: 500px) {
+    .banner {
+        h2.shrink {
+           font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .banner {
+        h2.shrink {
+           font-size: 24px;
+        }
     }
 }
 //////////////////Work Pages Responsive//////////////////
@@ -899,6 +918,9 @@ a.visitsite:hover {
         .hgroup {
             bottom: 0;
             margin-bottom: -220px;
+        }
+        h2 {
+            font-size:60px;
         }
     }
 

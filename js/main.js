@@ -127,7 +127,7 @@ function loadElements(data) {
 
 	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
-		scrollToContent(null, null);
+		if (win.width() > 960) scrollToContent(null, null, 1);
 		curContent.find('*').remove();
 	}, delay + 5);
 
@@ -199,8 +199,6 @@ function loadElements(data) {
 		curContent.height('auto');
 
 	}, delay + 10);
-
-	setTimeout(scrollDown, delay + 100);
 
 	win.scroll(function() {
 		newScrollingElements.each(function(){

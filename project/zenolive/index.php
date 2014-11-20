@@ -5,7 +5,7 @@ include('../../includes/header.php'); ?>
 
     <div class="banner">
         <div class="bannerimg"><img alt="" src="<?php echo $url; ?>/img/zeno-app/zenoapp-header.jpg"></div>
-        <div class="hgroup"><h3>Broadcaster Dashboard</h3><h2>ZenoRadio Live</h2></div>
+        <div class="hgroup"><h3 class="whitetitle">Broadcaster Dashboard</h3><h2 class="whitetitle shrink">ZENORADIO LIVE</h2></div>
     </div>
 
     <?php the_navigation($url, $slug); ?>
