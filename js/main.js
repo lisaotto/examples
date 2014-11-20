@@ -9,7 +9,8 @@ var win = $(window),
 var siteURLs = [
 	'lisaot.to',
 	'localhost',
-	'grad.lisaot.to'
+	'grad.lisaot.to',
+	'staging.lisaot.to'
 ];
 
 // scroll to the content...
@@ -80,7 +81,7 @@ win.scroll(promptScrollOff);
 
 // Return booleans for home page, about page, and just having been on a project page
 function isHome() {
-	return location.href === 'localhost/portfolio/' || location.pathname === '/';
+	return location.href === 'http://localhost/portfolio/' || location.pathname === '/';
 }
 function isAbout() {
 	return location.href === 'http://localhost/portfolio/about/' || location.href === 'http://localhost/portfolio/about' || location.pathname === '/about/' || location.pathname === '/about';
@@ -101,24 +102,11 @@ function scrollToWork(e) {
 	if ( isHome() ) {
 		scrollToContent();
 	} else {
-		location.href = this.href;
-		// TODO: make this work!
+		loadPage(e);
 	}
 }
 
 $('#work-link').click(scrollToWork);
-
-// On small screens, for various conditions, should scroll to where content starts
-function scrollDown() {
-
-	if ( win.width() < 960 ) {
-
-		if ( isAbout() || is404() || ( isHome() && comingFromInternal() ) ) {
-			scrollToContent();
-		}
-	}
-}
-scrollDown();
 
 // Smooth AJAX loading!
 function loadElements(data) {
@@ -139,7 +127,7 @@ function loadElements(data) {
 
 	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
-		scrollToContent(null, null, 1);
+		scrollToContent(null, null);
 		curContent.find('*').remove();
 	}, delay + 5);
 
@@ -161,16 +149,9 @@ function loadElements(data) {
 	for ( var i = 0; i < $data.length; i++ ) {
 		var el = $data[i];
 
-		if (el.tagName === 'HEADER') {
-			url = $(el).find('#page-url').html();
-		}
-		if (el.tagName === 'TITLE') {
-
-			title = el.innerHTML;
-		}
-		if (el.id === 'content') {
-			newContent = $(el);
-		}
+		if (el.tagName === 'HEADER') url = $(el).find('#page-url').html();
+		if (el.tagName === 'TITLE') title = el.innerHTML;
+		if (el.id === 'content') newContent = $(el);
 	}
 
 	if ( !!history ) {
@@ -248,23 +229,23 @@ function loadElements(data) {
 
 var loadedFromElement;
 function loadPage(e) {
-	e.preventDefault();
+	if (e) e.preventDefault();
 
 	loadedFromElement = $(this);
-
-	if (loadedFromElement.hasClass('next') && win.width() < 960) {
-		scrollToContent();
-	}
 
 	var url = this.href;
 
 	// update nav highlighting
 	var aboutLink = $('#about-link'),
 		workLink = $('#work-link');
+
 	if ( loadedFromElement.closest('#about-link').length === 1 ) {
 		workLink.find('p').removeClass('blue');
 		workLink.find('span').remove();
 		aboutLink.find('p').addClass('blue');
+	} else {
+		workLink.find('p').addClass('blue');
+		aboutLink.find('p').removeClass('blue');
 	}
 
 	if ( url !== location.href && url + '/' !== location.href) {

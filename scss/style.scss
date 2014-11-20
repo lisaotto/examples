@@ -903,9 +903,6 @@ a.visitsite:hover {
     }
 
     #content {
-		// override some JS that makes it height of window
-		// on larger screens
-		height: auto !important;
 
         .whitetitle {
             color: $grey;
