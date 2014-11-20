@@ -19,8 +19,7 @@ include('../../includes/header.php'); ?>
             <li>UX</li>
             <li>UI</li>
         </ul>
-        <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" title="Parsley and Sprouts, LLC">Parsley &amp; Sprouts</a></p>
-         <p>Photos taken by <a href="http://nateryan.com" title="Nate Ryan" target="_blank">Nate Ryan</a></p>
+        <p>Photos taken by <a href="http://nateryan.com" title="Nate Ryan" target="_blank">Nate Ryan</a></p>
         </div>
     </div>
     <div class="content outerpadding clearfix">

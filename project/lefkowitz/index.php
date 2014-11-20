@@ -15,7 +15,6 @@ include('../../includes/header.php'); ?>
         <div class="role">
             <h4>My Role</h4>
             <p>I designed site architecture, wireframes, UI mocks and worked closely with developer <a href="http://scottdonaldson.net" alt="Scott Donadlson, Developer" target="_blank">Scott Donaldson</a> to ensure site was developed to spec.</p>
-            <p>Work done with <a href="http://www.parsleyandsprouts.com" target="_blank" title="Parsley and Sprouts, LLC">Parsley &amp; Sprouts</a></p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
