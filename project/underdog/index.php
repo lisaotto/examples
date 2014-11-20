@@ -45,7 +45,7 @@ include('../../includes/header.php'); ?>
             <img alt="Underdog color and type style elements" class="halfcolumn" src="<?php echo $url; ?>/img/underdog/underdog-styleelements.jpg">
             <img alt="Underdog form elements" class="halfcolumn last finalblock" src="<?php echo $url; ?>/img/underdog/underdog-formelements.jpg">
         </div>
-        <a class="visitsite" href="https://www.underdog.io" target="_blank" title="Underdog">VISIT SITE<span class="icon-arrow"></span></a>
+        <a class="visitsite" href="<?php echo $url; ?>/project/underdog" target="_blank" title="Zeno Android App">PROJECT STILL IN DEVELOPMENT</span></a>
     </div>
 
     <div class="bottom-navigation">

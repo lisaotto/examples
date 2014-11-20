@@ -46,6 +46,9 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
 
+    <a class="visitsite" href="<?php echo $url; ?>/project/zenolive" target="_blank" title="Zeno Live">PROJECT STILL IN DEVELOPMENT</span></a>
+    </div>
+
     <div class="bottom-navigation">
         <a class="backup"><span class="title">back up</span><span class="icon-arrow-box"></span></a>
         <div class="bar"></div>
