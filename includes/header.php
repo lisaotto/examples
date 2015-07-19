@@ -107,7 +107,13 @@ include('projects.php');
             <h1>
                Lisa<br/>otto
             </h1>
-            <p class="social"><a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"></a><a href="http://dribbble.com/lisaotto" target="_blank" class="icon-dribbble"></a><a href="http://www.twitter.com/lisa_otto" target"_blank" class="icon-twitter"></a><a href="http://instagram.com/lisa_otto" target="_blank" class="icon-instagram"></a></p>
+            <p class="social">
+                <a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"></a>
+                <a href="ttps://www.linkedin.com/in/ottolisa target="_blank" class="icon-linkedin"></a>
+                <a href="http://dribbble.com/lisaotto" target="_blank" class="icon-dribbble"></a>
+                <a href="http://www.twitter.com/lisa_otto" target"_blank" class="icon-twitter"></a>
+                <a href="http://instagram.com/lisa_otto" target="_blank" class="icon-instagram"></a>
+            </p>
             </div>
         </div>
 
