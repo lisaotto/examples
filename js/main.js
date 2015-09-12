@@ -53,7 +53,7 @@ body.on('click', '.backup .title', scrollToContent);
 
 // Scroll down for more button
 function promptScrollOn() {
-	$('.scroll').addClass('prompting');
+	if ( win.scrollTop < 100 ) $('.scroll').addClass('prompting');
 }
 
 function promptScrollOff() {
@@ -63,6 +63,7 @@ function promptScrollOff() {
 function decideWhenToPrompt() {
 	var url = location.href;
 	url = url.split('/');
+	// only prompt if we're on a project page
 	for ( var i = 0; i < url.length; i++ ) {
 		if ( url[i] === 'project' ) {
 			setTimeout(promptScrollOn, 2500);
