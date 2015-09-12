@@ -9,12 +9,12 @@ $projects = array(
     'zenoandroid' => array(
         'title' => 'ZenoRadio App',
         'subtitle' => 'Android App',
-        'show' => array('grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'zenolive' => array(
         'title' => 'ZenoRadio Live',
         'subtitle' => 'Broadcaster Dashboard',
-        'show' => array('grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'platform' => array(
         'title' => 'Platform',
@@ -34,7 +34,7 @@ $projects = array(
     'bandr' => array(
         'title' => 'B and R',
         'subtitle' => 'Website Redesign',
-        'show' => array('lisaot.to')
+        'show' => array('')
     ),
     'parentalcontrols' => array(
         'title' => 'Parental Controls',
@@ -49,7 +49,7 @@ $projects = array(
     'inctrl' => array(
         'title' => 'Teach InCtrl',
         'subtitle' => 'Website Redesign',
-        'show' => array('lisaot.to')
+        'show' => array('')
     )
 );
 

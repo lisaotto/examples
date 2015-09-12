@@ -28,7 +28,6 @@ include('../../includes/header.php'); ?>
         <div class="clearfix">
             <h5>Defining the User</h5>
             <p class="threecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their perspective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected.</p>
-            <img alt="Zeno Live Proto-Persona describing key features of Adama" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-protopersona.png">
         </div>
         <div class="clearfix">
             <h5>The Design Process</h5>
@@ -46,7 +45,7 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
 
-    <a class="visitsite" href="<?php echo $url; ?>/project/zenolive" target="_blank" title="Zeno Live">PROJECT STILL IN DEVELOPMENT</span></a>
+    <a class="visitsite" href="http://www.zenolive.com" target="_blank" title="Zeno Live">VISIT SITE</span></a>
     </div>
 
     <div class="bottom-navigation">

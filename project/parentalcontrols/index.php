@@ -31,8 +31,6 @@ include('../../includes/header.php'); ?>
         <img alt="Illustrated Educate Icon" class="onecolumn" src="<?php echo $url; ?>/img/parentalcontrols/pc-educate.png">
         <img alt="Illustrated Control Icon" class="onecolumn last" src="<?php echo $url; ?>/img/parentalcontrols/pc-control.png">
         <img alt="Parental Controls landing page design" class="threecolumn last finalblock" src="<?php echo $url; ?>/img/parentalcontrols/pc-landing.jpg">
-
-        <p class="visitsite">SITE IS UNDER DEVELOPMENT</p>
     </div>
 
     <div class="bottom-navigation">
