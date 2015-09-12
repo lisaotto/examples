@@ -53,7 +53,7 @@ body.on('click', '.backup .title', scrollToContent);
 
 // Scroll down for more button
 function promptScrollOn() {
-	if ( win.scrollTop < 100 ) $('.scroll').addClass('prompting');
+	if ( win.scrollTop() < 100 ) $('.scroll').addClass('prompting');
 }
 
 function promptScrollOff() {
