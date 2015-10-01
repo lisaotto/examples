@@ -95,6 +95,11 @@ include('projects.php');
                         </a>
                     </li>
                     <li>
+                        <a href="<?php echo $url; ?>/writing" id="writing-link">
+                            <p class="<?= $title === 'Writing' ? 'blue' : ''; ?>">writing</p>
+                        </a>
+                    </li>
+                    <li>
                         <a href="<?php echo $url; ?>/" id="work-link">
                             <p class="<?= $title !== 'About' ? 'blue' : ''; ?>">work</p>
                             <?php if ($title !== 'About') { ?><span class="icon-arrow blue"></span><?php } ?>
