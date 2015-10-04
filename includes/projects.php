@@ -14,6 +14,7 @@ $projects = array(
     'zenolive' => array(
         'title' => 'ZenoRadio Live',
         'subtitle' => 'Broadcaster Dashboard',
+        'description' => 'bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas ',
         'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'platform' => array(

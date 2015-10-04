@@ -1106,6 +1106,30 @@ a.visitsite:hover {
         opacity: .5;
     }
 }
+
+
+//////////////writing////////////////
+
+.writing-container  {
+    padding: 10% 0 10% 0;
+    h2{
+        font-size: 20px;
+        margin: 0;
+        a:hover{
+            color:$blue;
+
+         }
+    }
+    p{
+        font-size: 14px;
+        opacity: .7;
+        margin: 0;
+        padding: 10px 0 40px 0;
+    }
+
+
+}
+
 //////////////404////////////////
 
 #content {
