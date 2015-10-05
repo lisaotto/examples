@@ -1,6 +1,13 @@
 <?php
 
 $projects = array(
+    'A New 311' => array(
+        'title' => 'A New 311',
+        'subtitle' => 'Speculative Redesign',
+        'description' => 'A speculative redesign on of Pittsburghs 311 system to allow for collaboration, increased engagement and governmental accountability.',
+        'show' => array('grad.lisaot.to')
+    ),
+
     'underdog' => array(
         'title' => 'Underdog',
         'subtitle' => 'User Onboarding',
@@ -9,17 +16,19 @@ $projects = array(
     'zenoandroid' => array(
         'title' => 'ZenoRadio App',
         'subtitle' => 'Android App',
+        'description' => 'An Android app for radio listening and call-ins developed to ease users into the concept that you dont need to <i>call</i> in to engage.',
         'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'zenolive' => array(
         'title' => 'ZenoRadio Live',
         'subtitle' => 'Broadcaster Dashboard',
-        'description' => 'bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas bananas ',
+        'description' => 'ZenoRadios broadcaster dashboard provides tools for individual broadcasters to host radio talk programs with callers from a variety of media (online widgets and telephone calling).',
         'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'platform' => array(
         'title' => 'Platform',
         'subtitle' => 'Blog Integration',
+         'description' => 'Blog redesign ',
         'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'booksatwork' => array(
