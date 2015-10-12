@@ -12,7 +12,7 @@ foreach ( $projects as $slug => $details ) {
             <div>
                 <div class="hgroup">
                     <h2><?= $details['title']; ?></h2>
-                    <h3><?= $details['description']; ?></h3>
+                    <h3><?= $details['subtitle']; ?></h3>
                 </div>
             </div>
             <div><p class="icon-arrow-box"></p></div>
