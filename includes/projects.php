@@ -1,13 +1,11 @@
 <?php
 
 $projects = array(
-    'A New 311' => array(
+    '311' => array(
         'title' => 'A New 311',
         'subtitle' => 'Speculative Redesign',
-        'description' => 'A speculative redesign on of Pittsburghs 311 system to allow for collaboration, increased engagement and governmental accountability.',
-        'show' => array('grad.lisaot.to')
+        'show' => array('lisaot.to, grad.lisaot.to')
     ),
-
     'underdog' => array(
         'title' => 'Underdog',
         'subtitle' => 'User Onboarding',

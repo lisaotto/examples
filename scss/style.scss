@@ -2,6 +2,7 @@
 @import "main";
 @import url("//hello.myfonts.net/count/2c6f59");
 
+
 $grey: #3f4144;
 $lightgrey: #585b5e;
 $lightestgrey: #E0E2E0;
@@ -1122,7 +1123,10 @@ a.visitsite:hover {
     h2{
         font-size: 20px;
 
+        a, a:visited{
+            color:$grey;
 
+        }
         a:hover{
             color:$blue;
 
@@ -1132,7 +1136,7 @@ a.visitsite:hover {
         font-size: 14px;
         opacity: .7;
         margin: 0;
-        padding: 10px 0 40px 0;
+        padding-bottom: 40px;
     }
 
 

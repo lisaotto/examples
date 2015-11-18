@@ -11,7 +11,7 @@ include('../../includes/header.php'); ?>
     <?php the_navigation($url, $slug); ?>
 
     <div class="intro clearfix outerpadding">
-
+        <h2><?= $next; ?></h2>
         <p class="description">As city planning becomes increasingly driven by sensors and data, it’s easy to lose sight of who these cities are for. But a city that relies on collected environmental data is a cold city. Knowing what residents want and need from their city and ensuring that they’re engaged with civic life keeps a city warm and alive. In response to a class project brief to design a “responsive and scalable User Interface that connects the experience across multiple devices ranging from a mobile phone, to digital whiteboards, to interactive kiosks” which facilitated collaborative visual thinking, I explored the way Pittsburgh’s 311 system could facilitate collaboration accross the city.</p>
 
 
