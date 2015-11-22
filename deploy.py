@@ -35,7 +35,8 @@ html = [
 	'project/platform/index.php',
 	'project/underdog/index.php',
 	'project/zenoandroid/index.php',
-	'project/zenolive/index.php'
+	'project/zenolive/index.php',
+	'writing/index.php'
 ]
 
 for slug in html:
@@ -65,7 +66,9 @@ for slug in css:
 	k.set_contents_from_string(r.content)
 
 js = [
-	'js/main.js'
+	'js/min/script.js',
+	'js/min/script.min.js',
+	'js/vendor/modernizr-2.6.2.min.js'
 ]
 
 for slug in js:
