@@ -101,8 +101,8 @@ include('projects.php');
                     </li>
                     <li>
                         <a href="<?php echo $url; ?>/" id="work-link">
-                            <p class="<?= $title !== 'About' ? 'blue' : ''; ?>">work</p>
-                            <?php if ($title !== 'About') { ?><span class="icon-arrow blue"></span><?php } ?>
+                            <p class="<?= $title != 'About' && $title != 'Writing' ? 'blue' : ''; ?>">work</p>
+                            <?php if ($title != 'About' && $title != 'Writing') { ?><span class="icon-arrow blue"></span><?php } ?>
                         </a>
                     </li>
                 </ul>

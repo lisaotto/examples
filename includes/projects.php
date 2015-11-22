@@ -76,16 +76,17 @@ function get_next_slug($url, $slug) {
     $slug = str_replace('project/', '', $slug);
 
     // set pointer of $projects to this one
-    while ( key($projects) !== $slug ) {
+    while ( key($projects) != $slug ) {
         $next = next($projects);
         if (!$next) break;
     }
 
     $next = next($projects);
-    while ( $location !== 'staging' && !in_array($location, $next['show']) ) {
+    while ( $location != 'staging' && !in_array($location, $next['show']) ) {
         $next = next($projects);
         if (!$next) break;
     }
+
     return $next ? key($projects) : false;
 }
 
@@ -100,13 +101,13 @@ function get_prev_slug($url, $slug) {
     $slug = str_replace('project/', '', $slug);
 
     // set pointer of $projects to this one
-    while ( key($projects) !== $slug ) {
+    while ( key($projects) != $slug ) {
         $next = next($projects);
         if (!$next) break;
     }
 
     $prev = prev($projects);
-    while ( $location !== 'staging' && !in_array($location, $prev['show']) ) {
+    while ( $location != 'staging' && !in_array($location, $prev['show']) ) {
         $prev = prev($projects);
         if (!$prev) break;
     }

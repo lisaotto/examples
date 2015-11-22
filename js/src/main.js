@@ -1,4 +1,9 @@
-(function($){
+var $ = require('jquery'),
+	imagesLoaded = require('imagesloaded');
+
+// if we included this separately, it would automatically handle,
+// but since it's coming in from NPM, we have to instantiate the jQuery plugin
+imagesLoaded.makeJQueryPlugin($);
 
 var win = $(window),
 	body = $('body'),
@@ -162,7 +167,7 @@ function loadElements(data) {
 		if (el.id === 'content') newContent = $(el);
 	}
 
-	if ( !!history ) {
+	if ( window.history ) {
 		window.history.pushState({}, title, url);
 		document.title = title;
 	}
@@ -173,7 +178,7 @@ function loadElements(data) {
 		projectSamples = newContent.find('.project-sample'),
 		newReadyElements = newContent.find('.navigation, .intro'),
 		banner = newContent.find('.banner'),
-		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
+		newScrollingElements = newElements.not('.banner, .navigation, .intro, .no-fader').find('img, p').not('.icon-arrow-box');
 
 	banner.children().addClass('fader faded');
 	projectSamples.addClass('fader faded');
@@ -245,18 +250,24 @@ function loadPage(e) {
 
 	// update nav highlighting
 	var aboutLink = $('#about-link'),
+		writingLink = $('#writing-link'),
 		workLink = $('#work-link');
 
+	// TODO: this is a hot mess...
 	if ( loadedFromElement.closest('#about-link').length === 1 ) {
-		workLink.find('p').removeClass('blue');
+		workLink.add(writingLink).find('p').removeClass('blue');
 		workLink.find('span').remove();
 		aboutLink.find('p').addClass('blue');
+	} else if ( loadedFromElement.closest('#writing-link').length === 1 ) {
+		workLink.add(aboutLink).find('p').removeClass('blue');
+		workLink.find('span').remove();
+		writingLink.find('p').addClass('blue');
 	} else {
 		workLink.find('p').addClass('blue');
 		if ( workLink.find('span').length === 0 ) {
 			workLink.append('<span class="icon-arrow blue">');
 		}
-		aboutLink.find('p').removeClass('blue');
+		aboutLink.add(writingLink).find('p').removeClass('blue');
 	}
 
 	if ( url !== location.href && url + '/' !== location.href) {
@@ -296,5 +307,3 @@ function centerPageContent() {
 }
 centerPageContent();
 win.on('load resize', centerPageContent);
-
-}(jQuery));
