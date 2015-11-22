@@ -44,7 +44,7 @@ include('../includes/header.php'); ?>
                 <h2><a href="https://medium.com/interaction-design-service-design-principles/a-wicked-problem-180ae9a7c81d" target="_blank">A Wicked Problem</a></h2>
                 <p>September 12, 2015</p>
             </div>            
-            <div>
+            <div class="finalblock">
                 <h2><a href="https://medium.com/interaction-design-service-design-principles/a-graphic-design-origin-of-interaction-design-9519ece12482" target="_blank">A Graphic Design Origin of Interaction Design?</a></h2>
                 <p>September 6, 2015</p>
             </div>

@@ -4,7 +4,7 @@ $projects = array(
     '311' => array(
         'title' => 'A New 311',
         'subtitle' => 'Speculative Redesign',
-        'show' => array('lisaot.to, grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'underdog' => array(
         'title' => 'Underdog',
