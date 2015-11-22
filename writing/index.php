@@ -13,7 +13,7 @@ include('../includes/header.php'); ?>
         <div class="clearfix">
                      
             <div>
-                <h2><a href="https://medium.com/interaction-design-service-design-principles/observations-from-observing-5dd3e4c5bfd8>Observations from Observing" target="_blank"> Observations from Observing </a></h2>
+                <h2><a href="https://medium.com/interaction-design-service-design-principles/observations-from-observing-5dd3e4c5bfd8#.3o8pehkm6" target="_blank">Observations from Observing </a></h2>
                 <p>November 4, 2015</p>
             </div>            
             <div>
