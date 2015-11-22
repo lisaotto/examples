@@ -7,6 +7,7 @@ include('../includes/header.php'); ?>
 
     <div class="banner">
         <div class="bannerimg"><img alt="" src="<?php echo $url; ?>/img/writing-header.jpg" alt="B and R"></div>
+        <div class="hgroup"><h2 class="bluetitle">WRITING</h2></div>
     </div>
 
    <div class="writing-container outerpadding">
