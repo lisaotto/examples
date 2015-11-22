@@ -26,6 +26,7 @@ html = [
 	'index.php',
 	'404.php',
 	'about/index.php',
+	'project/311/index.php',
 	'project/bandr/index.php',
 	'project/booksatwork/index.php',
 	'project/inctrl/index.php',
