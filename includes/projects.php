@@ -23,15 +23,16 @@ $projects = array(
         'description' => 'ZenoRadios broadcaster dashboard provides tools for individual broadcasters to host radio talk programs with callers from a variety of media (online widgets and telephone calling).',
         'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
+
+    'booksatwork' => array(
+        'title' => 'Books@Work',
+        'subtitle' => 'Website Redesign',
+        'show' => array('lisaot.to', 'grad.lisaot.to')
+    ),
     'platform' => array(
         'title' => 'Platform',
         'subtitle' => 'Blog Integration',
          'description' => 'Blog redesign ',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
-    ),
-    'booksatwork' => array(
-        'title' => 'Books@Work',
-        'subtitle' => 'Website Redesign',
         'show' => array('lisaot.to', 'grad.lisaot.to')
     ),
     'lefkowitz' => array(
@@ -47,7 +48,7 @@ $projects = array(
     'parentalcontrols' => array(
         'title' => 'Parental Controls',
         'subtitle' => 'Website Redesign',
-        'show' => array('lisaot.to')
+        'show' => array('')
     ),
     'infographics' => array(
         'title' => 'Illustrated Infographics',
