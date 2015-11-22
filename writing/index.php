@@ -1,7 +1,6 @@
 <?php
 $title = 'Writing';
 $slug = 'writing';
-$scroll = 'false';
 include('../includes/header.php'); ?>
 
 
@@ -10,7 +9,7 @@ include('../includes/header.php'); ?>
         <div class="hgroup"><h2 class="bluetitle">WRITING</h2></div>
     </div>
 
-   <div class="writing-container outerpadding">
+   <div class="writing-container outerpadding no-fader">
         <div class="clearfix">
                      
             <div>
@@ -18,7 +17,7 @@ include('../includes/header.php'); ?>
                 <p>November 4, 2015</p>
             </div>            
             <div>
-                <h2><a href=" https://medium.com/interaction-design-service-design-principles/the-disappearance-of-user-control-811a57701b82" target="_blank">The Dissapearance of User Control</a></h2>
+                <h2><a href=" https://medium.com/interaction-design-service-design-principles/the-disappearance-of-user-control-811a57701b82" target="_blank">The Disappearance of User Control</a></h2>
                 <p>October 25, 2015</p>
             </div>            
             <div>

@@ -5,7 +5,7 @@ include('../../includes/header.php'); ?>
 
     <div class="banner">
         <div class="bannerimg"><img alt="" src="<?php echo $url; ?>/img/311/header_311.jpg" alt=""></div>
-        <div class="hgroup"><h3>Speculative Redesign</h3><h2>A NEW 311 </h2></div>
+        <div class="hgroup"><h3>Speculative Redesign</h3><h2>A NEW 311</h2></div>
     </div>
 
     <?php the_navigation($url, $slug); ?>
