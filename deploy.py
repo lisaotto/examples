@@ -1,3 +1,4 @@
+import os
 import sys
 import requests
 import boto # AWS python SDK
@@ -82,3 +83,7 @@ for slug in js:
 	k.key = slug
 	k.content_type = 'application/x-javascript'
 	k.set_contents_from_string(r.content)
+
+# images
+print 'Syncing images...'
+os.system('aws s3 sync img s3://' + bucket_name + '/img')
