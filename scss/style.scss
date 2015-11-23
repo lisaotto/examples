@@ -847,6 +847,26 @@ a.visitsite:hover {
     }
 }
 
+a.intext-link, a.intext-link:visited {
+
+    margin-bottom: 0;
+    text-align: center;
+
+    display:block;
+
+    h3{
+        color: $blue !important;
+        margin-bottom:0;
+
+    }
+}
+
+.intext-link a:hover {
+   h3{
+        opacity: .5;
+    } 
+}
+
 ////platform////
 
 .gridoverlay {
