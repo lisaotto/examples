@@ -49,7 +49,7 @@ include('../../includes/header.php'); ?>
             </video>
             <p class="threecolumn"> Bus map design would use a poster map and LEDs. Each map would be customized for each stop it is implemented in and be connected to the Port Authority’s GPS bus data in order to show bus tracking.</p>
             <img alt="Storyboard Panel 2: Maggie Reports a Civic Issue" class="threecolumn" src="<?php echo $url; ?>/img/bus/map_diagram.png">
-            <p class="small">Map Illustration by Saumya</p>
+            <p class="small justcenter">Map Illustration by Saumya</p>
         </div>
         <div class="clearfix">
             <h6>Intervention 2: A Subtle Annoucement of the Bus</h6>
