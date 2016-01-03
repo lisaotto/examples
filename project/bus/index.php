@@ -28,10 +28,6 @@ include('../../includes/header.php'); ?>
             <p class="threecolumn">After taking several research trips to a busy intersection in Pittsburgh, we observed that bus stop riders are not a homogeneous group of people. They appeared to fall into three categories, clustered around age, but defined more broadly by attitude and habit. The 'domimant group' appeared most comfortable in the bus stop and used the wait time for social intereactions. We wondering if we could spread this attitude without disrupting the heirarchy already established within stops.</p>
         </div>
         <div class="clearfix">
-            <img  alt="Mobile UX Flow" class="threecolumn" src="<?php echo $url; ?>/img/311/311-ui.png">
-
-        </div>
-        <div class="clearfix">
             <img  alt="Journey map for the Youth, Dominant Group and Elderly at the bus stop" class="threecolumn" src="<?php echo $url; ?>/img/bus/journey_chart.png">
             <img  alt="Anxiety patterns found at the bus stop" class="threecolumn" src="<?php echo $url; ?>/img/bus/pattern_chart.png">
             
