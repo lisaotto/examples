@@ -11,6 +11,10 @@ include('../includes/header.php'); ?>
 
    <div class="writing-container outerpadding no-fader">
         <div class="clearfix">
+            <div>
+                <h2><a href="https://medium.com/@lisa_otto/this-is-interaction-design-2f3e445dc656#.x6o0caloh" target="_blank">This is Interaction Design, Reconsidered</a></h2>
+                <p>December 13, 2015</p>
+            </div>     
                      
             <div>
                 <h2><a href="https://medium.com/interaction-design-service-design-principles/observations-from-observing-5dd3e4c5bfd8#.3o8pehkm6" target="_blank">Observations from Observing </a></h2>

@@ -59,7 +59,7 @@ include('../../includes/header.php'); ?>
         </div>
     
 
-        <a class="visitsite" target="_blank" href="https://medium.com/ixd-studio/storyboarding-a-new-311-688e1770e880" alt="Books@Work">FULL PROCESS BLOG<span class="icon-arrow"></span></a>
+        <a class="visitsite" target="_blank" href="https://medium.com/ixd-studio/storyboarding-a-new-311-688e1770e880" alt="Process Blog">FULL PROCESS BLOG<span class="icon-arrow"></span></a>
     </div>
 
     <div class="bottom-navigation">

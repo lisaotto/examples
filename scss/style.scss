@@ -177,7 +177,7 @@ a {
     text-decoration:none;
 }
 
-h2, h3, h4, h5, h6, p, a, li, button {
+h2, h3, h4, h5, h6,  p, a, li, button {
     font-family: 'brandon', Arial, sans-serif;
     font-weight:normal;
 }
@@ -566,6 +566,21 @@ a.project-sample:hover, .touch a.project-sample {
         font-size: 22px;
     }
 
+    h6 {
+        text-align: center;
+        font-size: 20px;
+        color: $grey;
+        padding-top:4%;
+        font-weight: bold;
+        
+    }
+
+    .small {
+        font-size: 12px;
+        color: $lightgrey;
+        text-align: center;
+    }
+
     p{
         a{
             color:$blue;
@@ -578,6 +593,12 @@ a.project-sample:hover, .touch a.project-sample {
     }
 
 }
+
+ video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 8%;
+ }
 
 .navigation{
     position: fixed;
