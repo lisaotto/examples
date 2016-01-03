@@ -1,7 +1,24 @@
+
 <?php
 $title = 'Lisa Otto';
 $scroll = 'false';
+
 include('includes/header.php');
+
+?>
+ <div class="home-container outerpadding">
+
+ <ul>
+    <li>research</li>
+    <li>digital</li>
+    <li>exploratory</li>
+    <li>illustration</li>
+</ul>
+
+
+<?php
+
+
 
 foreach ( $projects as $slug => $details ) {
 
@@ -15,11 +32,13 @@ foreach ( $projects as $slug => $details ) {
                     <h3><?= $details['subtitle']; ?></h3>
                 </div>
             </div>
-            <div><p class="icon-arrow-box"></p></div>
         </div>
     </a>
     <?php
     }
 } ?>
 
+</div>
+
 <?php include('includes/footer.php'); ?>
+

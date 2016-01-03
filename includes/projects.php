@@ -1,6 +1,11 @@
 <?php
 
 $projects = array(
+    'Bus' => array(
+        'title' => 'At the Bus Stop',
+        'subtitle' => 'Research &amp Design Proposal',
+        'show' => array('lisaot.to', 'grad.lisaot.to')
+    ),
     '311' => array(
         'title' => 'A New 311',
         'subtitle' => 'Speculative Redesign',
