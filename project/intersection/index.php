@@ -16,7 +16,7 @@ include('../../includes/header.php'); ?>
 
         <div class="role">
             <h4>My Role</h4>
-            <p>the CMU MDes Computational Lab</p>
+            <p>CMU MDes Computational Lab</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
@@ -24,7 +24,7 @@ include('../../includes/header.php'); ?>
         <h5 class="no-margin">Project 1: Intersection / Collision </h5>
         <div class="clearfix">
             
-            <p class="threecolumn">Typically, traffic signals function as a mediator, allowing pedestrians and cars to avoid interacting with each other. Crosswalks are the intersections where cars and pedestrians overlap. Otherwise, the two remain in their own separate channels. Sometimes, this intersection creates a collision.On Twitter, you can watch as people share these experiences with these intersections—not with those who also experienced the intersection but with their followers. Does Twitter serve a similar function to the traffic signals? By matching two tweets—one from a person writing ‘almost hit someone with my car’ and one from someone writing ‘almost got hit by a car today,’ we create another near collision...</p>
+            <p class="threecolumn">Typically, traffic signals function as a mediator, allowing pedestrians and cars to avoid interacting with each other. Crosswalks are the intersections where cars and pedestrians overlap. Otherwise, the two remain in their own separate channels. Sometimes, this intersection creates a collision. On Twitter, you can watch as people share experiences with these intersections—not with those who also experienced the intersection but with their followers. Does Twitter serve a similar function to the traffic signals? By matching two tweets—one from a person writing ‘almost hit someone with my car’ and one from someone writing ‘almost got hit by a car today,’ we create another near collision...</p>
             <img alt="Intersection 1 Screenshot" class="threecolumn" src="<?php echo $url; ?>/img/intersection/Screen-Shot-1.jpg">
             <img alt="Intersection 1 Screenshot" class="threecolumn" src="<?php echo $url; ?>/img/intersection/Screen-Shot-2.jpg">
             <img alt="Intersection 1 Screenshot" class="threecolumn finalblock" src="<?php echo $url; ?>/img/intersection/Screen-Shot-3.jpg">
