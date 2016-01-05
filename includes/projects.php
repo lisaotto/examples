@@ -1,74 +1,86 @@
 <?php
 
+$tags = array(
+    'design research',
+    'user experience',
+    'experimental',
+    'illustration'
+);
+
 $projects = array(
     'Bus' => array(
         'title' => 'At the Bus Stop',
         'subtitle' => 'Research &amp Design Proposal',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => 'bus/bus-header.jpg',
+        'tags' => array('design research')
     ),
     '311' => array(
         'title' => 'A New 311',
         'subtitle' => 'Speculative Redesign',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => '311/header_311.jpg',
+        'tags' => array('user experience')
     ),
     'underdog' => array(
         'title' => 'Underdog',
         'subtitle' => 'User Onboarding',
-        'show' => array('grad.lisaot.to')
+        'show' => array('grad.lisaot.to'),
+        'img' => 'underdog/underdog-header.jpg',
+        'tags' => array('user experience')
     ),
     'zenoandroid' => array(
         'title' => 'ZenoRadio App',
         'subtitle' => 'Android App',
         'description' => 'An Android app for radio listening and call-ins developed to ease users into the concept that you dont need to <i>call</i> in to engage.',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => 'zeno-app/zenoapp-header.jpg',
+        'tags' => array('user experience', 'research')
     ),
     'zenolive' => array(
         'title' => 'ZenoRadio Live',
         'subtitle' => 'Broadcaster Dashboard',
         'description' => 'ZenoRadios broadcaster dashboard provides tools for individual broadcasters to host radio talk programs with callers from a variety of media (online widgets and telephone calling).',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => 'zeno-app/zenoapp-header.jpg',
+        'tags' => array('user experience', 'research')
     ),
 
     'booksatwork' => array(
         'title' => 'Books@Work',
         'subtitle' => 'Website Redesign',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => 'booksatwork/header_booksatwork.png',
+        'tags' => array('user experience')
     ),
     'platform' => array(
         'title' => 'Platform',
         'subtitle' => 'Blog Integration',
          'description' => 'Blog redesign ',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => 'platform/platform-header.png',
+        'tags' => array('user experience')
     ),
     'lefkowitz' => array(
         'title' => 'David Lefkowitz',
         'subtitle' => 'Website Redesign',
-        'show' => array('grad.lisaot.to')
-    ),
-    'bandr' => array(
-        'title' => 'B and R',
-        'subtitle' => 'Website Redesign',
-        'show' => array('')
-    ),
-    'parentalcontrols' => array(
-        'title' => 'Parental Controls',
-        'subtitle' => 'Website Redesign',
-        'show' => array('')
+        'show' => array('grad.lisaot.to'),
+        'img' => 'lefkowitz/lefko-header.jpg',
+        'tags' => array('user experience')
     ),
     'intersection' => array(
         'title' => 'Pittsburgh Intersections',
         'subtitle' => 'Conceptual Design Explorations',
-        'show' => array('lisaot.to')
+        'show' => array('lisaot.to'),
+        'img' => 'intersection/intersection-header.jpg',
+        'tags' => array('experimental')
     ),
     'infographics' => array(
         'title' => 'Illustrated Infographics',
         'subtitle' => 'Design &amp; Illustration',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
-    ),
-    'inctrl' => array(
-        'title' => 'Teach InCtrl',
-        'subtitle' => 'Website Redesign',
-        'show' => array('')
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => 'infographics/header-infographics.png',
+        'tags' => array('illustration')
     )
 );
 

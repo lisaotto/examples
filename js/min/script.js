@@ -308,6 +308,27 @@ function centerPageContent() {
 }
 centerPageContent();
 win.on('load resize', centerPageContent);
+
+$('#tags li').click(function() {
+
+	var $this = $(this),
+		tag = $this.text(),
+		samples = $('.project-sample');
+
+	if ( !$this.hasClass('active') ) {
+		samples.filter(function() {
+			return $(this).attr('data-tags').split(',').indexOf(tag) > -1;
+		}).addClass('active');
+		samples.filter(function() {
+			return $(this).attr('data-tags').split(',').indexOf(tag) === -1;
+		}).addClass('inactive');
+	// reset
+	} else {
+		samples.removeClass('active inactive');
+	}
+
+	$this.toggleClass('active');
+});
 },{"imagesloaded":2,"jquery":5}],2:[function(require,module,exports){
 /*!
  * imagesLoaded v3.2.0
