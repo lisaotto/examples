@@ -1,10 +1,47 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+var $ = require('jquery');
+
+function init() {
+	
+	var tags = $('#tags li');
+
+	tags.click(function() {
+
+		var $this = $(this),
+			tag = $this.text(),
+			samples = $('.project-sample');
+
+		$this.siblings().removeClass('active');
+
+		// reset
+		samples.removeClass('active inactive');
+
+		if ( !$this.hasClass('active') ) {
+			samples.filter(function() {
+				return $(this).attr('data-tags').split(',').indexOf(tag) > -1;
+			}).addClass('active');
+			samples.filter(function() {
+				return $(this).attr('data-tags').split(',').indexOf(tag) === -1;
+			}).addClass('inactive');
+		}
+
+		$this.toggleClass('active');
+	});
+}
+
+module.exports = {
+	init: init
+};
+},{"jquery":6}],2:[function(require,module,exports){
 var $ = require('jquery'),
 	imagesLoaded = require('imagesloaded');
 
 // if we included this separately, it would automatically handle,
 // but since it's coming in from NPM, we have to instantiate the jQuery plugin
 imagesLoaded.makeJQueryPlugin($);
+
+var tags = require('./components/tags');
+tags.init();
 
 var win = $(window),
 	body = $('body'),
@@ -308,28 +345,7 @@ function centerPageContent() {
 }
 centerPageContent();
 win.on('load resize', centerPageContent);
-
-$('#tags li').click(function() {
-
-	var $this = $(this),
-		tag = $this.text(),
-		samples = $('.project-sample');
-
-	if ( !$this.hasClass('active') ) {
-		samples.filter(function() {
-			return $(this).attr('data-tags').split(',').indexOf(tag) > -1;
-		}).addClass('active');
-		samples.filter(function() {
-			return $(this).attr('data-tags').split(',').indexOf(tag) === -1;
-		}).addClass('inactive');
-	// reset
-	} else {
-		samples.removeClass('active inactive');
-	}
-
-	$this.toggleClass('active');
-});
-},{"imagesloaded":2,"jquery":5}],2:[function(require,module,exports){
+},{"./components/tags":1,"imagesloaded":3,"jquery":6}],3:[function(require,module,exports){
 /*!
  * imagesLoaded v3.2.0
  * JavaScript is all like "You images are done yet or what?"
@@ -715,7 +731,7 @@ function makeArray( obj ) {
 
 });
 
-},{"eventie":3,"wolfy87-eventemitter":4}],3:[function(require,module,exports){
+},{"eventie":4,"wolfy87-eventemitter":5}],4:[function(require,module,exports){
 /*!
  * eventie v1.0.6
  * event binding helper
@@ -799,7 +815,7 @@ if ( typeof define === 'function' && define.amd ) {
 
 })( window );
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 /*!
  * EventEmitter v4.2.11 - git.io/ee
  * Unlicense - http://unlicense.org/
@@ -1275,7 +1291,7 @@ if ( typeof define === 'function' && define.amd ) {
     }
 }.call(this));
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
@@ -10487,4 +10503,4 @@ return jQuery;
 
 }));
 
-},{}]},{},[1]);
+},{}]},{},[2]);

@@ -5,6 +5,9 @@ var $ = require('jquery'),
 // but since it's coming in from NPM, we have to instantiate the jQuery plugin
 imagesLoaded.makeJQueryPlugin($);
 
+var tags = require('./components/tags');
+tags.init();
+
 var win = $(window),
 	body = $('body'),
 	headerContainer = $('header'),
@@ -307,24 +310,3 @@ function centerPageContent() {
 }
 centerPageContent();
 win.on('load resize', centerPageContent);
-
-$('#tags li').click(function() {
-
-	var $this = $(this),
-		tag = $this.text(),
-		samples = $('.project-sample');
-
-	if ( !$this.hasClass('active') ) {
-		samples.filter(function() {
-			return $(this).attr('data-tags').split(',').indexOf(tag) > -1;
-		}).addClass('active');
-		samples.filter(function() {
-			return $(this).attr('data-tags').split(',').indexOf(tag) === -1;
-		}).addClass('inactive');
-	// reset
-	} else {
-		samples.removeClass('active inactive');
-	}
-
-	$this.toggleClass('active');
-});
