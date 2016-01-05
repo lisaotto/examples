@@ -6,7 +6,7 @@ $scroll = 'false';
 include('includes/header.php');
 
 ?>
- <div class="home-container outerpadding">
+ <div class="home-container outerpadding clearfix">
 
  <ul>
     <li>research</li>

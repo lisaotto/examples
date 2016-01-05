@@ -16,7 +16,7 @@ include('../../includes/header.php'); ?>
 
         <div class="role">
             <h4>My Role</h4>
-            <p>I worked with fellow CMU design grad students <a href="https://medium.com/@saumya.k" target="_blank">Saumya Kharbanda</a> and <a href="http://kate-mclean.squarespace.com/" target="_blank">Kate McLean</a> collaborately on the research and design proposal phases of this project for IXD Studio.</p>
+            <p>I worked with fellow CMU design grad students <a href="https://medium.com/@saumya.k" target="_blank">Saumya Kharbanda</a> and <a href="http://kate-mclean.squarespace.com/" target="_blank">Kate McLean</a> collaborately on the research and design proposal phases of this project for CMU MDes IXD Studio.</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
@@ -38,9 +38,9 @@ include('../../includes/header.php'); ?>
         <div class="clearfix">
             <h6>Intervention 1: Predicting Bus Service without fixed timing</h6>
             <p class="threecolumn">While the wait time between buses might be fixed, the way people track that wait time varies (pause) from a tacit understanding of the bus cycle to printed schedules to digital apps. We saw that the fixed arrival time increased anxiety, focusing people on the wait time and creating frustration if the bus was even a few seconds off. An integrated wayfinding system would track the location of the buses, relying heavily on people’s assessment of arrival time and avoiding fixed scheduling. This map would begin to orient people to Pittsburgh’s illegible geography, and more functionally, alleviate the confusion of an overcrowded bus blowing by.</p>
-            <video width="1400" autoplay loop > 
-                <source src="<?php echo $url; ?>/img/bus/map.mp4" type="video/mp4"> 
-                <source src="<?php echo $url; ?>/img/bus/map.ogg" type="video/ogg"> 
+            <video width="1400" > 
+                <source src="<?php echo $url; ?>/img/bus/bus.mp4" type="video/mp4"> 
+                <source src="<?php echo $url; ?>/img/bus/bus.ogg" type="video/ogg"> 
                 <source src="<?php echo $url; ?>/img/bus/map.webm" type="video/webm"> 
             </video>
             <p class="threecolumn"> Bus map design would use a poster map and LEDs. Each map would be customized for each stop it is implemented in and be connected to the Port Authority’s GPS bus data in order to show bus tracking.</p>

@@ -43,7 +43,7 @@ $projects = array(
     'lefkowitz' => array(
         'title' => 'David Lefkowitz',
         'subtitle' => 'Website Redesign',
-        'show' => array('lisaot.to', 'grad.lisaot.to')
+        'show' => array('grad.lisaot.to')
     ),
     'bandr' => array(
         'title' => 'B and R',
@@ -54,6 +54,11 @@ $projects = array(
         'title' => 'Parental Controls',
         'subtitle' => 'Website Redesign',
         'show' => array('')
+    ),
+    'intersection' => array(
+        'title' => 'Pittsburgh Intersections',
+        'subtitle' => 'Conceptual Design Explorations',
+        'show' => array('lisaot.to')
     ),
     'infographics' => array(
         'title' => 'Illustrated Infographics',

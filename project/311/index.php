@@ -16,7 +16,7 @@ include('../../includes/header.php'); ?>
 
         <div class="role">
             <h4>My Role</h4>
-            <p>I designed the storyboards, wireframes, mocks and video based on personas provided by the IXD Studio class.</p>
+            <p>I designed the storyboards, wireframes, mocks and video based on personas provided by the CMU MDes IXD Studio.</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">

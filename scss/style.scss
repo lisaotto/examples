@@ -192,6 +192,10 @@ h1 {
 
 }
 
+.no-margin {
+    margin: 0;
+}
+
 
 //////////////////header//////////////////
 
@@ -307,22 +311,30 @@ main {
     margin-right: 0;
 }
 .home-container{
+    height: 100%;
     ul{
+        position: fixed;
+        top: 0;
         list-style: none;
         display: inline-block;
+        margin: 0;
+        padding: 10px 8% 0 0;
         width: 100%;
-        text-align: center;
-        padding-bottom: 2%;
+        background-color: $lightestgrey;
+        height: 50px;
+        z-index: 100;
+
     }
 
     li {
 
         float: left;
-        font-size: 20px;;
-        padding-right: 10%;
+        font-size: 20px;
+        padding-right: 3%;
         text-decoration: underline;
         color: $grey;
         text-align: center;
+        width: 16%;
 
 
 
@@ -353,7 +365,7 @@ main {
 }
 
 .overlay {
-    width: 70%;
+    width: 100%;
     height: 60%;
     position: absolute;
     margin: 0 10%;
@@ -383,7 +395,7 @@ main {
             color: $grey;
             text-align :left;
             margin: 0;
-            padding-top: 2px;
+            padding-top: 4px;
         }
 
         .hgroup {
@@ -446,6 +458,25 @@ a.project-sample:hover, .touch a.project-sample {
 }
 
 
+//////////////////Media Query > 1200 //////////////////
+
+@media screen and (max-width: 1200px){
+
+    .overlay {
+
+        h2{
+            font-size:20px;
+        }
+
+        h3{
+            font-size: 12px;
+        }
+
+    }
+
+
+}
+
 
 //////////////////Media Query < 960 //////////////////
 
@@ -466,7 +497,9 @@ a.project-sample:hover, .touch a.project-sample {
 
     .overlay {
 
-        h2, p {
+
+
+        p {
             font-size: 25px;
         }
 
@@ -475,12 +508,25 @@ a.project-sample:hover, .touch a.project-sample {
         }
     }
 
+    .project-sample {
+        width: $halfcolumnscreen;
+    }
+
     nav {
         a {
             .icon-arrow {
                 display:none;
             }
         }
+    }
+
+    .home-container {
+
+    padding-top: 8%;
+        ul {
+            display: none;
+        }
+
     }
 }
 
@@ -491,6 +537,10 @@ a.project-sample:hover, .touch a.project-sample {
     .portrait {
         margin-top: -225px;
         margin-left: 0px;
+    }
+
+    .project-sample {
+        width: 100%;
     }
 
 
