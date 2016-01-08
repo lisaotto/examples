@@ -357,6 +357,7 @@ main {
     float: left;
     margin-right: 3%;
     border-bottom: 2px solid $dblue;
+    transition: 0.3s;
 
     img{
         position:absolute;
@@ -374,12 +375,14 @@ main {
     width:100%;
  
     background-size: auto 100%;
-    transition: 0.3s opacity;
+    transition: 0.3s;
 
     .project-sample:hover & {
         opacity: 1;
     }
 }
+
+
 
 .overlay {
     width: 100%;
@@ -425,7 +428,8 @@ main {
  }
 
 .inactive {
-    opacity: .4;
+
+    display:none;
 }
 
 li.active{
@@ -441,6 +445,8 @@ a.project-sample:hover, .touch a.project-sample {
 
     h2, h3 {
         opacity:1;
+        color:$blue !important;
+        text-shadow: 0px 0px 2px transparentize($grey, .4);
     }
 
 
@@ -449,7 +455,7 @@ a.project-sample:hover, .touch a.project-sample {
 
 //////////////////Media Query > 1450 //////////////////
 
-@media screen and (min-width: 1450px){
+@media screen and (min-width: 1600px){
 
     .intro > p {
         font-size: 22px !important;
@@ -463,15 +469,11 @@ a.project-sample:hover, .touch a.project-sample {
     .overlay {
 
         h2{
-            font-size:40px;
+            font-size:36px;
         }
 
         h3{
-            font-size:24px;
-        }
-
-        p{
-            font-size: 26px;
+            font-size:22px;
         }
     }
 }
