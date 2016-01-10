@@ -499,6 +499,13 @@ a.project-sample:hover, .touch a.project-sample {
 
     }
 
+    .home-container {
+        .li {
+            font-size: 12px;
+        }
+
+    }
+
 
 }
 
@@ -577,6 +584,16 @@ a.project-sample:hover, .touch a.project-sample {
 
         h3 {
             font-size: 16px;
+        }
+    }
+
+    .project-sample:hover .bgimg {
+        opacity: 0;
+    }
+    a.project-sample:hover {
+        h2, h3 {
+            color: $grey !important;
+            text-shadow: 0 0 0 transparent;
         }
     }
 }

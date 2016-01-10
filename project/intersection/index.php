@@ -16,7 +16,7 @@ include('../../includes/header.php'); ?>
 
         <div class="role">
             <h4>My Role</h4>
-            <p>CMU MDes Computational Lab</p>
+            <p>Created during CMU MDes Computational Lab.</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">

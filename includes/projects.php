@@ -8,7 +8,7 @@ $tags = array(
 );
 
 $projects = array(
-    'Bus' => array(
+    'bus' => array(
         'title' => 'At the Bus Stop',
         'subtitle' => 'Research &amp Design Proposal',
         'show' => array('lisaot.to', 'grad.lisaot.to'),
