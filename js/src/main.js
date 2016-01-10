@@ -5,12 +5,14 @@ var $ = require('jquery'),
 // but since it's coming in from NPM, we have to instantiate the jQuery plugin
 imagesLoaded.makeJQueryPlugin($);
 
-var tags = require('./components/tags');
-tags.init();
+var home = require('./components/home');
+home.init();
+
+var header = require('./components/header');
+header.init();
 
 var win = $(window),
 	body = $('body'),
-	headerContainer = $('header'),
 	header = $('#header'),
 	tab = $('.tab');
 
@@ -32,12 +34,6 @@ function scrollToContent(e, amount, time) {
 		scrollTop: top
 	}, time || 500);
 }
-
-function headerThings() {
-	headerContainer.height( win.height() );
-}
-headerThings();
-win.resize( headerThings );
 
 function toggle() {
 	$( this.getAttribute('data-toggle') ).toggleClass( this.getAttribute('data-toggle-class') );

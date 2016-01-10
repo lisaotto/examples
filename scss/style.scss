@@ -169,8 +169,13 @@ $paddingmobile: 12%;
 
 
 html {
-    background-color: $grey;
+    background-color: $lightestgrey;
     position: relative;
+
+    // for header sizing (see js/components/header)
+    &.preload {
+        background-color: $grey;
+    }
 }
 
 a {
@@ -200,6 +205,7 @@ h1 {
 //////////////////header//////////////////
 
 header {
+    background: $grey;
     width: 30%;
     float: left;
     position:fixed;
@@ -357,7 +363,6 @@ main {
     float: left;
     margin-right: 3%;
     border-bottom: 2px solid $dblue;
-    transition: 0.3s;
 
     img{
         position:absolute;
