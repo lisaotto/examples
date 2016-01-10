@@ -2,6 +2,7 @@
 @import "main";
 @import url("//hello.myfonts.net/count/2c6f59");
 
+
 $grey: #3f4144;
 $lightgrey: #585b5e;
 $lightestgrey: #E0E2E0;
@@ -118,11 +119,11 @@ $paddingmobile: 12%;
 
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?-eukg1h');
-    src:url('../fonts/icomoon.eot?#iefix-eukg1h') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?-eukg1h') format('woff'),
-        url('../fonts/icomoon.ttf?-eukg1h') format('truetype'),
-        url('../fonts/icomoon.svg?-eukg1h#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?5ztwgx');
+    src:url('../fonts/icomoon.eot?#iefix5ztwgx') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?5ztwgx') format('truetype'),
+        url('../fonts/icomoon.woff?5ztwgx') format('woff'),
+        url('../fonts/icomoon.svg?5ztwgx#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -142,12 +143,12 @@ $paddingmobile: 12%;
 }
 
 .icon-envelope:before {
-    content: "\e601";
-}
-.icon-arrow-box:before {
     content: "\e600";
 }
 .icon-arrow:before {
+    content: "\e601";
+}
+.icon-arrow-box:before {
     content: "\e602";
 }
 .icon-instagram:before {
@@ -158,6 +159,9 @@ $paddingmobile: 12%;
 }
 .icon-dribbble:before {
     content: "\e605";
+}
+.icon-linkedin:before {
+    content: "\e606";
 }
 
 
@@ -173,7 +177,7 @@ a {
     text-decoration:none;
 }
 
-h2, h3, h4, h5, p, a, li, button {
+h2, h3, h4, h5, h6,  p, a, li, button {
     font-family: 'brandon', Arial, sans-serif;
     font-weight:normal;
 }
@@ -186,6 +190,10 @@ h1 {
 .blue {
     color: $blue;
 
+}
+
+.no-margin {
+    margin: 0;
 }
 
 
@@ -212,7 +220,7 @@ nav {
     }
 
     li{
-        width:50%;
+        width:33.3%;
         text-align: center;
         border-right: 1px solid $lightgrey;
         float:left;
@@ -228,15 +236,19 @@ nav {
         color: $lightestgrey;
 
         p, .icon-arrow {
-            top: 9px;
             font-size: 20px;
             margin:0;
             display: inline-block;
         }
 
+        p{
+            top:10px;
+        }
+
         .icon-arrow{
             transform:rotate(-90deg);
             padding-right:10px;
+            top: 8px;
         }
 
     }
@@ -268,7 +280,7 @@ h1 {
         -webkit-text-fill-color: transparent;
     animation: animatedBackground 25s linear infinite;
 }
- 
+
 .social {
     width: 100%;
     text-align: center;
@@ -276,7 +288,7 @@ h1 {
     position: absolute;
 
     a {
-        margin: 0 20px 0 20px;
+        margin: 0 16px 0 16px;
         padding: 10px;
         font-size: 18px;
         display:inline-block;
@@ -298,27 +310,87 @@ main {
     float: right;
     margin-right: 0;
 }
+.home-container{
+    height: 100%;
+    ul{
+        position: fixed;
+        top: 0;
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 10px 8% 0 0;
+        width: 100%;
+        background-color: $lightestgrey;
+        height: 50px;
+        z-index: 100;
 
+    }
+
+    li {
+
+        float: left;
+        font-size: 20px;
+        padding-right: 3%;
+        text-decoration: underline;
+        color: $grey;
+        text-align: center;
+        width: 16%;
+
+
+
+    }
+
+    li:hover {
+        color: $blue;
+        cursor: pointer;
+    }
+         
+}
 
 .project-sample {
 	background: $blue;
     padding-bottom: 22.73%;
+    margin-bottom: 5%;
     display: block;
-    width: 100%;
-    clear: both;
+    width: $columnscreen;
+
+    float: left;
+    margin-right: 3%;
     border-bottom: 2px solid $dblue;
+    transition: 0.3s;
 
     img{
         position:absolute;
-        width:100%;
+        width:$columnscreen;
     }
 }
 
+.bgimg {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width:100%;
+ 
+    background-size: auto 100%;
+    transition: 0.3s;
+
+    .project-sample:hover & {
+        opacity: 1;
+    }
+}
+
+
+
 .overlay {
-    width: 70%;
+    width: 100%;
     height: 60%;
     position: absolute;
-    margin: 4.5% 20%;
+    margin: 0 10%;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: left;
     transition: opacity .5s ease;
     transition-delay: .1s;
@@ -331,17 +403,20 @@ main {
         }
 
         h2 {
-            font-size: 36px;
+            font-size: 28px;
             color: $grey;
             text-align: left;
             margin: 0;
+            line-height: 100%;
         }
 
         h3 {
-            font-size: 18px;
+            font-size: 16px;
             color: $grey;
             text-align :left;
             margin: 0;
+            padding-top: 4px;
+
         }
 
         .hgroup {
@@ -349,18 +424,17 @@ main {
             transform: translateY(-50%);
             padding-right: 30px;
         }
-
-        p {
-            color: $grey;
-            text-align:center;
-            font-size: 20px;
-            margin: 0;
-            top: 80%;
-            opacity:0;
-            transition: .4s ease;
-            transition-delay: .1s;
-        }
  }
+
+.inactive {
+
+    display:none;
+}
+
+li.active{
+    color:$blue;
+}
+
 
 .icon-arrow-box {
     display:block;
@@ -368,51 +442,60 @@ main {
 
 a.project-sample:hover, .touch a.project-sample {
 
-	background: $dblue;
-
-    img {
-        opacity: .8;
+    h2, h3 {
+        opacity:1;
+        color:$blue !important;
+        text-shadow: 0px 0px 2px transparentize($grey, .4);
     }
 
-    .overlay p{
-        opacity:.95;
-    }
 
-    p {
-        top: 50%;
-        transform: translateY(-50%);
-    }
+
 }
 
 //////////////////Media Query > 1450 //////////////////
 
-@media screen and (min-width: 1450px){
+@media screen and (min-width: 1600px){
 
     .intro > p {
         font-size: 22px !important;
         line-height:150%;
     }
 
-    p.onecolumn, p.twocolumn {
+    p.onecolumn, p.twocolumn, p.threecolumn, .role > p{
         font-size: 18px
     }
 
     .overlay {
 
         h2{
-            font-size:40px;
+            font-size:36px;
         }
 
         h3{
-            font-size:24px;
-        }
-
-        p{
-            font-size: 26px;
+            font-size:22px;
         }
     }
 }
 
+
+//////////////////Media Query > 1200 //////////////////
+
+@media screen and (max-width: 1200px){
+
+    .overlay {
+
+        h2{
+            font-size:20px;
+        }
+
+        h3{
+            font-size: 12px;
+        }
+
+    }
+
+
+}
 
 
 //////////////////Media Query < 960 //////////////////
@@ -434,7 +517,9 @@ a.project-sample:hover, .touch a.project-sample {
 
     .overlay {
 
-        h2, p {
+
+
+        p {
             font-size: 25px;
         }
 
@@ -443,12 +528,25 @@ a.project-sample:hover, .touch a.project-sample {
         }
     }
 
+    .project-sample {
+        width: $halfcolumnscreen;
+    }
+
     nav {
         a {
             .icon-arrow {
                 display:none;
             }
         }
+    }
+
+    .home-container {
+
+    padding-top: 8%;
+        ul {
+            display: none;
+        }
+
     }
 }
 
@@ -459,6 +557,10 @@ a.project-sample:hover, .touch a.project-sample {
     .portrait {
         margin-top: -225px;
         margin-left: 0px;
+    }
+
+    .project-sample {
+        width: 100%;
     }
 
 
@@ -510,9 +612,27 @@ a.project-sample:hover, .touch a.project-sample {
         }
     }
 
-    .overlay {
+    .banner {
         h2 {
+            font-size:30px;
+        }
+    }
+
+    .overlay {
+        h3 {
             display:none;
+        }
+    }
+
+    .navigation {
+        .hide-small{
+            display:none;
+        }
+
+        .back {
+            .icon-arrow-box {
+                margin-top: 5px;
+            }
         }
     }
 }
@@ -523,7 +643,7 @@ a.project-sample:hover, .touch a.project-sample {
 #content{
     background-color:$lightestgrey;
 
-    h2, h3, h4, p {
+    h2, h3, p {
         color: $grey;
     }
 
@@ -533,6 +653,34 @@ a.project-sample:hover, .touch a.project-sample {
         font-size: 34px;
         margin-top: 8%;
         margin-bottom: -4%;
+    }
+
+    h4 {
+        color: $blue;
+        font-size: 22px;
+    }
+
+    h6 {
+        text-align: center;
+        font-size: 20px;
+        color: $grey;
+        padding-top:4%;
+        font-weight: bold;
+        
+    }
+
+    .small {
+        font-size: 12px;
+        color: $lightgrey;
+
+
+           a, a:visited {
+            color: $blue;
+        }
+
+        a:hover {
+             opacity: .5;
+        }
     }
 
     p{
@@ -548,6 +696,12 @@ a.project-sample:hover, .touch a.project-sample {
 
 }
 
+ video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 8%;
+ }
+
 .navigation{
     position: fixed;
     top: 0;
@@ -559,11 +713,12 @@ a.project-sample:hover, .touch a.project-sample {
 
     span {
         display: inline-block;
-        padding: 10px;
+        margin-top:10px;
     }
 
     .icon-arrow-box {
-        top: 2px;
+        top: 3px;
+        margin: 0 8px;
     }
 }
 
@@ -612,7 +767,6 @@ a.project-sample:hover, .touch a.project-sample {
     left:0;
     top:0;
     z-index:10002;
-
 }
 
 .next{
@@ -625,6 +779,7 @@ a.project-sample:hover, .touch a.project-sample {
     right:0;
     bottom:0;
     z-index:10001;
+    cursor: pointer;
 }
 
 .back {
@@ -648,7 +803,7 @@ a.project-sample:hover, .touch a.project-sample {
 
     h2 {
         margin: 10px 0;
-        font-size: 80px;
+        font-size: 70px;
         line-height: 70%;
     }
 
@@ -772,6 +927,9 @@ a.visitsite:hover {
     margin: 0 auto;
     padding-top: $paddingscreen;
 }
+.justcenter {
+    text-align: center;
+}
 
 .last {
     margin-right: 0;
@@ -809,6 +967,30 @@ a.visitsite:hover {
         text-shadow: 2px 2px 8px transparentize($grey, 0.5);
     }
 
+    .bluetitle {
+        color: $grey;
+        text-shadow: 2px 2px 8px transparentize($grey, 0.5);
+    }
+}
+
+a.intext-link, a.intext-link:visited {
+
+    margin-bottom: 0;
+    text-align: center;
+
+    display:block;
+
+    h3{
+        color: $blue !important;
+        margin-bottom:0;
+
+    }
+}
+
+.intext-link a:hover {
+   h3{
+        opacity: .5;
+    } 
 }
 
 ////platform////
@@ -816,6 +998,7 @@ a.visitsite:hover {
 .gridoverlay {
     position: absolute;
     bottom: 0;
+	left: 0;
     opacity: 0;
 }
 
@@ -849,19 +1032,31 @@ a.visitsite:hover {
 }
 ////parental controls////
 
-@media screen and (max-width: 766px) {
-    h2.shrink {
-       font-size: 55px;
-       line-height: 100%;
+@media screen and (max-width: 750px) {
+    .banner {
+        h2.shrink {
+           font-size: 40px;
+           line-height: 100%;
+        }
     }
 }
 
-@media screen and (max-width: 425px) {
-    h2.shrink {
-       font-size: 35px !important;
+@media screen and (max-width: 500px) {
+    .banner {
+        h2.shrink {
+           font-size: 28px;
+        }
     }
 }
+
 //////////////////Work Pages Responsive//////////////////
+
+@media screen and (max-width: 1220px) {
+    
+    .social a {
+        padding: 2px;
+    }
+}
 
 
 @media screen and (max-width: 959px) {
@@ -878,12 +1073,12 @@ a.visitsite:hover {
             bottom: 0;
             margin-bottom: -220px;
         }
+        h2 {
+            font-size:60px;
+        }
     }
 
     #content {
-		// override some JS that makes it height of window
-		// on larger screens
-		height: auto !important;
 
         .whitetitle {
             color: $grey;
@@ -906,6 +1101,10 @@ a.visitsite:hover {
 
     .navigation{
         margin-bottom: 160px;
+    }
+
+    #content h5 {
+        margin-top: 16%;
     }
 
     .banner{
@@ -967,9 +1166,6 @@ a.visitsite:hover {
         margin: 0 auto;
         margin-top:-8%;
     }
-}
-
-@media screen and (max-width: 550px) {
 
     .banner{
 
@@ -990,6 +1186,22 @@ a.visitsite:hover {
     .intro > p {
         font-size: 18px;
     }
+}
+
+
+@media screen and (max-width: 360px) {
+    .banner {
+        h2{
+           font-size: 24px;
+        }
+    }
+}
+
+//////////////311///////////////////
+.iframe-center {
+    margin: 0 auto;
+    display:block;
+    width: 100%;
 }
 //////////////Scroll////////////////
 
@@ -1036,6 +1248,49 @@ a.visitsite:hover {
     }
 }
 
+.stroke {
+    border: 2px solid #fafafa;
+}
+
+.about-container {
+
+    h6 {
+    font-size: 14px !important;
+    color: $grey;
+    text-align: left !important;
+
+     
+    }
+
+  
+}
+
+
+//////////////writing////////////////
+
+.writing-container  {
+
+    h2{
+        font-size: 20px;
+
+        a, a:visited{
+            color:$grey;
+
+        }
+        a:hover{
+            color:$blue;
+
+         }
+    }
+    p{
+        font-size: 14px;
+        opacity: .7;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+
+}
 
 //////////////404////////////////
 
@@ -1091,6 +1346,11 @@ a.visitsite:hover {
              margin-top:0%;
              padding-top: 10%;
         }
+
+		// don't adjust height on about page
+		.about & {
+			height: auto !important;
+		}
     }
 }
 

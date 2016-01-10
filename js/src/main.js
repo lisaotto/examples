@@ -1,4 +1,12 @@
-(function($){
+var $ = require('jquery'),
+	imagesLoaded = require('imagesloaded');
+
+// if we included this separately, it would automatically handle,
+// but since it's coming in from NPM, we have to instantiate the jQuery plugin
+imagesLoaded.makeJQueryPlugin($);
+
+var tags = require('./components/tags');
+tags.init();
 
 var win = $(window),
 	body = $('body'),
@@ -9,12 +17,15 @@ var win = $(window),
 var siteURLs = [
 	'lisaot.to',
 	'localhost',
-	'grad.lisaot.to'
+	'grad.lisaot.to',
+	'staging.lisaot.to'
 ];
 
 // scroll to the content...
 // different for mobile
-function scrollToContent(amount, time) {
+function scrollToContent(e, amount, time) {
+	if (e) e.preventDefault();
+
 	var top = amount || $('#content').offset().top,
 		el = navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/) ? body : $('html, body');
 	el.animate({
@@ -50,7 +61,7 @@ body.on('click', '.backup .title', scrollToContent);
 
 // Scroll down for more button
 function promptScrollOn() {
-	$('.scroll').addClass('prompting');
+	if ( win.scrollTop() < 100 ) $('.scroll').addClass('prompting');
 }
 
 function promptScrollOff() {
@@ -60,6 +71,7 @@ function promptScrollOff() {
 function decideWhenToPrompt() {
 	var url = location.href;
 	url = url.split('/');
+	// only prompt if we're on a project page
 	for ( var i = 0; i < url.length; i++ ) {
 		if ( url[i] === 'project' ) {
 			setTimeout(promptScrollOn, 2500);
@@ -68,9 +80,9 @@ function decideWhenToPrompt() {
 	}
 }
 
-body.on('click', '.scroll', function() {
+body.on('click', '.scroll', function(e) {
 	promptScrollOff();
-	scrollToContent( win.height() * 0.75 );
+	scrollToContent( e, win.height() * 0.75 );
 });
 
 decideWhenToPrompt();
@@ -78,19 +90,21 @@ win.scroll(promptScrollOff);
 
 // Return booleans for home page, about page, and just having been on a project page
 function isHome() {
-	return location.href === 'localhost/portfolio/' || location.pathname === '/';
+	return location.href === 'http://localhost/portfolio/' || location.pathname === '/';
 }
 function isAbout() {
-	return location.href === 'http://localhost/portfolio/about/' || location.pathname === '/about/';
+	return location.href === 'http://localhost/portfolio/about/' || location.href === 'http://localhost/portfolio/about' || location.pathname === '/about/' || location.pathname === '/about';
 }
 function is404() {
 	return $('.error').length > 0;
 }
 function comingFromInternal() {
+	var referrer = document.referrer || loadedFromPage,
+	 	internal;
 	siteURLs.forEach(function(url) {
-		if ( document.referrer.indexOf(url) >= 0 ) return true;
+		if ( referrer.indexOf(url) >= 0 ) return internal = true;
 	});
-	return false;
+	return internal ? true : false;
 }
 
 // click on the work link: if on the work page, should scroll to where the content starts
@@ -98,25 +112,10 @@ function scrollToWork(e) {
 	e.preventDefault();
 	if ( isHome() ) {
 		scrollToContent();
-	} else {
-		location.href = this.href;
 	}
 }
 
 $('#work-link').click(scrollToWork);
-
-// On small screens, for various conditions, should scroll to where content starts
-function scrollDown() {
-	console.log(is404());
-
-	if ( win.width() < 960 ) {
-
-		if ( isAbout() || is404() || ( isHome() && comingFromInternal() ) ) {
-			scrollToContent();
-		}
-	}
-}
-scrollDown();
 
 // Smooth AJAX loading!
 function loadElements(data) {
@@ -127,18 +126,26 @@ function loadElements(data) {
 
 	promptScrollOff();
 
+	// time delay
 	var delay = 500;
 
 	// Fade out and remove current project elements
-	var curContent = $('#content')
+	var curContent = $('#content');
+
 	curContent.height( curContent.height() );
 	curContent.find('*').fadeOut(delay);
 
 	// Animate back to the top of the content and remove old elements
 	setTimeout(function(){
-		scrollToContent(null, 1);
+		if (win.width() > 960) {
+			scrollToContent(null, null, 1);
+		} else {
+			if ( comingFromInternal() && (isHome() || isAbout()) ) {
+				scrollToContent(null, null);
+			}
+		}
 		curContent.find('*').remove();
-	}, delay + 1);
+	}, delay + 5);
 
 	var $data = $(data),
 		url,
@@ -157,20 +164,13 @@ function loadElements(data) {
 
 	for ( var i = 0; i < $data.length; i++ ) {
 		var el = $data[i];
-		// console.log(el);
-		if (el.tagName === 'HEADER') {
-			url = $(el).find('#page-url').html();
-		}
-		if (el.tagName === 'TITLE') {
 
-			title = el.innerHTML;
-		}
-		if (el.id === 'content') {
-			newContent = $(el);
-		}
+		if (el.tagName === 'HEADER') url = $(el).find('#page-url').html();
+		if (el.tagName === 'TITLE') title = el.innerHTML;
+		if (el.id === 'content') newContent = $(el);
 	}
 
-	if ( !!history ) {
+	if ( window.history ) {
 		window.history.pushState({}, title, url);
 		document.title = title;
 	}
@@ -181,7 +181,7 @@ function loadElements(data) {
 		projectSamples = newContent.find('.project-sample'),
 		newReadyElements = newContent.find('.navigation, .intro'),
 		banner = newContent.find('.banner'),
-		newScrollingElements = newElements.not('.banner, .navigation, .intro').find('img, p').not('.icon-arrow-box');
+		newScrollingElements = newElements.not('.banner, .navigation, .intro, .no-fader').find('img, p').not('.icon-arrow-box');
 
 	banner.children().addClass('fader faded');
 	projectSamples.addClass('fader faded');
@@ -209,13 +209,12 @@ function loadElements(data) {
 			}, $this.index() * delay / 2);
 		});
 
+		if ( isAbout() ) newElements.find('.faded').removeClass('faded');
+
 		centerPageContent();
-		newElements.find('.faded').removeClass('faded');
 		curContent.height('auto');
 
-	}, delay + 2);
-
-	setTimeout(scrollDown, delay + 100);
+	}, delay + 10);
 
 	win.scroll(function() {
 		newScrollingElements.each(function(){
@@ -242,17 +241,37 @@ function loadElements(data) {
 	ga('send', 'pageview');
 }
 
-var loadedFromElement;
+var loadedFromPage,
+	loadedFromElement;
 function loadPage(e) {
-	e.preventDefault();
+	if (e) e.preventDefault();
 
 	loadedFromElement = $(this);
-
-	if (loadedFromElement.hasClass('next') && win.width() < 960) {
-		scrollToContent();
-	}
+	loadedFromPage = location.href;
 
 	var url = this.href;
+
+	// update nav highlighting
+	var aboutLink = $('#about-link'),
+		writingLink = $('#writing-link'),
+		workLink = $('#work-link');
+
+	// TODO: this is a hot mess...
+	if ( loadedFromElement.closest('#about-link').length === 1 ) {
+		workLink.add(writingLink).find('p').removeClass('blue');
+		workLink.find('span').remove();
+		aboutLink.find('p').addClass('blue');
+	} else if ( loadedFromElement.closest('#writing-link').length === 1 ) {
+		workLink.add(aboutLink).find('p').removeClass('blue');
+		workLink.find('span').remove();
+		writingLink.find('p').addClass('blue');
+	} else {
+		workLink.find('p').addClass('blue');
+		if ( workLink.find('span').length === 0 ) {
+			workLink.append('<span class="icon-arrow blue">');
+		}
+		aboutLink.add(writingLink).find('p').removeClass('blue');
+	}
 
 	if ( url !== location.href && url + '/' !== location.href) {
 		$.ajax({
@@ -291,5 +310,3 @@ function centerPageContent() {
 }
 centerPageContent();
 win.on('load resize', centerPageContent);
-
-}(jQuery));

@@ -1,7 +1,19 @@
-<?php 
+<?php
 
 $dev = isset($_GET['deploy']) && $_GET['deploy'] === 'true' ? false : true;
-$url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
+$url = 'http://localhost/portfolio';
+
+if ( isset($_GET['deploy-url']) ) {
+    $url = $_GET['deploy-url'];
+}
+
+// set the location
+$location = str_replace('http://', '', $url);
+if ( $location === 'localhost/portfolio' || $location === 'staging.lisaot.to' ) {
+    $location = 'staging';
+}
+
+include('projects.php');
 
 ?>
 <!DOCTYPE html>
@@ -14,7 +26,7 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>
-            <?php 
+            <?php
             if ($title === 'Lisa Otto') {
                 echo 'Lisa Otto';
             } else {
@@ -22,13 +34,13 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
             }
             ?>
         </title>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="<?= $url; ?>/favicon.ico">
 
         <link rel="stylesheet" href="<?= $url; ?>/css/style.css">
-        
+
         <script src="<?= $url; ?>/js/vendor/modernizr-2.6.2.min.js"></script>
         <script>
               Modernizr.addTest('backgroundclip',function() {
@@ -38,7 +50,7 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
                 if ('backgroundClip' in div.style)
                   return true;
 
-                'Webkit Moz O ms Khtml'.replace(/([A-Za-z]*)/g,function(val) { 
+                'Webkit Moz O ms Khtml'.replace(/([A-Za-z]*)/g,function(val) {
                   if (val+'BackgroundClip' in div.style) return true;
                 });
 
@@ -57,8 +69,8 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
         </script>
     </head>
 
-    <?php 
-    $body_class = $title !== 'Lisa Otto' ? '' : 'home'; 
+    <?php
+    $body_class = $title !== 'Lisa Otto' ? '' : 'home';
     $body_class = isset($slug) ? $body_class . ' ' . str_replace('project/', '', $slug) : $body_class;
     ?>
 
@@ -72,20 +84,25 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
         <?php if ($title !== 'Page Not Found') { ?>
             <div hidden id="page-url"><?php echo $url . '/' . $slug; ?></div>
         <?php } ?>
-    
+
         <div>
 
             <nav>
                 <ul class="clearfix">
                     <li>
-                        <a href="<?php echo $url; ?>/about">
+                        <a href="<?php echo $url; ?>/about" id="about-link">
                             <p class="<?= $title === 'About' ? 'blue' : ''; ?>">about</p>
                         </a>
                     </li>
                     <li>
+                        <a href="<?php echo $url; ?>/writing" id="writing-link">
+                            <p class="<?= $title === 'Writing' ? 'blue' : ''; ?>">writing</p>
+                        </a>
+                    </li>
+                    <li>
                         <a href="<?php echo $url; ?>/" id="work-link">
-                            <p class="<?= $title !== 'About' ? 'blue' : ''; ?>">work</p>
-                            <?php if ($title !== 'About') { ?><span class="icon-arrow blue"></span><?php } ?>
+                            <p class="<?= $title != 'About' && $title != 'Writing' ? 'blue' : ''; ?>">work</p>
+                            <?php if ($title != 'About' && $title != 'Writing') { ?><span class="icon-arrow blue"></span><?php } ?>
                         </a>
                     </li>
                 </ul>
@@ -95,7 +112,13 @@ $url = $dev ? 'http://localhost/portfolio' : 'http://lisaot.to';
             <h1>
                Lisa<br/>otto
             </h1>
-            <p class="social"><a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"></a><a href="http://dribbble.com/lisaotto" target="_blank" class="icon-dribbble"></a><a href="http://www.twitter.com/lisa_otto" target"_blank" class="icon-twitter"></a><a href="http://instagram.com/lisa_otto" target="_blank" class="icon-instagram"></a></p>
+            <p class="social">
+                <a href="mailto:otto.elizabeth@gmail.com" class="icon-envelope"></a>
+                <a href="https://www.linkedin.com/in/ottolisa" target="_blank" class="icon-linkedin"></a>
+                <a href="http://dribbble.com/lisaotto" target="_blank" class="icon-dribbble"></a>
+                <a href="http://www.twitter.com/lisa_otto" target"_blank" class="icon-twitter"></a>
+                <a href="http://instagram.com/lisa_otto" target="_blank" class="icon-instagram"></a>
+            </p>
             </div>
         </div>
 

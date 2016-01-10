@@ -1,49 +1,46 @@
+
 <?php
 $title = 'Lisa Otto';
-include('includes/header.php'); ?>
-    <a href="<?php echo $url; ?>/project/platform" class="project-sample">
+$scroll = 'false';
+
+include('includes/header.php');
+
+?>
+ <div class="home-container outerpadding clearfix">
+
+<ul id="tags">
+    <?php foreach ( $tags as $tag ) { ?>
+        <li><?= $tag; ?></li>
+    <?php } ?>
+</ul>
+
+
+<?php
+
+
+
+foreach ( $projects as $slug => $details ) {
+
+    if ( $location === 'staging' || in_array($location, $details['show']) ) {
+
+    $tags = implode(',', $details['tags']);
+    ?>
+    <a href="<?= $url; ?>/project/<?= $slug; ?>" class="project-sample" data-tags="<?= $tags; ?>">
+        <div class="bgimg" style="background-image:url(<?= $url; ?>/img/<?= $details['img']; ?>)"></div>
         <div class="overlay">
-            <div><div class="hgroup"><h2>Platform</h2><h3>Blog Integration</h3></div></div>
-            <div><p class="icon-arrow-box"></p></div>
-        </div>             
-    </a>
-    <a href="<?php echo $url; ?>/project/booksatwork" class="project-sample">
-        <div class="overlay">
-            <div><div class="hgroup"><h2>Books@Work</h2><h3>Website Redesign</h3></div></div>
-            <div><p class="icon-arrow-box"></p></div>
-        </div>            
-    </a>
-    <a href="<?php echo $url; ?>/project/lefkowitz" class="project-sample">
-        <div class="overlay">
-            <div><div class="hgroup"><h2>David Lefkowitz</h2><h3>Website Redesign</h3></div></div>
-            <div><p class="icon-arrow-box"></p></div>
+            <div>
+                <div class="hgroup">
+                    <h2><?= $details['title']; ?></h2>
+                    <h3><?= $details['subtitle']; ?></h3>
+                </div>
+            </div>
         </div>
     </a>
-    <a href="<?php echo $url; ?>/project/bandr" class="project-sample">
-        <div class="overlay">
-            <div><div class="hgroup"><h2>B and R</h2><h3>Website Redesign</h3></div></div>
-            <div><p class="icon-arrow-box"></p></div>
-        </div>             
-    </a>
-    <a href="<?php echo $url; ?>/project/parentalcontrols" class="project-sample">
-        <div class="overlay">
-            <div><div class="hgroup"><h2>Parental Controls</h2><h3>Website Redesign</h3></div></div>
-            <div><p class="icon-arrow-box"></p></div>
-        </div>             
-    </a>
+    <?php
+    }
+} ?>
 
-    <a href="<?php echo $url; ?>/project/infographics" class="project-sample">
-        <div class="overlay">
-            <div><div class="hgroup"><h2>Illustrated Infographics</h2><h3>Design &amp; Illustration</h3></div></div>
-            <div><p class="icon-arrow-box"></p></div>
-        </div>                 
-    </a>
-    <a href="<?php echo $url; ?>/project/inctrl" class="project-sample">
-        <div class="overlay">
-            <div><div class="hgroup"><h2>Teach InCtrl</h2><h3>Website Redesign</h3></div></div>
-            <div><p class="icon-arrow-box"></p></div>
-        </div>                 
-    </a>
-
+</div>
 
 <?php include('includes/footer.php'); ?>
+
