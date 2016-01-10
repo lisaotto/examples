@@ -202,6 +202,12 @@ function loadElements(data) {
 			var $this = $(this);
 			setTimeout(function(){
 				$this.removeClass('faded');
+
+				// once they've faded in, make them not "faders" anymore
+				// (since filtering requires no transition on opacity)
+				setTimeout(function() {
+					$this.removeClass('fader')
+				}, 510);
 			}, $this.index() * delay / 2);
 		});
 
