@@ -12,24 +12,28 @@ var _ = require('lodash'),
     watchify = require('watchify');
 
 var paths = {
-    cssIn: 'scss/style.css',
+    cssIn: 'scss/**/*.scss',
     cssOut: 'css',
     jsIn: 'js/src/main.js',
     jsOut: 'js/min'
 };
 
-gulp.task('css', function() {
+function css() {
     var processors = [
         autoprefixer('last 2 versions')
     ];
 
     gulp.src( paths.cssIn )
+        .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed'
         }))
         .pipe(postcss(processors))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest( paths.cssOut ));
-});
+}
+
+gulp.task('css', css);
 
 function build(watch) {
 
