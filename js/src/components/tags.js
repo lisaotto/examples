@@ -2,9 +2,9 @@ var $ = require('jquery');
 
 function init() {
 	
-	var tags = $('#tags li');
+	var tags = '#tags li';
 
-	tags.click(function() {
+	$('body').on('click', tags, function() {
 
 		var $this = $(this),
 			tag = $this.text(),
