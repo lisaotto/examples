@@ -28,7 +28,10 @@ include('../../includes/header.php'); ?>
             <p class="threecolumn">After taking several research trips to a busy intersection in Pittsburgh, we observed that bus stop riders are not a homogeneous group of people. They appeared to fall into three categories, clustered around age, but defined more broadly by attitude and habit. The 'dominant group' appeared most comfortable in the bus stop and used the wait time for social intereactions. We wondered if we could spread this attitude without disrupting the hierarchy already established within stops.</p>
         </div>
         <div class="clearfix">
+            <img  alt="Groupsonas" class="threecolumn" src="<?php echo $url; ?>/img/bus/personas.png">
+            <p class="small justcenter">Persona Illustrations by Kate</p>
             <img  alt="Journey map for the Youth, Dominant Group and Elderly at the bus stop" class="threecolumn" src="<?php echo $url; ?>/img/bus/journey_chart.png">
+
             <img  alt="Anxiety patterns found at the bus stop" class="threecolumn" src="<?php echo $url; ?>/img/bus/pattern_chart.png">
             
         </div>
@@ -44,7 +47,7 @@ include('../../includes/header.php'); ?>
                 <source src="<?php echo $url; ?>/img/bus/map.webm" type="video/webm"> 
             </video>
             <p class="threecolumn"> Bus map design would use a poster map and LEDs. Each map would be customized for each stop it is implemented in and be connected to the Port Authority’s GPS bus data in order to show bus tracking.</p>
-            <img alt="Storyboard Panel 2: Maggie Reports a Civic Issue" class="threecolumn" src="<?php echo $url; ?>/img/bus/map_diagram.png">
+            <img alt="Example map for shelter at S Negley Ave & Baum Ave" class="threecolumn" src="<?php echo $url; ?>/img/bus/map_diagram.png">
             <p class="small justcenter">Map Illustration by Saumya</p>
         </div>
         <div class="clearfix">
@@ -59,12 +62,12 @@ include('../../includes/header.php'); ?>
         <div class="clearfix">
             <h6>Intervention 3: Acknowleding and Accommodating the Use of Space Around the Shelter</h6>
             <p class="threecolumn">Typical bus shelters have small frames that can only accommodate three to five people. Stops where we found the most social interaction were deep and allowed for people to move in, out, and around the stop. Modular seating that expands outside of the frame of the bus stop will acknowledge people’s habit of being in motion in and around the designated space while waiting. </p>
-            <img alt="Example map for shelter at S Negley Ave & Baum Ave" class="threecolumn" src="<?php echo $url; ?>/img/bus/benches.jpg">
+            <img alt="Benches at the bus stop" class="threecolumn" src="<?php echo $url; ?>/img/bus/benches.jpg">
         </div
         <div class="clearfix">
             <h6>Intervention 4: Giving the Shelterless Stops a Sense of Space</h6>
             <p class="threecolumn">Bus stops with shelters are easy to locate but those with bus signs are a challenge to find for newcomers. Colorful concrete patterns around the bus stop help identify bus stops and create a clearer sense of space for stops without shelters. These tiles could be different for each stop, and designed by local artists, creating a greater sense of community for each stop and adding to the legibility of the city. </p>
-            <img alt="Example map for shelter at S Negley Ave & Baum Ave" class="threecolumn finalblock" src="<?php echo $url; ?>/img/bus/no-shelter.jpg">
+            <img alt="Tile art at shelter-less bus stops" class="threecolumn finalblock" src="<?php echo $url; ?>/img/bus/no-shelter.jpg">
         </div>
 
          <a class="visitsite" target="_blank" href="https://medium.com/@lisa_otto/reducing-anxiety-at-the-bus-stop-6537795a9470#.yjhjtha95" alt="Process Blog">FULL PROCESS BLOG<span class="icon-arrow"></span></a>

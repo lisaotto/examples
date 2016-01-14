@@ -45,13 +45,13 @@ include('../../includes/header.php'); ?>
             <h6>Game Play Phase I: Watch the Signals and Make a Choice</h6>
             <img alt="Intersection 1 Screenshot" class="threecolumn" src="<?php echo $url; ?>/img/intersection/phase1.jpg">
             <div class="clearfix">
-                <img alt="Intersection 1 Screenshot" class="halfcolumn" src="<?php echo $url; ?>/img/intersection/phase1-explanation.png">
-                <img alt="Intersection 1 Screenshot" class="halfcolumn last" src="<?php echo $url; ?>/img/intersection/player.gif">
+                <img alt="Phase 1" class="halfcolumn" src="<?php echo $url; ?>/img/intersection/phase1-explanation.png">
+                <img alt="Players place the phone on their foreheads" class="halfcolumn last" src="<?php echo $url; ?>/img/intersection/player.gif">
             </div>
             <p class="threecolumn "> Players are shown six signals that either tell them to wait or go. Players must decide to follow or ignore the signal.</p>
              <h6>Game Play Phase II: Assess the Choices and Move Again</h6>
-            <img alt="Intersection 1 Screenshot" class="threecolumn" src="<?php echo $url; ?>/img/intersection/phase2.jpg">
-            <img alt="Intersection 1 Screenshot" class="threecolumn " src="<?php echo $url; ?>/img/intersection/phase2-explanation.jpg">
+            <img alt="Phase 2" class="threecolumn" src="<?php echo $url; ?>/img/intersection/phase2.jpg">
+            <img alt="Points awarded chart" class="threecolumn " src="<?php echo $url; ?>/img/intersection/phase2-explanation.jpg">
             <p class="threecolumn finalblock">Players move their pieces based on whether they and their partner ignored or followed the signals in phase I.</p>
         </div>
 
