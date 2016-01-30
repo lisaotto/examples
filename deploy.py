@@ -37,6 +37,7 @@ html = [
 	'project/lefkowitz/index.php',
 	'project/parentalcontrols/index.php',
 	'project/platform/index.php',
+	'project/reading/index.php',
 	'project/underdog/index.php',
 	'project/zenoandroid/index.php',
 	'project/zenolive/index.php',

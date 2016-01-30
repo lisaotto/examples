@@ -17,7 +17,7 @@ $projects = array(
     ),
     '311' => array(
         'title' => 'A New 311',
-        'subtitle' => 'Speculative Redesign',
+        'subtitle' => 'Design Proposal',
         'show' => array('lisaot.to', 'grad.lisaot.to'),
         'img' => '311/header_311.jpg',
         'tags' => array('user experience')
@@ -73,6 +73,13 @@ $projects = array(
         'subtitle' => 'Conceptual Design Explorations',
         'show' => array('lisaot.to'),
         'img' => 'intersection/intersection-header.jpg',
+        'tags' => array('experimental')
+    ),
+        'reading' => array(
+        'title' => 'Immersive Reading',
+        'subtitle' => 'Design Proposal',
+        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'img' => 'reading/header_reading.jpg',
         'tags' => array('experimental')
     ),
     'infographics' => array(
