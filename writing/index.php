@@ -11,6 +11,10 @@ include('../includes/header.php'); ?>
 
    <div class="writing-container outerpadding no-fader">
         <div class="clearfix">
+            <div>
+                <h2><a href="https://medium.com/design-for-service/postmates-brainstorming-8efc4bab964d#.bemfl06xj" target="_blank">Mapping the Postmates Partner Experience</a></h2>
+                <p>January 31, 2016</p>
+            </div>   
           <div>
                 <h2><a href="https://medium.com/transition-design/transparency-trust-and-agency-in-recycling-bafffb72492b#.2l06pqfe5" target="_blank">Transparency, Trust and Agency in Recycling</a></h2>
                 <p>December 13, 2015</p>

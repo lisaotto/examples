@@ -101,7 +101,7 @@ $paddingmobile: 12%;
         opacity: 0 !important;
     }
 
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 1020px) {
         &.faded {
             opacity: 1 !important;
         }
@@ -512,7 +512,7 @@ a.project-sample:hover, .touch a.project-sample {
 
 //////////////////Media Query < 960 //////////////////
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1020px) {
 
     header {
         width:100%;
@@ -1081,7 +1081,7 @@ a.intext-link, a.intext-link:visited {
 }
 
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1020px) {
 
     .navigation{
         position:relative;
@@ -1264,7 +1264,7 @@ a.intext-link, a.intext-link:visited {
     }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1020px) {
     .about-container {
         padding: 10% 0 10% 0;
     }
@@ -1349,7 +1349,7 @@ a.intext-link, a.intext-link:visited {
 }
 
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1020px) {
 
 
     #content{
