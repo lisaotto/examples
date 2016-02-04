@@ -20,7 +20,10 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
     <div class="content outerpadding clearfix">
-
+        <div class="clearfix">
+            <h4 class="first">Design Brief</h4>
+            <p class=" first threecolumn finalblock">Design a “responsive and scalable User Interface that connects the experience across multiple devices ranging from a mobile phone, to digital whiteboards, to interactive kiosks” which facilitated collaborative visual thinking. I interpreted visual thinking broadly; I looked at a system, Pittsburgh’s 311, that did not support collaboration and attempted to design an interface and system that would support it. </p>
+        </div>
 
         <div class="clearfix">
              <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/140729357?title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>

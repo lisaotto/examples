@@ -22,6 +22,14 @@ $projects = array(
         'img' => '311/header_311.jpg',
         'tags' => array('user experience')
     ),
+
+    'intersection' => array(
+        'title' => 'Pittsburgh Intersections',
+        'subtitle' => 'Conceptual Design Explorations',
+        'show' => array('lisaot.to'),
+        'img' => 'intersection/intersection-header.jpg',
+        'tags' => array('experimental')
+    ),
     'underdog' => array(
         'title' => 'Underdog',
         'subtitle' => 'User Onboarding',
@@ -67,13 +75,6 @@ $projects = array(
         'show' => array('grad.lisaot.to'),
         'img' => 'lefkowitz/lefko-header.jpg',
         'tags' => array('user experience')
-    ),
-    'intersection' => array(
-        'title' => 'Pittsburgh Intersections',
-        'subtitle' => 'Conceptual Design Explorations',
-        'show' => array('lisaot.to'),
-        'img' => 'intersection/intersection-header.jpg',
-        'tags' => array('experimental')
     ),
         'reading' => array(
         'title' => 'Immersive Reading',

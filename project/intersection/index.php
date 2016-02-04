@@ -11,7 +11,7 @@ include('../../includes/header.php'); ?>
     <?php the_navigation($url, $slug); ?>
 
     <div class="intro clearfix outerpadding">
-        <p class="description">I began the lab course by looking at intersections and the abundance of types of traffic signals in Pittsburgh. In what ways can the digital signage improve or diminish the walkability of a city? This quickly morphed into an exploration of the functions of traffic signals—not just their surface function, directing traffic patterns, but how they mediate our relationships with others on the road. </p>
+        <p class="description">I began the lab course by looking at intersections and the abundance of types of traffic signals in Pittsburgh. In what ways can the digital signage improve or diminish the walkability of a city? This quickly morphed into playful explorations of the functions of traffic signals—not just their surface function, directing traffic patterns, but how they mediate our relationships with others on the road. </p>
 
 
         <div class="role">
