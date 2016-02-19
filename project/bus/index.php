@@ -40,10 +40,10 @@ include('../../includes/header.php'); ?>
             
         </div>
         <div class="clearfix">
-            <h5>Proposed Interventions</h5>
+            <h5>Principals</h5>
         </div>
         <div class="clearfix">
-            <h6>Intervention 1: Predicting Bus Service without fixed timing</h6>
+            <h6>1. Fixed Timing</h6>
             <p class="threecolumn">While the wait time between buses might be fixed, the way people track that wait time varies from a tacit understanding of the bus cycle to printed schedules to digital apps. We saw that the fixed arrival time increased anxiety, focusing people on the wait time and creating frustration if the bus was even a few seconds off. An integrated wayfinding system would track the location of the buses, relying heavily on people’s assessment of arrival time and avoiding fixed scheduling. This map would begin to orient people to Pittsburgh’s illegible geography, and more functionally, alleviate the confusion of an overcrowded bus blowing by.</p>
             <video width="1400" height="auto"> 
                 <source src="<?php echo $url; ?>/img/bus/map.mp4" type="video/mp4"> 
@@ -55,7 +55,7 @@ include('../../includes/header.php'); ?>
             <p class="small justcenter">Map Illustration by Saumya</p>
         </div>
         <div class="clearfix">
-            <h6>Intervention 2: A Subtle Annoucement of the Bus</h6>
+            <h6>2. Preocupation & Signalling </h6>
             <p class="threecolumn"> People ritually checked the space or their phone to see when the bus was arriving, keeping them from engaging in social interaction or other activities that they might find more meaningful. A lighting and sound system helps to indicate where bus stops are located at night but also indicates when buses are arriving so that people can focus on activities while waiting.</p>
             <video width="1400" autoplay loop height="auto"> 
                 <source src="<?php echo $url; ?>/img/bus/lighting.mp4" type="video/mp4"> 
@@ -64,12 +64,12 @@ include('../../includes/header.php'); ?>
             </video>
         </div>
         <div class="clearfix">
-            <h6>Intervention 3: Acknowleding and Accommodating the Use of Space Around the Shelter</h6>
+            <h6>3. Acknowleding and Accommodating the Use of Space</h6>
             <p class="threecolumn">Typical bus shelters have small frames that can only accommodate three to five people. Stops where we found the most social interaction were deep and allowed for people to move in, out, and around the stop. Modular seating that expands outside of the frame of the bus stop will acknowledge people’s habit of being in motion in and around the designated space while waiting. </p>
             <img alt="Benches at the bus stop" class="threecolumn" src="<?php echo $url; ?>/img/bus/benches.jpg">
         </div
         <div class="clearfix">
-            <h6>Intervention 4: Giving the Shelterless Stops a Sense of Space</h6>
+            <h6>4. Sense of Space</h6>
             <p class="threecolumn">Bus stops with shelters are easy to locate but those with bus signs are a challenge to find for newcomers. Colorful concrete patterns around the bus stop help identify bus stops and create a clearer sense of space for stops without shelters. These tiles could be different for each stop, and designed by local artists, creating a greater sense of community for each stop and adding to the legibility of the city. </p>
             <img alt="Tile art at shelter-less bus stops" class="threecolumn finalblock" src="<?php echo $url; ?>/img/bus/no-shelter.jpg">
         </div>
