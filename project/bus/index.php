@@ -27,7 +27,7 @@ include('../../includes/header.php'); ?>
 
 
         <div class="clearfix">
-            <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/148120143?title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/148120143?title=0&byline=0&portrait=0" width="900" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             <h5>Design Ethnographic Research: Understanding the Users</h5>
             <p class="threecolumn">After taking several research trips to a busy intersection in Pittsburgh, we observed that bus stop riders are not a homogeneous group of people. They appeared to fall into three categories, clustered around age, but defined more broadly by attitude and habit. The 'dominant group' appeared most comfortable in the bus stop and used the wait time for social intereactions. We wondered if we could spread this attitude without disrupting the hierarchy already established within stops.</p>
         </div>

@@ -22,15 +22,17 @@ include('../../includes/header.php'); ?>
 
 
         <div class="clearfix">
-             <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/143089643?title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
+             <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/143089643?title=0&byline=0&portrait=0" width="900" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
             <img  alt="AR UX Flow" class="threecolumn" src="<?php echo $url; ?>/img/reading/chart.jpg">
         </div>
         <div class="clearfix">
             <h5>The Demo</h5>
-            <img alt="" class="threecolumn" src="<?php echo $url; ?>/img/reading/img_1.jpg">
-            <img alt="" class="threecolumn" src="<?php echo $url; ?>/img/reading/img_2.jpg">
+            <p class="threecolumn">The final result of the project was a proof of concept demo. We created a scenario of a reader selecting books based off of the aura (or "mood") of the books. Though ideally in production this effect would be created through the home's integrated lighting system, we created the effect using a ceiling mounted projector. Then the demo followed the reader as she skimmed through the book and the aura of the lighting changed (through the projector) as she hit different arcs in the narrative. We demonstrated how she could be able to pull and save these moods through a simple tugging gesture. </p>
             <img alt="" class="threecolumn " src="<?php echo $url; ?>/img/reading/img_3.jpg">
-            <p class="small finalblock justcenter">Photos taken by Saumya</p>
+            <img alt="" class="halfcolumn" src="<?php echo $url; ?>/img/reading/img_1.jpg">
+            <img alt="" class="halfcolumn last" src="<?php echo $url; ?>/img/reading/img_2.jpg">
+            <p class="small finalblock justcenter extrapadding">Photos taken by Saumya</p>
+
             
         </div>
 

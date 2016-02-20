@@ -5,7 +5,7 @@ include('../../includes/header.php'); ?>
 
     <div class="banner">
         <div class="bannerimg"><img alt="" src="<?php echo $url; ?>/img/311/header_311.jpg" alt=""></div>
-        <div class="hgroup"><h3>Speculative Redesign</h3><h2>A NEW 311</h2></div>
+        <div class="hgroup"><h3>Design Proposal</h3><h2>A NEW 311</h2></div>
     </div>
 
     <?php the_navigation($url, $slug); ?>
@@ -26,7 +26,7 @@ include('../../includes/header.php'); ?>
         </div>
 
         <div class="clearfix">
-             <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/140729357?title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
+             <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/140729357?title=0&byline=0&portrait=0" width="900" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
             <p class="threecolumn">“Beyond 311” is a common headline for stories on ‘smart cities’ but 311 is the foundation for a system to gather than feedback from and for community if properly implemented. 311 was first developed in the ‘90s as a phone number to get information on city services. “Burning building? Call 911. Burning question? Call 311.” was the tagline for the Chicago 311.</p>
             <p class="threecolumn first" >However, Pittsburgh’s 311 system hasn’t changed much since then. While now you can report issues online, the system is still focused on getting information in and not providing feedback to residents. Pittsburgh’s 311 doesn’t provide a way for citizens to track or share reports. It doesn’t provide a way for citizens to monitor the number of issues being reported or the speed at which they are being dealt with. While, obviously, a key part of a 311 system is getting issues to the department so they can resolve them, providing residents with feedback would increase engagement and improve accountability in the government, creating a more vibrant community.</p>
         </div>
