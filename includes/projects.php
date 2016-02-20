@@ -4,7 +4,7 @@ $tags = array(
     'design research',
     'user experience',
     'experimental',
-    'illustration'
+
 );
 
 $projects = array(
@@ -24,7 +24,7 @@ $projects = array(
     ),
 
     'intersection' => array(
-        'title' => 'Pittsburgh Intersections',
+        'title' => 'Intersections',
         'subtitle' => 'Conceptual Design Explorations',
         'show' => array('lisaot.to'),
         'img' => 'intersection/intersection-header.jpg',

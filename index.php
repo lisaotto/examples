@@ -27,13 +27,10 @@ foreach ( $projects as $slug => $details ) {
     ?>
     <a href="<?= $url; ?>/project/<?= $slug; ?>" class="project-sample" data-tags="<?= $tags; ?>">
         <div class="bgimg" style="background-image:url(<?= $url; ?>/img/<?= $details['img']; ?>)"></div>
-        <div class="overlay">
-            <div>
-                <div class="hgroup">
-                    <h2><?= $details['title']; ?></h2>
-                    <h3><?= $details['subtitle']; ?></h3>
-                </div>
-            </div>
+
+        <div class="hgroup">
+            <h2><?= $details['title']; ?></h2>
+            <h3><?= $details['subtitle']; ?></h3>
         </div>
     </a>
     <?php

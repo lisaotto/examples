@@ -330,6 +330,7 @@ main {
         height: 50px;
         z-index: 100;
 
+
     }
 
     li {
@@ -354,15 +355,13 @@ main {
 }
 
 .project-sample {
-	background: $blue;
-    padding-bottom: 22.73%;
+    height: 220px;
     margin-bottom: 3%;
     display: block;
     width: $columnscreen;
 
     float: left;
     margin-right: 3%;
-    border-bottom: 2px solid $dblue;
 
     img{
         position:absolute;
@@ -372,64 +371,39 @@ main {
 
 .bgimg {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     width:100%;
- 
+    height: 70%;
     background-size: auto 100%;
     transition: 0.3s;
 
     .project-sample:hover & {
-        opacity: 1;
+        opacity: .8;
     }
+}
+
+ .hgroup {
+      bottom: -145px;
+      text-align: center;
+
+      h2 {
+        font-size: 20px
+
+      }
+
+      h3 {
+        font-size: 14px;
+        margin-top:-16px;
+      }
+
 }
 
 
 
-.overlay {
-    width: 100%;
-    height: 60%;
-    position: absolute;
-    margin: 0 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: left;
-    transition: opacity .5s ease;
-    transition-delay: .1s;
-    overflow:hidden;
-
-        > div {
-            display:inline-block;
-            height: 100%;
-            vertical-align: top;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: $grey;
-            text-align: left;
-            margin: 0;
-            line-height: 100%;
-        }
-
-        h3 {
-            font-size: 16px;
-            color: $grey;
-            text-align :left;
-            margin: 0;
-            padding-top: 4px;
-
-        }
-
-        .hgroup {
-            top: 50%;
-            transform: translateY(-50%);
-            padding-right: 30px;
-        }
- }
 
 .inactive {
 
@@ -445,17 +419,7 @@ li.active{
     display:block;
 }
 
-a.project-sample:hover, .touch a.project-sample {
 
-    h2, h3 {
-        opacity:1;
-        color:$blue !important;
-        text-shadow: 0px 0px 2px transparentize($grey, .4);
-    }
-
-
-
-}
 
 //////////////////Media Query > 1450 //////////////////
 
@@ -470,16 +434,7 @@ a.project-sample:hover, .touch a.project-sample {
         font-size: 18px
     }
 
-    .overlay {
 
-        h2{
-            font-size:36px;
-        }
-
-        h3{
-            font-size:22px;
-        }
-    }
 }
 
 
@@ -487,17 +442,7 @@ a.project-sample:hover, .touch a.project-sample {
 
 @media screen and (max-width: 1200px){
 
-    .overlay {
 
-        h2{
-            font-size:20px;
-        }
-
-        h3{
-            font-size: 12px;
-        }
-
-    }
 
     .home-container {
         .li {
@@ -527,18 +472,6 @@ a.project-sample:hover, .touch a.project-sample {
         position:relative;
     }
 
-    .overlay {
-
-
-
-        p {
-            font-size: 25px;
-        }
-
-        h3{
-            font-size: 18px;
-        }
-    }
 
     .project-sample {
         width: $halfcolumnscreen;
@@ -562,9 +495,9 @@ a.project-sample:hover, .touch a.project-sample {
     }
 }
 
-//////////////////Media Query < 700 //////////////////
+//////////////////Media Query < 500 //////////////////
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
 
     .portrait {
         margin-top: -225px;
@@ -576,19 +509,9 @@ a.project-sample:hover, .touch a.project-sample {
     }
 
 
-    .overlay {
-
-        h2, p {
-            font-size: 20px;
-        }
-
-        h3 {
-            font-size: 16px;
-        }
-    }
 
     .project-sample:hover .bgimg {
-        opacity: 0;
+        opacity: 0.8
     }
     a.project-sample:hover {
         h2, h3 {
@@ -611,13 +534,13 @@ a.project-sample:hover, .touch a.project-sample {
         margin-left: -15px;
     }
 
-    .overlay {
+
 
         .hgroup {
             padding-right:8px;
         }
     }
-}
+
 
 
 //////////////////Media Query < 360 //////////////////
@@ -640,7 +563,7 @@ a.project-sample:hover, .touch a.project-sample {
         }
     }
 
-    .overlay {
+    .hgroup {
         h3 {
             display:none;
         }
@@ -667,6 +590,12 @@ a.project-sample:hover, .touch a.project-sample {
 
     h2, h3, p {
         color: $grey;
+
+    }
+
+ 
+    h3 {
+         text-align: left;
     }
 
     h5{
