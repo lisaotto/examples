@@ -318,6 +318,8 @@ main {
 }
 .home-container{
     height: 100%;
+    padding-top: 50px; // .bar height
+
     ul{
         position: fixed;
         top: 0;
@@ -326,7 +328,7 @@ main {
         margin: 0;
         padding: 10px 8% 0 0;
         width: 100%;
-        background-color: $lightestgrey;
+        // background-color: $lightestgrey;
         height: 50px;
         z-index: 100;
 
@@ -355,13 +357,15 @@ main {
 }
 
 .project-sample {
-    height: 220px;
-    margin-bottom: 3%;
     display: block;
-    width: $columnscreen;
-
     float: left;
-    margin-right: 3%;
+    margin-bottom: 3%;
+    width: $columnscreen;
+    margin-right: #{(100% - 3 * $columnscreen) / 2};
+    
+    &:nth-child(3n + 1) {
+        margin-right: 0;
+    }
 
     img{
         position:absolute;
@@ -370,53 +374,47 @@ main {
 }
 
 .bgimg {
-    position: absolute;
     opacity: 1;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width:100%;
-    height: 70%;
+    width: 100%;
     background-size: auto 100%;
+    background-position: center center;
+    padding-top: 75%;
     transition: 0.3s;
 
     .project-sample:hover & {
-        opacity: .8;
+        opacity: 0.8;
     }
 }
 
- .hgroup {
-      bottom: -145px;
-      text-align: center;
+.hgroup {
+    bottom: -145px;
 
-      h2 {
+    h2 {
         font-size: 20px
+    }
 
-      }
-
-      h3 {
+    h3 {
         font-size: 14px;
         margin-top:-16px;
-      }
+    }
 
+    &.hgroup-home {
+        bottom: 0;
+        text-align: center;
+    }
 }
 
-
-
-
 .inactive {
-
     display:none;
 }
 
 li.active{
-    color:$blue;
+    color: $blue;
 }
 
 
 .icon-arrow-box {
-    display:block;
+    display: block;
 }
 
 
@@ -474,7 +472,16 @@ li.active{
 
 
     .project-sample {
+        margin-right: #{(100% - 2 * $halfcolumnscreen)};
         width: $halfcolumnscreen;
+
+        &:nth-child(3n + 1) {
+            margin-right: #{(100% - 2 * $halfcolumnscreen)};
+        }
+
+        &:nth-child(2n + 1) {
+            margin-right: 0;
+        }
     }
 
     nav {
@@ -486,12 +493,15 @@ li.active{
     }
 
     .home-container {
+        padding-top: 8%;
 
-    padding-top: 8%;
         ul {
             display: none;
         }
+    }
 
+    .bar-home {
+        display: none;
     }
 }
 
@@ -505,6 +515,7 @@ li.active{
     }
 
     .project-sample {
+        margin-right: 0 !important;
         width: 100%;
     }
 
@@ -590,15 +601,9 @@ li.active{
 
     h2, h3, p {
         color: $grey;
-
     }
 
- 
-    h3 {
-         text-align: left;
-    }
-
-    h5{
+    h5 {
         color: $blue;
         text-align:center;
         font-size: 34px;
@@ -689,13 +694,18 @@ li.active{
     }
 }
 
-.bar{
+.bar {
     background-color:$lightgrey;
     opacity:.4;
     width:100%;
     position:absolute;
     top:0;
     height:50px;
+
+    &.bar-home {
+        position: fixed;
+        z-index: 2;
+    }
 }
 
 .back, .next, .backup {
@@ -1191,7 +1201,7 @@ a.intext-link, a.intext-link:visited {
 }
 
 .vcenter {
-    .halfcolumn, .onecolumn, .threecoulmn, .twocolumn {
+    .halfcolumn, .onecolumn, .threecolumn, .twocolumn {
         margin-top: 0;
     }
 }

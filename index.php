@@ -6,7 +6,11 @@ $scroll = 'false';
 include('includes/header.php');
 
 ?>
- <div class="home-container outerpadding clearfix">
+
+<div class="bar bar-home"></div>
+
+<div class="home-container outerpadding clearfix">
+
 
 <ul id="tags">
     <?php foreach ( $tags as $tag ) { ?>
@@ -17,8 +21,6 @@ include('includes/header.php');
 
 <?php
 
-
-
 foreach ( $projects as $slug => $details ) {
 
     if ( $location === 'staging' || in_array($location, $details['show']) ) {
@@ -28,7 +30,7 @@ foreach ( $projects as $slug => $details ) {
     <a href="<?= $url; ?>/project/<?= $slug; ?>" class="project-sample" data-tags="<?= $tags; ?>">
         <div class="bgimg" style="background-image:url(<?= $url; ?>/img/<?= $details['img']; ?>)"></div>
 
-        <div class="hgroup">
+        <div class="hgroup hgroup-home">
             <h2><?= $details['title']; ?></h2>
             <h3><?= $details['subtitle']; ?></h3>
         </div>
