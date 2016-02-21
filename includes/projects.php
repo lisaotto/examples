@@ -57,7 +57,7 @@ $projects = array(
     'booksatwork' => array(
         'title' => 'Books@Work',
         'subtitle' => 'Website Redesign',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('grad.lisaot.to'),
         'img' => 'booksatwork/header_booksatwork.png',
         'tags' => array('user experience')
     ),
@@ -65,7 +65,7 @@ $projects = array(
         'title' => 'Platform',
         'subtitle' => 'Blog Integration',
          'description' => 'Blog redesign ',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('grad.lisaot.to'),
         'img' => 'platform/platform-header.png',
         'tags' => array('user experience')
     ),
@@ -86,7 +86,7 @@ $projects = array(
     'infographics' => array(
         'title' => 'Illustrated Infographics',
         'subtitle' => 'Design &amp; Illustration',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('grad.lisaot.to'),
         'img' => 'infographics/header-infographics.png',
         'tags' => array('illustration')
     )
