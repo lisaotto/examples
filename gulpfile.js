@@ -15,7 +15,7 @@ var paths = {
     cssIn: 'scss/**/*.scss',
     cssOut: 'css',
     jsIn: 'js/src/main.js',
-    jsOut: 'js/min'
+    jsOut: 'js/dist'
 };
 
 function css() {
@@ -76,20 +76,9 @@ function build(watch) {
             .pipe(sourcemaps.init({
                 loadMaps: true
             }))
-            .pipe(sourcemaps.write())
+            .pipe(uglify())
+            .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest( paths.jsOut ));
-
-        if ( !watch ) {
-            bundler
-                .transform('babelify', {
-                    presets: ['es2015']
-                })
-                .bundle()
-                .pipe(source('script.min.js'))
-                .pipe(buffer())
-                .pipe(uglify())
-                .pipe(gulp.dest( paths.jsOut ));
-        }
 
         hrTime = process.hrtime();
         var t2 = hrTime[0] * 1000 + hrTime[1] / 1000000;
