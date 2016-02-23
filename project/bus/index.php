@@ -40,6 +40,11 @@ include('../../includes/header.php'); ?>
             
         </div>
         <div class="clearfix">
+            <p class="threecolumn">Taking our initial research a step further, we also experimented with several playful lo-fi interventions in the space to get an understanding of what people would respond to and how.</p>
+            <img  alt="Hanging a map in the bus stop" class="halfcolumn " src="<?php echo $url; ?>/img/bus/intervention1.jpg">
+            <img  alt="Chalk drawing at the bus stop" class="halfcolumn last" src="<?php echo $url; ?>/img/bus/intervention2.jpg">
+        </div>
+        <div class="clearfix">
             <h5>Principals</h5>
         </div>
         <div class="clearfix">

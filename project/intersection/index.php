@@ -30,7 +30,7 @@ include('../../includes/header.php'); ?>
             <img alt="Intersection 1 Screenshot" class="threecolumn finalblock" src="<?php echo $url; ?>/img/intersection/Screen-Shot-3.jpg">
         </div>
         <a class="visitsite" target="_blank" href="http://intersection.lisaot.to" alt="Process Blog">VISIT SITE<span class="icon-arrow"></span></a>
-    
+        <img id="line" src="<?php echo $url; ?>/img/line.png">
         
 
         <h5 class="no-margin">Project 2: Traffic Signals as Mediator</h5>

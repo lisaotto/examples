@@ -317,7 +317,7 @@ main {
     margin-right: 0;
 }
 .home-container{
-    height: 100%;
+
     padding-top: 50px; // .bar height
 
     ul{
@@ -414,6 +414,12 @@ li.active{
 
 
 .icon-arrow-box {
+    display: block;
+}
+
+#line {
+    margin: 0 auto;
+    width: 250px;
     display: block;
 }
 
