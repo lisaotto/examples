@@ -15,7 +15,7 @@ include('../../includes/header.php'); ?>
 
         <div class="role">
             <h4>My Role</h4>
-            <p>Worked with <a href="https://medium.com/@saumya.k" target="_blank">Saumya Kharbanda</a> and <a href="http://www.kayleewhite.com/" target="_blank">Kaylee White</a> for the CMU MDes IXD Studio.</p>
+            <p>I Worked collaboratively with <a href="https://medium.com/@saumya.k" target="_blank">Saumya Kharbanda</a> and <a href="http://www.kayleewhite.com/" target="_blank">Kaylee White</a> for the duration of the two week project for CMU MDes IXD Studio.</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
