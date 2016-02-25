@@ -45,7 +45,7 @@ include('../../includes/header.php'); ?>
             <img  alt="Chalk drawing at the bus stop" class="halfcolumn last" src="<?php echo $url; ?>/img/bus/intervention2.jpg">
         </div>
         <div class="clearfix">
-            <h5>Principals</h5>
+            <h5>Principles</h5>
         </div>
         <div class="clearfix">
             <h6>1. Fixed Timing</h6>

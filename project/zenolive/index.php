@@ -11,7 +11,7 @@ include('../../includes/header.php'); ?>
     <?php the_navigation($url, $slug); ?>
 
     <div class="intro clearfix outerpadding">
-        <p class="description">ZenoRadio's broadcaster dashboard provides tools for individual broadcasters to host talk programs with callers from a variety of media (online widgets and telephone calling). I spent time sitting down with broadcasters to see how they manage their programs using the tools available in the market today. Without a unified platform to manage callers and their stream, hosts end up having to juggle many program windows, dashboards, microphones, and speakers. Zeno's platform aims to streamline the process, allowing hosts to manage their callers, share media files and regulate their regular stream through one interface.</p>
+        <p class="description">ZenoRadio's broadcaster dashboard provides tools for individual broadcasters to host talk programs with callers from a variety of media (online widgets and telephone calling). The dashboard was a new product for the company and in order to help guide the product direction I conducted contextual interviews with broadcasters to understand how they manage their programs using the tools available in the market today. Without a unified platform to manage callers and their stream, hosts end up having to juggle many program windows, dashboards, microphones, and speakers. Zeno's platform aims to streamline the process, allowing hosts to manage their callers, share media files and regulate their regular stream through one interface.</p>
         <div class="role">
             <h4>My Role</h4>
             <p>I was the sole designer on the project that was done in conjunction with the <a href="<?php echo $url; ?>/project/zenoandroid" alt="Zeno Android Application">Android app</a>. I worked closely with the technical and marketing team to provide wireframes, UI mocks, interactive prototypes and UI patterns. I performed field studies with users. I also collaborated with off-site developers to ensure that shipped product matched user needs.</p>
@@ -22,12 +22,12 @@ include('../../includes/header.php'); ?>
             <img alt="Zeno Live Broadcaster Platform Interface" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-full.png">
         </div>
         <div class="clearfix">
-            <img alt="Zeno Live Broadcaster Platform Station Profile Interface" class="halfcolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-profile.png">
-            <img alt="Zeno Live Broadcaster Media Interface" class="halfcolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-media.png">
+            <img alt="Zeno Live Broadcaster Live Listeners Stats" class="halfcolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-livelisteners.png">
+            <img alt="Zeno Live Broadcaster Analytics" class="halfcolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-analytics.png">
         </div>
         <div class="clearfix">
             <h5>Defining the User</h5>
-            <p class="threecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their perspective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected.</p>
+            <p class="threecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their perspective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected. Additionally, I helped establish a regular user testing framework and schedule that fit with the development cycles</p>
         </div>
         <div class="clearfix">
             <h5>The Design Process</h5>
@@ -45,7 +45,7 @@ include('../../includes/header.php'); ?>
         </div>
     </div>
 
-    <a class="visitsite" href="http://www.zenolive.com" target="_blank" title="Zeno Live">VISIT SITE</span></a>
+    <a class="visitsite" href="http://www.zenolive.com" target="_blank" title="Zeno Live">VISIT SITE<span class="icon-arrow"></span></a>
     </div>
 
     <div class="bottom-navigation">
