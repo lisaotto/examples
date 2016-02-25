@@ -50,23 +50,27 @@ include('../../includes/header.php'); ?>
         <div class="clearfix">
             <h6>1. Fixed Timing</h6>
             <p class="threecolumn">While the wait time between buses might be fixed, the way people track that wait time varies from a tacit understanding of the bus cycle to printed schedules to digital apps. We saw that the fixed arrival time increased anxiety, focusing people on the wait time and creating frustration if the bus was even a few seconds off. An integrated wayfinding system would track the location of the buses, relying heavily on people’s assessment of arrival time and avoiding fixed scheduling. This map would begin to orient people to Pittsburgh’s illegible geography, and more functionally, alleviate the confusion of an overcrowded bus blowing by.</p>
-            <video width="1400" height="auto"> 
-                <source src="<?php echo $url; ?>/img/bus/map.mp4" type="video/mp4"> 
-                <source src="<?php echo $url; ?>/img/bus/map.ogg" type="video/ogg"> 
-                <source src="<?php echo $url; ?>/img/bus/map.webm" type="video/webm"> 
-            </video>
+            <div class="vid-container">
+                <video> 
+                    <source src="<?php echo $url; ?>/img/bus/map.mp4" type="video/mp4"> 
+                    <source src="<?php echo $url; ?>/img/bus/map.ogg" type="video/ogg"> 
+                    <source src="<?php echo $url; ?>/img/bus/map.webm" type="video/webm"> 
+                </video>
+            </div>
             <p class="threecolumn"> Bus map design would use a poster map and LEDs. Each map would be customized for each stop it is implemented in and be connected to the Port Authority’s GPS bus data in order to show bus tracking.</p>
             <img alt="Example map for shelter at S Negley Ave & Baum Ave" class="threecolumn" src="<?php echo $url; ?>/img/bus/map_diagram.png">
             <p class="small justcenter">Map Illustration by Saumya</p>
         </div>
         <div class="clearfix">
-            <h6>2. Preocupation & Signalling </h6>
+            <h6>2. Preoccupation &amp; Signalling </h6>
             <p class="threecolumn"> People ritually checked the space or their phone to see when the bus was arriving, keeping them from engaging in social interaction or other activities that they might find more meaningful. A lighting and sound system helps to indicate where bus stops are located at night but also indicates when buses are arriving so that people can focus on activities while waiting.</p>
-            <video width="1400" autoplay loop height="auto"> 
-                <source src="<?php echo $url; ?>/img/bus/lighting.mp4" type="video/mp4"> 
-                <source src="<?php echo $url; ?>/img/bus/lighting.ogg" type="video/ogg"> 
-                <source src="<?php echo $url; ?>/img/bus/lighting.webm" type="video/webm"> 
-            </video>
+            <div class="vid-container">
+                <video autoplay loop> 
+                    <source src="<?php echo $url; ?>/img/bus/lighting.mp4" type="video/mp4"> 
+                    <source src="<?php echo $url; ?>/img/bus/lighting.ogg" type="video/ogg"> 
+                    <source src="<?php echo $url; ?>/img/bus/lighting.webm" type="video/webm"> 
+                </video>
+            </div>
         </div>
         <div class="clearfix">
             <h6>3. Acknowleding and Accommodating the Use of Space</h6>

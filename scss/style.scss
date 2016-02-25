@@ -658,12 +658,19 @@ li.active{
 
 }
 
- video {
-    max-width: 100%;
-
-    height: auto;
+.vid-container {
     margin-top: 8%;
- }
+    padding-bottom: 56.25%;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
 
 .navigation{
     position: fixed;
