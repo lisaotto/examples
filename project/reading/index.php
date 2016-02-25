@@ -22,7 +22,7 @@ include('../../includes/header.php'); ?>
 
 
         <div class="clearfix">
-             <div class="iframe-center"><iframe class="iframe-center" src="https://player.vimeo.com/video/143089643?title=0&byline=0&portrait=0" width="900" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
+             <div class="iframe-center"><iframe src="https://player.vimeo.com/video/143089643?title=0&byline=0&portrait=0" width="900" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> </div>
              <img  alt="Immersive Reading Video Screenshot 1" class="threecolumn" src="<?php echo $url; ?>/img/reading/video1.jpg">
              <img  alt="Immersive Reading Video Screenshot 2" class="threecolumn" src="<?php echo $url; ?>/img/reading/video2.jpg">
              <img  alt="Immersive Reading Video Screenshot 3" class="threecolumn" src="<?php echo $url; ?>/img/reading/video3.jpg">

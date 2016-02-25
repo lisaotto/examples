@@ -666,8 +666,7 @@ li.active{
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
+        height: 100%;
         width: 100%;
     }
 }
@@ -1179,7 +1178,16 @@ a.intext-link, a.intext-link:visited {
 .iframe-center {
     margin: 0 auto;
     display:block;
+    padding-bottom: 56.333%;
     width: 100%;
+
+    iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
 //////////////Scroll////////////////
 
