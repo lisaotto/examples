@@ -21,8 +21,8 @@ include('../../includes/header.php'); ?>
     <div class="content outerpadding clearfix">
 
         <div class="clearfix">
-            <h4 class="first">Design Brief</h4>
-            <p class="first threecolumn finalblock">Look into the everyday lives affected by complex systems that are sometimes unnoticed, immersive, delightful, informative, useful or useless. By approaching systems such as social/mobile services from various perspectives, discover an opportunity where intelligent sensing, systems can add value in the way in which people connect with one another in their surroundings throughout the day. </p>
+            <h4 class="first justcenter">Design Brief</h4>
+            <p class="first threecolumn last"> <em>Look into the everyday lives affected by complex systems that are sometimes unnoticed, immersive, delightful, informative, useful or useless. By approaching systems such as social/mobile services from various perspectives, discover an opportunity where intelligent sensing, systems can add value in the way in which people connect with one another in their surroundings throughout the day.</em> </p>
         </div>
 
 
@@ -30,7 +30,7 @@ include('../../includes/header.php'); ?>
             <div class="iframe-center" id="bus-video">
                 <iframe src="https://player.vimeo.com/video/148120143?title=0&byline=0&portrait=0" width="900" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
-            <h5>Design Ethnographic Research: Understanding the Users</h5>
+            <h5>Design Research: Understanding the Users</h5>
             <p class="threecolumn">After taking several research trips to a busy intersection in Pittsburgh, we observed that bus stop riders are not a homogeneous group of people. They appeared to fall into three categories, clustered around age, but defined more broadly by attitude and habit. The 'dominant group' appeared most comfortable in the bus stop and used the wait time for social intereactions. We wondered if we could spread this attitude without disrupting the hierarchy already established within stops.</p>
         </div>
         <div class="clearfix">
@@ -47,10 +47,10 @@ include('../../includes/header.php'); ?>
             <img  alt="Chalk drawing at the bus stop" class="halfcolumn last" src="<?php echo $url; ?>/img/bus/intervention2.jpg">
         </div>
         <div class="clearfix">
-            <h5>Principles</h5>
+            <h5>Final Deliverable: 4 Principles </h5>
         </div>
         <div class="clearfix">
-            <h6>1. Fixed Timing</h6>
+            <h6>1. The Problems with Fixed Timing</h6>
             <p class="threecolumn">While the wait time between buses might be fixed, the way people track that wait time varies from a tacit understanding of the bus cycle to printed schedules to digital apps. We saw that the fixed arrival time increased anxiety, focusing people on the wait time and creating frustration if the bus was even a few seconds off. An integrated wayfinding system would track the location of the buses, relying heavily on people’s assessment of arrival time and avoiding fixed scheduling. This map would begin to orient people to Pittsburgh’s illegible geography, and more functionally, alleviate the confusion of an overcrowded bus blowing by.</p>
             <div class="vid-container">
                 <video autoplay loop> 

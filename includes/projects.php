@@ -11,14 +11,14 @@ $projects = array(
     'bus' => array(
         'title' => 'At the Bus Stop',
         'subtitle' => 'Research &amp Design Proposal',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('lisaot.to'),
         'img' => 'home-bus.jpg',
         'tags' => array('design research')
     ),
     '311' => array(
         'title' => 'A New 311',
         'subtitle' => 'Design Proposal',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('lisaot.to'),
         'img' => 'home-311.jpg',
         'tags' => array('user experience')
     ),
@@ -33,7 +33,7 @@ $projects = array(
     'underdog' => array(
         'title' => 'Underdog',
         'subtitle' => 'User Onboarding',
-        'show' => array('grad.lisaot.to'),
+        'show' => array(),
         'img' => 'underdog/underdog-header.jpg',
         'tags' => array('user experience')
     ),
@@ -41,7 +41,7 @@ $projects = array(
         'title' => 'ZenoRadio App',
         'subtitle' => 'Android App',
         'description' => 'An Android app for radio listening and call-ins developed to ease users into the concept that you dont need to <i>call</i> in to engage.',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('lisaot.to'),
         'img' => 'home-zeno-app.jpg',
         'tags' => array('user experience', 'research')
     ),
@@ -49,7 +49,7 @@ $projects = array(
         'title' => 'ZenoRadio Live',
         'subtitle' => 'Broadcaster Dashboard',
         'description' => 'ZenoRadios broadcaster dashboard provides tools for individual broadcasters to host radio talk programs with callers from a variety of media (online widgets and telephone calling).',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('lisaot.to'),
         'img' => 'home-zenoweb.jpg',
         'tags' => array('user experience', 'research')
     ),
@@ -79,7 +79,7 @@ $projects = array(
     'reading' => array(
         'title' => 'Immersive Reading',
         'subtitle' => 'Design Proposal',
-        'show' => array('lisaot.to', 'grad.lisaot.to'),
+        'show' => array('lisaot.to'),
         'img' => 'home-reading.jpg',
         'tags' => array('experimental')
     ),

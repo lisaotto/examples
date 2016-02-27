@@ -421,6 +421,7 @@ li.active{
     margin: 0 auto;
     width: 250px;
     display: block;
+    padding-bottom:4%;
 }
 
 
@@ -627,6 +628,7 @@ li.active{
         font-size: 20px;
         color: $grey;
         padding-top:4%;
+        margin-bottom: -10px;
         font-weight: bold;
         
     }
@@ -1180,6 +1182,7 @@ a.intext-link, a.intext-link:visited {
     display:block;
     padding-bottom: 56.333%;
     width: 100%;
+    margin-top: 8%;
 
     iframe {
         position: absolute;
@@ -1188,6 +1191,12 @@ a.intext-link, a.intext-link:visited {
         height: 100%;
         width: 100%;
     }
+}
+.prototype-center {
+    margin: 0 auto;
+    display:block;
+    width: 100%;
+    margin-top: 8%;
 }
 //////////////Scroll////////////////
 

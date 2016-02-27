@@ -21,8 +21,8 @@ include('../../includes/header.php'); ?>
     </div>
     <div class="content outerpadding clearfix">
         <div class="clearfix">
-            <h4 class="first">Design Brief</h4>
-            <p class=" first threecolumn finalblock">Design a “responsive and scalable User Interface that connects the experience across multiple devices ranging from a mobile phone, to digital whiteboards, to interactive kiosks” which facilitated collaborative visual thinking. I interpreted visual thinking broadly; I looked at a system, Pittsburgh’s 311, that did not support collaboration and attempted to design an interface and system that would support it. </p>
+            <h4 class="first justcenter">Design Brief</h4>
+            <p class=" first threecolumn"><em>Design a “responsive and scalable User Interface that connects the experience across multiple devices ranging from a mobile phone, to digital whiteboards, to interactive kiosks” which facilitated collaborative visual thinking.</em> I interpreted visual thinking broadly; I looked at a system, Pittsburgh’s 311, that did not support collaboration and attempted to design an interface and system that would support it. </p>
         </div>
 
         <div class="clearfix">
@@ -30,28 +30,36 @@ include('../../includes/header.php'); ?>
             <p class="threecolumn">“Beyond 311” is a common headline for stories on ‘smart cities’ but 311 is the foundation for a system to gather than feedback from and for community if properly implemented. 311 was first developed in the ‘90s as a phone number to get information on city services. “Burning building? Call 911. Burning question? Call 311.” was the tagline for the Chicago 311.</p>
             <p class="threecolumn first" >However, Pittsburgh’s 311 system hasn’t changed much since then. While now you can report issues online, the system is still focused on getting information in and not providing feedback to residents. Pittsburgh’s 311 doesn’t provide a way for citizens to track or share reports. It doesn’t provide a way for citizens to monitor the number of issues being reported or the speed at which they are being dealt with. While, obviously, a key part of a 311 system is getting issues to the department so they can resolve them, providing residents with feedback would increase engagement and improve accountability in the government, creating a more vibrant community.</p>
         </div>
+
         <div class="clearfix">
             <img  alt="Mobile UX Flow" class="threecolumn" src="<?php echo $url; ?>/img/311/311-ui.png">
 
 
         </div>
+
         <div class="clearfix">
+            <h5 class="threecolumn">UX Flow</h5>
             <img  alt="Mobile UX Flow" class="threecolumn" src="<?php echo $url; ?>/img/311/311-iphone-flow.png">
             <img  alt="Desktop UX flow" class="threecolumn" src="<?php echo $url; ?>/img/311/311-desktop-flow.png">
 
 
         </div>
         <div class="clearfix">
-            <h5>Storyboards</h5>
+            <h5>Process</h5>
+            <h6>Storyboards</h6>
+
+           <p class="threecolumn">Storyboards demonstrated the ideal journey that a new 311 digital system would create. This helped frame the problems the design was addressing and define the requirements of the prototype.</p>
             <img alt="Storyboard Panel 1: Maggie Discovers a Civic Issue" class="threecolumn" src="<?php echo $url; ?>/img/311/storyboard-maggie-panel1.jpg">
-            <p class="threecoloumn">Maggie is walking to Target with her granddaughter. They stop and wait at a crosswalk with the Target in their sights. When the walk light turns green, Maggie is about to step into the street but notices that the ramp isn’t at the crosswalk — it’s at the corner of the sidewalk. ‘That’s annoying,’ she thinks. ‘That’s a big step for Kacey and I don’t want to veer us into traffic.’ She pulls up the 311 site on her phone. It recognizes her location and pinpoints her on a map. She’s not surprised to see that someone has already submitted a photo of the misplaced ramp and three other people have confirmed that this is an issue. ‘Wow!’ she thinks, ‘this has been an issue since two month ago!’ She taps to confirm that it’s still an issue and asks to be notified when it’s resolved.</p>
+            <p class="threecoloumn"><em>Maggie is walking to Target with her granddaughter. They stop and wait at a crosswalk with the Target in their sights. When the walk light turns green, Maggie is about to step into the street but notices that the ramp isn’t at the crosswalk — it’s at the corner of the sidewalk. ‘That’s annoying,’ she thinks. ‘That’s a big step for Kacey and I don’t want to veer us into traffic.’ She pulls up the 311 site on her phone. It recognizes her location and pinpoints her on a map. She’s not surprised to see that someone has already submitted a photo of the misplaced ramp and three other people have confirmed that this is an issue. ‘Wow!’ she thinks, ‘this has been an issue since two month ago!’ She taps to confirm that it’s still an issue and asks to be notified when it’s resolved.</em></p>
             <img alt="Storyboard Panel 2: Maggie Reports a Civic Issue" class="threecolumn first" src="<?php echo $url; ?>/img/311/storyboard-maggie-panel2.jpg">
-              <p class="threecoloumn">Later, walking home with their shopping bags, she notices that someone has knocked over the stop sign. She pulls up the site again. No one’s submitted this issue! She takes a quick picture and adds a description to the site.</p>
+              <p class="threecoloumn"><em>Later, walking home with their shopping bags, she notices that someone has knocked over the stop sign. She pulls up the site again. No one’s submitted this issue! She takes a quick picture and adds a description to the site.</em></p>
             <img alt="Storyboard Panel 3: Maggie Checks Up On a Civic Issues" class="threecolumn first" src="<?php echo $url; ?>/img/311/storyboard-maggie-panel4.png">
-            <p class="threecoloumn last">Two days later she gets a notification that the stop sign has been resolved. ‘Hmm,’ she thinks, ‘what about that curb?’ She pulls up the site. Still an issue! She sends it to two of her friends that work with her on the community garden. They, too, have been frustrated with the city’s irregular decisions on crosswalk maintenance. They click to confirm that the crosswalk is still an issue.</p>
+            <p class="threecoloumn last"><em>Two days later she gets a notification that the stop sign has been resolved. ‘Hmm,’ she thinks, ‘what about that curb?’ She pulls up the site. Still an issue! She sends it to two of her friends that work with her on the community garden. They, too, have been frustrated with the city’s irregular decisions on crosswalk maintenance. They click to confirm that the crosswalk is still an issue.</em></p>
         </div>
         <div class="clearfix">
-             <h5>Wireframes</h5>
+             <h6>Wireframes & Lo-Fi Prototype</h6>
+              <p class="threecolumn">Wireframes and prototyping allowed me to test the functionality quickly to get a sense if the user flow would be understandable to end users. Issues quickly bubbled to the surface such as the limits of having only one color option for annotating (one color might get lost in a similarly colored background). I was able to address these issues and test again with little lost time. </p>
+             <iframe class="prototype-center" width="438" height="930" src="//invis.io/FS4I76UBM" frameborder="0" allowfullscreen></iframe>
             <img alt="Mobile Wireframes" class="threecolumn" src="<?php echo $url; ?>/img/311/tabs.jpg">
              <img alt="Desktop Wireframs" class="threecolumn last" src="<?php echo $url; ?>/img/311/pads.jpg">
         </div>
