@@ -48,7 +48,7 @@ include('../../includes/header.php'); ?>
             <h5>Process</h5>
             <h6>Storyboards</h6>
 
-           <p class="threecolumn">Storyboards demonstrated the ideal journey that a new 311 digital system would create. This helped frame the problems the design was addressing and define the requirements of the prototype.</p>
+           <p class="threecolumn">Storyboards demonstrated the ideal journey that a new 311 digital system would create. This helped frame the design problems and define the requirements of the prototype.</p>
             <img alt="Storyboard Panel 1: Maggie Discovers a Civic Issue" class="threecolumn" src="<?php echo $url; ?>/img/311/storyboard-maggie-panel1.jpg">
             <p class="threecoloumn"><em>Maggie is walking to Target with her granddaughter. They stop and wait at a crosswalk with the Target in their sights. When the walk light turns green, Maggie is about to step into the street but notices that the ramp isn’t at the crosswalk — it’s at the corner of the sidewalk. ‘That’s annoying,’ she thinks. ‘That’s a big step for Kacey and I don’t want to veer us into traffic.’ She pulls up the 311 site on her phone. It recognizes her location and pinpoints her on a map. She’s not surprised to see that someone has already submitted a photo of the misplaced ramp and three other people have confirmed that this is an issue. ‘Wow!’ she thinks, ‘this has been an issue since two month ago!’ She taps to confirm that it’s still an issue and asks to be notified when it’s resolved.</em></p>
             <img alt="Storyboard Panel 2: Maggie Reports a Civic Issue" class="threecolumn first" src="<?php echo $url; ?>/img/311/storyboard-maggie-panel2.jpg">
@@ -58,7 +58,7 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
              <h6>Wireframes & Lo-Fi Prototype</h6>
-              <p class="threecolumn">Wireframes and prototyping allowed me to test the functionality quickly to get a sense if the user flow would be understandable to end users. Issues quickly bubbled to the surface such as the limits of having only one color option for annotating (one color might get lost in a similarly colored background). I was able to address these issues and test again with little lost time. </p>
+              <p class="threecolumn">Wireframes and prototyping allowed me to test the functionality quickly to get a sense if the user flow would be understandable to end users. Some issues quickly bubbled to the surface, such as the limits of having only one color option for annotating (one color might get lost in a similarly colored background). I was able to address these issues and test again with little lost time. </p>
              <iframe class="prototype-center" width="438" height="930" src="//invis.io/FS4I76UBM" frameborder="0" allowfullscreen></iframe>
             <img alt="Mobile Wireframes" class="threecolumn" src="<?php echo $url; ?>/img/311/tabs.jpg">
              <img alt="Desktop Wireframs" class="threecolumn last" src="<?php echo $url; ?>/img/311/pads.jpg">
