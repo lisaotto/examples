@@ -15,7 +15,7 @@ include('../../includes/header.php'); ?>
         <p class="description">The wait for the bus is a high point of anxiety for bus riders. How can we make waiting for the bus a less frustrating experience? Could it be productive? Social? Or just less anxiety-creating? After performing design ethnographic research at bus stops in Pittsburgh, our team proposed four interventions that could reduce the stress of the waiting for the bus. </p>
         <div class="role">
             <h4>My Role</h4>
-            <p>I worked with fellow CMU design grad students <a href="https://medium.com/@saumya.k" target="_blank">Saumya Kharbanda</a> and <a href="http://kate-mclean.squarespace.com/" target="_blank">Kate McLean</a> collaboratively on the research and design proposal phases of this project for CMU MDes IXD Studio.</p>
+            <p>I worked with fellow CMU design grad students <a href="http://www.saumyakharbanda.com/" target="_blank">Saumya Kharbanda</a> and <a href="http://kate-mclean.squarespace.com/" target="_blank">Kate McLean</a> collaboratively on the research and design proposal phases of this project for CMU MDes IXD Studio.</p>
         </div>
     </div>
     <div class="content outerpadding clearfix">
