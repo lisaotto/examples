@@ -26,14 +26,14 @@ $projects = array(
     'intersection' => array(
         'title' => 'Intersections',
         'subtitle' => 'Conceptual Design Explorations',
-        'show' => array('lisaot.to'),
+        'show' => array('grad.lisaot.to'),
         'img' => 'home-game.jpg',
         'tags' => array('experimental')
     ),
     'underdog' => array(
         'title' => 'Underdog',
         'subtitle' => 'User Onboarding',
-        'show' => array(),
+        'show' => array('grad.lisaot.to'),
         'img' => 'underdog/underdog-header.jpg',
         'tags' => array('user experience')
     ),
@@ -61,14 +61,7 @@ $projects = array(
         'img' => 'booksatwork/header_booksatwork.png',
         'tags' => array('user experience')
     ),
-    'platform' => array(
-        'title' => 'Platform',
-        'subtitle' => 'Blog Integration',
-         'description' => 'Blog redesign ',
-        'show' => array('grad.lisaot.to'),
-        'img' => 'platform/platform-header.png',
-        'tags' => array('user experience')
-    ),
+
     'lefkowitz' => array(
         'title' => 'David Lefkowitz',
         'subtitle' => 'Website Redesign',
@@ -82,6 +75,14 @@ $projects = array(
         'show' => array('lisaot.to'),
         'img' => 'home-reading.jpg',
         'tags' => array('experimental')
+    ),
+    'platform' => array(
+        'title' => 'Platform',
+        'subtitle' => 'Blog Integration',
+         'description' => 'Blog redesign ',
+        'show' => array('lisaot.to'),
+        'img' => 'home-platform.jpg',
+        'tags' => array('user experience')
     ),
     'infographics' => array(
         'title' => 'Illustrated Infographics',

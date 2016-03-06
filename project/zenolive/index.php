@@ -20,14 +20,15 @@ include('../../includes/header.php'); ?>
     <div class="content outerpadding clearfix">
         <div class="clearfix">
             <img alt="Zeno Live Broadcaster Platform Interface" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-full.png">
+             <img alt="Zeno Live Broadcaster Live Listeners Stats" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-livelisteners.png">
+             <img alt="Zeno Live Broadcaster Platform Show Analytics" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-analytics2.png">
+             <img alt="Zeno Live Broadcaster Analytics" class="threecolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-analytics.png">
         </div>
-        <div class="clearfix">
-            <img alt="Zeno Live Broadcaster Live Listeners Stats" class="halfcolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-livelisteners.png">
-            <img alt="Zeno Live Broadcaster Analytics" class="halfcolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-analytics.png">
-        </div>
+
         <div class="clearfix">
             <h5>Defining the User</h5>
-            <p class="threecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their perspective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected. Additionally, I helped establish a regular user testing framework and schedule that fit with the development cycles</p>
+            <p class="onecolumn">Since the dashboard marked a departure from ZenoRadio's previous product model, it was important to determine who the user for this new product would be. I worked closely with the marketing and customer service team to gather their perspective on requirements and was also able to do a series of contextual inquiries with broadcasters. I put together a proto-persona that the team could use to guide decisions and test assumptions as more data about the user was collected. Additionally, I helped establish a regular user testing framework and schedule that fit with the development cycles</p>
+            <img alt="" class="twocolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-user.png">
         </div>
         <div class="clearfix">
             <h5>The Design Process</h5>
@@ -42,7 +43,9 @@ include('../../includes/header.php'); ?>
         </div>
         <div class="clearfix">
             <img alt="Specification for the development of Zeno Live" class="threecolumn finalblock" src="<?php echo $url; ?>/img/zeno-live/zenolive-specs.png">
+
         </div>
+   
     </div>
 
     <a class="visitsite" href="http://www.zenolive.com" target="_blank" title="Zeno Live">VISIT SITE<span class="icon-arrow"></span></a>
