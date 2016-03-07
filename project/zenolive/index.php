@@ -21,8 +21,9 @@ include('../../includes/header.php'); ?>
         <div class="clearfix">
             <img alt="Zeno Live Broadcaster Platform Interface" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-full.png">
              <img alt="Zeno Live Broadcaster Live Listeners Stats" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-livelisteners.png">
+            <img alt="Zeno Live Broadcaster Analytics" class="threecolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-analytics.png">
              <img alt="Zeno Live Broadcaster Platform Show Analytics" class="threecolumn" src="<?php echo $url; ?>/img/zeno-live/zenolive-analytics2.png">
-             <img alt="Zeno Live Broadcaster Analytics" class="threecolumn last" src="<?php echo $url; ?>/img/zeno-live/zenolive-analytics.png">
+
         </div>
 
         <div class="clearfix">
