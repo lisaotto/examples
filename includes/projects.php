@@ -8,20 +8,7 @@ $tags = array(
 );
 
 $projects = array(
-    'bus' => array(
-        'title' => 'At the Bus Stop',
-        'subtitle' => 'Research &amp Design Proposal',
-        'show' => array('lisaot.to'),
-        'img' => 'home-bus.jpg',
-        'tags' => array('design research')
-    ),
-    '311' => array(
-        'title' => 'A New 311',
-        'subtitle' => 'Design Proposal',
-        'show' => array('lisaot.to'),
-        'img' => 'home-311.jpg',
-        'tags' => array('user experience')
-    ),
+
 
     'intersection' => array(
         'title' => 'Intersections',
@@ -53,7 +40,21 @@ $projects = array(
         'img' => 'home-zenoweb.jpg',
         'tags' => array('user experience', 'research')
     ),
-
+       '311' => array(
+        'title' => 'A New 311',
+        'subtitle' => 'Design Proposal',
+        'show' => array('lisaot.to'),
+        'img' => 'home-311.jpg',
+        'tags' => array('user experience')
+    ),
+    'bus' => array(
+        'title' => 'At the Bus Stop',
+        'subtitle' => 'Research &amp Design Proposal',
+        'show' => array('lisaot.to'),
+        'img' => 'home-bus.jpg',
+        'tags' => array('design research')
+    ),
+ 
     'booksatwork' => array(
         'title' => 'Books@Work',
         'subtitle' => 'Website Redesign',
@@ -61,7 +62,6 @@ $projects = array(
         'img' => 'booksatwork/header_booksatwork.png',
         'tags' => array('user experience')
     ),
-
     'lefkowitz' => array(
         'title' => 'David Lefkowitz',
         'subtitle' => 'Website Redesign',
